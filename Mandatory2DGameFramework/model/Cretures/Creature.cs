@@ -41,6 +41,8 @@ namespace Mandatory2DGameFramework.model.Cretures
 
         public void ReceiveHit(int hit)
         {
+            // conditional before this logging is needed, but for now
+            // we just log the info
             Logger.Log.LogInfo($"{Name} received {hit} damage");
         }
 
