@@ -1,4 +1,5 @@
-﻿using Mandatory2DGameFramework.model.attack;
+﻿using Mandatory2DGameFramework.logging;
+using Mandatory2DGameFramework.model.attack;
 using Mandatory2DGameFramework.model.defence;
 using Mandatory2DGameFramework.worlds;
 using System;
@@ -40,17 +41,22 @@ namespace Mandatory2DGameFramework.model.Cretures
 
         public void ReceiveHit(int hit)
         {
-            throw new NotImplementedException();
+            Logger.Log.LogInfo($"{Name} received {hit} damage");
         }
 
         public void Loot(WorldObject obj)
         {
-            throw new NotImplementedException();
+            // conditional before this logging is needed, but for now
+            // we just log the error
+            Logger.Log.LogError("Tried to loot a non-lootable object");
         }
 
         public override string ToString()
         {
-            return $"{{{nameof(Name)}={Name}, {nameof(HitPoint)}={HitPoint.ToString()}, {nameof(Attack)}={Attack}, {nameof(Defence)}={Defence}}}";
+            return $"{{{nameof(Name)}={Name}, " +
+                $"{nameof(HitPoint)}={HitPoint.ToString()}, " +
+                $"{nameof(Attack)}={Attack}, " +
+                $"{nameof(Defence)}={Defence}}}";
         }
     }
 }

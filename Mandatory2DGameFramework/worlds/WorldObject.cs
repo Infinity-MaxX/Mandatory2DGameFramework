@@ -21,7 +21,9 @@ namespace Mandatory2DGameFramework.worlds
 
         public override string ToString()
         {
-            return $"{{{nameof(Name)}={Name}, {nameof(Lootable)}={Lootable.ToString()}, {nameof(Removeable)}={Removeable.ToString()}}}";
+            return $"{{{nameof(Name)}={Name}, " +
+                $"{nameof(Lootable)}={Lootable.ToString()}, " +
+                $"{nameof(Removeable)}={Removeable.ToString()}}}";
         }
     }
 }
