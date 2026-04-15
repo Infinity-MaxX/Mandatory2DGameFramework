@@ -8,8 +8,6 @@ using System.Threading.Tasks;
 
 namespace Mandatory2DGameFramework.worlds
 {
-    // Some place in the code there must be at least one
-    // Operator Overload
     /// <summary>
     /// Represents the game world, including its dimensions, 
     /// difficulty level, with objects and creatures.
@@ -70,8 +68,7 @@ namespace Mandatory2DGameFramework.worlds
         /// the world's dimensions and difficulty. Cannot be null.</param>
         /// <returns>A new World instance initialized with the
         /// parameters from the specified configuration.</returns>
-        // factory design pattern method
-        public static World FromConfig(GameConfig config)
+        public static World FromConfig(GameConfig config) // factory design pattern method
         {
             return new World(config.World.MaxX, config.World.MaxY, config.Difficulty);
         }
