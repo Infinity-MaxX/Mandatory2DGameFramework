@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mandatory2DGameFramework", "Mandatory2DGameFramework\Mandatory2DGameFramework.csproj", "{91FF87E0-556E-4F16-A9A9-3A94619ED3EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mandatory2DGameConsole", "Mandatory2DGameConsole\Mandatory2DGameConsole.csproj", "{C28C0F8B-65BC-4678-B4C5-F30F209D6866}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{91FF87E0-556E-4F16-A9A9-3A94619ED3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91FF87E0-556E-4F16-A9A9-3A94619ED3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91FF87E0-556E-4F16-A9A9-3A94619ED3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C28C0F8B-65BC-4678-B4C5-F30F209D6866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C28C0F8B-65BC-4678-B4C5-F30F209D6866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C28C0F8B-65BC-4678-B4C5-F30F209D6866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C28C0F8B-65BC-4678-B4C5-F30F209D6866}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
