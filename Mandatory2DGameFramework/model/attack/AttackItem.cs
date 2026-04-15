@@ -32,11 +32,12 @@ namespace Mandatory2DGameFramework.model.attack
     public class AttackItem : WorldObject
     {
         #region Properties
-        /// <summary>
-        /// Gets or sets the name of the attack item, which 
-        /// identifies the type of attack or weapon it represents.
-        /// </summary>
-        public string Name { get; set; }
+        ///// <summary>
+        ///// Gets or sets the name of the attack item, which 
+        ///// identifies the type of attack or weapon it represents.
+        ///// </summary>
+        //public string Name { get; set; }
+
         /// <summary>
         /// Gets or sets the hit strength of the attack item, 
         /// which determines the amount of damage it can inflict 

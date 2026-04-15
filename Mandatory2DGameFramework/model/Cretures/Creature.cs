@@ -12,15 +12,56 @@ namespace Mandatory2DGameFramework.model.Cretures
 {
     // This needs to be a Template Design Pattern
     // It needs to support the Observer Design Pattern
-    // At least one method needs to implement the Strategy Design Pattern
+    // At least one method needs to implement the
+    // Strategy Design Pattern
+
+    /// <summary>
+    /// Represents a creature in the game world, encapsulating 
+    /// its name, hit points, and equipped attack and defence
+    /// items.
+    /// </summary>
+    /// <remarks>The Creature class serves as a base for entities 
+    /// that participate in combat and interact with the environment. 
+    /// It provides properties for managing the creature's state 
+    /// and equipment, and defines methods for handling combat actions 
+    /// such as attacking, receiving damage, and looting objects.
+    /// Derived classes can extend or override behavior to implement 
+    /// specific creature types or advanced combat logic.</remarks>
     public class Creature
     {
+        #region Properties
+        /// <summary>
+        /// Gets or sets the name associated with the creature.
+        /// </summary>
         public string Name { get; set; }
+        /// <summary>
+        /// Gets or sets the current hit points for the creature.
+        /// </summary>
         public int HitPoint { get; set; }
         // Todo consider how many attack / defence weapons are allowed
+        /// <summary>
+        /// Gets or sets the attack item equipped by the creature. When 
+        /// the creature performs an attack, it will use the hit strength 
+        /// specified in the equipped attack item to determine the damage 
+        /// inflicted on the enemy. If no attack item is equipped, the 
+        /// creature will not be able to inflict damage through attacks.
+        /// </summary>
         public AttackItem? Attack { get; set; }
+        /// <summary>
+        /// Gets or sets the defence item equipped by the creature. The
+        /// creature can have no defence item equipped, in which case this
+        /// property will be null. When the creature receives a hit, it
+        /// will take the incoming damage at full strength. If a defence 
+        /// item is equipped, the damage will be reduced by the amount 
+        /// specified in the defence item's ReduceHitPoint property.
+        /// </summary>
         public DefenceItem? Defence { get; set; }
+        #endregion
 
+        #region Constructors
+        /// <summary>
+        /// Initializes a new instance of the Creature class with default values.
+        /// </summary>
         public Creature()
         {
             Name = string.Empty;
@@ -33,7 +74,9 @@ namespace Mandatory2DGameFramework.model.Cretures
             // the incoming attack damage by the sum of ReduceHitPoint
             Defence = null;
         }
+        #endregion
 
+        #region Methods
         public int Hit()
         {
             throw new NotImplementedException();
@@ -53,6 +96,12 @@ namespace Mandatory2DGameFramework.model.Cretures
             Logger.Log.LogError("Tried to loot a non-lootable object");
         }
 
+        /// <summary>
+        /// A string representation of the Creature, including its name, 
+        /// hit points, and the details of its equipped attack and defence 
+        /// items (if any are equipped).
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"{{{nameof(Name)}={Name}, " +
@@ -60,5 +109,6 @@ namespace Mandatory2DGameFramework.model.Cretures
                 $"{nameof(Attack)}={Attack}, " +
                 $"{nameof(Defence)}={Defence}}}";
         }
+        #endregion
     }
 }
