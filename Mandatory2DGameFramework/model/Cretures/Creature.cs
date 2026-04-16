@@ -1,4 +1,5 @@
-﻿using Mandatory2DGameFramework.logging;
+﻿using Mandatory2DGameFramework.helper.logger;
+using Mandatory2DGameFramework.helper.generator;
 using Mandatory2DGameFramework.model.attack;
 using Mandatory2DGameFramework.model.defence;
 using Mandatory2DGameFramework.worlds;
@@ -30,7 +31,8 @@ namespace Mandatory2DGameFramework.model.Cretures
     public class Creature
     {
         #region Instances
-
+        private NumberGenerator _generator;
+        private Logger _log;
         #endregion
 
         #region Properties
@@ -73,6 +75,9 @@ namespace Mandatory2DGameFramework.model.Cretures
         /// </summary>
         public Creature()
         {
+            _generator = new NumberGenerator();
+            _log = Logger.Log;
+
             Name = string.Empty;
             HitPoint = 100;
 
@@ -82,6 +87,7 @@ namespace Mandatory2DGameFramework.model.Cretures
             // when a creature is hit, the defence items will reduce
             // the incoming attack damage by the sum of ReduceHitPoint
             Defence = null;
+
             Reset();
         }
         /// <summary>
@@ -99,10 +105,14 @@ namespace Mandatory2DGameFramework.model.Cretures
         public Creature(string name, int hitPoint = 100, 
             AttackItem? attack = null, DefenceItem? defence = null)
         {
+            _generator = new NumberGenerator();
+            _log = Logger.Log;
+
             Name = name;
             HitPoint = hitPoint;
             Attack = attack;
             Defence = defence;
+
             Reset();
         }
         #endregion
@@ -117,7 +127,7 @@ namespace Mandatory2DGameFramework.model.Cretures
         {
             // conditional before this logging is needed, but for now
             // we just log the info
-            Logger.Log.LogInfo($"{Name} received {hit} damage");
+            _log.LogInfo($"{Name} received {hit} damage");
         }
 
         /// <summary>
@@ -132,7 +142,7 @@ namespace Mandatory2DGameFramework.model.Cretures
         {
             // conditional before this logging is needed, but for now
             // we just log the error
-            Logger.Log.LogError("Tried to loot a non-lootable object");
+            _log.LogError("Tried to loot a non-lootable object");
         }
 
         /// <summary>

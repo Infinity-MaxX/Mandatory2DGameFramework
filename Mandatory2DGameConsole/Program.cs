@@ -1,7 +1,7 @@
 ﻿using Mandatory2DGameFramework.config;
 using Mandatory2DGameFramework.worlds;
-using Mandatory2DGameFramework.logging;
 using System.Diagnostics;
+using Mandatory2DGameFramework.helper.logger;
 
 class Program
 {

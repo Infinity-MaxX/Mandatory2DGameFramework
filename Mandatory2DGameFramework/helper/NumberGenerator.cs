@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mandatory2DGameFramework.generator
+namespace Mandatory2DGameFramework.helper.generator
 {
     /// <summary>
     /// A utility class for generating random numbers within 

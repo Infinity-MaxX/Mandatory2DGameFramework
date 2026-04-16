@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Mandatory2DGameFramework.logging
+namespace Mandatory2DGameFramework.helper.logger
 {
     /// <summary>
     /// Provides a thread-safe, singleton logger for writing 
