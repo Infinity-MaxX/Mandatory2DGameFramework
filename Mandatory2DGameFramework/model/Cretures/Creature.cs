@@ -143,7 +143,7 @@ namespace Mandatory2DGameFramework.model.Cretures
         /// being applied to the creature's hit points. The method also logs 
         /// the amount of damage received for informational purposes.
         /// </summary>
-        /// <param name="hit"></param>
+        /// <param name="hit">The amount of hit point damage recieved.</param>
         public void ReceiveHit(int hit)
         {
             DefenceItem? defence = Defence;
@@ -179,6 +179,10 @@ namespace Mandatory2DGameFramework.model.Cretures
             HitPoint = 100;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="obj"></param>
         public void Loot(WorldObject obj)
         {
             // conditional before this logging is needed, but for now

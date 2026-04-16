@@ -19,18 +19,21 @@ namespace Mandatory2DGameFramework.worlds
         /// </summary>
         public string Name { get; set; }
         /// <summary>
-        /// Gets or sets a value indicating whether the item can be looted.
+        /// Gets or sets a value indicating whether the item can
+        /// be looted.
         /// </summary>
         public bool Lootable { get; set; }
         /// <summary>
-        /// Gets or sets a value indicating whether the item can be removed.
+        /// Gets or sets a value indicating whether the item can
+        /// be removed.
         /// </summary>
         public bool Removeable { get; set; }
         #endregion
 
         #region Constructors
         /// <summary>
-        /// Initializes a new instance of the WorldObject class with default values.
+        /// Initializes a new instance of the WorldObject class with
+        /// default values.
         /// </summary>
         public WorldObject()
         {
@@ -38,11 +41,32 @@ namespace Mandatory2DGameFramework.worlds
             Lootable = false;
             Removeable = false;
         }
+
+        /// <summary>
+        /// Initialises a new instance of the WorldObject class with
+        /// name, lootability and removeability specified. Defaults
+        /// to false for lootability and removeability if not provided.
+        /// </summary>
+        /// <param name="name">The name of the object.</param>
+        /// <param name="lootable">A boolean type which returns true or
+        /// false depending on whether the item can be looted or not.
+        /// Defaults to false if no specification is provided.</param>
+        /// <param name="removeable">A boolean type which returns true
+        /// or false depending on whether the item can be removed or not.
+        /// Defaults to false if no specification is provided.</param>
+        public WorldObject(string name, bool lootable = false, 
+            bool removeable = false)
+        {
+            Name = name;
+            Lootable = lootable;
+            Removeable = removeable;
+        }
         #endregion
 
         #region Methods
         /// <summary>
-        /// A string representation of the WorldObject, including its name and properties.
+        /// A string representation of the WorldObject, including its
+        /// name and properties.
         /// </summary>
         /// <returns></returns>
         public override string ToString()
