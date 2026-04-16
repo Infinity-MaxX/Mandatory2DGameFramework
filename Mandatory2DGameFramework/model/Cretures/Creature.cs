@@ -29,6 +29,10 @@ namespace Mandatory2DGameFramework.model.Cretures
     /// specific creature types or advanced combat logic.</remarks>
     public class Creature
     {
+        #region Instances
+
+        #endregion
+
         #region Properties
         /// <summary>
         /// Gets or sets the name associated with the creature.
@@ -56,6 +60,11 @@ namespace Mandatory2DGameFramework.model.Cretures
         /// specified in the defence item's ReduceHitPoint property.
         /// </summary>
         public DefenceItem? Defence { get; set; }
+        /// <summary>
+        /// Checks if a creature is dead by evaluating whether its hit
+        /// points are less or equal to zero.
+        /// </summary>
+        public bool IsDead { get { return HitPoint <= 0; } }
         #endregion
 
         #region Constructors
@@ -68,11 +77,33 @@ namespace Mandatory2DGameFramework.model.Cretures
             HitPoint = 100;
 
             // if multiple attack items are equiped then the creature
-            // should hit opponent with the sum of all equipped weapons
+            // should hit the opponent with the sum of all equipped weapons
             Attack = null;
             // when a creature is hit, the defence items will reduce
             // the incoming attack damage by the sum of ReduceHitPoint
             Defence = null;
+            Reset();
+        }
+        /// <summary>
+        /// Initializes a new instance of the Creature class with specified 
+        /// values for name, hit points, attack item, and defence item.
+        /// </summary>
+        /// <param name="name">Instantiates the name of the creature. Must 
+        /// be provided at the start of initialisation.</param>
+        /// <param name="hitPoint">Instantiates the amount of HitPoints. 
+        /// Defaults to 100 if no argument is provided.</param>
+        /// <param name="attack">Instantiates the attack items. If the creature
+        /// has none at the start of initalisation, defaults to null.</param>
+        /// <param name="defence">Instantiates the defence items. If the creature
+        /// has none at the start of initialisation, defaults to null.</param>
+        public Creature(string name, int hitPoint = 100, 
+            AttackItem? attack = null, DefenceItem? defence = null)
+        {
+            Name = name;
+            HitPoint = hitPoint;
+            Attack = attack;
+            Defence = defence;
+            Reset();
         }
         #endregion
 
@@ -87,6 +118,14 @@ namespace Mandatory2DGameFramework.model.Cretures
             // conditional before this logging is needed, but for now
             // we just log the info
             Logger.Log.LogInfo($"{Name} received {hit} damage");
+        }
+
+        /// <summary>
+        /// Resets the creature's hit points to the default value of 100.
+        /// </summary>
+        public void Reset()
+        {
+            HitPoint = 100;
         }
 
         public void Loot(WorldObject obj)
