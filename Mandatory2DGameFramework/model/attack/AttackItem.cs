@@ -56,13 +56,45 @@ namespace Mandatory2DGameFramework.model.attack
 
         #region Constructors
         /// <summary>
-        /// Initializes a new instance of the AttackItem class with default values.
+        /// Initializes a new instance of the AttackItem class with 
+        /// default values. This version of the constructor assumes 
+        /// that the player has no attack items equipped.
         /// </summary>
         public AttackItem()
         {
             Name = string.Empty;
             Hit = 0;
             Range = 0;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the AttackItem class with a
+        /// name and default values for hit strength and range. This
+        /// allows for junk/gag weapons that have no attack strength 
+        /// or range.
+        /// </summary>
+        /// <param name="name">The name of the weapon.</param>
+        public AttackItem(string name)
+        {
+            Name = name;
+            Hit = 0;
+            Range = 0;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the AttackItem class with 
+        /// specified values for name, hit strength, and range.
+        /// </summary>
+        /// <param name="name">The name of the attack item.</param>
+        /// <param name="hit">The strength of the attack item for 
+        /// damage output.</param>
+        /// <param name="range">Describes how far an attack item can
+        /// reach when used in combat.</param>
+        public AttackItem(string name, int hit, int range)
+        {
+            Name = name;
+            Hit = hit;
+            Range = range;
         }
         #endregion
 

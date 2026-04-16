@@ -23,7 +23,9 @@ namespace Mandatory2DGameFramework.model.defence
 
         #region Constructors
         /// <summary>
-        /// Initializes a new instance of the DefenceItem class with default values.
+        /// Initializes a new instance of the DefenceItem class with 
+        /// default values. This version assumes the player is not
+        /// wearing any defensive items.
         /// </summary>
         public DefenceItem()
         {
