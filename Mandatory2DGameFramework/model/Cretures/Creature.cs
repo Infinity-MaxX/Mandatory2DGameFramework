@@ -185,9 +185,14 @@ namespace Mandatory2DGameFramework.model.Cretures
         /// <param name="obj"></param>
         public void Loot(WorldObject obj)
         {
-            // conditional before this logging is needed, but for now
-            // we just log the error
-            _log.LogError("Tried to loot a non-lootable object");
+            if (obj.Lootable)
+            {
+                _log.LogInfo($"{Name} looted {obj.Name}!");
+                // Todo add the looted item to the creature's inventory
+            }
+            else {
+                _log.LogError("Tried to loot a non-lootable object");
+            }
         }
 
         /// <summary>
