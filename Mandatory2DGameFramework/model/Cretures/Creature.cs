@@ -1,5 +1,5 @@
-﻿using Mandatory2DGameFramework.helper.logger;
-using Mandatory2DGameFramework.helper.generator;
+﻿using Mandatory2DGameFramework.helper.generator;
+using Mandatory2DGameFramework.helper.logger;
 using Mandatory2DGameFramework.model.attack;
 using Mandatory2DGameFramework.model.defence;
 using Mandatory2DGameFramework.worlds;
@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Mandatory2DGameFramework.model.Cretures
 {
@@ -118,16 +119,56 @@ namespace Mandatory2DGameFramework.model.Cretures
         #endregion
 
         #region Methods
+        /// <summary>
+        /// Simulates the creature performing an attack by generating a 
+        /// random amount of damage within a specified range. The damage
+        /// is determined by a minimum value of 10 and a maximum value 
+        /// of 30, which can be adjusted as needed. The method also logs
+        /// the amount of damage dealt for informational purposes.
+        /// </summary>
+        /// <returns>The damage dealt to an opponent based on a number 
+        /// generated randomly between specified interval.</returns>
         public int Hit()
         {
-            throw new NotImplementedException();
+            int damage = _generator.Next(10, 30);
+            _log.LogInfo($"{Name} dealt {damage} damage!");
+            return damage;
         }
 
+        /// <summary>
+        /// Simulates the amount of a damage a creature receives and deducts 
+        /// it from the creature's hit points. If the creature has a defence 
+        /// item equipped, the incoming damage will be reduced by the amount 
+        /// specified in the defence item's ReduceHitPoint property before 
+        /// being applied to the creature's hit points. The method also logs 
+        /// the amount of damage received for informational purposes.
+        /// </summary>
+        /// <param name="hit"></param>
         public void ReceiveHit(int hit)
         {
-            // conditional before this logging is needed, but for now
-            // we just log the info
-            _log.LogInfo($"{Name} received {hit} damage");
+            DefenceItem? defence = Defence;
+
+            if (defence == null) 
+            {
+                HitPoint = HitPoint - hit;
+                _log.LogInfo($"{Name} has no defence item equipped, " +
+                    $"and takes the full hit of {hit} damage! \n{Name} " +
+                    $"is down to {HitPoint} hit points.");
+            }
+            else
+            {
+                int reducedHit = hit - defence.ReduceHitPoint;
+                HitPoint = HitPoint - reducedHit;
+                _log.LogInfo($"{Name} has a defence item equipped that " +
+                    $"reduces the incoming hit by {defence.ReduceHitPoint}, " +
+                    $"resulting in {reducedHit} damage taken! \n{Name} is " +
+                    $"down to {HitPoint} hit points.");
+            }
+
+            if (IsDead)
+            {
+                _log.LogInfo($"{Name} died!");
+            }
         }
 
         /// <summary>
@@ -150,7 +191,8 @@ namespace Mandatory2DGameFramework.model.Cretures
         /// hit points, and the details of its equipped attack and defence 
         /// items (if any are equipped).
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Returns the creature's name, its current hitspoints,
+        /// and the details of its equiptment if any are equipped.</returns>
         public override string ToString()
         {
             return $"{{{nameof(Name)}={Name}, " +
