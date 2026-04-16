@@ -1,5 +1,4 @@
-﻿using Mandatory2DGameFramework.helper.generator;
-using Mandatory2DGameFramework.helper.logger;
+﻿using Mandatory2DGameFramework.helper.logger;
 using Mandatory2DGameFramework.model.attack;
 using Mandatory2DGameFramework.model.defence;
 using Mandatory2DGameFramework.worlds;
@@ -32,8 +31,8 @@ namespace Mandatory2DGameFramework.model.Cretures
     public class Creature
     {
         #region Instances
-        private NumberGenerator _generator;
         private Logger _log;
+        private List<AttackItem> _inventory;
         #endregion
 
         #region Properties
@@ -76,8 +75,8 @@ namespace Mandatory2DGameFramework.model.Cretures
         /// </summary>
         public Creature()
         {
-            _generator = new NumberGenerator();
             _log = Logger.Log;
+            _inventory = new List<AttackItem>();
 
             Name = string.Empty;
             HitPoint = 100;
@@ -106,8 +105,8 @@ namespace Mandatory2DGameFramework.model.Cretures
         public Creature(string name, int hitPoint = 100, 
             AttackItem? attack = null, DefenceItem? defence = null)
         {
-            _generator = new NumberGenerator();
             _log = Logger.Log;
+            _inventory = new List<AttackItem>();
 
             Name = name;
             HitPoint = hitPoint;
@@ -120,19 +119,41 @@ namespace Mandatory2DGameFramework.model.Cretures
 
         #region Methods
         /// <summary>
-        /// Simulates the creature performing an attack by generating a 
-        /// random amount of damage within a specified range. The damage
-        /// is determined by a minimum value of 10 and a maximum value 
-        /// of 30, which can be adjusted as needed. The method also logs
+        /// The creature attacks an opponent based on the combined
+        /// strength of its equipped AttackItems. The method also logs
         /// the amount of damage dealt for informational purposes.
         /// </summary>
-        /// <returns>The damage dealt to an opponent based on a number 
-        /// generated randomly between specified interval.</returns>
+        /// <returns>The damage dealt to an opponent.</returns>
         public int Hit()
         {
-            int damage = _generator.Next(10, 30);
+            // incorrect implementation of weapons
+            AttackItem? weaponOne = Attack;
+            AttackItem? weaponTwo = Attack;
+
+            // terniary operator for nullable objects
+            // if object evalutes to null then default to 0
+            int damage = (weaponOne?.Hit ?? 0) + (weaponTwo?.Hit ?? 0);
             _log.LogInfo($"{Name} dealt {damage} damage!");
             return damage;
+        }
+
+        /// <summary>
+        /// Simulates looting in a game World. If the object is lootable
+        /// it will be added to the inventory.
+        /// </summary>
+        /// <param name="obj">Describes the object found and looted.</param>
+        public void Loot(WorldObject obj)
+        {
+            if (obj.Lootable)
+            {
+                _inventory.Append(obj);
+                _log.LogInfo($"{Name} looted {obj.Name}! Check the inventory!");
+                _log.LogInfo($"Inventory: \n{_inventory}");
+            }
+            else
+            {
+                _log.LogError("Tried to loot a non-lootable object.");
+            }
         }
 
         /// <summary>
@@ -177,22 +198,6 @@ namespace Mandatory2DGameFramework.model.Cretures
         public void Reset()
         {
             HitPoint = 100;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="obj"></param>
-        public void Loot(WorldObject obj)
-        {
-            if (obj.Lootable)
-            {
-                _log.LogInfo($"{Name} looted {obj.Name}!");
-                // Todo add the looted item to the creature's inventory
-            }
-            else {
-                _log.LogError("Tried to loot a non-lootable object");
-            }
         }
 
         /// <summary>
