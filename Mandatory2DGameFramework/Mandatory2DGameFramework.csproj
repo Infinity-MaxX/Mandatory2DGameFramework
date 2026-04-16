@@ -13,4 +13,12 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="gameInterface\composite\" />
+    <Folder Include="gameInterface\decorator\" />
+    <Folder Include="gameInterface\template\" />
+    <Folder Include="gameInterface\observer\" />
+    <Folder Include="gameInterface\strategy\" />
+  </ItemGroup>
+
 </Project>

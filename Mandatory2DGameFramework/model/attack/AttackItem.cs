@@ -14,44 +14,45 @@ namespace Mandatory2DGameFramework.model.attack
 
     // Note: The AttackItem must have a property weight. A creature
     // must be configurable to be able to carry a maximum weight of
-    // attack weapons (attackItems). Hint: May Implemented in the
+    // attack weapons (attackItems). Hint: May be implemented in the
     // Composite class
 
     /// <summary>
     /// Represents an item that can be used to perform attacks within 
     /// the game world. Provides properties for the item's name, attack
-    /// strength, and range.
+    /// strength, range, and weight.
     /// </summary>
-    /// <remarks>AttackItem serves as a base class for specialized attack 
-    /// items, including those that implement design patterns such as 
-    /// Decorator (for modifying attack or defense properties) and Composite 
-    /// (for grouping multiple weapons). Subclasses may extend functionality 
+    /// <remarks>
+    /// AttackItem serves as a base class for specialized attack items,
+    /// including those that implement design patterns such as Decorator
+    /// (for modifying attack or defense properties) and Composite (for
+    /// grouping multiple weapons). Subclasses may extend functionality 
     /// to support features like weight management or composite behaviors. 
     /// Instances of AttackItem are typically used by creatures or entities 
-    /// capable of carrying and utilizing attack items.</remarks>
+    /// capable of carrying and utilizing attack items.
+    /// </remarks>
     public class AttackItem : WorldObject
     {
         #region Properties
-        ///// <summary>
-        ///// Gets or sets the name of the attack item, which 
-        ///// identifies the type of attack or weapon it represents.
-        ///// </summary>
-        //public string Name { get; set; }
-
         /// <summary>
         /// Gets or sets the hit strength of the attack item, 
         /// which determines the amount of damage it can inflict 
         /// on a target when used in an attack.
         /// </summary>
-        public int Hit { get; set; }
+        public virtual int Hit { get; set; }
+
         /// <summary>
         /// Gets or sets the range of the attack item, which 
         /// indicates how far the attack can reach or affect 
-        /// targets. This could represent the distance at which 
-        /// the attack can be effective, such as melee range or 
-        /// ranged attacks.
+        /// targets.
         /// </summary>
-        public int Range { get; set; }
+        public virtual int Range { get; set; }
+
+        /// <summary>
+        /// Gets or sets the weight of the attack item.
+        /// Used to determine whether a creature can carry it.
+        /// </summary>
+        public virtual int Weight { get; set; }
         #endregion
 
         #region Constructors
@@ -65,6 +66,7 @@ namespace Mandatory2DGameFramework.model.attack
             Name = string.Empty;
             Hit = 0;
             Range = 0;
+            Weight = 0;
         }
 
         /// <summary>
@@ -79,6 +81,7 @@ namespace Mandatory2DGameFramework.model.attack
             Name = name;
             Hit = 0;
             Range = 0;
+            Weight = 0;
         }
 
         /// <summary>
@@ -95,20 +98,41 @@ namespace Mandatory2DGameFramework.model.attack
             Name = name;
             Hit = hit;
             Range = range;
+            Weight = 0;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AttackItem"/> class 
+        /// with explicit values for name, hit strength, range, and weight.
+        /// </summary>
+        /// <param name="name">The name of the attack item.</param>
+        /// <param name="hit">The amount of damage this item can inflict 
+        /// when used in combat.</param>
+        /// <param name="range">The effective distance at which this item 
+        /// can be used.</param>
+        /// <param name="weight">The weight of the item, used to determine 
+        /// whether a creature is able to carry it based on its maximum 
+        /// carrying capacity.</param>
+        public AttackItem(string name, int hit, int range, int weight)
+        {
+            Name = name;
+            Hit = hit;
+            Range = range;
+            Weight = weight;
         }
         #endregion
 
         #region Methods
         /// <summary>
         /// A string representation of the AttackItem, 
-        /// including its name, hit strength, and range.
+        /// including its name, hit strength, range, and weight.
         /// </summary>
-        /// <returns></returns>
         public override string ToString()
         {
             return $"{{{nameof(Name)}={Name}, " +
-                $"{nameof(Hit)}={Hit.ToString()}, " +
-                $"{nameof(Range)}={Range.ToString()}}}";
+                $"{nameof(Hit)}={Hit}, " +
+                $"{nameof(Range)}={Range}, " +
+                $"{nameof(Weight)}={Weight}}}";
         }
         #endregion
     }
