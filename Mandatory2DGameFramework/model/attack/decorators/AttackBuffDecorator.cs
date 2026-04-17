@@ -10,36 +10,36 @@ namespace Mandatory2DGameFramework.model.attack.decorators
     /// <summary>
     /// Increases the hit strength of the wrapped attack item.
     /// </summary>
-    public class AttackBoostDecorator : AttackDecorator
+    public class AttackBuffDecorator : AttackDecorator
     {
         #region Instances
-        private readonly int _boost;
+        private readonly int _buff;
         #endregion
 
         #region Properties
         /// <summary>
-        /// Gets or sets the attack item with added booster.
-        /// Subclasses may override this to modify the hit value.
+        /// Gets or sets the attack item with added buff.
+        /// Subclasses may override this to modify the buff value.
         /// </summary>
         public override int Hit
         {
-            get { return base.Hit + _boost; }
+            get { return base.Hit + _buff; }
             set { base.Hit = value; }
         }
         #endregion
 
         #region Constructors
         /// <summary>
-        /// Initializes a new decorator that wraps the specified attack item
-        /// with added booster.
+        /// Initializes a new decorator that wraps the specified attack
+        /// item with added buff.
         /// </summary>
-        /// <param name="item">The attack item to boost.</param>
-        /// <param name="boost">The amount to boost the attack item with.
+        /// <param name="item">The attack item to buff.</param>
+        /// <param name="buff">The amount to buff the attack item with.
         /// Default value is 5.</param>
-        public AttackBoostDecorator(AttackItem item, int boost = 5)
+        public AttackBuffDecorator(AttackItem item, int buff = 5)
             : base(item)
         {
-            _boost = boost;
+            _buff = buff;
             Name = item.Name + " +AttackBoost";
         }
         #endregion
