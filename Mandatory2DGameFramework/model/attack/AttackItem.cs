@@ -122,40 +122,51 @@ namespace Mandatory2DGameFramework.model.attack
         /// items are null.</exception>
         public static AttackItem operator +(AttackItem a, AttackItem b)
         {
+            // we need to deal with every case in a reasonable order
+            // handle the most extreme case first: if both are null
             if (a == null && b == null)
             {
                 throw new ArgumentNullException("Both attack items are null."); 
             }
+            // deal with less extreme case: if either is null
             if (a == null) { return b; }
             if (b == null) { return a; }
 
-            // If both are composites, merge their items
-            if (a is AttackComposite acA && b is AttackComposite acB)
+            // deal with the next most complicated case
+            // if both are composites, merge their items
+            // "a is AttackComposite compositeA" checks if a is an 
+            // AttackComposite and, if so, cast it and assign it to
+            // compositeA. do the same for b
+            if (a is AttackComposite compositeA && b is AttackComposite compositeB)
             {
-                var merged = new AttackComposite(acA.Items);
-                foreach (var item in acB.Items)
+                // create a new composite with the items from compositeA,
+                // then add the items from compositeB
+                var merged = new AttackComposite(compositeA.Items);
+                foreach (var item in compositeB.Items)
                 {
                     merged.Add(item);
                 }
                 return merged;
             }
 
-            // If left is composite, add right
-            if (a is AttackComposite acLeft)
+            // deal with simpler cases where one is a composite
+            // if only left is composite, add b's single item
+            if (a is AttackComposite left)
             {
-                var composite = new AttackComposite(acLeft.Items);
+                var composite = new AttackComposite(left.Items);
                 composite.Add(b);
                 return composite;
             }
 
-            // If right is composite, add left
-            if (b is AttackComposite acRight)
+            // if only right is composite, add a's single item
+            if (b is AttackComposite right)
             {
-                var composite = new AttackComposite(acRight.Items);
+                var composite = new AttackComposite(right.Items);
                 composite.Add(a);
                 return composite;
             }
 
+            // deal with the simplest case
             // if neither is composite, create a new composite with both
             return new AttackComposite([a, b]);
         }
