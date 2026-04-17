@@ -23,7 +23,7 @@ namespace Mandatory2DGameFramework.model.attack
         /// <summary>
         /// The wrapped attack item being decorated.
         /// </summary>
-        protected readonly AttackItem _decorator;
+        protected readonly AttackItem _baseWeapon;
         #endregion
 
         #region Properties
@@ -33,8 +33,8 @@ namespace Mandatory2DGameFramework.model.attack
         /// </summary>
         public override int Hit
         {
-            get { return _decorator.Hit; }
-            set { _decorator.Hit = value; }
+            get { return _baseWeapon.Hit; }
+            set {  _baseWeapon.Hit = value; }
         }
 
         /// <summary>
@@ -43,8 +43,8 @@ namespace Mandatory2DGameFramework.model.attack
         /// </summary>
         public override int Range
         {
-            get { return _decorator.Range; }
-            set { _decorator.Range = value; }
+            get { return _baseWeapon.Range; }
+            set { _baseWeapon.Range = value; }
         }
 
         /// <summary>
@@ -53,8 +53,8 @@ namespace Mandatory2DGameFramework.model.attack
         /// </summary>
         public override int Weight
         {
-            get { return _decorator.Weight; }
-            set { _decorator.Weight = value; }
+            get { return _baseWeapon.Weight; }
+            set { _baseWeapon.Weight = value; }
         }
         #endregion
 
@@ -62,18 +62,18 @@ namespace Mandatory2DGameFramework.model.attack
         /// <summary>
         /// Initializes a new decorator that wraps the specified attack item.
         /// </summary>
-        /// <param name="decorator">The attack item to decorate.</param>
+        /// <param name="baseWeapon">The attack item to decorate.</param>
         /// <exception cref="ArgumentNullException">
         /// Thrown if the decorated attack item is null.
         /// </exception>
-        public AttackDecorator(AttackItem decorator)
+        public AttackDecorator(AttackItem baseWeapon)
         {
-            if (decorator == null)
+            if (baseWeapon == null)
             {
-                throw new ArgumentNullException(nameof(decorator), "Decorated attack item cannot be null.");
+                throw new ArgumentNullException(nameof(baseWeapon), "Decorated attack item cannot be null.");
             }
-            _decorator = decorator;
-            Name = decorator.Name + " (Decorated)";
+            _baseWeapon = baseWeapon;
+            Name = baseWeapon.Name + " (Decorated)";
         }
         #endregion
 

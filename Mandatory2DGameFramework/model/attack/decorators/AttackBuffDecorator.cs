@@ -33,14 +33,14 @@ namespace Mandatory2DGameFramework.model.attack.decorators
         /// Initializes a new decorator that wraps the specified attack
         /// item with added buff.
         /// </summary>
-        /// <param name="item">The attack item to buff.</param>
+        /// <param name="baseWeapon">The attack item to buff.</param>
         /// <param name="buff">The amount to buff the attack item with.
         /// Default value is 5.</param>
-        public AttackBuffDecorator(AttackItem item, int buff = 5)
-            : base(item)
+        public AttackBuffDecorator(AttackItem baseWeapon, int buff = 5)
+            : base(baseWeapon)
         {
             _buff = buff;
-            Name = item.Name + $" +{buff}";
+            Name = baseWeapon.Name + $" +{buff}";
         }
         #endregion
     }

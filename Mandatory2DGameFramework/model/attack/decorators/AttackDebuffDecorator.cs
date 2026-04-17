@@ -39,14 +39,14 @@ namespace Mandatory2DGameFramework.model.attack.decorators
         /// Initializes a new decorator that wraps the specified attack
         /// item with added debuff.
         /// </summary>
-        /// <param name="item">The attack item to debuff.</param>
+        /// <param name="baseWeapon">The attack item to debuff.</param>
         /// <param name="debuff">The amount to debuff the attack item
         /// with. Default value is 3.</param>
-        public AttackDebuffDecorator(AttackItem item, int debuff = 3)
-            : base(item)
+        public AttackDebuffDecorator(AttackItem baseWeapon, int debuff = 3)
+            : base(baseWeapon)
         {
             _debuff = debuff;
-            Name = item.Name + $" -{debuff}";
+            Name = baseWeapon.Name + $" -{debuff}";
         }
         #endregion
     }
