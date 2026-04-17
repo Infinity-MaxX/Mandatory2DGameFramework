@@ -107,6 +107,60 @@ namespace Mandatory2DGameFramework.model.attack
 
         #region Methods
         /// <summary>
+        /// Combines two <see cref="AttackItem"/> instances into a single 
+        /// <see cref="AttackComposite"/> item. If either item is null,
+        /// the non-null item is  returned. If both items are composites,
+        /// their contents are merged. If one item is a composite, the
+        /// other item is added to it. If neither item is a composite, a
+        /// new composite containing both items is created and returned.
+        /// </summary>
+        /// <param name="a">The first attack item.</param>
+        /// <param name="b">The second attack item.</param>
+        /// <returns>A composite attack item containing both input items.
+        /// </returns>
+        /// <exception cref="ArgumentNullException">Thrown if both attack 
+        /// items are null.</exception>
+        public static AttackItem operator +(AttackItem a, AttackItem b)
+        {
+            if (a == null && b == null)
+            {
+                throw new ArgumentNullException("Both attack items are null."); 
+            }
+            if (a == null) { return b; }
+            if (b == null) { return a; }
+
+            // If both are composites, merge their items
+            if (a is AttackComposite acA && b is AttackComposite acB)
+            {
+                var merged = new AttackComposite(acA.Items);
+                foreach (var item in acB.Items)
+                {
+                    merged.Add(item);
+                }
+                return merged;
+            }
+
+            // If left is composite, add right
+            if (a is AttackComposite acLeft)
+            {
+                var composite = new AttackComposite(acLeft.Items);
+                composite.Add(b);
+                return composite;
+            }
+
+            // If right is composite, add left
+            if (b is AttackComposite acRight)
+            {
+                var composite = new AttackComposite(acRight.Items);
+                composite.Add(a);
+                return composite;
+            }
+
+            // if neither is composite, create a new composite with both
+            return new AttackComposite([a, b]);
+        }
+
+        /// <summary>
         /// A string representation of the AttackItem, 
         /// including its name, hit strength, range, and weight.
         /// </summary>
@@ -116,53 +170,6 @@ namespace Mandatory2DGameFramework.model.attack
                 $"{nameof(Hit)}={Hit}, " +
                 $"{nameof(Range)}={Range}, " +
                 $"{nameof(Weight)}={Weight}}}";
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="b"></param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        public static AttackItem operator +(AttackItem a, AttackItem b)
-        {
-            if (a == null && b == null)
-                throw new ArgumentNullException("Both attack items are null.");
-
-            if (a == null)
-                return b;
-
-            if (b == null)
-                return a;
-
-            // If both are composites → merge their items
-            if (a is AttackComposite acA && b is AttackComposite acB)
-            {
-                var merged = new AttackComposite(acA.Items);
-                foreach (var item in acB.Items)
-                    merged.Add(item);
-                return merged;
-            }
-
-            // If left is composite → add right
-            if (a is AttackComposite acLeft)
-            {
-                var composite = new AttackComposite(acLeft.Items);
-                composite.Add(b);
-                return composite;
-            }
-
-            // If right is composite → add left
-            if (b is AttackComposite acRight)
-            {
-                var composite = new AttackComposite(acRight.Items);
-                composite.Add(a);
-                return composite;
-            }
-
-            // Neither is composite → create a new composite with both
-            return new AttackComposite([a, b]);
         }
         #endregion
     }
