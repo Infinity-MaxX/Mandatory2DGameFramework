@@ -58,6 +58,24 @@ namespace Mandatory2DGameFramework.model.creatures
         public bool IsDead { get { return HitPoint <= 0; } }
 
         /// <summary>
+        /// Gets or sets the maximum total weight of attack items 
+        /// the creature can carry.
+        /// </summary>
+        public int MaxAttackWeight { get; set; }
+
+        /// <summary>
+        /// Gets or sets the maximum total weight of defence items 
+        /// the creature can carry.
+        /// </summary>
+        public int MaxDefenceWeight { get; set; }
+
+        /// <summary>
+        /// Gets or sets the hit strategy used to calculate 
+        /// outgoing damage.
+        /// </summary>
+        public IHitStrategy HitStrategy { get; set; }
+
+        /// <summary>
         /// Gets or sets the creature's X‑coordinate in the world.
         /// </summary>
         public int X { get; set; }
@@ -66,18 +84,6 @@ namespace Mandatory2DGameFramework.model.creatures
         /// Gets or sets the creature's Y‑coordinate in the world.
         /// </summary>
         public int Y { get; set; }
-
-        /// <summary>
-        /// Gets or sets the maximum total weight of attack items 
-        /// the creature can carry.
-        /// </summary>
-        public int MaxAttackWeight { get; set; }
-
-        /// <summary>
-        /// Gets or sets the hit strategy used to calculate 
-        /// outgoing damage.
-        /// </summary>
-        public IHitStrategy HitStrategy { get; set; }
         #endregion
 
         #region Constructors

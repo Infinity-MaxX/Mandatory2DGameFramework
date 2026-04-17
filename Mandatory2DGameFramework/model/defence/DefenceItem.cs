@@ -19,6 +19,12 @@ namespace Mandatory2DGameFramework.model.defence
         /// from the creature when damage is applied.
         /// </summary>
         public int ReduceHitPoint { get; set; }
+        /// <summary>
+        /// Gets or sets the weight of the defence item, which 
+        /// will be used to determine how much it affects the 
+        /// player's mobility or weight capacity in subclasses.
+        /// </summary>
+        public int Weight { get; set; }
         #endregion
 
         #region Constructors
