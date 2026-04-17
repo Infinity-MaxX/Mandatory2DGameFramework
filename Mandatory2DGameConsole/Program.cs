@@ -15,7 +15,6 @@ class Program
 
         Console.WriteLine(world);
 
-
         // testing logging 
         var logger = Logger.Log;
 
@@ -45,12 +44,13 @@ class Program
         world.AddCreature(hero);
         world.AddCreature(mage);
 
-        var chest = new AttackItem("Axe", 12, 1, 8) { Lootable = true };
-        chest.MoveObject(5, 5);
-        world.AddObject(chest);
+        var axe = new AttackItem("Axe", 12, 1, 8) { Lootable = true };
+        axe.MoveObject(5, 5);
+        world.AddObject(axe);
 
-        hero.Loot(chest);
+        hero.Loot(axe);
         hero.PerformHit(mage);
-
+        Console.WriteLine(hero);
+        Console.WriteLine(mage);
     }
 }
