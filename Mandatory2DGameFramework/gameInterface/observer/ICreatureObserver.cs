@@ -1,4 +1,4 @@
-﻿using Mandatory2DGameFramework.model.Cretures;
+﻿using Mandatory2DGameFramework.model.creatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
