@@ -27,53 +27,78 @@ namespace Mandatory2DGameFramework.worlds
         /// Gets or sets a value indicating whether the item can
         /// be removed.
         /// </summary>
-        public bool Removeable { get; set; }
+        public bool Removable { get; set; }
+        /// <summary>
+        /// Gets or sets the X-coordinate position of the object 
+        /// in the world.
+        /// </summary>
+        public int X { get; set; }
+        /// <summary>
+        /// Gets or sets the Y-coordinate position of the object 
+        /// in the world.
+        /// </summary>
+        public int Y { get; set; }
         #endregion
 
         #region Constructors
         /// <summary>
-        /// Initializes a new instance of the WorldObject class with
-        /// default values.
+        /// Initializes a new instance of the WorldObject class
+        /// with default values.
         /// </summary>
         public WorldObject()
         {
             Name = string.Empty;
             Lootable = false;
-            Removeable = false;
+            Removable = false;
         }
 
         /// <summary>
-        /// Initialises a new instance of the WorldObject class with
-        /// name, lootability and removeability specified. Defaults
-        /// to false for lootability and removeability if not provided.
+        /// Initialises a new instance of the WorldObject class
+        /// with name, lootability and removeability specified.
+        /// defaults to false for lootability and removeability 
+        /// if not provided.
         /// </summary>
         /// <param name="name">The name of the object.</param>
-        /// <param name="lootable">A boolean type which returns true or
-        /// false depending on whether the item can be looted or not.
-        /// Defaults to false if no specification is provided.</param>
-        /// <param name="removeable">A boolean type which returns true
-        /// or false depending on whether the item can be removed or not.
-        /// Defaults to false if no specification is provided.</param>
+        /// <param name="lootable">A boolean type which returns
+        /// true or false depending on whether the item can be
+        /// looted or not. Defaults to false if no specification 
+        /// is provided.</param>
+        /// <param name="removable">A boolean type which returns
+        /// true or false depending on whether the item can be 
+        /// removed or not. Defaults to false if no specification 
+        /// is provided.</param>
         public WorldObject(string name, bool lootable = false, 
-            bool removeable = false)
+            bool removable = false)
         {
             Name = name;
             Lootable = lootable;
-            Removeable = removeable;
+            Removable = removable;
         }
         #endregion
 
         #region Methods
         /// <summary>
-        /// A string representation of the WorldObject, including its
-        /// name and properties.
+        /// Moves the object to a new position in the world by 
+        /// updating its X and Y coordinates.
+        /// </summary>
+        /// <param name="x">The new X-coordinate.</param>
+        /// <param name="y">The new Y-coordinate.</param>
+        public void MoveObject(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        /// <summary>
+        /// A string representation of the WorldObject, including
+        /// its name and properties.
         /// </summary>
         /// <returns></returns>
         public override string ToString()
         {
             return $"{{{nameof(Name)}={Name}, " +
                 $"{nameof(Lootable)}={Lootable.ToString()}, " +
-                $"{nameof(Removeable)}={Removeable.ToString()}}}";
+                $"{nameof(Removable)}={Removable.ToString()}}}";
         }
         #endregion
     }
