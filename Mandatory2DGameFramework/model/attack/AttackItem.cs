@@ -85,23 +85,6 @@ namespace Mandatory2DGameFramework.model.attack
         }
 
         /// <summary>
-        /// Initializes a new instance of the AttackItem class with 
-        /// specified values for name, hit strength, and range.
-        /// </summary>
-        /// <param name="name">The name of the attack item.</param>
-        /// <param name="hit">The strength of the attack item for 
-        /// damage output.</param>
-        /// <param name="range">Describes how far an attack item can
-        /// reach when used in combat.</param>
-        public AttackItem(string name, int hit, int range)
-        {
-            Name = name;
-            Hit = hit;
-            Range = range;
-            Weight = 0;
-        }
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="AttackItem"/> class 
         /// with explicit values for name, hit strength, range, and weight.
         /// </summary>
