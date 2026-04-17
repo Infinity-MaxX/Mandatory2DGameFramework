@@ -22,21 +22,21 @@ namespace Mandatory2DGameFramework.model.attack
     public class AttackComposite : AttackItem
     {
         #region Instances
-        private readonly List<AttackItem> _inventory;
+        private readonly List<AttackItem> _items;
         #endregion
 
         #region Properties
         /// <summary>
         /// Gets the collection of attack items.
         /// </summary>
-        public IEnumerable<AttackItem> Inventory { get { return _inventory; } }
+        public IEnumerable<AttackItem> Items { get { return _items; } }
 
         /// <summary>
         /// Gets the total hit strength of all attack items.
         /// </summary>
         public override int Hit
         {
-            get { return _inventory.Sum(attackItem => attackItem.Hit); } 
+            get { return _items.Sum(attackItem => attackItem.Hit); } 
         }
 
         /// <summary>
@@ -50,15 +50,15 @@ namespace Mandatory2DGameFramework.model.attack
         {
             get
             {
-                if (_inventory.Count == 0) { return 0; }
-                else { return _inventory.Max(i => i.Range); }
+                if (_items.Count == 0) { return 0; }
+                else { return _items.Max(i => i.Range); }
             }
         }
 
         /// <summary>
         /// Gets the total weight of all attack items in the composite.
         /// </summary>
-        public override int Weight { get { return _inventory.Sum(i => i.Weight); } }
+        public override int Weight { get { return _items.Sum(i => i.Weight); } }
 
         #endregion
 
@@ -69,7 +69,7 @@ namespace Mandatory2DGameFramework.model.attack
         /// </summary>
         public AttackComposite()
         {
-            _inventory = new List<AttackItem>();
+            _items = new List<AttackItem>();
             Name = "CompositeWeapon";
         }
 
@@ -79,7 +79,7 @@ namespace Mandatory2DGameFramework.model.attack
         /// <param name="items">The attack items to include in the composite.</param>
         public AttackComposite(IEnumerable<AttackItem> items)
         {
-            _inventory = items.ToList();
+            _items = items.ToList();
             Name = "CompositeWeapon";
         }
 
@@ -92,7 +92,7 @@ namespace Mandatory2DGameFramework.model.attack
         /// <param name="item">The attack item to add.</param>
         public void Add(AttackItem item)
         {
-            _inventory.Add(item);
+            _items.Add(item);
         }
 
         /// <summary>
@@ -101,7 +101,7 @@ namespace Mandatory2DGameFramework.model.attack
         /// <param name="item">The attack item to remove.</param>
         public void Remove(AttackItem item)
         {
-            _inventory.Remove(item);
+            _items.Remove(item);
         }
 
         /// <summary>
@@ -110,7 +110,7 @@ namespace Mandatory2DGameFramework.model.attack
         /// </summary>
         public override string ToString()
         {
-            return $"{{Composite: Count={_inventory.Count}, " +
+            return $"{{Composite: Count={_items.Count}, " +
                 $"Hit={Hit}, Range={Range}, Weight={Weight}}}";
         }
 

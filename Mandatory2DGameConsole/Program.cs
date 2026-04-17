@@ -1,7 +1,8 @@
 ﻿using Mandatory2DGameFramework.config;
+using Mandatory2DGameFramework.helper.logger;
+using Mandatory2DGameFramework.model.attack;
 using Mandatory2DGameFramework.worlds;
 using System.Diagnostics;
-using Mandatory2DGameFramework.helper.logger;
 
 class Program
 {
@@ -26,5 +27,14 @@ class Program
         logger.LogInfo("Game started");
         logger.LogWarning("Low health warning");
         logger.LogError("Critical failure");
+
+        // testing AttackItem
+        var sword = new AttackItem("Sword", 10, 1, 5);
+        var dagger = new AttackItem("Dagger", 5, 1, 2);
+
+        var combo = sword + dagger;
+
+        Console.WriteLine(combo.Hit);
+        Console.WriteLine(combo.Weight);
     }
 }
