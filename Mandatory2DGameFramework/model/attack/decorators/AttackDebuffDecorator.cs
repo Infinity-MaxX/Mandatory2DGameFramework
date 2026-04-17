@@ -20,15 +20,15 @@ namespace Mandatory2DGameFramework.model.attack.decorators
         /// <summary>
         /// Gets or sets the attack subtracted by the debuff. A check
         /// is employed to ensure the damage output does not return a
-        /// a negative value. Subclasses may override this to modify 
-        /// the debuff value.
+        /// negative value. Subclasses may override this to modify the
+        /// debuff value.
         /// </summary>
         public override int Hit
         {
             get
             {
                 int debuff = base.Hit - _debuff;
-                return debuff < 0 ? 0 : debuff;
+                if (debuff < 0) { return 0; } else { return debuff; }
             }
             set { base.Hit = value; }
         }
@@ -46,7 +46,7 @@ namespace Mandatory2DGameFramework.model.attack.decorators
             : base(item)
         {
             _debuff = debuff;
-            Name = item.Name + " -AttackDebuff";
+            Name = item.Name + $" -{debuff}";
         }
         #endregion
     }

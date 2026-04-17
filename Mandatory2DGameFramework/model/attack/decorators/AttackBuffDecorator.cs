@@ -40,7 +40,7 @@ namespace Mandatory2DGameFramework.model.attack.decorators
             : base(item)
         {
             _buff = buff;
-            Name = item.Name + " +AttackBoost";
+            Name = item.Name + $" +{buff}";
         }
         #endregion
     }

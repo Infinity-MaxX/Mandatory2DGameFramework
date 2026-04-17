@@ -68,10 +68,13 @@ namespace Mandatory2DGameFramework.model.attack
         /// </exception>
         public AttackDecorator(AttackItem decorator)
         {
-            _decorator = decorator ?? throw new ArgumentNullException(nameof(decorator));
+            if (decorator == null)
+            {
+                throw new ArgumentNullException(nameof(decorator), "Decorated attack item cannot be null.");
+            }
+            _decorator = decorator;
             Name = decorator.Name + " (Decorated)";
         }
-
         #endregion
 
         #region Methods

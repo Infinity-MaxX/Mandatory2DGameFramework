@@ -36,7 +36,7 @@ namespace Mandatory2DGameFramework.model.attack
         /// </summary>
         public override int Hit
         {
-            get { return _items.Sum(attackItem => attackItem.Hit); } 
+            get { return _items.Sum(attackItem => attackItem.Hit); }
         }
 
         /// <summary>
@@ -63,7 +63,6 @@ namespace Mandatory2DGameFramework.model.attack
         #endregion
 
         #region Constructors
-
         /// <summary>
         /// Initializes a new empty composite attack item.
         /// </summary>
@@ -82,12 +81,11 @@ namespace Mandatory2DGameFramework.model.attack
             _items = items.ToList();
             Name = "CompositeWeapon";
         }
-
         #endregion
 
         #region Methods
         /// <summary>
-        /// Adds an attack item to the composite.
+        /// Adds a single attack item to the composite.
         /// </summary>
         /// <param name="item">The attack item to add.</param>
         public void Add(AttackItem item)
@@ -96,7 +94,7 @@ namespace Mandatory2DGameFramework.model.attack
         }
 
         /// <summary>
-        /// Removes an attack item from the composite.
+        /// Removes a single attack item from the composite.
         /// </summary>
         /// <param name="item">The attack item to remove.</param>
         public void Remove(AttackItem item)
@@ -113,7 +111,6 @@ namespace Mandatory2DGameFramework.model.attack
             return $"{{Composite: Count={_items.Count}, " +
                 $"Hit={Hit}, Range={Range}, Weight={Weight}}}";
         }
-
         #endregion
     }
 }
