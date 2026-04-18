@@ -158,6 +158,17 @@ namespace Mandatory2DGameFramework.worlds
         }
 
         /// <summary>
+        /// Called when a creature in the world loots an object.
+        /// </summary>
+        /// <param name="creature">The creature that looted the object.</param>
+        /// <param name="obj">The object that was looted.</param>
+        public void OnCreatureLoot(Creature creature, WorldObject obj)
+        {
+            _log.LogInfo($"[WORLD] {creature.Name} has looted {obj.Name}.");
+            RemoveObject(obj);
+        }
+
+        /// <summary>
         /// Returns all <see cref="WorldObject"/> instances located 
         /// at the specified coordinates.
         /// </summary>

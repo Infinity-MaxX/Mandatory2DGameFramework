@@ -48,8 +48,8 @@ namespace Mandatory2DGameFramework.worlds
         public WorldObject()
         {
             Name = string.Empty;
-            Lootable = false;
-            Removable = false;
+            Lootable = true;
+            Removable = true;
         }
 
         /// <summary>
@@ -67,8 +67,8 @@ namespace Mandatory2DGameFramework.worlds
         /// true or false depending on whether the item can be 
         /// removed or not. Defaults to false if no specification 
         /// is provided.</param>
-        public WorldObject(string name, bool lootable = false, 
-            bool removable = false)
+        public WorldObject(string name, bool lootable = true, 
+            bool removable = true)
         {
             Name = name;
             Lootable = lootable;

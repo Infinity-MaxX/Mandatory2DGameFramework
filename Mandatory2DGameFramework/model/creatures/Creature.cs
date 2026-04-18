@@ -221,6 +221,13 @@ namespace Mandatory2DGameFramework.model.creatures
             }
         }
 
+        private void NotifyLoot(WorldObject obj)
+        {
+            foreach (var obs in _observers)
+            {
+                obs.OnCreatureLoot(this, obj);
+            }
+        }
         // ---------------------------------------------------------
         // COMBAT
         // ---------------------------------------------------------
@@ -353,6 +360,7 @@ namespace Mandatory2DGameFramework.model.creatures
                     if (AddAttackItem(atk))
                     {
                         _log.LogInfo($"{Name} looted {atk.Name} (Attack Item).");
+                        NotifyLoot(atk);
                     }
                 }
                 else if (obj is DefenceItem def)
@@ -360,6 +368,7 @@ namespace Mandatory2DGameFramework.model.creatures
                     if (AddDefenceItem(def))
                     {
                         _log.LogInfo($"{Name} looted {def.Name} (Defence Item).");
+                        NotifyLoot(def);
                     }
                 }
                 else

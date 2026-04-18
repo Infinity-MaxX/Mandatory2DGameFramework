@@ -1,4 +1,5 @@
 ﻿using Mandatory2DGameFramework.model.creatures;
+using Mandatory2DGameFramework.worlds;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,5 +27,13 @@ namespace Mandatory2DGameFramework.gameInterface.observer
         /// </summary>
         /// <param name="creature">The creature that died.</param>
         void OnCreatureDeath(Creature creature);
+
+        /// <summary>
+        /// A method that is called when a creature loots an object.
+        /// </summary>
+        /// <param name="creature">The creature that looted the object.</param>
+        /// <param name="obj">The object that was looted.</param>
+        void OnCreatureLoot(Creature creature, WorldObject obj);
+
     }
 }
