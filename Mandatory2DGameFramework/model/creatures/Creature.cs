@@ -64,7 +64,7 @@ namespace Mandatory2DGameFramework.model.creatures
         public int MaxAttackWeight { get; set; }
 
         /// <summary>
-        /// Gets or sets the maximum total weight of defence items 
+        /// Gets or sets the maximum total weight of defence items
         /// the creature can carry.
         /// </summary>
         public int MaxDefenceWeight { get; set; }
@@ -94,14 +94,17 @@ namespace Mandatory2DGameFramework.model.creatures
         /// <param name="name">The creature's name.</param>
         /// <param name="hitPoint">The starting hit points. 
         /// Default is 100.</param>
-        /// <param name="maxWeight">The maximum attack weight the 
+        /// <param name="maxAttackWeight">The maximum attack weight the 
         /// creature can carry. Default is 50.</param>
-        protected Creature(string name, int hitPoint = 100, int maxWeight = 50)
+        /// <param name="maxDefenceWeight">The maximum defence weight the
+        /// creature can carry. Default is 50.</param>
+        protected Creature(string name, int hitPoint = 100, int maxAttackWeight = 50, int maxDefenceWeight = 50)
         {
             Name = name;
             HitPoint = hitPoint;
             HitStrategy = new BalancedHitStrategy();
-            MaxAttackWeight = maxWeight;
+            MaxAttackWeight = maxAttackWeight;
+            MaxDefenceWeight = maxDefenceWeight;
         }
         #endregion
 
@@ -282,17 +285,19 @@ namespace Mandatory2DGameFramework.model.creatures
             return true;
         }
 
-        // Note: There is no weight limit for defence items in this design
-        // ToDo: A similar weight check should be implemented for defence
-        // items as well.
-
         /// <summary>
         /// Adds a defence item to the creature's inventory.
         /// </summary>
         /// <param name="item">The defence item to add.</param>
-        public void AddDefenceItem(DefenceItem item)
+        public bool AddDefenceItem(DefenceItem item)
         {
+            if (CurrentDefenceWeight() + item.Weight > MaxDefenceWeight)
+            {
+                _log.LogWarning($"{Name} cannot carry {item.Name}, too heavy.");
+                return false;
+            }
             _defenceItems.Add(item);
+            return true;
         }
 
         /// <summary>
@@ -305,6 +310,20 @@ namespace Mandatory2DGameFramework.model.creatures
             foreach (var a in _attackItems)
             {
                 sum += a.Weight;
+            }
+            return sum;
+        }
+
+        /// <summary>
+        /// Checks the total weight of all currently equipped defence items.
+        /// </summary>
+        /// <returns>The total weight of defence items.</returns>
+        public int CurrentDefenceWeight()
+        {
+            int sum = 0;
+            foreach (var d in _defenceItems)
+            {
+                sum += d.Weight;
             }
             return sum;
         }
@@ -331,13 +350,17 @@ namespace Mandatory2DGameFramework.model.creatures
             {
                 if (obj is AttackItem atk)
                 {
-                    AddAttackItem(atk);
-                    _log.LogInfo($"{Name} looted {atk.Name} (Attack Item).");
+                    if (AddAttackItem(atk))
+                    {
+                        _log.LogInfo($"{Name} looted {atk.Name} (Attack Item).");
+                    }
                 }
                 else if (obj is DefenceItem def)
                 {
-                    AddDefenceItem(def);
-                    _log.LogInfo($"{Name} looted {def.Name} (Defence Item).");
+                    if (AddDefenceItem(def))
+                    {
+                        _log.LogInfo($"{Name} looted {def.Name} (Defence Item).");
+                    }
                 }
                 else
                 {
