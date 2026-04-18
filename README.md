@@ -25,10 +25,16 @@ Frameworket er udviklet som en del af faget **Advanced Software Construction** o
 
 ## Installation
 
+Dotnet CLI
+
+```PowerShell
+dotnet add package Katerina2DGameFramework --version 1.0.0
+```
+
 PowerShell
 
 ```PowerShell
-Install-Package Mandatory2DGameFramework
+Install-Package Katerina2DGameFramework
 ```
 
 ## Konfiguration
