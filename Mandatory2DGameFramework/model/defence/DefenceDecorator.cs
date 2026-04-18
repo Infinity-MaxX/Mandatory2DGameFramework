@@ -32,8 +32,8 @@ namespace Mandatory2DGameFramework.model.defence
         /// </summary>
         public override int ReduceHitPoint
         {
-            get { return _baseDefence.ReduceHitPoint; }
-            set {  _baseDefence.ReduceHitPoint = value; }
+            get { return base.ReduceHitPoint; }
+            set { base.ReduceHitPoint = value; }
         }
 
         /// <summary>
@@ -42,8 +42,8 @@ namespace Mandatory2DGameFramework.model.defence
         /// </summary>
         public override int Weight
         {
-            get { return _baseDefence.Weight; }
-            set { _baseDefence.Weight = value; }
+            get { return base.Weight; }
+            set { base.Weight = value; }
         }
         #endregion
 

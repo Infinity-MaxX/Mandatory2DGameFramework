@@ -23,8 +23,7 @@ namespace Mandatory2DGameFramework.model.defence.decorators
         /// </summary>
         public override int ReduceHitPoint
         {
-            get { return base.ReduceHitPoint + _buff; }
-            set { base.ReduceHitPoint = value; }
+            get { return _baseDefence.ReduceHitPoint + _buff; }
         }
         #endregion
 

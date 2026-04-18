@@ -8,7 +8,7 @@ using Mandatory2DGameFramework.model.defence;
 namespace Mandatory2DGameFramework.model.defence.decorators
 {
     /// <summary>
-    /// Reduces the reduce hit point of the wrapped defence item.
+    /// Reduces the hit strength of the wrapped defence item.
     /// </summary>
     public class DefenceDebuffDecorator : DefenceDecorator
     {
@@ -18,8 +18,8 @@ namespace Mandatory2DGameFramework.model.defence.decorators
 
         #region Properties
         /// <summary>
-        /// Gets or sets the defence item with added debuff. A check
-        /// is employed to ensure the damage output does not return a
+        /// Gets or sets the defence subtracted by the debuff. A check
+        /// is employed to ensure the defence output does not return a
         /// negative value. Subclasses may override this to modify the
         /// debuff value.
         /// </summary>
@@ -27,10 +27,9 @@ namespace Mandatory2DGameFramework.model.defence.decorators
         {
             get
             {
-                int debuff = base.ReduceHitPoint - _debuff;
+                int debuff = _baseDefence.ReduceHitPoint - _debuff;
                 if (debuff < 0) { return 0; } else { return debuff; }
             }
-            set { base.ReduceHitPoint = value; }
         }
         #endregion
 
@@ -46,9 +45,8 @@ namespace Mandatory2DGameFramework.model.defence.decorators
             : base(baseDefence)
         {
             _debuff = debuff;
-            Name = baseDefence.Name + $" -{debuff}";
+            Name = baseDefence.Name + $" {baseDefence.ReduceHitPoint} - {debuff}";
         }
         #endregion
     }
 }
-

@@ -27,10 +27,9 @@ namespace Mandatory2DGameFramework.model.attack.decorators
         {
             get
             {
-                int debuff = base.Hit - _debuff;
+                int debuff = _baseWeapon.Hit - _debuff;
                 if (debuff < 0) { return 0; } else { return debuff; }
             }
-            set { base.Hit = value; }
         }
         #endregion
 
@@ -46,7 +45,7 @@ namespace Mandatory2DGameFramework.model.attack.decorators
             : base(baseWeapon)
         {
             _debuff = debuff;
-            Name = baseWeapon.Name + $" -{debuff}";
+            Name = baseWeapon.Name + $" {baseWeapon.Hit} - {debuff}";
         }
         #endregion
     }

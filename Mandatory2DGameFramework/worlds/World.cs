@@ -93,7 +93,7 @@ namespace Mandatory2DGameFramework.worlds
         public void AddObject(WorldObject obj)
         {
             _worldObjects.Add(obj);
-            _log.LogInfo($"Added object: {obj.ToString()} at " +
+            _log.LogInfo($"[WORLD] Added object: {obj.ToString()} at " +
                 $"({obj.X}, {obj.Y})");
 
         }
@@ -108,7 +108,7 @@ namespace Mandatory2DGameFramework.worlds
             if (obj.Removable)
             {
                 _worldObjects.Remove(obj);
-                _log.LogInfo($"Removed object: {obj.ToString()} from " +
+                _log.LogInfo($"[WORLD] Removed object: {obj.ToString()} from " +
                     $"({obj.X}, {obj.Y})");
             }
         }
@@ -121,7 +121,7 @@ namespace Mandatory2DGameFramework.worlds
         {
             _creatures.Add(creature);
             creature.RegisterObserver(this);
-            _log.LogInfo($"Added creature: {creature.ToString()} at " +
+            _log.LogInfo($"[WORLD] Added creature: {creature.ToString()} at " +
                     $"({creature.X}, {creature.Y})");
         }
 
@@ -133,7 +133,7 @@ namespace Mandatory2DGameFramework.worlds
         {
             _creatures.Remove(creature);
             creature.RemoveObserver(this);
-            _log.LogInfo($"Removed creature: {creature.ToString()} from " +
+            _log.LogInfo($"[WORLD] Removed creature: {creature.ToString()} from " +
                     $"({creature.X}, {creature.Y})");
         }
 
@@ -217,7 +217,7 @@ namespace Mandatory2DGameFramework.worlds
         /// <returns></returns>
         public override string ToString()
         {
-            return $"{{{nameof(MaxX)}={MaxX.ToString()}, " +
+            return $"[WORLD] {{{nameof(MaxX)}={MaxX.ToString()}, " +
                 $"{nameof(MaxY)}={MaxY.ToString()}, " +
                 $"{nameof(Difficulty)}={Difficulty.ToString()}}}";
         }

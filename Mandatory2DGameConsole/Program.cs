@@ -22,6 +22,7 @@ class Program
         var config = GameConfigLoader.Load("gameconfig.xml");
         World world = World.FromConfig(config);
         Console.WriteLine($"Loaded world: {world}\n");
+        Console.WriteLine(world);
 
         Debug.Assert(world.MaxX == config.World.MaxX, "World MaxX mismatch");
         Debug.Assert(world.MaxY == config.World.MaxY, "World MaxY mismatch");
@@ -54,6 +55,7 @@ class Program
         var dagger = new AttackItem("Dagger", 5, 1, 2);
 
         var combo = sword + dagger;
+        Console.WriteLine(combo);
         Debug.Assert(combo.Hit == 15, "Sword + Dagger Hit mismatch");
         Debug.Assert(combo.Weight == 7, "Sword + Dagger Weight mismatch");
 
@@ -68,14 +70,17 @@ class Program
         Debug.Assert(compA.Weight == compC.Weight, "Composite operator Weight mismatch");
 
         // Decorators
-        Creature throwaway = new Warrior("Throwaway");
-        throwaway.Strategy = new BalancedStrategy();
         var buffedSword = new AttackBuffDecorator(sword, 3);
-        // throwaway.AddAttackItem(buffedSword);
-        Debug.Assert(throwaway.Strategy.CalculateDamage([buffedSword]) == 13, "Decorator buff mismatch");
+        Console.WriteLine(buffedSword);
+        Debug.Assert(buffedSword.Hit == 13, "Decorator buff mismatch");
 
         var debuffedSword = new AttackDebuffDecorator(new AttackItem("TestSword", 10, 1, 5), 20);
+        Console.WriteLine(debuffedSword);
         Debug.Assert(debuffedSword.Hit == 0, "AttackDebuffDecorator should not go below 0");
+
+        var smallDebuff = new AttackDebuffDecorator(new AttackItem("TestSword", 10, 1, 5), 3);
+        Console.WriteLine(smallDebuff);
+        Debug.Assert(smallDebuff.Hit == 7, "Small AttackDebuffDecorator mismatch");
 
         // ---------------------------------------------------------
         // 4) DEFENCEITEM TESTS
@@ -86,16 +91,20 @@ class Program
         var helmet = new DefenceItem("Helmet", 3, 1);
 
         var defenceCombo = shield + helmet;
+        Console.WriteLine(defenceCombo);
         Debug.Assert(defenceCombo.ReduceHitPoint == 8, "Defence combo mismatch");
 
         var buffedShield = new DefenceBuffDecorator(new DefenceItem("Shield", 5, 3), 4);
+        Console.WriteLine(buffedShield);
         Debug.Assert(buffedShield.ReduceHitPoint == 9, "DefenceBuffDecorator mismatch");
 
-        var debuffedHelmet = new DefenceDebuffDecorator(new DefenceItem("Helmet", 3, 1), 10);
-        Debug.Assert(debuffedHelmet.ReduceHitPoint == 0, "DefenceDebuffDecorator should not go below 0");
+        var debuffedShield = new DefenceDebuffDecorator(new DefenceItem("Shield", 5, 3), 10);
+        Console.WriteLine(debuffedShield);
+        Debug.Assert(debuffedShield.ReduceHitPoint == 0, "DefenceDebuffDecorator should not go below 0");
 
-        var smallDebuffedShield = new DefenceDebuffDecorator(new DefenceItem("Shield", 5, 3), 2);
-        Debug.Assert(smallDebuffedShield.ReduceHitPoint == 3, "Small DefenceDebuffDecorator mismatch");
+        var smallDebuffShield = new DefenceDebuffDecorator(new DefenceItem("Shield", 5, 3), 2);
+        Console.WriteLine(smallDebuffShield);
+        Debug.Assert(smallDebuffShield.ReduceHitPoint == 3, "Small DefenceDebuffDecorator mismatch");
 
         // ---------------------------------------------------------
         // 5) CREATURE TESTS
