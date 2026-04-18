@@ -1,62 +1,91 @@
-﻿# Project Title
+﻿# Mandatory2DGameFramework
 
-Simple overview of use/purpose.
+- [Features](#features)
+- [Installation](#installation)
+- [Konfiguration](#konfiguration)
+- [Eksempel](#eksempel)
+- [Arkitektur](#arkitektur)
 
-## Description
+Et fleksibelt og konfigurerbart mini‑framework til tur‑baserede 2D‑spil i C#.
 
-An in-depth paragraph about your project and overview of use.
+Frameworket er udviklet som en del af faget **Advanced Software Construction** og demonstrerer brugen af SOLID‑principperne samt en række klassiske design patterns: Template, Strategy, Observer, Composite, Decorator, Factory, Singleton.
 
-## Getting Started
+---
 
-### Dependencies
+## Features
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+- 2D‑verden med dynamisk størrelse (konfigureret via XML)
+- Creatures med position, inventory, strategi‑baseret kamp og observer‑notifikationer
+- Attack‑ og defence‑items med Composite og Decorator patterns
+- Looting‑system med automatisk fjernelse af objekter fra verden
+- Logging via singleton‑logger med udskiftelige TraceListeners
+- Klar til brug som NuGet‑pakke
 
-### Installing
+---
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+## Installation
 
-### Executing program
+PowerShell
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
+```PowerShell
+Install-Package Mandatory2DGameFramework
 ```
 
-## Authors
+## Konfiguration
 
-Contributors names and contact info
+Frameworket læser konfiguration fra en XML‑fil:
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+```xml
+<GameConfig>
+  <World>
+    <MaxX>20</MaxX>
+    <MaxY>10</MaxY>
+  </World>
+  <GameDifficulty>Beginner</GameDifficulty>
+</GameConfig>
+```
 
-## Version History
+## Eksempel
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+```csharp
+var world = World.FromConfig(GameConfigLoader.Load("gameconfig.xml"));
 
-## License
+var warrior = new Warrior("Laezel");
+var mage = new Mage("Gale");
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+world.AddCreature(warrior);
+world.AddCreature(mage);
 
-## Acknowledgments
+var sword = new AttackItem("Sword", 10, 1, 5);
+warrior.Loot(sword);
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+warrior.PerformHit(mage);
+Console.WriteLine(mage);
+```
+
+## Arkitektur
+
+World
+
+- Indeholder creatures og world objects
+- Observerer creatures (hit, death, loot)
+- Factory: World.FromConfig
+
+Creature
+
+- Template Method: PerformHit
+- Strategy: Aggressive, Balanced, Defensive
+- Observer: registrerer world
+- Inventory: attack + defence items
+- Looting med vægtbegrænsning
+
+AttackItem / DefenceItem
+
+- Composite: kombiner flere items
+- Decorator: buff/debuff
+- Operator overload: +
+
+Logger
+
+- Singleton
+- Understøtter udskiftelige TraceListeners
