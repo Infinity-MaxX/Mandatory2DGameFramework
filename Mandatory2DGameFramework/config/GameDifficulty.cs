@@ -14,7 +14,8 @@ namespace Mandatory2DGameFramework.config
     /// current difficulty setting. The values typically correspond 
     /// to increasing levels of challenge, with 'Beginner' being 
     /// the easiest and 'Expert' the most difficult. The meaning of 
-    /// each level may vary depending on the game implementation.</remarks>
+    /// each level may vary depending on the game implementation.
+    /// </remarks>
     public enum GameDifficulty
     {
         /// <summary>
@@ -95,16 +96,18 @@ namespace Mandatory2DGameFramework.config
         public static GameConfig Load(string filePath)
         {
             if (!File.Exists(filePath))
+            {
                 throw new FileNotFoundException("Config file not found", filePath);
-
+            }
             var serializer = new XmlSerializer(typeof(GameConfig));
 
             using var stream = File.OpenRead(filePath);
             var config = (GameConfig?)serializer.Deserialize(stream);
 
             if (config == null)
+            {
                 throw new InvalidDataException("Could not deserialize GameConfig");
-
+            }
             return config;
         }
     }

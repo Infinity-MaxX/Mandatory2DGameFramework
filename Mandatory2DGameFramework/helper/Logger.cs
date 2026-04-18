@@ -7,12 +7,14 @@ namespace Mandatory2DGameFramework.helper.logger
     /// trace information, warnings, and errors to registered
     /// listeners.
     /// </summary>
-    /// <remarks>The Logger class does not add any default listeners. 
-    /// User must add one or more TraceListener instances using the 
-    /// AddListener method to receive log output. This design allows 
-    /// the logging framework to remain neutral and adaptable to 
-    /// different logging targets. The singleton instance can be 
-    /// accessed via the Log property.</remarks>
+    /// <remarks>The <see cref="Logger"/> class does not add 
+    /// any default listeners. User must add one or more 
+    /// <see cref="TraceListener"/> instances using the 
+    /// <see cref="AddListener"/> method to receive log output. 
+    /// This design allows the logging framework to remain 
+    /// neutral and adaptable to different logging targets. 
+    /// The singleton instance can be accessed via the 
+    /// <see cref="Log"/> property.</remarks>
     public sealed class Logger
     {
         #region Instances
@@ -26,16 +28,17 @@ namespace Mandatory2DGameFramework.helper.logger
         /// <remarks>Use this property to write log messages 
         /// throughout the application. The returned logger is a 
         /// singleton and is thread-safe for concurrent use.</remarks>
-        public static Logger Log => _log.Value;
+        public static Logger Log { get { return _log.Value;} }
         #endregion
 
         #region Constructors
         /// <summary>
-        /// Initializes a new instance of the Logger class.
+        /// Initializes a new instance of the <see cref="Logger"/> class.
         /// </summary>
         /// <remarks>This constructor is private to prevent direct 
         /// instantiation. Use the provided factory methods or 
-        /// properties to obtain a Logger instance.</remarks>
+        /// properties to obtain a <see cref="Logger"/> instance.
+        /// </remarks>
         private Logger()
         {
             // no default listeners – frameworket must be neutral

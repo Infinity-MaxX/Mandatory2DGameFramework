@@ -57,8 +57,7 @@ namespace Mandatory2DGameFramework.worlds
         /// <param name="difficulty">Sets the difficulty of the game. 
         /// Options include Beginner, Intermediate, and Expert. 
         /// Default is set to Beginner.</param>
-        public World(int maxX, int maxY, 
-            GameDifficulty difficulty = GameDifficulty.Beginner)
+        public World(int maxX, int maxY, GameDifficulty difficulty = GameDifficulty.Beginner)
         {
             MaxX = maxX;
             MaxY = maxY;
@@ -82,8 +81,7 @@ namespace Mandatory2DGameFramework.worlds
         // factory design pattern method
         public static World FromConfig(GameConfig config)
         {
-            return new World(config.World.MaxX, 
-                config.World.MaxY, config.Difficulty);
+            return new World(config.World.MaxX, config.World.MaxY, config.Difficulty);
         }
 
         /// <summary>
