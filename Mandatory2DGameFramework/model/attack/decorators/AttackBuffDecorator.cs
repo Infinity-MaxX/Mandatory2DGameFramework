@@ -23,8 +23,7 @@ namespace Mandatory2DGameFramework.model.attack.decorators
         /// </summary>
         public override int Hit
         {
-            get { return base.Hit + _buff; }
-            set { base.Hit = value; }
+            get { return _baseWeapon.Hit + _buff; }
         }
         #endregion
 

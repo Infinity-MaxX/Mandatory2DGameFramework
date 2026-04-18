@@ -21,7 +21,7 @@ namespace Mandatory2DGameFramework.model.creatures.classes
         /// <param name="name">The name of the warrior.</param>
         public Warrior(string name) : base(name)
         {
-            HitStrategy = new AggressiveHitStrategy();
+            Strategy = new AggressiveStrategy();
         }
         #endregion
 
@@ -52,7 +52,7 @@ namespace Mandatory2DGameFramework.model.creatures.classes
         /// <param name="name">The name of the mage.</param>
         public Mage(string name) : base(name)
         {
-            HitStrategy = new DefensiveHitStrategy();
+            Strategy = new DefensiveStrategy();
         }
         #endregion
 

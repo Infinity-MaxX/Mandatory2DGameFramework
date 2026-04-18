@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<GameConfig>
+	<World>
+		<MaxX>20</MaxX>
+		<MaxY>10</MaxY>
+	</World>
+	<GameDifficulty>Beginner</GameDifficulty>
+</GameConfig>

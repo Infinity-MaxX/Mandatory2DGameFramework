@@ -11,4 +11,10 @@
     <ProjectReference Include="..\Mandatory2DGameFramework\Mandatory2DGameFramework.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="gameconfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

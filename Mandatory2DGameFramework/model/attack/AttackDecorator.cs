@@ -33,8 +33,8 @@ namespace Mandatory2DGameFramework.model.attack
         /// </summary>
         public override int Hit
         {
-            get { return _baseWeapon.Hit; }
-            set {  _baseWeapon.Hit = value; }
+            get { return base.Hit; }
+            set { base.Hit = value; }
         }
 
         /// <summary>
@@ -43,8 +43,8 @@ namespace Mandatory2DGameFramework.model.attack
         /// </summary>
         public override int Range
         {
-            get { return _baseWeapon.Range; }
-            set { _baseWeapon.Range = value; }
+            get { return base.Range; }
+            set { base.Range = value; }
         }
 
         /// <summary>
@@ -53,8 +53,8 @@ namespace Mandatory2DGameFramework.model.attack
         /// </summary>
         public override int Weight
         {
-            get { return _baseWeapon.Weight; }
-            set { _baseWeapon.Weight = value; }
+            get { return base.Weight; }
+            set { base.Weight = value; }
         }
         #endregion
 

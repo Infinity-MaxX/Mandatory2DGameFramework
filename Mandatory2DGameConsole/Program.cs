@@ -1,7 +1,12 @@
 ﻿using Mandatory2DGameFramework.config;
 using Mandatory2DGameFramework.helper.logger;
 using Mandatory2DGameFramework.model.attack;
+using Mandatory2DGameFramework.model.attack.decorators;
+using Mandatory2DGameFramework.model.combat;
+using Mandatory2DGameFramework.model.creatures;
 using Mandatory2DGameFramework.model.creatures.classes;
+using Mandatory2DGameFramework.model.defence;
+using Mandatory2DGameFramework.model.defence.decorators;
 using Mandatory2DGameFramework.worlds;
 using System.Diagnostics;
 
@@ -9,48 +14,164 @@ class Program
 {
     static void Main()
     {
-        // testing configuration and loading of world
+        Console.WriteLine("=== TESTSUITE START ===\n");
+
+        // ---------------------------------------------------------
+        // 1) Configuration
+        // ---------------------------------------------------------
         var config = GameConfigLoader.Load("gameconfig.xml");
         World world = World.FromConfig(config);
+        Console.WriteLine($"Loaded world: {world}\n");
 
-        Console.WriteLine(world);
+        Debug.Assert(world.MaxX == config.World.MaxX, "World MaxX mismatch");
+        Debug.Assert(world.MaxY == config.World.MaxY, "World MaxY mismatch");
+        Debug.Assert(world.Difficulty == config.Difficulty, "World Difficulty mismatch");
 
-        // testing logging 
+        // ---------------------------------------------------------
+        // 2) LOGGER
+        // ---------------------------------------------------------
         var logger = Logger.Log;
 
-        // Console output
-        logger.AddListener(new ConsoleTraceListener());
+        var consoleListener = new ConsoleTraceListener();
+        var fileListener = new TextWriterTraceListener("game.log");
+        var fileListener2 = new TextWriterTraceListener("game2.log");
 
-        // log to file
-        logger.AddListener(new TextWriterTraceListener("game.log"));
+        logger.AddListener(consoleListener);
+        logger.AddListener(fileListener);
+        logger.AddListener(fileListener2);
 
-        logger.LogInfo("Game started");
-        logger.LogWarning("Low health warning");
-        logger.LogError("Critical failure");
+        logger.LogInfo("Logger initialized");
 
-        // testing AttackItem
+        logger.RemoveListener(fileListener2);
+        logger.LogInfo("File listener removed");
+
+        // ---------------------------------------------------------
+        // 3) ATTACKITEM TESTS
+        // ---------------------------------------------------------
+        Console.WriteLine("\n=== ATTACK TESTS ===");
+
         var sword = new AttackItem("Sword", 10, 1, 5);
         var dagger = new AttackItem("Dagger", 5, 1, 2);
 
         var combo = sword + dagger;
+        Debug.Assert(combo.Hit == 15, "Sword + Dagger Hit mismatch");
+        Debug.Assert(combo.Weight == 7, "Sword + Dagger Weight mismatch");
 
-        Console.WriteLine(combo.Hit);
-        Console.WriteLine(combo.Weight);
+        var compA = new AttackComposite([sword, dagger]);
+        var compB = new AttackComposite([new AttackItem("Axe", 12, 1, 8)]);
+        var compC = sword + dagger;
+        var merged = compA + compB;
 
-        // testing battle classes and world object added to the world
-        var hero = new Warrior("Conan");
-        var mage = new Mage("Merlin");
+        Debug.Assert(merged.Hit == 27, "Composite merge Hit mismatch");
+        Debug.Assert(merged.Weight == 15, "Composite merge Weight mismatch");
+        Debug.Assert(compA.Hit == compC.Hit, "Composite operator Hit mismatch");
+        Debug.Assert(compA.Weight == compC.Weight, "Composite operator Weight mismatch");
 
-        world.AddCreature(hero);
+        // Decorators
+        Creature throwaway = new Warrior("Throwaway");
+        throwaway.Strategy = new BalancedStrategy();
+        var buffedSword = new AttackBuffDecorator(sword, 3);
+        // throwaway.AddAttackItem(buffedSword);
+        Debug.Assert(throwaway.Strategy.CalculateDamage([buffedSword]) == 13, "Decorator buff mismatch");
+
+        var debuffedSword = new AttackDebuffDecorator(new AttackItem("TestSword", 10, 1, 5), 20);
+        Debug.Assert(debuffedSword.Hit == 0, "AttackDebuffDecorator should not go below 0");
+
+        // ---------------------------------------------------------
+        // 4) DEFENCEITEM TESTS
+        // ---------------------------------------------------------
+        Console.WriteLine("\n=== DEFENCE TESTS ===");
+
+        var shield = new DefenceItem("Shield", 5, 3);
+        var helmet = new DefenceItem("Helmet", 3, 1);
+
+        var defenceCombo = shield + helmet;
+        Debug.Assert(defenceCombo.ReduceHitPoint == 8, "Defence combo mismatch");
+
+        var buffedShield = new DefenceBuffDecorator(new DefenceItem("Shield", 5, 3), 4);
+        Debug.Assert(buffedShield.ReduceHitPoint == 9, "DefenceBuffDecorator mismatch");
+
+        var debuffedHelmet = new DefenceDebuffDecorator(new DefenceItem("Helmet", 3, 1), 10);
+        Debug.Assert(debuffedHelmet.ReduceHitPoint == 0, "DefenceDebuffDecorator should not go below 0");
+
+        var smallDebuffedShield = new DefenceDebuffDecorator(new DefenceItem("Shield", 5, 3), 2);
+        Debug.Assert(smallDebuffedShield.ReduceHitPoint == 3, "Small DefenceDebuffDecorator mismatch");
+
+        // ---------------------------------------------------------
+        // 5) CREATURE TESTS
+        // ---------------------------------------------------------
+        Console.WriteLine("\n=== CREATURE TESTS ===");
+
+        var warrior = new Warrior("Laezel");
+        var mage = new Mage("Gale");
+
+        world.AddCreature(warrior);
         world.AddCreature(mage);
 
-        var axe = new AttackItem("Axe", 12, 1, 8) { Lootable = true };
+        // Looting
+        var axe = new AttackItem("Axe", 8, 1, 8);
         axe.MoveObject(5, 5);
         world.AddObject(axe);
 
-        hero.Loot(axe);
-        hero.PerformHit(mage);
-        Console.WriteLine(hero);
-        Console.WriteLine(mage);
+        warrior.Loot(axe);
+        Debug.Assert(!world.ObjectsAt(5, 5).Any(), "Looted axe should be removed from world");
+        // Attack strategy should give 25% bonus to attack, so 8 * 1.25 = 10
+        Debug.Assert(warrior.Strategy.CalculateDamage([axe]) == 10, "Warrior should have looted axe");
+
+        // Add defence to mage
+        var armor = new DefenceItem("Light armor", 4, 5);
+        mage.Loot(armor);
+        // Defensive strategy should give 25% bonus to defence, so 4 * 1.25 = 5
+        Debug.Assert(mage.Strategy.CalculateDefence([armor]) == 5, "Mage should have looted armor");
+
+        // ---------------------------------------------------------
+        // 6) STRATEGY TESTS
+        // ---------------------------------------------------------
+        Console.WriteLine("\n=== STRATEGY TESTS ===");
+
+        // Balanced
+        warrior.Strategy = new BalancedStrategy();
+        Debug.Assert(warrior.Strategy.CalculateDamage([sword]) == 10, "Balanced damage mismatch");
+
+        // Aggressive
+        warrior.Strategy = new AggressiveStrategy();
+        Debug.Assert(warrior.Strategy.CalculateDamage([sword]) == (int)(10 * 1.25), "Aggressive damage mismatch");
+
+        // Defensive
+        mage.Strategy = new DefensiveStrategy();
+        Debug.Assert(mage.Strategy.CalculateDamage([dagger]) == (int)(5 * 0.75), "Defensive damage mismatch");
+
+        // ---------------------------------------------------------
+        // 7) COMBAT TESTS
+        // ---------------------------------------------------------
+        Console.WriteLine("\n=== COMBAT TESTS ===");
+
+        int mageHPBefore = mage.HitPoint;
+        int damage = warrior.PerformHit(mage);
+
+        Debug.Assert(damage >= 0, "Damage should never be negative");
+        Debug.Assert(mage.HitPoint == mageHPBefore - (damage - mage.Strategy.CalculateDefence([armor])), "Damage application mismatch");
+
+        // Kill test
+        Console.WriteLine("\n=== DEATH TEST ===");
+        while (!mage.IsDead)
+            warrior.PerformHit(mage);
+
+        Debug.Assert(mage.IsDead, "Mage should be dead");
+        Debug.Assert(mage.HitPoint == 0, "Dead creature should have 0 HP");
+
+        // ---------------------------------------------------------
+        // 8) WORLD TESTS
+        // ---------------------------------------------------------
+        Console.WriteLine("\n=== WORLD TESTS ===");
+
+        var chest = new WorldObject("Chest", lootable: false, removable: false);
+        chest.MoveObject(2, 2);
+        world.AddObject(chest);
+        warrior.Loot(chest); // Should not be able to loot
+
+        Debug.Assert(world.ObjectsAt(2, 2).Count() == 1, "Chest should still be there");
+
+        Console.WriteLine("\n=== TESTSUITE END ===");
     }
 }
