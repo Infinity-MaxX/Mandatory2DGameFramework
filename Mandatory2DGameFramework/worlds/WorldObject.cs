@@ -38,12 +38,6 @@ namespace Mandatory2DGameFramework.worlds
         /// in the world.
         /// </summary>
         public int Y { get; set; }
-
-        /// <summary>
-        /// Gets or sets the type of the world object,
-        /// such as "Chest", "Wall", "Potion", or "Trap".
-        /// </summary>
-        public string Type { get; set; }
         #endregion
 
         #region Constructors
@@ -54,7 +48,6 @@ namespace Mandatory2DGameFramework.worlds
         public WorldObject()
         {
             Name = string.Empty;
-            Type = string.Empty;
             Lootable = false;
             Removable = false;
         }
@@ -66,7 +59,6 @@ namespace Mandatory2DGameFramework.worlds
         /// if not provided.
         /// </summary>
         /// <param name="name">The name of the object.</param>
-        /// <param name="type">What kind of object it is.</param>
         /// <param name="lootable">A boolean type which returns
         /// true or false depending on whether the item can be
         /// looted or not. Defaults to false if no specification 
@@ -75,11 +67,10 @@ namespace Mandatory2DGameFramework.worlds
         /// true or false depending on whether the item can be 
         /// removed or not. Defaults to false if no specification 
         /// is provided.</param>
-        public WorldObject(string name, string type, bool lootable = false, 
+        public WorldObject(string name, bool lootable = false, 
             bool removable = false)
         {
             Name = name;
-            Type = type;
             Lootable = lootable;
             Removable = removable;
         }
@@ -106,7 +97,6 @@ namespace Mandatory2DGameFramework.worlds
         public override string ToString()
         {
             return $"{{{nameof(Name)}={Name}, " +
-                $"{nameof(Type)}={Type}, " +
                 $"{nameof(Lootable)}={Lootable.ToString()}, " +
                 $"{nameof(Removable)}={Removable.ToString()}}}";
         }

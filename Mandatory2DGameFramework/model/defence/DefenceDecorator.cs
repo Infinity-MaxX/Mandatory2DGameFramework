@@ -74,7 +74,7 @@ namespace Mandatory2DGameFramework.model.defence
         {
             return $"{{Decorator: {Name}, ReduceHitPoint={ReduceHitPoint}, " +
                 $"Weight={Weight}}}";
-        #endregion
         }
+        #endregion
     }
 }
