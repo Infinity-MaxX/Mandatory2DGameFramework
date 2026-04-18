@@ -10,7 +10,7 @@ namespace Mandatory2DGameFramework.gameInterface.observer
 {
     /// <summary>
     /// Interface for observing events related to creatures, 
-    /// such as being hit or dying.
+    /// such as being hit, dying, or looting objects.
     /// </summary>
     public interface ICreatureObserver
     {
@@ -34,6 +34,5 @@ namespace Mandatory2DGameFramework.gameInterface.observer
         /// <param name="creature">The creature that looted the object.</param>
         /// <param name="obj">The object that was looted.</param>
         void OnCreatureLoot(Creature creature, WorldObject obj);
-
     }
 }

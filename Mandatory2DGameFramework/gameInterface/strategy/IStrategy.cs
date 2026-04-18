@@ -1,4 +1,5 @@
 ﻿using Mandatory2DGameFramework.model.attack;
+using Mandatory2DGameFramework.model.defence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,12 @@ namespace Mandatory2DGameFramework.gameInterface.strategy
 {
     /// <summary>
     /// Interface for calculating the damage of an attack 
-    /// based on a collection of attack items. Implementations 
+    /// based on a collection of attack items, and the defence 
+    /// based on a collection of defence items. Implementations 
     /// of this interface can define different strategies for 
-    /// how the damage is calculated.
+    /// how the damage and defence are calculated.
     /// </summary>
-    public interface IHitStrategy
+    public interface IStrategy
     {
         /// <summary>
         /// Calculates the total damage of an attack based on 
@@ -24,5 +26,14 @@ namespace Mandatory2DGameFramework.gameInterface.strategy
         /// <returns>The total damage calculated from the attack 
         /// items.</returns>
         int CalculateDamage(IEnumerable<AttackItem> items);
+        /// <summary>
+        /// Calculates the total defence based on the provided 
+        /// collection of defence items.
+        /// </summary>
+        /// <param name="items">The collection of defence items 
+        /// to calculate defence from.</param>
+        /// <returns>The total defence calculated from the defence 
+        /// items.</returns>
+        int CalculateDefence(IEnumerable<DefenceItem> items);
     }
 }

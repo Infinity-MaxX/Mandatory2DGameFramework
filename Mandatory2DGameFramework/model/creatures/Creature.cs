@@ -73,8 +73,8 @@ namespace Mandatory2DGameFramework.model.creatures
         /// Gets or sets the hit strategy used to calculate 
         /// outgoing damage.
         /// </summary>
-        public IHitStrategy HitStrategy { get; set; }
-
+        public IStrategy Strategy { get; set; }
+        
         /// <summary>
         /// Gets or sets the creature's X‑coordinate in the world.
         /// </summary>
@@ -102,7 +102,7 @@ namespace Mandatory2DGameFramework.model.creatures
         {
             Name = name;
             HitPoint = hitPoint;
-            HitStrategy = new BalancedHitStrategy();
+            Strategy = new BalancedStrategy();
             MaxAttackWeight = maxAttackWeight;
             MaxDefenceWeight = maxDefenceWeight;
         }
@@ -145,7 +145,16 @@ namespace Mandatory2DGameFramework.model.creatures
         /// <returns>The calculated damage value.</returns>
         protected virtual int CalculateDamage()
         {
-            return HitStrategy.CalculateDamage(_attackItems);
+            return Strategy.CalculateDamage(_attackItems);
+        }
+
+        /// <summary>
+        /// Calculates the total defence using the configured strategy.
+        /// </summary>
+        /// <returns>The calculated defence value.</returns>
+        protected virtual int CalculateDefence()
+        {
+            return Strategy.CalculateDefence(_defenceItems);
         }
 
         /// <summary>
@@ -175,6 +184,8 @@ namespace Mandatory2DGameFramework.model.creatures
             AfterHit(target);
             return damage;
         }
+
+
 
         // ---------------------------------------------------------
         // OBSERVER PATTERN
@@ -253,7 +264,7 @@ namespace Mandatory2DGameFramework.model.creatures
         /// <param name="damage">The raw incoming damage.</param>
         public void ReceiveHit(int damage)
         {
-            int reduced = damage - TotalDefence();
+            int reduced = damage - CalculateDefence();
             if (reduced < 0) { reduced = 0; }
 
             HitPoint -= reduced;
