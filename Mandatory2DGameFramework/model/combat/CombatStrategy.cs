@@ -31,7 +31,7 @@ namespace Mandatory2DGameFramework.model.combat
         }
 
         /// <summary>
-        /// Calculates the total defence by summing the ReduceHitPoint 
+        /// Calculates the total defence by summing the ReduceDamage 
         /// values of all DefenceItems and applying a defensive 
         /// multiplier of 0.75.
         /// </summary>
@@ -41,7 +41,7 @@ namespace Mandatory2DGameFramework.model.combat
         /// multiplier.</returns>
         public int CalculateDefence(IEnumerable<DefenceItem> items)
         {
-            return (int)(items.Sum(i => i.ReduceHitPoint) * 0.75);
+            return (int)(items.Sum(i => i.ReduceDamage) * 0.75);
         }
     }
 
@@ -66,7 +66,7 @@ namespace Mandatory2DGameFramework.model.combat
         }
 
         /// <summary>
-        /// Calculates the total defence by summing the ReduceHitPoint
+        /// Calculates the total defence by summing the ReduceDamage
         /// values of all DefenceItems without any modifications.
         /// </summary>
         /// <param name="items">The collection of DefenceItems to 
@@ -75,7 +75,7 @@ namespace Mandatory2DGameFramework.model.combat
         /// </returns>
         public int CalculateDefence(IEnumerable<DefenceItem> items)
         {
-            return items.Sum(i => i.ReduceHitPoint);
+            return items.Sum(i => i.ReduceDamage);
         }
     }
 
@@ -100,7 +100,7 @@ namespace Mandatory2DGameFramework.model.combat
         }
 
         /// <summary>
-        /// Calculates the total defence by summing the ReduceHitPoint 
+        /// Calculates the total defence by summing the ReduceDamage 
         /// values of all DefenceItems and applying a defensive multiplier 
         /// of 1.25.
         /// </summary>
@@ -110,7 +110,7 @@ namespace Mandatory2DGameFramework.model.combat
         /// multiplier.</returns>
         public int CalculateDefence(IEnumerable<DefenceItem> items)
         {
-            return (int)(items.Sum(i => i.ReduceHitPoint) * 1.25);
+            return (int)(items.Sum(i => i.ReduceDamage) * 1.25);
         }
     }
 }

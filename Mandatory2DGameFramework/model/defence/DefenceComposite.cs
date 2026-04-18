@@ -25,9 +25,9 @@ namespace Mandatory2DGameFramework.model.defence
         /// <summary>
         /// Gets the total hit strength of all defence items.
         /// </summary>
-        public override int ReduceHitPoint
+        public override int ReduceDamage
         {
-            get { return _items.Sum(defenceItem => defenceItem.ReduceHitPoint); }
+            get { return _items.Sum(defenceItem => defenceItem.ReduceDamage); }
         }
 
         /// <summary>
@@ -79,12 +79,12 @@ namespace Mandatory2DGameFramework.model.defence
 
         /// <summary>
         /// Returns a string representation of the composite, including 
-        /// total ReduceHitPoint, weight, and the number of items.
+        /// total ReduceDamage, weight, and the number of items.
         /// </summary>
         public override string ToString()
         {
             return $"{{Composite: Count={_items.Count}, " +
-                $"ReduceHitPoint={ReduceHitPoint}, Weight={Weight}}}";
+                $"ReduceDamage={ReduceDamage}, Weight={Weight}}}";
         }
         #endregion
     }

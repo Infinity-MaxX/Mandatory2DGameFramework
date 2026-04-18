@@ -8,7 +8,7 @@ using Mandatory2DGameFramework.model.defence;
 namespace Mandatory2DGameFramework.model.defence.decorators
 {
     /// <summary>
-    /// Increases the reduce hit point of the wrapped defence item.
+    /// Increases the reduced damage of the wrapped defence item.
     /// </summary>
     public class DefenceBuffDecorator : DefenceDecorator
     {
@@ -21,9 +21,9 @@ namespace Mandatory2DGameFramework.model.defence.decorators
         /// Gets or sets the defence item with added buff.
         /// Subclasses may override this to modify the buff value.
         /// </summary>
-        public override int ReduceHitPoint
+        public override int ReduceDamage
         {
-            get { return _baseDefence.ReduceHitPoint + _buff; }
+            get { return _baseDefence.ReduceDamage + _buff; }
         }
         #endregion
 

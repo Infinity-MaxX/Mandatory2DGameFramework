@@ -14,7 +14,7 @@ namespace Mandatory2DGameFramework.model.defence
     /// <remarks>
     /// This class implements the Composite design pattern, allowing 
     /// multiple defence items to be treated as a single item. The 
-    /// composite sums the ReduceHitPoint and Weight values of all 
+    /// composite sums the ReduceDamage and Weight values of all 
     /// contained items. It can be used by creatures to represent 
     /// carrying or equipping multiple defence items at once.
     /// </remarks>
@@ -25,7 +25,7 @@ namespace Mandatory2DGameFramework.model.defence
         /// Gets or sets the amount of hit points to reduce 
         /// from the creature when damage is applied.
         /// </summary>
-        public virtual int ReduceHitPoint { get; set; }
+        public virtual int ReduceDamage { get; set; }
         /// <summary>
         /// Gets or sets the weight of the defence item, which 
         /// will be used to determine how much it affects the 
@@ -43,7 +43,7 @@ namespace Mandatory2DGameFramework.model.defence
         public DefenceItem()
         {
             Name = string.Empty;
-            ReduceHitPoint = 0;
+            ReduceDamage = 0;
             Weight = 0;
         }
 
@@ -53,10 +53,10 @@ namespace Mandatory2DGameFramework.model.defence
         /// This allows for junk/gag defensive items that have no
         /// defensive strength or weight.
         /// </summary>
-        public DefenceItem(string name, int reduceHitPoint, int weight)
+        public DefenceItem(string name, int reduceDamage, int weight)
         {
             Name = name;
-            ReduceHitPoint = reduceHitPoint;
+            ReduceDamage = reduceDamage;
             Weight = weight;
         }
         #endregion
@@ -135,7 +135,7 @@ namespace Mandatory2DGameFramework.model.defence
         public override string ToString()
         {
             return $"{{{nameof(Name)}={Name}, " +
-                $"{nameof(ReduceHitPoint)}={ReduceHitPoint}, " +
+                $"{nameof(ReduceDamage)}={ReduceDamage}, " +
                 $"{nameof(Weight)}={Weight}}}";
         }
         #endregion

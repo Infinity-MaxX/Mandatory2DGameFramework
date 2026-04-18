@@ -23,11 +23,11 @@ namespace Mandatory2DGameFramework.model.defence.decorators
         /// negative value. Subclasses may override this to modify the
         /// debuff value.
         /// </summary>
-        public override int ReduceHitPoint
+        public override int ReduceDamage
         {
             get
             {
-                int debuff = _baseDefence.ReduceHitPoint - _debuff;
+                int debuff = _baseDefence.ReduceDamage - _debuff;
                 if (debuff < 0) { return 0; } else { return debuff; }
             }
         }
@@ -45,7 +45,7 @@ namespace Mandatory2DGameFramework.model.defence.decorators
             : base(baseDefence)
         {
             _debuff = debuff;
-            Name = baseDefence.Name + $" {baseDefence.ReduceHitPoint} - {debuff}";
+            Name = baseDefence.Name + $" {baseDefence.ReduceDamage} - {debuff}";
         }
         #endregion
     }

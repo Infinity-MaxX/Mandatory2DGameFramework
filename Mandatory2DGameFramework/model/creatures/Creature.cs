@@ -253,7 +253,7 @@ namespace Mandatory2DGameFramework.model.creatures
             int sum = 0;
             foreach (var d in _defenceItems)
             {
-                sum += d.ReduceHitPoint;
+                sum += d.ReduceDamage;
             }
             return sum;
         }

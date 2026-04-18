@@ -92,19 +92,19 @@ class Program
 
         var defenceCombo = shield + helmet;
         Console.WriteLine(defenceCombo);
-        Debug.Assert(defenceCombo.ReduceHitPoint == 8, "Defence combo mismatch");
+        Debug.Assert(defenceCombo.ReduceDamage == 8, "Defence combo mismatch");
 
         var buffedShield = new DefenceBuffDecorator(new DefenceItem("Shield", 5, 3), 4);
         Console.WriteLine(buffedShield);
-        Debug.Assert(buffedShield.ReduceHitPoint == 9, "DefenceBuffDecorator mismatch");
+        Debug.Assert(buffedShield.ReduceDamage == 9, "DefenceBuffDecorator mismatch");
 
         var debuffedShield = new DefenceDebuffDecorator(new DefenceItem("Shield", 5, 3), 10);
         Console.WriteLine(debuffedShield);
-        Debug.Assert(debuffedShield.ReduceHitPoint == 0, "DefenceDebuffDecorator should not go below 0");
+        Debug.Assert(debuffedShield.ReduceDamage == 0, "DefenceDebuffDecorator should not go below 0");
 
         var smallDebuffShield = new DefenceDebuffDecorator(new DefenceItem("Shield", 5, 3), 2);
         Console.WriteLine(smallDebuffShield);
-        Debug.Assert(smallDebuffShield.ReduceHitPoint == 3, "Small DefenceDebuffDecorator mismatch");
+        Debug.Assert(smallDebuffShield.ReduceDamage == 3, "Small DefenceDebuffDecorator mismatch");
 
         // ---------------------------------------------------------
         // 5) CREATURE TESTS

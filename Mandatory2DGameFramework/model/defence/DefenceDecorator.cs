@@ -13,7 +13,7 @@ namespace Mandatory2DGameFramework.model.defence
     /// <remarks>
     /// This class implements the Decorator Design Pattern. It wraps another
     /// DefenceItem and forwards all property calls to the wrapped item unless
-    /// overridden by subclasses. Concrete decorators can modify ReduceHitPoint,
+    /// overridden by subclasses. Concrete decorators can modify ReduceDamage,
     /// Weight, or other behavior without changing the underlying item.
     /// </remarks>
     public abstract class DefenceDecorator : DefenceItem
@@ -27,13 +27,13 @@ namespace Mandatory2DGameFramework.model.defence
 
         #region Properties
         /// <summary>
-        /// Gets or sets the ReduceHitPoint of the decorated defence item.
+        /// Gets or sets the ReduceDamage of the decorated defence item.
         /// Subclasses may override this to modify the hit value.
         /// </summary>
-        public override int ReduceHitPoint
+        public override int ReduceDamage
         {
-            get { return base.ReduceHitPoint; }
-            set { base.ReduceHitPoint = value; }
+            get { return base.ReduceDamage; }
+            set { base.ReduceDamage = value; }
         }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Mandatory2DGameFramework.model.defence
         /// </summary>
         public override string ToString()
         {
-            return $"{{Decorator: {Name}, ReduceHitPoint={ReduceHitPoint}, " +
+            return $"{{Decorator: {Name}, ReduceDamage={ReduceDamage}, " +
                 $"Weight={Weight}}}";
         }
         #endregion
