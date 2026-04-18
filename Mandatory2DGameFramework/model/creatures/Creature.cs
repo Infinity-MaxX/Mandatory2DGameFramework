@@ -226,7 +226,8 @@ namespace Mandatory2DGameFramework.model.creatures
 
         private void NotifyDeath()
         {
-            foreach (var obs in _observers)
+            var originalObservers = _observers.ToList(); // Create a copy to avoid modification issues
+            foreach (var obs in originalObservers)
             {
                 obs.OnCreatureDeath(this);
             }

@@ -164,7 +164,9 @@ class Program
         // Kill test
         Console.WriteLine("\n=== DEATH TEST ===");
         while (!mage.IsDead)
+        {
             warrior.PerformHit(mage);
+        }
 
         Debug.Assert(mage.IsDead, "Mage should be dead");
         Debug.Assert(mage.HitPoint == 0, "Dead creature should have 0 HP");
