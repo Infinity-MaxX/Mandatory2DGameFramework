@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_259a41be33fac42bf8cb6538aa74f666" kind="dir">
+    <compoundname>Mandatory2DGameFramework/model/creatures</compoundname>
+    <innerfile refid="_battle_class_8cs">BattleClass.cs</innerfile>
+    <innerfile refid="_creature_8cs">Creature.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Mandatory2DGameFramework/model/creatures/"/>
+  </compounddef>
+</doxygen>

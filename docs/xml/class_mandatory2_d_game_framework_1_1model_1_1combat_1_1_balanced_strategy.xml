@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::combat::BalancedStrategy</compoundname>
+    <basecompoundref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy" prot="public" virt="non-virtual">Mandatory2DGameFramework.gameInterface.strategy.IStrategy</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_1af6bbe54177879ef71edd4cf54184e106" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.combat.BalancedStrategy.CalculateDamage</definition>
+        <argsstring>(IEnumerable&lt; AttackItem &gt; items)</argsstring>
+        <name>CalculateDamage</name>
+        <qualifiedname>Mandatory2DGameFramework.model.combat.BalancedStrategy.CalculateDamage</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_1a6b5a1c7df79c1ff0356831e5e758aab9">CalculateDamage</reimplements>
+        <param>
+          <type>IEnumerable&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> &gt;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the total damage by summing the Hit values of all AttackItems without any modifications. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The collection of AttackItems to <linebreak/>
+ calculates damage from.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The total damage without any modifications. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" line="63" column="20" bodyfile="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_1a7120dba3d70ee1827a519d5dd72afe30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.combat.BalancedStrategy.CalculateDefence</definition>
+        <argsstring>(IEnumerable&lt; DefenceItem &gt; items)</argsstring>
+        <name>CalculateDefence</name>
+        <qualifiedname>Mandatory2DGameFramework.model.combat.BalancedStrategy.CalculateDefence</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_1ae2f11d94042a261a276bf407e37c573b">CalculateDefence</reimplements>
+        <param>
+          <type>IEnumerable&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref> &gt;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the total defence by summing the ReduceDamage values of all DefenceItems without any modifications. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The collection of DefenceItems to calculate defence from.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The total defence without any modifications. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" line="76" column="20" bodyfile="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" bodystart="76" bodyend="79"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>An implementation of the <ref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy" kindref="compound">IStrategy</ref> interface that calculates combat in a balanced manner. No modifications are made to the total damage or defence. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.combat.BalancedStrategy</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.gameInterface.strategy.IStrategy</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.combat.BalancedStrategy</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.gameInterface.strategy.IStrategy</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy"/>
+      </node>
+    </collaborationgraph>
+    <location file="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" line="53" column="11" bodyfile="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" bodystart="54" bodyend="80"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_1af6bbe54177879ef71edd4cf54184e106" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::combat::BalancedStrategy</scope><name>CalculateDamage</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_1a7120dba3d70ee1827a519d5dd72afe30" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::combat::BalancedStrategy</scope><name>CalculateDefence</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

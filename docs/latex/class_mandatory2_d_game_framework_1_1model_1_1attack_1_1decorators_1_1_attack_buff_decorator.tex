@@ -1,0 +1,119 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+model.\+attack.\+decorators.\+Attack\+Buff\+Decorator Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator}{}\label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator}\index{Mandatory2DGameFramework.model.attack.decorators.AttackBuffDecorator@{Mandatory2DGameFramework.model.attack.decorators.AttackBuffDecorator}}
+
+
+Increases the hit strength of the wrapped attack item.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator_ab941f9e3e33ec8d696978538cf2eddcb}{Attack\+Buff\+Decorator}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}} base\+Weapon, int buff=5)
+\begin{DoxyCompactList}\small\item\em Initializes a new decorator that wraps the specified attack item with added buff. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator}{Mandatory2\+DGame\+Framework.\+model.\+attack.\+Attack\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_ae7aeaa591be5a4489455079f2634ba25}{Attack\+Decorator}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}} base\+Weapon)
+\begin{DoxyCompactList}\small\item\em Initializes a new decorator that wraps the specified attack item. \end{DoxyCompactList}\item 
+override string {\bfseries To\+String} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the decorated attack item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Mandatory2\+DGame\+Framework.\+model.\+attack.\+Attack\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Attack\+Item} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} class with default values. This version of the constructor assumes that the player has no attack items equipped. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_aeb055ba1faa10dc9a298454955899a6c}{Attack\+Item}} (string name)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} class with a name and default values for hit strength and range. This allows for junk/\+gag weapons that have no attack strength or range. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a1cea0367bb6354da7543f89711a4111e}{Attack\+Item}} (string name, int hit, int range, int weight)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} class with explicit values for name, hit strength, range, and weight. \end{DoxyCompactList}\item 
+override string {\bfseries To\+String} ()
+\begin{DoxyCompactList}\small\item\em A string representation of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item}, including its name, hit strength, range, and weight. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{Mandatory2\+DGame\+Framework.\+worlds.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries World\+Object} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} class with default values. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_a08e5aa9ac1a774047559753e80376ed2}{World\+Object}} (string name, bool lootable=true, bool removable=true)
+\begin{DoxyCompactList}\small\item\em Initialises a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} class with name, lootability and removeability specified. defaults to false for lootability and removeability if not provided. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_a5c96165c1c5fa6133cd63fddd3318e45}{Move\+Object}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Moves the object to a new position in the world by updating its X and Y coordinates. \end{DoxyCompactList}\item 
+override string \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_a8f6d24976133e2cff6bdbe69e75a29e6}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em A string representation of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}, including its name and properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator_af7210213a8f1903a2d92ef984617c534}\label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator_af7210213a8f1903a2d92ef984617c534} 
+override int {\bfseries Hit}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the attack item with added buff. Subclasses may override this to modify the buff value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator}{Mandatory2\+DGame\+Framework.\+model.\+attack.\+Attack\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+override int {\bfseries Hit}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the hit strength of the decorated attack item. Subclasses may override this to modify the hit value. \end{DoxyCompactList}\item 
+override int {\bfseries Range}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the range of the decorated attack item. Subclasses may override this to modify the range. \end{DoxyCompactList}\item 
+override int {\bfseries Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the weight of the decorated attack item. Subclasses may override this to modify the weight. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Mandatory2\+DGame\+Framework.\+model.\+attack.\+Attack\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual int {\bfseries Hit}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the hit strength of the attack item, which determines the amount of damage it can inflict on a target when used in an attack. \end{DoxyCompactList}\item 
+virtual int {\bfseries Range}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the range of the attack item, which indicates how far the attack can reach or affect targets. \end{DoxyCompactList}\item 
+virtual int {\bfseries Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the weight of the attack item. Used to determine whether a creature can carry it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{Mandatory2\+DGame\+Framework.\+worlds.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the name associated with the object. \end{DoxyCompactList}\item 
+bool {\bfseries Lootable}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the item can be looted. \end{DoxyCompactList}\item 
+bool {\bfseries Removable}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the item can be removed. \end{DoxyCompactList}\item 
+int {\bfseries X}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the X-\/coordinate position of the object in the world. \end{DoxyCompactList}\item 
+int {\bfseries Y}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the Y-\/coordinate position of the object in the world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Mandatory2\+DGame\+Framework.\+model.\+attack.\+Attack\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}} \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a57a89a86ad284ff50342442a3017ad38}{operator+}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}} a, \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}} b)
+\begin{DoxyCompactList}\small\item\em Combines two \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} instances into a single \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite}{Attack\+Composite} item. If either item is null, the non-\/null item is returned. If both items are composites, their contents are merged. If one item is a composite, the other item is added to it. If neither item is a composite, a new composite containing both items is created and returned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator}{Mandatory2\+DGame\+Framework.\+model.\+attack.\+Attack\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+readonly \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}} {\bfseries \+\_\+base\+Weapon}
+\begin{DoxyCompactList}\small\item\em The wrapped attack item being decorated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Increases the hit strength of the wrapped attack item. 
+
+\label{doc-constructors}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator_ab941f9e3e33ec8d696978538cf2eddcb}\index{Mandatory2DGameFramework.model.attack.decorators.AttackBuffDecorator@{Mandatory2DGameFramework.model.attack.decorators.AttackBuffDecorator}!AttackBuffDecorator@{AttackBuffDecorator}}
+\index{AttackBuffDecorator@{AttackBuffDecorator}!Mandatory2DGameFramework.model.attack.decorators.AttackBuffDecorator@{Mandatory2DGameFramework.model.attack.decorators.AttackBuffDecorator}}
+\doxysubsubsection{\texorpdfstring{AttackBuffDecorator()}{AttackBuffDecorator()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator_ab941f9e3e33ec8d696978538cf2eddcb} 
+Mandatory2\+DGame\+Framework.\+model.\+attack.\+decorators.\+Attack\+Buff\+Decorator.\+Attack\+Buff\+Decorator (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}}}]{base\+Weapon}{, }\item[{int}]{buff}{ = {\ttfamily 5}}\end{DoxyParamCaption})}
+
+
+
+Initializes a new decorator that wraps the specified attack item with added buff. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Weapon} & The attack item to buff.\\
+\hline
+{\em buff} & The amount to buff the attack item with. Default value is 5.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+model/\+attack/\+decorators/\+Attack\+Buff\+Decorator.\+cs\end{DoxyCompactItemize}

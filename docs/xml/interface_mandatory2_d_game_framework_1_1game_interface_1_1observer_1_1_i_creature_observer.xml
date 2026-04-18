@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer" kind="interface" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::gameInterface::observer::ICreatureObserver</compoundname>
+    <derivedcompoundref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" prot="public" virt="non-virtual">Mandatory2DGameFramework.worlds.World</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a91e0cd8329b36ca388742c1a332a96a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver.OnCreatureHit</definition>
+        <argsstring>(Creature creature, int damage)</argsstring>
+        <name>OnCreatureHit</name>
+        <qualifiedname>Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver.OnCreatureHit</qualifiedname>
+        <reimplementedby refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a8828d2714648459b46fba861143080d2">OnCreatureHit</reimplementedby>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>creature</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+<para>A method that is called when a creature is hit, providing the creature and the damage taken. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creature that was hit.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>damage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of damage taken by the creature.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/gameInterface/observer/ICreatureObserver.cs" line="24" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a469a85fee4e05b20b1a671cf670de489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver.OnCreatureDeath</definition>
+        <argsstring>(Creature creature)</argsstring>
+        <name>OnCreatureDeath</name>
+        <qualifiedname>Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver.OnCreatureDeath</qualifiedname>
+        <reimplementedby refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae7d088ceca56746b303f0c81467d9a10">OnCreatureDeath</reimplementedby>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>creature</declname>
+        </param>
+        <briefdescription>
+<para>A method that is called when a creature dies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creature that died.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/gameInterface/observer/ICreatureObserver.cs" line="29" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a22161c11a7f0ffea37f9760c62d0469a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver.OnCreatureLoot</definition>
+        <argsstring>(Creature creature, WorldObject obj)</argsstring>
+        <name>OnCreatureLoot</name>
+        <qualifiedname>Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver.OnCreatureLoot</qualifiedname>
+        <reimplementedby refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a803b69d32ffb8b895f1ec21b0c4f34a2">OnCreatureLoot</reimplementedby>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>creature</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>A method that is called when a creature loots an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creature that looted the object.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object that was looted.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/gameInterface/observer/ICreatureObserver.cs" line="36" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Interface for observing events related to creatures, such as being hit, dying, or looting objects. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer"/>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.worlds.World</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Mandatory2DGameFramework/gameInterface/observer/ICreatureObserver.cs" line="15" column="22" bodyfile="Mandatory2DGameFramework/gameInterface/observer/ICreatureObserver.cs" bodystart="16" bodyend="37"/>
+    <listofallmembers>
+      <member refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a469a85fee4e05b20b1a671cf670de489" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::gameInterface::observer::ICreatureObserver</scope><name>OnCreatureDeath</name></member>
+      <member refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a91e0cd8329b36ca388742c1a332a96a1" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::gameInterface::observer::ICreatureObserver</scope><name>OnCreatureHit</name></member>
+      <member refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a22161c11a7f0ffea37f9760c62d0469a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::gameInterface::observer::ICreatureObserver</scope><name>OnCreatureLoot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

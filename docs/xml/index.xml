@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.16.1" xml:lang="en-US">
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_aggressive_strategy" kind="class"><name>Mandatory2DGameFramework::model::combat::AggressiveStrategy</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_aggressive_strategy_1a10d550f41e92b7b588397218a66bf757" kind="function"><name>CalculateDamage</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_aggressive_strategy_1a735c14f07ca6d1ba0176b87cd5fba7f9" kind="function"><name>CalculateDefence</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator" kind="class"><name>Mandatory2DGameFramework::model::attack::decorators::AttackBuffDecorator</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator_1a8b26c4c27b19cf028ad7d12f0b56add2" kind="variable"><name>_buff</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator_1af7210213a8f1903a2d92ef984617c534" kind="property"><name>Hit</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator_1ab941f9e3e33ec8d696978538cf2eddcb" kind="function"><name>AttackBuffDecorator</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite" kind="class"><name>Mandatory2DGameFramework::model::attack::AttackComposite</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a948615f856ca3bc3b7452fe4451cbc62" kind="variable"><name>_items</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a4070a9b15eeed0c3d968757ab854bc8b" kind="property"><name>Items</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a127a2b170a71efd7d12becb17d2d3a2d" kind="property"><name>Hit</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1aa5ed01eb27059bd87134521fce2ac967" kind="property"><name>Range</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a267f1ba089101be176d392bfc41e1a83" kind="property"><name>Weight</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1afacebb9ad3438b33da07c3be214b6d89" kind="function"><name>AttackComposite</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a54f101a10e1a4f9ce617470bd7ec9ea3" kind="function"><name>AttackComposite</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a9f66103f71f90b0e95ede1fc158886b8" kind="function"><name>Add</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a2fd468f722a65d8f137b803f86aa3967" kind="function"><name>Remove</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a0afff0652d5b4fe81580f46363475a46" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator" kind="class"><name>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator_1a2663df7acb3700146a89e3d8a196a281" kind="variable"><name>_debuff</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator_1a48094afce738deca5b275f6a7e8c1b81" kind="property"><name>Hit</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator_1a6bda9d35205f280c245b56e07befc865" kind="function"><name>AttackDebuffDecorator</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator" kind="class"><name>Mandatory2DGameFramework::model::attack::AttackDecorator</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a243ef79b6da76a60585e711b3e3ae3fc" kind="variable"><name>_baseWeapon</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a7575a7cda9e9284912427a35b68881da" kind="property"><name>Hit</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a4f4491c445a596cd899cf3986b8bd38b" kind="property"><name>Range</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a15ef1af98f28a62da8aa51d19fde625e" kind="property"><name>Weight</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1ae7aeaa591be5a4489455079f2634ba25" kind="function"><name>AttackDecorator</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a562d0d7ae7ce458427a7664fd1989a5a" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kind="class"><name>Mandatory2DGameFramework::model::attack::AttackItem</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1aa7beb6b6c4e1bf65f56ae7e48e8297d3" kind="property"><name>Hit</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a4f6ad49d96181c66688cae16f85f5f74" kind="property"><name>Range</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a999b8742cf5208db9d9e1bf322bdf1ab" kind="property"><name>Weight</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" kind="function"><name>AttackItem</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1aeb055ba1faa10dc9a298454955899a6c" kind="function"><name>AttackItem</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a1cea0367bb6354da7543f89711a4111e" kind="function"><name>AttackItem</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a39c14499449be8d78fbe387811b7a13f" kind="function"><name>ToString</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a57a89a86ad284ff50342442a3017ad38" kind="function"><name>operator+</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy" kind="class"><name>Mandatory2DGameFramework::model::combat::BalancedStrategy</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_1af6bbe54177879ef71edd4cf54184e106" kind="function"><name>CalculateDamage</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_1a7120dba3d70ee1827a519d5dd72afe30" kind="function"><name>CalculateDefence</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kind="class"><name>Mandatory2DGameFramework::model::creatures::Creature</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a5361cad53caa264f6c3189f066ff1d8f" kind="variable"><name>_log</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ac4588eb03df1782ee51a844ddddb98c5" kind="variable"><name>_observers</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1aa1a98a9ea3ff5c074c6c8fd968c29a74" kind="variable"><name>_attackItems</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ad7a06caf5b5b84ff9ad7e407ef316237" kind="variable"><name>_defenceItems</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a2f12df238206d89b93b65d1edfaae14e" kind="property"><name>Name</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a387dfaa6ea37c6580855fa6ffca63735" kind="property"><name>HitPoint</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a0648526f0e817bdb54ae06b4b9778b20" kind="property"><name>IsDead</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a274eb44077a331053086f5512a6fc67b" kind="property"><name>MaxAttackWeight</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a0765d87fd2bf7dbe10558dd1af97cb1b" kind="property"><name>MaxDefenceWeight</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a3473d8720295c3eaba3450c49ecf2a5b" kind="property"><name>Strategy</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a69c891df3e22fcd908acb2b469e0b2a3" kind="property"><name>X</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a73279c70e84d878359e9524f69d2b9fa" kind="property"><name>Y</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ada8f687b850a877a4215bbb7231f39a4" kind="function"><name>Creature</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a51d9c8de951060b3c1249705a331be4e" kind="function"><name>AfterHit</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1abee2f3c53c6ab173b31a4771a2fa0070" kind="function"><name>BeforeHit</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a35dbd21e14d6ec4bfefd125898da99f7" kind="function"><name>CalculateDamage</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ac4b45ff510cd2345d7e4809876270a1c" kind="function"><name>CalculateDefence</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a4d37e9d85da0188fd103ac41fae577c4" kind="function"><name>PerformHit</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a83b429ea45feb959cfab975cb6b77de4" kind="function"><name>RegisterObserver</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1aef7d906a8465b33764596752b2e8dd69" kind="function"><name>RemoveObserver</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a3beba53eb5ed2e03a6a3d89181360549" kind="function"><name>TotalDefence</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1af6fee2d078abb89e04fdda4d7c3a2f19" kind="function"><name>ReceiveHit</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a7950d8387d78c36a9c3a1de1a9704a81" kind="function"><name>AddAttackItem</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1af67c7c34dff98bbe47277f6425ffc12c" kind="function"><name>AddDefenceItem</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a895f635e4f59e77a66f7e4ef6c9ba499" kind="function"><name>CurrentAttackWeight</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1afe9235fd884fb2f98f45069395e0471a" kind="function"><name>CurrentDefenceWeight</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a41e4a1f9ab6d9868e84f91f04a3dcdfe" kind="function"><name>Loot</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a496f6512ba854eef11bcaaeb0fac440f" kind="function"><name>ToString</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1aeb6861efeb963fc4cc71aae7996127fc" kind="function"><name>NotifyHit</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ad355612da36a9ac6d1ea648d91ec2b12" kind="function"><name>NotifyDeath</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a6acc2da87cb4283caa2836de1b57fd77" kind="function"><name>NotifyLoot</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator" kind="class"><name>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator_1a03e4054c644c1305b9f5c44d5a75cbec" kind="variable"><name>_buff</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator_1acda1adb146edba59ebf81436117c0bb7" kind="property"><name>ReduceDamage</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator_1a64928781694c556ee731c1a697eabec7" kind="function"><name>DefenceBuffDecorator</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite" kind="class"><name>Mandatory2DGameFramework::model::defence::DefenceComposite</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a66a39d2a2f3bc6a90dcca37b6921037d" kind="variable"><name>_items</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a1c7f7aae23cf382a023115117216e4e0" kind="property"><name>Items</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a703086c327eff56c15b4db46e5936f3a" kind="property"><name>ReduceDamage</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1aaa969c7b3b0e8ad7475b6b9f2f4d83b6" kind="property"><name>Weight</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a7175abcaa1290180cd89d534b7a7b33e" kind="function"><name>DefenceComposite</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a22dc8c855cc0590015660a2387013f7d" kind="function"><name>DefenceComposite</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1afdd3391d09285496d2f21ed9f06aaa43" kind="function"><name>Add</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a11c9d33f527c302bfa9ec427716e9ccf" kind="function"><name>Remove</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a6d5f1f8df76d4358d3f055c6bec3ff0a" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_debuff_decorator" kind="class"><name>Mandatory2DGameFramework::model::defence::decorators::DefenceDebuffDecorator</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_debuff_decorator_1a8bebb976e2fa36bcd977fb627dc6d48f" kind="variable"><name>_debuff</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_debuff_decorator_1a83c67e70d23ef7ce2043160deb074b21" kind="property"><name>ReduceDamage</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_debuff_decorator_1afeb5d16a3b01de30cd1c0a0e3b5f33e5" kind="function"><name>DefenceDebuffDecorator</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator" kind="class"><name>Mandatory2DGameFramework::model::defence::DefenceDecorator</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator_1a5d2e91817e64fceda3381859ed9a10d4" kind="variable"><name>_baseDefence</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator_1a7b9186d2e96f90e1f38021b06e4866e3" kind="property"><name>ReduceDamage</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator_1a917713af7125e4c222a7a943af0cd9cc" kind="property"><name>Weight</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator_1aaa27b64fca966e9e5614d6e721593ea5" kind="function"><name>DefenceDecorator</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator_1a35f468fdb62b20540a415ca7ffa1eb9e" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kind="class"><name>Mandatory2DGameFramework::model::defence::DefenceItem</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1aff658980d00ea677a411e11b50872825" kind="property"><name>ReduceDamage</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a0daed8af64f17e3f2390a88b7e76c7eb" kind="property"><name>Weight</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a2800a3024565901b5ceaf248890c09fa" kind="function"><name>DefenceItem</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a045d49fa8375b28ec8d74a69f9e11a24" kind="function"><name>DefenceItem</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a7b9c7ace396b732ddbecdf138fb2b0ea" kind="function"><name>ToString</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a38ef30df3f4cf08306040a3674c9b2fb" kind="function"><name>operator+</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_defensive_strategy" kind="class"><name>Mandatory2DGameFramework::model::combat::DefensiveStrategy</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_defensive_strategy_1a5c12b236153b5a82828cf63f96acba7a" kind="function"><name>CalculateDamage</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_defensive_strategy_1a1147ca7d470db47f136a036d287eeac9" kind="function"><name>CalculateDefence</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config" kind="class"><name>Mandatory2DGameFramework::config::GameConfig</name>
+    <member refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config_1a11fd0ec5e9126ca51ea6e158b7740846" kind="property"><name>World</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config_1a9ecb4ef78a3418d1ee163c3c9e698551" kind="property"><name>Difficulty</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config_loader" kind="class"><name>Mandatory2DGameFramework::config::GameConfigLoader</name>
+    <member refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config_loader_1aa5137fe21742afe01ae1a584428af0e5" kind="function"><name>Load</name></member>
+  </compound>
+  <compound refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer" kind="interface"><name>Mandatory2DGameFramework::gameInterface::observer::ICreatureObserver</name>
+    <member refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a91e0cd8329b36ca388742c1a332a96a1" kind="function"><name>OnCreatureHit</name></member>
+    <member refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a469a85fee4e05b20b1a671cf670de489" kind="function"><name>OnCreatureDeath</name></member>
+    <member refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a22161c11a7f0ffea37f9760c62d0469a" kind="function"><name>OnCreatureLoot</name></member>
+  </compound>
+  <compound refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy" kind="interface"><name>Mandatory2DGameFramework::gameInterface::strategy::IStrategy</name>
+    <member refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_1a6b5a1c7df79c1ff0356831e5e758aab9" kind="function"><name>CalculateDamage</name></member>
+    <member refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_1ae2f11d94042a261a276bf407e37c573b" kind="function"><name>CalculateDefence</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger" kind="class"><name>Mandatory2DGameFramework::helper::logger::Logger</name>
+    <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a2e274cf6512b414f03f4ec5f6190ba9e" kind="variable"><name>_log</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a63bb41f3132e391f305c2e4b17c2dd17" kind="property"><name>Log</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a79e7dd4042e8f7865c60ffd4aba4d410" kind="function"><name>Logger</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a543d8c665d9480d6c6c431ad5316a693" kind="function"><name>AddListener</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1ae5ab4da0aaf3ece73377902de7fc3a3a" kind="function"><name>RemoveListener</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1ac13d3036e0f9f3b636c8bda41d3f9509" kind="function"><name>LogInfo</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a32242633b15c93beeb203b46335c2003" kind="function"><name>LogWarning</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1ad60537e8cbef29f05ecf2ea936ebbcbe" kind="function"><name>LogError</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage" kind="class"><name>Mandatory2DGameFramework::model::creatures::classes::Mage</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage_1a7cc108ba5df058d5b8ec922f88220357" kind="function"><name>Mage</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage_1ae9a178604ef21e88216f5ea8189eff60" kind="function"><name>BeforeHit</name></member>
+  </compound>
+  <compound refid="class_program" kind="class"><name>Program</name>
+    <member refid="class_program_1ad22b0f776312e09174fc36a1e4bade60" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior" kind="class"><name>Mandatory2DGameFramework::model::creatures::classes::Warrior</name>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior_1ab41997ee04b6350d202e4556aa52eb81" kind="function"><name>Warrior</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior_1a2e56ba123410795db4eda9c65134c3ef" kind="function"><name>AfterHit</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kind="class"><name>Mandatory2DGameFramework::worlds::World</name>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a4bd97adefe2bd94f326f0d57fb7c0c8b" kind="variable"><name>_worldObjects</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a2dabc6d79a166bef88473bd06915ea65" kind="variable"><name>_creatures</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a5ff8757da02d490999d83318f597a929" kind="variable"><name>_log</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0b1ad1e842a47530036cb945367b8465" kind="property"><name>MaxX</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a448ca41211652392fcc724b3f06427d7" kind="property"><name>MaxY</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae47b636a19335bfbbbdaed97a7ede666" kind="property"><name>Difficulty</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0cb8fe6b874ce2f1b0d72bb3312b466c" kind="function"><name>World</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1aef4de3605390ade10c8ce879275cd555" kind="function"><name>AddObject</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae338f5056e2c4507b4bfee81d4f65bbb" kind="function"><name>RemoveObject</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a565918c3a734b0e67208ca627a599ec3" kind="function"><name>AddCreature</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1af9a0054ea2d402567a9dfbf28f8abde5" kind="function"><name>RemoveCreature</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a8828d2714648459b46fba861143080d2" kind="function"><name>OnCreatureHit</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae7d088ceca56746b303f0c81467d9a10" kind="function"><name>OnCreatureDeath</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a803b69d32ffb8b895f1ec21b0c4f34a2" kind="function"><name>OnCreatureLoot</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a30c70a445d132e52f91ca1055a073d08" kind="function"><name>ObjectsAt</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0563e673ca68b396681cabaf6d8b5e81" kind="function"><name>CreaturesAt</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0058e208eaf3f7e2fb61e25b66730914" kind="function"><name>ToString</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1aaea96f12a7b8707c491f8870f41ab04a" kind="function"><name>FromConfig</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1config_1_1_world_config" kind="class"><name>Mandatory2DGameFramework::config::WorldConfig</name>
+    <member refid="class_mandatory2_d_game_framework_1_1config_1_1_world_config_1a17713641f7078ffc6666f9ad1e27c3d1" kind="property"><name>MaxX</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1config_1_1_world_config_1a522a51347397d2471df847b8eb277544" kind="property"><name>MaxY</name></member>
+  </compound>
+  <compound refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kind="class"><name>Mandatory2DGameFramework::worlds::WorldObject</name>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a22287e4da7ba3627ce0a41cf10dc4a2c" kind="property"><name>Name</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" kind="property"><name>Lootable</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8a4119f23e39f81c1f6c39156943767c" kind="property"><name>Removable</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1af69309e8102b27e50095a5d61e094a97" kind="property"><name>X</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a19a046421bfc9bd38c545a9e9e9c663a" kind="property"><name>Y</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a36701698b4ac1503dca8f4a57dc7cfc7" kind="function"><name>WorldObject</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a08e5aa9ac1a774047559753e80376ed2" kind="function"><name>WorldObject</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5c96165c1c5fa6133cd63fddd3318e45" kind="function"><name>MoveObject</name></member>
+    <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8f6d24976133e2cff6bdbe69e75a29e6" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework" kind="namespace"><name>Mandatory2DGameFramework</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1config" kind="namespace"><name>Mandatory2DGameFramework::config</name>
+    <member refid="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eac" kind="enum"><name>GameDifficulty</name></member>
+    <member refid="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eaca2ddabc33a6100ceb5311697534035d8d" kind="enumvalue"><name>Beginner</name></member>
+    <member refid="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eaca960b44c579bc2f6818d2daaf9e4c16f0" kind="enumvalue"><name>Normal</name></member>
+    <member refid="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eaca0b84df4e0b66e9d55b22eefb55ca928f" kind="enumvalue"><name>Expert</name></member>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1game_interface" kind="namespace"><name>Mandatory2DGameFramework::gameInterface</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer" kind="namespace"><name>Mandatory2DGameFramework::gameInterface::observer</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1game_interface_1_1strategy" kind="namespace"><name>Mandatory2DGameFramework::gameInterface::strategy</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1helper" kind="namespace"><name>Mandatory2DGameFramework::helper</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1helper_1_1logger" kind="namespace"><name>Mandatory2DGameFramework::helper::logger</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1model" kind="namespace"><name>Mandatory2DGameFramework::model</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1model_1_1attack" kind="namespace"><name>Mandatory2DGameFramework::model::attack</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators" kind="namespace"><name>Mandatory2DGameFramework::model::attack::decorators</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1model_1_1combat" kind="namespace"><name>Mandatory2DGameFramework::model::combat</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1model_1_1creatures" kind="namespace"><name>Mandatory2DGameFramework::model::creatures</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes" kind="namespace"><name>Mandatory2DGameFramework::model::creatures::classes</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1model_1_1defence" kind="namespace"><name>Mandatory2DGameFramework::model::defence</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators" kind="namespace"><name>Mandatory2DGameFramework::model::defence::decorators</name>
+  </compound>
+  <compound refid="namespace_mandatory2_d_game_framework_1_1worlds" kind="namespace"><name>Mandatory2DGameFramework::worlds</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_xml_1_1_serialization" kind="namespace"><name>System::Xml::Serialization</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_console_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_framework_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_console_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes__clean_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes_clean.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_framework_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes__clean_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes_clean.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_console_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes__clean__clean_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes_clean_clean.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_framework_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assem18ee42d761bd5b1cda7147e26f21ca88" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes_clean_clean.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_console_8_assembly_info_8cs" kind="file"><name>Mandatory2DGameConsole.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_console_8_assembly_info__clean_8cs" kind="file"><name>Mandatory2DGameConsole.AssemblyInfo_clean.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_console_8_assembly_info__clean__clean_8cs" kind="file"><name>Mandatory2DGameConsole.AssemblyInfo_clean_clean.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_console_8_global_usings_8g_8cs" kind="file"><name>Mandatory2DGameConsole.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_console_8_global_usings_8g__clean_8cs" kind="file"><name>Mandatory2DGameConsole.GlobalUsings.g_clean.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_console_8_global_usings_8g__clean__clean_8cs" kind="file"><name>Mandatory2DGameConsole.GlobalUsings.g_clean_clean.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_game_difficulty_8cs" kind="file"><name>GameDifficulty.cs</name>
+  </compound>
+  <compound refid="_i_creature_observer_8cs" kind="file"><name>ICreatureObserver.cs</name>
+  </compound>
+  <compound refid="_i_strategy_8cs" kind="file"><name>IStrategy.cs</name>
+  </compound>
+  <compound refid="_logger_8cs" kind="file"><name>Logger.cs</name>
+  </compound>
+  <compound refid="_attack_composite_8cs" kind="file"><name>AttackComposite.cs</name>
+  </compound>
+  <compound refid="_attack_decorator_8cs" kind="file"><name>AttackDecorator.cs</name>
+  </compound>
+  <compound refid="_attack_item_8cs" kind="file"><name>AttackItem.cs</name>
+  </compound>
+  <compound refid="_attack_buff_decorator_8cs" kind="file"><name>AttackBuffDecorator.cs</name>
+  </compound>
+  <compound refid="_attack_debuff_decorator_8cs" kind="file"><name>AttackDebuffDecorator.cs</name>
+  </compound>
+  <compound refid="_combat_strategy_8cs" kind="file"><name>CombatStrategy.cs</name>
+  </compound>
+  <compound refid="_battle_class_8cs" kind="file"><name>BattleClass.cs</name>
+  </compound>
+  <compound refid="_creature_8cs" kind="file"><name>Creature.cs</name>
+  </compound>
+  <compound refid="_defence_buff_decorator_8cs" kind="file"><name>DefenceBuffDecorator.cs</name>
+  </compound>
+  <compound refid="_defence_debuff_decorator_8cs" kind="file"><name>DefenceDebuffDecorator.cs</name>
+  </compound>
+  <compound refid="_defence_composite_8cs" kind="file"><name>DefenceComposite.cs</name>
+  </compound>
+  <compound refid="_defence_decorator_8cs" kind="file"><name>DefenceDecorator.cs</name>
+  </compound>
+  <compound refid="_defence_item_8cs" kind="file"><name>DefenceItem.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_framework_8_assembly_info_8cs" kind="file"><name>Mandatory2DGameFramework.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_framework_8_assembly_info__clean_8cs" kind="file"><name>Mandatory2DGameFramework.AssemblyInfo_clean.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_framework_8_assembly_info__clean__clean_8cs" kind="file"><name>Mandatory2DGameFramework.AssemblyInfo_clean_clean.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_framework_8_global_usings_8g_8cs" kind="file"><name>Mandatory2DGameFramework.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_framework_8_global_usings_8g__clean_8cs" kind="file"><name>Mandatory2DGameFramework.GlobalUsings.g_clean.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_framework_8_global_usings_8g__clean__clean_8cs" kind="file"><name>Mandatory2DGameFramework.GlobalUsings.g_clean_clean.cs</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_world_8cs" kind="file"><name>World.cs</name>
+  </compound>
+  <compound refid="_world_object_8cs" kind="file"><name>WorldObject.cs</name>
+  </compound>
+  <compound refid="dir_82e61b5fb2595d953b347c062e97bb1f" kind="dir"><name>Mandatory2DGameFramework/model/attack</name>
+  </compound>
+  <compound refid="dir_bd37672376abceae9f2c3f11316d9634" kind="dir"><name>Mandatory2DGameFramework/model/combat</name>
+  </compound>
+  <compound refid="dir_362c41f5b11fda2b93be8febdbfd8a42" kind="dir"><name>Mandatory2DGameFramework/config</name>
+  </compound>
+  <compound refid="dir_259a41be33fac42bf8cb6538aa74f666" kind="dir"><name>Mandatory2DGameFramework/model/creatures</name>
+  </compound>
+  <compound refid="dir_dcbaa1abcc6049f2f74337bac6f4cef8" kind="dir"><name>Mandatory2DGameConsole/obj/Debug</name>
+  </compound>
+  <compound refid="dir_311ca790a6674993f295431db59864a5" kind="dir"><name>Mandatory2DGameFramework/obj/Debug</name>
+  </compound>
+  <compound refid="dir_b019f5de8203ed3d0ffc9958a3b37740" kind="dir"><name>Mandatory2DGameFramework/model/attack/decorators</name>
+  </compound>
+  <compound refid="dir_6e1ca4677140877dca7347afb7c5d949" kind="dir"><name>Mandatory2DGameFramework/model/defence/decorators</name>
+  </compound>
+  <compound refid="dir_99709bcc8a98f016f948bb0c56a2d369" kind="dir"><name>Mandatory2DGameFramework/model/defence</name>
+  </compound>
+  <compound refid="dir_5a4631f505f73e88f40b95d210689c6a" kind="dir"><name>Mandatory2DGameFramework/gameInterface</name>
+  </compound>
+  <compound refid="dir_7212c6eb6ca2e0c4c6d7ac3e93845858" kind="dir"><name>Mandatory2DGameFramework/helper</name>
+  </compound>
+  <compound refid="dir_cadd8b6148d3397bbd460aa37bf4a7d8" kind="dir"><name>Mandatory2DGameConsole</name>
+  </compound>
+  <compound refid="dir_381299e59da83805f38fdd2613dbbd2c" kind="dir"><name>Mandatory2DGameFramework</name>
+  </compound>
+  <compound refid="dir_65e7ca9a4eac2191b7420c85995dd86f" kind="dir"><name>Mandatory2DGameFramework/model</name>
+  </compound>
+  <compound refid="dir_dd985d0128b35157aaf00159add20a54" kind="dir"><name>Mandatory2DGameConsole/obj/Debug/net8.0</name>
+  </compound>
+  <compound refid="dir_96e2df98be83dc6968d66ba38a59ea8f" kind="dir"><name>Mandatory2DGameFramework/obj/Debug/net8.0</name>
+  </compound>
+  <compound refid="dir_9603f80f68a1e8bd86700ef3836632d1" kind="dir"><name>Mandatory2DGameConsole/obj</name>
+  </compound>
+  <compound refid="dir_dbbe25d3b601d1e206bc32d96462a158" kind="dir"><name>Mandatory2DGameFramework/obj</name>
+  </compound>
+  <compound refid="dir_6302962440af046b6a2deba30c8ecc01" kind="dir"><name>Mandatory2DGameFramework/gameInterface/observer</name>
+  </compound>
+  <compound refid="dir_39013238c3c654d58c4e823b837e3669" kind="dir"><name>Mandatory2DGameFramework/gameInterface/strategy</name>
+  </compound>
+  <compound refid="dir_d806afad6ee8922d858f06de41b548ad" kind="dir"><name>Mandatory2DGameFramework/worlds</name>
+  </compound>
+</doxygenindex>

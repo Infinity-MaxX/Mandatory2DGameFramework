@@ -1,0 +1,142 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+model.\+attack.\+Attack\+Item Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{}\label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}\index{Mandatory2DGameFramework.model.attack.AttackItem@{Mandatory2DGameFramework.model.attack.AttackItem}}
+
+
+Represents an item that can be used to perform attacks within the game world. Provides properties for the item\textquotesingle{}s name, attack strength, range, and weight.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}\label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916} 
+{\bfseries Attack\+Item} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} class with default values. This version of the constructor assumes that the player has no attack items equipped. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_aeb055ba1faa10dc9a298454955899a6c}{Attack\+Item}} (string name)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} class with a name and default values for hit strength and range. This allows for junk/\+gag weapons that have no attack strength or range. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a1cea0367bb6354da7543f89711a4111e}{Attack\+Item}} (string name, int hit, int range, int weight)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} class with explicit values for name, hit strength, range, and weight. \end{DoxyCompactList}\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a39c14499449be8d78fbe387811b7a13f}\label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a39c14499449be8d78fbe387811b7a13f} 
+override string {\bfseries To\+String} ()
+\begin{DoxyCompactList}\small\item\em A string representation of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item}, including its name, hit strength, range, and weight. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{Mandatory2\+DGame\+Framework.\+worlds.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries World\+Object} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} class with default values. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_a08e5aa9ac1a774047559753e80376ed2}{World\+Object}} (string name, bool lootable=true, bool removable=true)
+\begin{DoxyCompactList}\small\item\em Initialises a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} class with name, lootability and removeability specified. defaults to false for lootability and removeability if not provided. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_a5c96165c1c5fa6133cd63fddd3318e45}{Move\+Object}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Moves the object to a new position in the world by updating its X and Y coordinates. \end{DoxyCompactList}\item 
+override string \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_a8f6d24976133e2cff6bdbe69e75a29e6}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em A string representation of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}, including its name and properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}} \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a57a89a86ad284ff50342442a3017ad38}{operator+}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}} a, \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}} b)
+\begin{DoxyCompactList}\small\item\em Combines two \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} instances into a single \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite}{Attack\+Composite} item. If either item is null, the non-\/null item is returned. If both items are composites, their contents are merged. If one item is a composite, the other item is added to it. If neither item is a composite, a new composite containing both items is created and returned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_aa7beb6b6c4e1bf65f56ae7e48e8297d3}\label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_aa7beb6b6c4e1bf65f56ae7e48e8297d3} 
+virtual int {\bfseries Hit}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the hit strength of the attack item, which determines the amount of damage it can inflict on a target when used in an attack. \end{DoxyCompactList}\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a4f6ad49d96181c66688cae16f85f5f74}\label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a4f6ad49d96181c66688cae16f85f5f74} 
+virtual int {\bfseries Range}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the range of the attack item, which indicates how far the attack can reach or affect targets. \end{DoxyCompactList}\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a999b8742cf5208db9d9e1bf322bdf1ab}\label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a999b8742cf5208db9d9e1bf322bdf1ab} 
+virtual int {\bfseries Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the weight of the attack item. Used to determine whether a creature can carry it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{Mandatory2\+DGame\+Framework.\+worlds.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the name associated with the object. \end{DoxyCompactList}\item 
+bool {\bfseries Lootable}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the item can be looted. \end{DoxyCompactList}\item 
+bool {\bfseries Removable}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the item can be removed. \end{DoxyCompactList}\item 
+int {\bfseries X}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the X-\/coordinate position of the object in the world. \end{DoxyCompactList}\item 
+int {\bfseries Y}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the Y-\/coordinate position of the object in the world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an item that can be used to perform attacks within the game world. Provides properties for the item\textquotesingle{}s name, attack strength, range, and weight. 
+
+\doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} serves as a base class for specialized attack items, including those that implement design patterns such as Decorator (for modifying attack or defense properties) and Composite (for grouping multiple weapons). Subclasses may extend functionality to support features like weight management or composite behaviors. Instances of \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} are typically used by creatures or entities capable of carrying and utilizing attack items. 
+
+\label{doc-constructors}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_aeb055ba1faa10dc9a298454955899a6c}\index{Mandatory2DGameFramework.model.attack.AttackItem@{Mandatory2DGameFramework.model.attack.AttackItem}!AttackItem@{AttackItem}}
+\index{AttackItem@{AttackItem}!Mandatory2DGameFramework.model.attack.AttackItem@{Mandatory2DGameFramework.model.attack.AttackItem}}
+\doxysubsubsection{\texorpdfstring{AttackItem()}{AttackItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_aeb055ba1faa10dc9a298454955899a6c} 
+Mandatory2\+DGame\+Framework.\+model.\+attack.\+Attack\+Item.\+Attack\+Item (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} class with a name and default values for hit strength and range. This allows for junk/\+gag weapons that have no attack strength or range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the weapon.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a1cea0367bb6354da7543f89711a4111e}\index{Mandatory2DGameFramework.model.attack.AttackItem@{Mandatory2DGameFramework.model.attack.AttackItem}!AttackItem@{AttackItem}}
+\index{AttackItem@{AttackItem}!Mandatory2DGameFramework.model.attack.AttackItem@{Mandatory2DGameFramework.model.attack.AttackItem}}
+\doxysubsubsection{\texorpdfstring{AttackItem()}{AttackItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a1cea0367bb6354da7543f89711a4111e} 
+Mandatory2\+DGame\+Framework.\+model.\+attack.\+Attack\+Item.\+Attack\+Item (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{int}]{hit}{, }\item[{int}]{range}{, }\item[{int}]{weight}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} class with explicit values for name, hit strength, range, and weight. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the attack item.\\
+\hline
+{\em hit} & The amount of damage this item can inflict when used in combat.\\
+\hline
+{\em range} & The effective distance at which this item can be used.\\
+\hline
+{\em weight} & The weight of the item, used to determine whether a creature is able to carry it based on its maximum carrying capacity.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a57a89a86ad284ff50342442a3017ad38}\index{Mandatory2DGameFramework.model.attack.AttackItem@{Mandatory2DGameFramework.model.attack.AttackItem}!operator+@{operator+}}
+\index{operator+@{operator+}!Mandatory2DGameFramework.model.attack.AttackItem@{Mandatory2DGameFramework.model.attack.AttackItem}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a57a89a86ad284ff50342442a3017ad38} 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}} Mandatory2\+DGame\+Framework.\+model.\+attack.\+Attack\+Item.\+operator+ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}}}]{a}{, }\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_a8245758c94a8503111611dde2c38f916}{Attack\+Item}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Combines two \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} instances into a single \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite}{Attack\+Composite} item. If either item is null, the non-\/null item is returned. If both items are composites, their contents are merged. If one item is a composite, the other item is added to it. If neither item is a composite, a new composite containing both items is created and returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first attack item.\\
+\hline
+{\em b} & The second attack item.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A composite attack item containing both input items. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Thrown if both attack items are null.\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+model/\+attack/\+Attack\+Item.\+cs\end{DoxyCompactItemize}

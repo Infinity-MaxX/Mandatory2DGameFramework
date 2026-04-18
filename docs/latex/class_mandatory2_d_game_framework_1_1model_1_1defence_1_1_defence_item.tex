@@ -1,0 +1,110 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+model.\+defence.\+Defence\+Item Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{}\label{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}\index{Mandatory2DGameFramework.model.defence.DefenceItem@{Mandatory2DGameFramework.model.defence.DefenceItem}}
+
+
+Represents an object in the world that provides defensive capabilities by reducing incoming hit points.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a2800a3024565901b5ceaf248890c09fa}\label{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a2800a3024565901b5ceaf248890c09fa} 
+{\bfseries Defence\+Item} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item} class with default values. This version assumes the player is not wearing any defensive items. \end{DoxyCompactList}\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a045d49fa8375b28ec8d74a69f9e11a24}\label{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a045d49fa8375b28ec8d74a69f9e11a24} 
+{\bfseries Defence\+Item} (string name, int reduce\+Damage, int weight)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item} class with a ~\newline
+ name and default values for hit point reduction and weight. This allows for junk/\+gag defensive items that have no defensive strength or weight. \end{DoxyCompactList}\item 
+override string \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a7b9c7ace396b732ddbecdf138fb2b0ea}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em A string representation of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item}, including its name and the amount of hit points it reduces. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{Mandatory2\+DGame\+Framework.\+worlds.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries World\+Object} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} class with default values. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_a08e5aa9ac1a774047559753e80376ed2}{World\+Object}} (string name, bool lootable=true, bool removable=true)
+\begin{DoxyCompactList}\small\item\em Initialises a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} class with name, lootability and removeability specified. defaults to false for lootability and removeability if not provided. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_a5c96165c1c5fa6133cd63fddd3318e45}{Move\+Object}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Moves the object to a new position in the world by updating its X and Y coordinates. \end{DoxyCompactList}\item 
+override string \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_a8f6d24976133e2cff6bdbe69e75a29e6}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em A string representation of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}, including its name and properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a2800a3024565901b5ceaf248890c09fa}{Defence\+Item}} \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a38ef30df3f4cf08306040a3674c9b2fb}{operator+}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a2800a3024565901b5ceaf248890c09fa}{Defence\+Item}} a, \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a2800a3024565901b5ceaf248890c09fa}{Defence\+Item}} b)
+\begin{DoxyCompactList}\small\item\em Combines two \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item} instances into a single \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite}{Defence\+Composite} item. If either item is null, the non-\/null item is returned. If both items are composites, their contents are merged. If one item is a composite, the other item is added to it. If neither item is a composite, a new composite containing both items is created and returned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_aff658980d00ea677a411e11b50872825}\label{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_aff658980d00ea677a411e11b50872825} 
+virtual int {\bfseries Reduce\+Damage}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the amount of hit points to reduce from the creature when damage is applied. \end{DoxyCompactList}\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a0daed8af64f17e3f2390a88b7e76c7eb}\label{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a0daed8af64f17e3f2390a88b7e76c7eb} 
+virtual int {\bfseries Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the weight of the defence item, which will be used to determine how much it affects the player\textquotesingle{}s mobility or weight capacity in subclasses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{Mandatory2\+DGame\+Framework.\+worlds.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the name associated with the object. \end{DoxyCompactList}\item 
+bool {\bfseries Lootable}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the item can be looted. \end{DoxyCompactList}\item 
+bool {\bfseries Removable}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the item can be removed. \end{DoxyCompactList}\item 
+int {\bfseries X}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the X-\/coordinate position of the object in the world. \end{DoxyCompactList}\item 
+int {\bfseries Y}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the Y-\/coordinate position of the object in the world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an object in the world that provides defensive capabilities by reducing incoming hit points. 
+
+This class implements the Composite design pattern, allowing multiple defence items to be treated as a single item. The composite sums the Reduce\+Damage and Weight values of all contained items. It can be used by creatures to represent carrying or equipping multiple defence items at once. 
+
+\label{doc-func-members}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a38ef30df3f4cf08306040a3674c9b2fb}\index{Mandatory2DGameFramework.model.defence.DefenceItem@{Mandatory2DGameFramework.model.defence.DefenceItem}!operator+@{operator+}}
+\index{operator+@{operator+}!Mandatory2DGameFramework.model.defence.DefenceItem@{Mandatory2DGameFramework.model.defence.DefenceItem}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a38ef30df3f4cf08306040a3674c9b2fb} 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a2800a3024565901b5ceaf248890c09fa}{Defence\+Item}} Mandatory2\+DGame\+Framework.\+model.\+defence.\+Defence\+Item.\+operator+ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a2800a3024565901b5ceaf248890c09fa}{Defence\+Item}}}]{a}{, }\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a2800a3024565901b5ceaf248890c09fa}{Defence\+Item}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Combines two \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item} instances into a single \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite}{Defence\+Composite} item. If either item is null, the non-\/null item is returned. If both items are composites, their contents are merged. If one item is a composite, the other item is added to it. If neither item is a composite, a new composite containing both items is created and returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first defence item.\\
+\hline
+{\em b} & The second defence item.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A composite defence item containing both input items. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Thrown if both defence items are null.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a7b9c7ace396b732ddbecdf138fb2b0ea}\index{Mandatory2DGameFramework.model.defence.DefenceItem@{Mandatory2DGameFramework.model.defence.DefenceItem}!ToString@{ToString}}
+\index{ToString@{ToString}!Mandatory2DGameFramework.model.defence.DefenceItem@{Mandatory2DGameFramework.model.defence.DefenceItem}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a7b9c7ace396b732ddbecdf138fb2b0ea} 
+override string Mandatory2\+DGame\+Framework.\+model.\+defence.\+Defence\+Item.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A string representation of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item}, including its name and the amount of hit points it reduces. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+model/\+defence/\+Defence\+Item.\+cs\end{DoxyCompactItemize}

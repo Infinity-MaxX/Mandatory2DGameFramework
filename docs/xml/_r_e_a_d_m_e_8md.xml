@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Project<sp/>Title</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Simple<sp/>overview<sp/>of<sp/>use/purpose.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Description</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">An<sp/>in-depth<sp/>paragraph<sp/>about<sp/>your<sp/>project<sp/>and<sp/>overview<sp/>of<sp/>use.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Getting<sp/>Started</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Dependencies</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>Describe<sp/>any<sp/>prerequisites,<sp/>libraries,<sp/>OS<sp/>version,<sp/>etc.,<sp/>needed<sp/>before<sp/>installing<sp/>program.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>ex.<sp/>Windows<sp/>10</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Installing</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>How/where<sp/>to<sp/>download<sp/>your<sp/>program</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Any<sp/>modifications<sp/>needed<sp/>to<sp/>be<sp/>made<sp/>to<sp/>files/folders</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Executing<sp/>program</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>How<sp/>to<sp/>run<sp/>the<sp/>program</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Step-by-step<sp/>bullets</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">code<sp/>blocks<sp/>for<sp/>commands</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Help</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Any<sp/>advise<sp/>for<sp/>common<sp/>problems<sp/>or<sp/>issues.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">command<sp/>to<sp/>run<sp/>if<sp/>program<sp/>contains<sp/>helper<sp/>info</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Authors</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Contributors<sp/>names<sp/>and<sp/>contact<sp/>info</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ex.<sp/>Dominique<sp/>Pizzie<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">ex.<sp/>[@DomPizzie](https://twitter.com/dompizzie)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Version<sp/>History</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>0.2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Various<sp/>bug<sp/>fixes<sp/>and<sp/>optimizations</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>See<sp/>[commit<sp/>change]()<sp/>or<sp/>See<sp/>[release<sp/>history]()</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>0.1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Initial<sp/>Release</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>License</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>project<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>[NAME<sp/>HERE]<sp/>License<sp/>-<sp/>see<sp/>the<sp/>LICENSE.md<sp/>file<sp/>for<sp/>details</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Acknowledgments</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Inspiration,<sp/>code<sp/>snippets,<sp/>etc.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[awesome-readme](https://github.com/matiassingers/awesome-readme)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[dbader](https://github.com/dbader/readme-template)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[zenorocha](https://gist.github.com/zenorocha/4526327)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)</highlight></codeline>
+    </programlisting>
+    <location file="Mandatory2DGameFramework/README.md"/>
+  </compounddef>
+</doxygen>

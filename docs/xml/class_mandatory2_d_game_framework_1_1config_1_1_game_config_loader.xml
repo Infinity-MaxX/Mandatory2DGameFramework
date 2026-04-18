@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1config_1_1_game_config_loader" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::config::GameConfigLoader</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1config_1_1_game_config_loader_1aa5137fe21742afe01ae1a584428af0e5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config" kindref="compound">GameConfig</ref></type>
+        <definition>static GameConfig Mandatory2DGameFramework.config.GameConfigLoader.Load</definition>
+        <argsstring>(string filePath)</argsstring>
+        <name>Load</name>
+        <qualifiedname>Mandatory2DGameFramework.config.GameConfigLoader.Load</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Loads the game configuration from an XML file at the specified path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>FileNotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throw an exception if the config file cannot be found.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InvalidDataException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throw an exception if the game configurations cannot be deserialised.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="96" column="34" bodyfile="Mandatory2DGameFramework/config/GameDifficulty.cs" bodystart="96" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a utility class responsible for loading game configuration. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="85" column="19" bodyfile="Mandatory2DGameFramework/config/GameDifficulty.cs" bodystart="86" bodyend="113"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config_loader_1aa5137fe21742afe01ae1a584428af0e5" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::config::GameConfigLoader</scope><name>Load</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

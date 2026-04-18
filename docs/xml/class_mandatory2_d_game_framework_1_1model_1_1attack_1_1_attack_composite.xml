@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::attack::AttackComposite</compoundname>
+    <basecompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.attack.AttackItem</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a948615f856ca3bc3b7452fe4451cbc62" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" kindref="member">AttackItem</ref> &gt;</type>
+        <definition>readonly List&lt;AttackItem&gt; Mandatory2DGameFramework.model.attack.AttackComposite._items</definition>
+        <argsstring></argsstring>
+        <name>_items</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackComposite._items</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="24" column="31" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a4070a9b15eeed0c3d968757ab854bc8b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" kindref="member">AttackItem</ref> &gt;</type>
+        <definition>IEnumerable&lt;AttackItem&gt; Mandatory2DGameFramework.model.attack.AttackComposite.Items</definition>
+        <argsstring></argsstring>
+        <name>Items</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackComposite.Items</qualifiedname>
+        <briefdescription>
+<para>Gets the collection of attack items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="31" column="28" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a127a2b170a71efd7d12becb17d2d3a2d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int Mandatory2DGameFramework.model.attack.AttackComposite.Hit</definition>
+        <argsstring></argsstring>
+        <name>Hit</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackComposite.Hit</qualifiedname>
+        <briefdescription>
+<para>Gets the total hit strength of all attack items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="36" column="29" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1aa5ed01eb27059bd87134521fce2ac967" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int Mandatory2DGameFramework.model.attack.AttackComposite.Range</definition>
+        <argsstring></argsstring>
+        <name>Range</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackComposite.Range</qualifiedname>
+        <briefdescription>
+<para>Gets the maximum range among all attack items. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Range is not summed, because a creature cannot attack farther than its longest-range weapon. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="48" column="29" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a267f1ba089101be176d392bfc41e1a83" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int Mandatory2DGameFramework.model.attack.AttackComposite.Weight</definition>
+        <argsstring></argsstring>
+        <name>Weight</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackComposite.Weight</qualifiedname>
+        <briefdescription>
+<para>Gets the total weight of all attack items in the composite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="60" column="29" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="60" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1afacebb9ad3438b33da07c3be214b6d89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.attack.AttackComposite.AttackComposite</definition>
+        <argsstring>()</argsstring>
+        <name>AttackComposite</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackComposite.AttackComposite</qualifiedname>
+        <briefdescription>
+<para>Initializes a new empty composite attack item. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="68" column="16" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a54f101a10e1a4f9ce617470bd7ec9ea3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.attack.AttackComposite.AttackComposite</definition>
+        <argsstring>(IEnumerable&lt; AttackItem &gt; items)</argsstring>
+        <name>AttackComposite</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackComposite.AttackComposite</qualifiedname>
+        <param>
+          <type>IEnumerable&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" kindref="member">AttackItem</ref> &gt;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new composite attack item with an initial list of items. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attack items to include in the composite.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="78" column="16" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a9f66103f71f90b0e95ede1fc158886b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.attack.AttackComposite.Add</definition>
+        <argsstring>(AttackItem item)</argsstring>
+        <name>Add</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackComposite.Add</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" kindref="member">AttackItem</ref></type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Adds a single attack item to the composite. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attack item to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="90" column="21" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a2fd468f722a65d8f137b803f86aa3967" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.attack.AttackComposite.Remove</definition>
+        <argsstring>(AttackItem item)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackComposite.Remove</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" kindref="member">AttackItem</ref></type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Removes a single attack item from the composite. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attack item to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="99" column="21" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a0afff0652d5b4fe81580f46363475a46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Mandatory2DGameFramework.model.attack.AttackComposite.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackComposite.ToString</qualifiedname>
+        <briefdescription>
+<para>Returns a string representation of the composite, including total hit, range, weight, and the number of items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="108" column="32" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="108" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a composite attack item that groups multiple <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> instances into a single logical weapon. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements the Composite design pattern, allowing multiple attack items to be treated as a single item. The composite sums the Hit, Range, and Weight values of all contained items. It can be used by creatures to represent carrying or equipping multiple weapons at once. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.attack.AttackComposite</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.attack.AttackItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.attack.AttackComposite</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.attack.AttackItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="21" column="11" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="22" bodyend="114"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a948615f856ca3bc3b7452fe4451cbc62" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>_items</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a9f66103f71f90b0e95ede1fc158886b8" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>Add</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1afacebb9ad3438b33da07c3be214b6d89" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>AttackComposite</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a54f101a10e1a4f9ce617470bd7ec9ea3" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>AttackComposite</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>AttackItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1aeb055ba1faa10dc9a298454955899a6c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>AttackItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a1cea0367bb6354da7543f89711a4111e" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>AttackItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a127a2b170a71efd7d12becb17d2d3a2d" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>Hit</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a4070a9b15eeed0c3d968757ab854bc8b" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>Items</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>Lootable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5c96165c1c5fa6133cd63fddd3318e45" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>MoveObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a22287e4da7ba3627ce0a41cf10dc4a2c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>Name</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a57a89a86ad284ff50342442a3017ad38" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>operator+</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1aa5ed01eb27059bd87134521fce2ac967" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>Range</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8a4119f23e39f81c1f6c39156943767c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>Removable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a2fd468f722a65d8f137b803f86aa3967" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>Remove</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a0afff0652d5b4fe81580f46363475a46" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>ToString</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a267f1ba089101be176d392bfc41e1a83" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>Weight</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a36701698b4ac1503dca8f4a57dc7cfc7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>WorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a08e5aa9ac1a774047559753e80376ed2" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>WorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1af69309e8102b27e50095a5d61e094a97" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>X</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a19a046421bfc9bd38c545a9e9e9c663a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

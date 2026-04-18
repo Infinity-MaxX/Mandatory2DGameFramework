@@ -1,0 +1,125 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+model.\+creatures.\+classes.\+Mage Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage}{}\label{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage}\index{Mandatory2DGameFramework.model.creatures.classes.Mage@{Mandatory2DGameFramework.model.creatures.classes.Mage}}
+
+
+A concrete implementation of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature} class representing a \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage}{Mage} character instance.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage_a7cc108ba5df058d5b8ec922f88220357}{Mage}} (string name)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage}{Mage} class with the specified name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Mandatory2\+DGame\+Framework.\+model.\+creatures.\+Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a4d37e9d85da0188fd103ac41fae577c4}{Perform\+Hit}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_ada8f687b850a877a4215bbb7231f39a4}{Creature}} target)
+\begin{DoxyCompactList}\small\item\em Performs an attack on the specified target using the Template Method pattern. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a83b429ea45feb959cfab975cb6b77de4}{Register\+Observer}} (\doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer}{ICreature\+Observer}} \doxymbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer}{observer}})
+\begin{DoxyCompactList}\small\item\em Registers an observer that will be notified when the creature is hit or dies. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_aef7d906a8465b33764596752b2e8dd69}{Remove\+Observer}} (\doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer}{ICreature\+Observer}} \doxymbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer}{observer}})
+\begin{DoxyCompactList}\small\item\em Removes a previously registered observer. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a3beba53eb5ed2e03a6a3d89181360549}{Total\+Defence}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the total defence value from all equipped defence items. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_af6fee2d078abb89e04fdda4d7c3a2f19}{Receive\+Hit}} (int damage)
+\begin{DoxyCompactList}\small\item\em Applies incoming damage to the creature, reduced by all equipped defence items. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a7950d8387d78c36a9c3a1de1a9704a81}{Add\+Attack\+Item}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item}} item)
+\begin{DoxyCompactList}\small\item\em Attempts to add an attack item to the creature\textquotesingle{}s inventory. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_af67c7c34dff98bbe47277f6425ffc12c}{Add\+Defence\+Item}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item}} item)
+\begin{DoxyCompactList}\small\item\em Adds a defence item to the creature\textquotesingle{}s inventory. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a895f635e4f59e77a66f7e4ef6c9ba499}{Current\+Attack\+Weight}} ()
+\begin{DoxyCompactList}\small\item\em Checks the total weight of all currently equipped attack items. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_afe9235fd884fb2f98f45069395e0471a}{Current\+Defence\+Weight}} ()
+\begin{DoxyCompactList}\small\item\em Checks the total weight of all currently equipped defence items. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a41e4a1f9ab6d9868e84f91f04a3dcdfe}{Loot}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}} obj)
+\begin{DoxyCompactList}\small\item\em Attempts to loot a world object. If the object is lootable and is an attack or defence item, it is added to the creature\textquotesingle{}s inventory. \end{DoxyCompactList}\item 
+override string {\bfseries To\+String} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the creature, including name, hit points, and world position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage_ae9a178604ef21e88216f5ea8189eff60}{Before\+Hit}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_ada8f687b850a877a4215bbb7231f39a4}{Creature}} target)
+\begin{DoxyCompactList}\small\item\em Hooks into the hit process before an attack is performed, allowing the mage to prepare a spell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Mandatory2\+DGame\+Framework.\+model.\+creatures.\+Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_ada8f687b850a877a4215bbb7231f39a4}{Creature}} (string name, int hit\+Point=100, int max\+Attack\+Weight=50, int max\+Defence\+Weight=50)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature} class. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a51d9c8de951060b3c1249705a331be4e}{After\+Hit}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_ada8f687b850a877a4215bbb7231f39a4}{Creature}} target)
+\begin{DoxyCompactList}\small\item\em Hook method invoked after a successful hit. Subclasses may override this to implement custom post‑attack behavior. \end{DoxyCompactList}\item 
+virtual int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a35dbd21e14d6ec4bfefd125898da99f7}{Calculate\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the outgoing damage using the configured hit strategy. \end{DoxyCompactList}\item 
+virtual int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_ac4b45ff510cd2345d7e4809876270a1c}{Calculate\+Defence}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the total defence using the configured strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Mandatory2\+DGame\+Framework.\+model.\+creatures.\+Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the creature\textquotesingle{}s display name. \end{DoxyCompactList}\item 
+int {\bfseries Hit\+Point}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Gets the creature\textquotesingle{}s current hit points. \end{DoxyCompactList}\item 
+bool {\bfseries Is\+Dead}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether the creature is dead. \end{DoxyCompactList}\item 
+int {\bfseries Max\+Attack\+Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the maximum total weight of attack items the creature can carry. \end{DoxyCompactList}\item 
+int {\bfseries Max\+Defence\+Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the maximum total weight of defence items the creature can carry. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy}{IStrategy}} {\bfseries Strategy}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the hit strategy used to calculate outgoing damage. \end{DoxyCompactList}\item 
+int {\bfseries X}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the creature\textquotesingle{}s X‑coordinate in the world. \end{DoxyCompactList}\item 
+int {\bfseries Y}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the creature\textquotesingle{}s Y‑coordinate in the world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A concrete implementation of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature} class representing a \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage}{Mage} character instance. 
+
+\label{doc-constructors}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage_a7cc108ba5df058d5b8ec922f88220357}\index{Mandatory2DGameFramework.model.creatures.classes.Mage@{Mandatory2DGameFramework.model.creatures.classes.Mage}!Mage@{Mage}}
+\index{Mage@{Mage}!Mandatory2DGameFramework.model.creatures.classes.Mage@{Mandatory2DGameFramework.model.creatures.classes.Mage}}
+\doxysubsubsection{\texorpdfstring{Mage()}{Mage()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage_a7cc108ba5df058d5b8ec922f88220357} 
+Mandatory2\+DGame\+Framework.\+model.\+creatures.\+classes.\+Mage.\+Mage (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage}{Mage} class with the specified name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the mage.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage_ae9a178604ef21e88216f5ea8189eff60}\index{Mandatory2DGameFramework.model.creatures.classes.Mage@{Mandatory2DGameFramework.model.creatures.classes.Mage}!BeforeHit@{BeforeHit}}
+\index{BeforeHit@{BeforeHit}!Mandatory2DGameFramework.model.creatures.classes.Mage@{Mandatory2DGameFramework.model.creatures.classes.Mage}}
+\doxysubsubsection{\texorpdfstring{BeforeHit()}{BeforeHit()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage_ae9a178604ef21e88216f5ea8189eff60} 
+override void Mandatory2\+DGame\+Framework.\+model.\+creatures.\+classes.\+Mage.\+Before\+Hit (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_ada8f687b850a877a4215bbb7231f39a4}{Creature}}}]{target}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Hooks into the hit process before an attack is performed, allowing the mage to prepare a spell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The creature that will be targeted by the spell.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_abee2f3c53c6ab173b31a4771a2fa0070}{Mandatory2\+DGame\+Framework.\+model.\+creatures.\+Creature}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+model/\+creatures/\+Battle\+Class.\+cs\end{DoxyCompactItemize}

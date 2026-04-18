@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespace_mandatory2_d_game_framework_1_1worlds" kind="namespace" language="C#">
+    <compoundname>Mandatory2DGameFramework::worlds</compoundname>
+    <innerclass refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" prot="public">Mandatory2DGameFramework::worlds::World</innerclass>
+    <innerclass refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" prot="public">Mandatory2DGameFramework::worlds::WorldObject</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Mandatory2DGameFramework/worlds/World.cs" line="11" column="1"/>
+  </compounddef>
+</doxygen>

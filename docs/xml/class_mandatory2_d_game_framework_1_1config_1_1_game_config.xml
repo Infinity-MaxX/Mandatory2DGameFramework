@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1config_1_1_game_config" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::config::GameConfig</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1config_1_1_game_config_1a11fd0ec5e9126ca51ea6e158b7740846" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1config_1_1_world_config" kindref="compound">WorldConfig</ref></type>
+        <definition>WorldConfig Mandatory2DGameFramework.config.GameConfig.World</definition>
+        <argsstring></argsstring>
+        <name>World</name>
+        <qualifiedname>Mandatory2DGameFramework.config.GameConfig.World</qualifiedname>
+        <initializer>= new <ref refid="class_mandatory2_d_game_framework_1_1config_1_1_world_config" kindref="compound">WorldConfig</ref>()</initializer>
+        <briefdescription>
+<para>Gets or sets the configuration settings for the world environment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="54" column="28" bodyfile="Mandatory2DGameFramework/config/GameDifficulty.cs" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1config_1_1_game_config_1a9ecb4ef78a3418d1ee163c3c9e698551" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eac" kindref="member">GameDifficulty</ref></type>
+        <definition>GameDifficulty Mandatory2DGameFramework.config.GameConfig.Difficulty</definition>
+        <argsstring></argsstring>
+        <name>Difficulty</name>
+        <qualifiedname>Mandatory2DGameFramework.config.GameConfig.Difficulty</qualifiedname>
+        <initializer>= <ref refid="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eaca2ddabc33a6100ceb5311697534035d8d" kindref="member">GameDifficulty.Beginner</ref></initializer>
+        <briefdescription>
+<para>Gets or sets the difficulty level for the game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="60" column="31" bodyfile="Mandatory2DGameFramework/config/GameDifficulty.cs" bodystart="60" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents the configuration settings for a game, including world parameters and difficulty level. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is typically used to serialize or deserialize game configuration data, such as when loading or saving settings to XML. It serves as the root element for game configuration files.</para>
+    </detaileddescription>
+    <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="48" column="11" bodyfile="Mandatory2DGameFramework/config/GameDifficulty.cs" bodystart="49" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config_1a9ecb4ef78a3418d1ee163c3c9e698551" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::config::GameConfig</scope><name>Difficulty</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config_1a11fd0ec5e9126ca51ea6e158b7740846" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::config::GameConfig</scope><name>World</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

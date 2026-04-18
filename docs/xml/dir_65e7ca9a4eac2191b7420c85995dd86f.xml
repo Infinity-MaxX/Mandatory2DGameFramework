@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_65e7ca9a4eac2191b7420c85995dd86f" kind="dir">
+    <compoundname>Mandatory2DGameFramework/model</compoundname>
+    <innerdir refid="dir_82e61b5fb2595d953b347c062e97bb1f">Mandatory2DGameFramework/model/attack</innerdir>
+    <innerdir refid="dir_bd37672376abceae9f2c3f11316d9634">Mandatory2DGameFramework/model/combat</innerdir>
+    <innerdir refid="dir_259a41be33fac42bf8cb6538aa74f666">Mandatory2DGameFramework/model/creatures</innerdir>
+    <innerdir refid="dir_99709bcc8a98f016f948bb0c56a2d369">Mandatory2DGameFramework/model/defence</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Mandatory2DGameFramework/model/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::worlds::World</compoundname>
+    <basecompoundref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer" prot="public" virt="non-virtual">Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a4bd97adefe2bd94f326f0d57fb7c0c8b" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> &gt;</type>
+        <definition>List&lt;WorldObject&gt; Mandatory2DGameFramework.worlds.World._worldObjects</definition>
+        <argsstring></argsstring>
+        <name>_worldObjects</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World._worldObjects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="28" column="22" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a2dabc6d79a166bef88473bd06915ea65" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref> &gt;</type>
+        <definition>List&lt;Creature&gt; Mandatory2DGameFramework.worlds.World._creatures</definition>
+        <argsstring></argsstring>
+        <name>_creatures</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World._creatures</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="29" column="22" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a5ff8757da02d490999d83318f597a929" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger" kindref="compound">Logger</ref></type>
+        <definition>Logger Mandatory2DGameFramework.worlds.World._log</definition>
+        <argsstring></argsstring>
+        <name>_log</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World._log</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="30" column="24" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0b1ad1e842a47530036cb945367b8465" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.worlds.World.MaxX</definition>
+        <argsstring></argsstring>
+        <name>MaxX</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.MaxX</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the maximum X-coordinate value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="37" column="20" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a448ca41211652392fcc724b3f06427d7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.worlds.World.MaxY</definition>
+        <argsstring></argsstring>
+        <name>MaxY</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.MaxY</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the maximum Y-coordinate value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="41" column="20" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae47b636a19335bfbbbdaed97a7ede666" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eac" kindref="member">GameDifficulty</ref></type>
+        <definition>GameDifficulty Mandatory2DGameFramework.worlds.World.Difficulty</definition>
+        <argsstring></argsstring>
+        <name>Difficulty</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.Difficulty</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the difficulty level for the game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="45" column="31" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="45" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0cb8fe6b874ce2f1b0d72bb3312b466c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.worlds.World.World</definition>
+        <argsstring>(int maxX, int maxY, GameDifficulty difficulty=GameDifficulty.Beginner)</argsstring>
+        <name>World</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.World</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>maxX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxY</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eac" kindref="member">GameDifficulty</ref></type>
+          <declname>difficulty</declname>
+          <defval>GameDifficulty.Beginner</defval>
+        </param>
+        <briefdescription>
+<para>Instatiates a new <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kindref="compound">World</ref> object with specified dimensions and difficulty level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sets the maximum X-coordinate value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sets the maximum Y-coordinate value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>difficulty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sets the difficulty of the game. Options include Beginner, Intermediate, and Expert. Default is set to Beginner.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="60" column="16" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1aef4de3605390ade10c8ce879275cd555" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.worlds.World.AddObject</definition>
+        <argsstring>(WorldObject obj)</argsstring>
+        <name>AddObject</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.AddObject</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Adds a <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> to the world. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="91" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae338f5056e2c4507b4bfee81d4f65bbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.worlds.World.RemoveObject</definition>
+        <argsstring>(WorldObject obj)</argsstring>
+        <name>RemoveObject</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.RemoveObject</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Removes a <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> from the world if it is marked as removable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="104" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="104" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a565918c3a734b0e67208ca627a599ec3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.worlds.World.AddCreature</definition>
+        <argsstring>(Creature creature)</argsstring>
+        <name>AddCreature</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.AddCreature</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>creature</declname>
+        </param>
+        <briefdescription>
+<para>Adds a <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref> to the world. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creature to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="118" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="118" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1af9a0054ea2d402567a9dfbf28f8abde5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.worlds.World.RemoveCreature</definition>
+        <argsstring>(Creature creature)</argsstring>
+        <name>RemoveCreature</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.RemoveCreature</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>creature</declname>
+        </param>
+        <briefdescription>
+<para>Removes a <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref> from the world. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creature to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="130" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="130" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a8828d2714648459b46fba861143080d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.worlds.World.OnCreatureHit</definition>
+        <argsstring>(Creature creature, int damage)</argsstring>
+        <name>OnCreatureHit</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.OnCreatureHit</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a91e0cd8329b36ca388742c1a332a96a1">OnCreatureHit</reimplements>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>creature</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+<para>Called when a creature in the world takes damage. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creature to that was hit.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>damage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How much net damage the creature took.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="143" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae7d088ceca56746b303f0c81467d9a10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.worlds.World.OnCreatureDeath</definition>
+        <argsstring>(Creature creature)</argsstring>
+        <name>OnCreatureDeath</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.OnCreatureDeath</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a469a85fee4e05b20b1a671cf670de489">OnCreatureDeath</reimplements>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>creature</declname>
+        </param>
+        <briefdescription>
+<para>Called when a creature in the world dies. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creature to that has died.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="152" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="152" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a803b69d32ffb8b895f1ec21b0c4f34a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.worlds.World.OnCreatureLoot</definition>
+        <argsstring>(Creature creature, WorldObject obj)</argsstring>
+        <name>OnCreatureLoot</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.OnCreatureLoot</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a22161c11a7f0ffea37f9760c62d0469a">OnCreatureLoot</reimplements>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>creature</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Called when a creature in the world loots an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creature that looted the object.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object that was looted.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="163" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="163" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a30c70a445d132e52f91ca1055a073d08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> &gt;</type>
+        <definition>IEnumerable&lt; WorldObject &gt; Mandatory2DGameFramework.worlds.World.ObjectsAt</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>ObjectsAt</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.ObjectsAt</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Returns all <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> instances located at the specified coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X-coordinate to check.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y-coordinate to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An enumerable collection of <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> instances at the specified coordinates.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="177" column="28" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="177" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0563e673ca68b396681cabaf6d8b5e81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref> &gt;</type>
+        <definition>IEnumerable&lt; Creature &gt; Mandatory2DGameFramework.worlds.World.CreaturesAt</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>CreaturesAt</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.CreaturesAt</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Returns all <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref> instances located at the specified coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X-coordinate to check.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y-coordinate to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An enumerable collection of <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref> instances at the specified coordinates.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="198" column="28" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="198" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0058e208eaf3f7e2fb61e25b66730914" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Mandatory2DGameFramework.worlds.World.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.ToString</qualifiedname>
+        <briefdescription>
+<para>A string representation of the <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kindref="compound">World</ref> object, including its dimensions and difficulty level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="216" column="32" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="216" bodyend="221"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1aaea96f12a7b8707c491f8870f41ab04a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0cb8fe6b874ce2f1b0d72bb3312b466c" kindref="member">World</ref></type>
+        <definition>static World Mandatory2DGameFramework.worlds.World.FromConfig</definition>
+        <argsstring>(GameConfig config)</argsstring>
+        <name>FromConfig</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.FromConfig</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config" kindref="compound">GameConfig</ref></type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new instance of the <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kindref="compound">World</ref> class using the specified game configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration settings that define the world&apos;s dimensions and difficulty. Cannot be null.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kindref="compound">World</ref> instance initialized with the parameters from the specified configuration.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/World.cs" line="82" column="29" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="82" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents the game world, including its dimensions, difficulty level, creatures and objects placed in the world. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kindref="compound">World</ref> class serves as the primary container for game state, defining the playable area&apos;s boundaries and difficulty. Use the FromConfig method to create a <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kindref="compound">World</ref> instance from a configuration object. The MaxX and MaxY properties specify the world&apos;s size along the X and Y axes, respectively. The Difficulty property determines the overall challenge level for the world.</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.worlds.World</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.worlds.World</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer"/>
+      </node>
+    </collaborationgraph>
+    <location file="Mandatory2DGameFramework/worlds/World.cs" line="25" column="11" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="26" bodyend="223"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a2dabc6d79a166bef88473bd06915ea65" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>_creatures</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a5ff8757da02d490999d83318f597a929" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>_log</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a4bd97adefe2bd94f326f0d57fb7c0c8b" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>_worldObjects</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a565918c3a734b0e67208ca627a599ec3" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>AddCreature</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1aef4de3605390ade10c8ce879275cd555" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>AddObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0563e673ca68b396681cabaf6d8b5e81" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>CreaturesAt</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae47b636a19335bfbbbdaed97a7ede666" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>Difficulty</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1aaea96f12a7b8707c491f8870f41ab04a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>FromConfig</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0b1ad1e842a47530036cb945367b8465" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>MaxX</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a448ca41211652392fcc724b3f06427d7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>MaxY</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a30c70a445d132e52f91ca1055a073d08" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>ObjectsAt</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae7d088ceca56746b303f0c81467d9a10" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>OnCreatureDeath</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a8828d2714648459b46fba861143080d2" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>OnCreatureHit</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a803b69d32ffb8b895f1ec21b0c4f34a2" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>OnCreatureLoot</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1af9a0054ea2d402567a9dfbf28f8abde5" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>RemoveCreature</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae338f5056e2c4507b4bfee81d4f65bbb" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>RemoveObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0058e208eaf3f7e2fb61e25b66730914" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>ToString</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0cb8fe6b874ce2f1b0d72bb3312b466c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>World</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

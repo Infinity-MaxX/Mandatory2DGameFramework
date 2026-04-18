@@ -1,0 +1,90 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+game\+Interface.\+observer.\+ICreature\+Observer Interface Reference}
+\hypertarget{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer}{}\label{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer}\index{Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver@{Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver}}
+
+
+Interface for observing events related to creatures, such as being hit, dying, or looting objects.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a91e0cd8329b36ca388742c1a332a96a1}{On\+Creature\+Hit}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}} creature, int damage)
+\begin{DoxyCompactList}\small\item\em A method that is called when a creature is hit, providing the creature and the damage taken. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a469a85fee4e05b20b1a671cf670de489}{On\+Creature\+Death}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}} creature)
+\begin{DoxyCompactList}\small\item\em A method that is called when a creature dies. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a22161c11a7f0ffea37f9760c62d0469a}{On\+Creature\+Loot}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}} creature, \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}} obj)
+\begin{DoxyCompactList}\small\item\em A method that is called when a creature loots an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for observing events related to creatures, such as being hit, dying, or looting objects. 
+
+\label{doc-func-members}
+\Hypertarget{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a469a85fee4e05b20b1a671cf670de489}\index{Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver@{Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver}!OnCreatureDeath@{OnCreatureDeath}}
+\index{OnCreatureDeath@{OnCreatureDeath}!Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver@{Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver}}
+\doxysubsubsection{\texorpdfstring{OnCreatureDeath()}{OnCreatureDeath()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a469a85fee4e05b20b1a671cf670de489} 
+void Mandatory2\+DGame\+Framework.\+game\+Interface.\+observer.\+ICreature\+Observer.\+On\+Creature\+Death (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}}}]{creature}{}\end{DoxyParamCaption})}
+
+
+
+A method that is called when a creature dies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature that died.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_ae7d088ceca56746b303f0c81467d9a10}{Mandatory2\+DGame\+Framework.\+worlds.\+World}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a91e0cd8329b36ca388742c1a332a96a1}\index{Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver@{Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver}!OnCreatureHit@{OnCreatureHit}}
+\index{OnCreatureHit@{OnCreatureHit}!Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver@{Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver}}
+\doxysubsubsection{\texorpdfstring{OnCreatureHit()}{OnCreatureHit()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a91e0cd8329b36ca388742c1a332a96a1} 
+void Mandatory2\+DGame\+Framework.\+game\+Interface.\+observer.\+ICreature\+Observer.\+On\+Creature\+Hit (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}}}]{creature}{, }\item[{int}]{damage}{}\end{DoxyParamCaption})}
+
+
+
+A method that is called when a creature is hit, providing the creature and the damage taken. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature that was hit.\\
+\hline
+{\em damage} & The amount of damage taken by the creature.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a8828d2714648459b46fba861143080d2}{Mandatory2\+DGame\+Framework.\+worlds.\+World}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a22161c11a7f0ffea37f9760c62d0469a}\index{Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver@{Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver}!OnCreatureLoot@{OnCreatureLoot}}
+\index{OnCreatureLoot@{OnCreatureLoot}!Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver@{Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver}}
+\doxysubsubsection{\texorpdfstring{OnCreatureLoot()}{OnCreatureLoot()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a22161c11a7f0ffea37f9760c62d0469a} 
+void Mandatory2\+DGame\+Framework.\+game\+Interface.\+observer.\+ICreature\+Observer.\+On\+Creature\+Loot (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}}}]{creature}{, }\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}}}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+A method that is called when a creature loots an object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature that looted the object.\\
+\hline
+{\em obj} & The object that was looted.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a803b69d32ffb8b895f1ec21b0c4f34a2}{Mandatory2\+DGame\+Framework.\+worlds.\+World}}.
+
+
+
+The documentation for this interface was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+game\+Interface/\+observer/\+ICreature\+Observer.\+cs\end{DoxyCompactItemize}

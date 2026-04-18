@@ -1,0 +1,292 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+worlds.\+World Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world}{}\label{class_mandatory2_d_game_framework_1_1worlds_1_1_world}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+
+
+Represents the game world, including its dimensions, difficulty level, creatures and objects placed in the world.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0cb8fe6b874ce2f1b0d72bb3312b466c}{World}} (int maxX, int maxY, \doxymbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1config_a3d8ea8230e1215280d9f9e50bc2a0eac}{Game\+Difficulty}} difficulty=Game\+Difficulty.\+Beginner)
+\begin{DoxyCompactList}\small\item\em Instatiates a new \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world}{World} object with specified dimensions and difficulty level. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_aef4de3605390ade10c8ce879275cd555}{Add\+Object}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}} obj)
+\begin{DoxyCompactList}\small\item\em Adds a \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} to the world. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_ae338f5056e2c4507b4bfee81d4f65bbb}{Remove\+Object}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}} obj)
+\begin{DoxyCompactList}\small\item\em Removes a \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} from the world if it is marked as removable. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a565918c3a734b0e67208ca627a599ec3}{Add\+Creature}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}} creature)
+\begin{DoxyCompactList}\small\item\em Adds a \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature} to the world. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_af9a0054ea2d402567a9dfbf28f8abde5}{Remove\+Creature}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}} creature)
+\begin{DoxyCompactList}\small\item\em Removes a \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature} from the world. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a8828d2714648459b46fba861143080d2}{On\+Creature\+Hit}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}} creature, int damage)
+\begin{DoxyCompactList}\small\item\em Called when a creature in the world takes damage. 
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature to that was hit.\\
+\hline
+{\em damage} & How much net damage the creature took.\\
+\hline
+\end{DoxyParams}
+. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_ae7d088ceca56746b303f0c81467d9a10}{On\+Creature\+Death}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}} creature)
+\begin{DoxyCompactList}\small\item\em Called when a creature in the world dies. 
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature to that has died.\\
+\hline
+\end{DoxyParams}
+. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a803b69d32ffb8b895f1ec21b0c4f34a2}{On\+Creature\+Loot}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}} creature, \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}} obj)
+\begin{DoxyCompactList}\small\item\em Called when a creature in the world loots an object. \end{DoxyCompactList}\item 
+IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}} $>$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a30c70a445d132e52f91ca1055a073d08}{Objects\+At}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Returns all \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} instances located at the specified coordinates. \end{DoxyCompactList}\item 
+IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}} $>$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0563e673ca68b396681cabaf6d8b5e81}{Creatures\+At}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Returns all \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature} instances located at the specified coordinates. \end{DoxyCompactList}\item 
+override string \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0058e208eaf3f7e2fb61e25b66730914}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em A string representation of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world}{World} object, including its dimensions and difficulty level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0cb8fe6b874ce2f1b0d72bb3312b466c}{World}} \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_aaea96f12a7b8707c491f8870f41ab04a}{From\+Config}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1config_1_1_game_config}{Game\+Config}} \doxymbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1config}{config}})
+\begin{DoxyCompactList}\small\item\em Creates a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world}{World} class using the specified game configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0b1ad1e842a47530036cb945367b8465}\label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0b1ad1e842a47530036cb945367b8465} 
+int {\bfseries MaxX}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the maximum X-\/coordinate value. \end{DoxyCompactList}\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a448ca41211652392fcc724b3f06427d7}\label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a448ca41211652392fcc724b3f06427d7} 
+int {\bfseries MaxY}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the maximum Y-\/coordinate value. \end{DoxyCompactList}\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_ae47b636a19335bfbbbdaed97a7ede666}\label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_ae47b636a19335bfbbbdaed97a7ede666} 
+\doxymbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1config_a3d8ea8230e1215280d9f9e50bc2a0eac}{Game\+Difficulty}} {\bfseries Difficulty}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Gets or sets the difficulty level for the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the game world, including its dimensions, difficulty level, creatures and objects placed in the world. 
+
+The \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world}{World} class serves as the primary container for game state, defining the playable area\textquotesingle{}s boundaries and difficulty. Use the From\+Config method to create a \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world}{World} instance from a configuration object. The MaxX and MaxY properties specify the world\textquotesingle{}s size along the X and Y axes, respectively. The Difficulty property determines the overall challenge level for the world.
+
+\label{doc-constructors}
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0cb8fe6b874ce2f1b0d72bb3312b466c}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!World@{World}}
+\index{World@{World}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{World()}{World()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0cb8fe6b874ce2f1b0d72bb3312b466c} 
+Mandatory2\+DGame\+Framework.\+worlds.\+World.\+World (\begin{DoxyParamCaption}\item[{int}]{maxX}{, }\item[{int}]{maxY}{, }\item[{\doxymbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1config_a3d8ea8230e1215280d9f9e50bc2a0eac}{Game\+Difficulty}}}]{difficulty}{ = {\ttfamily GameDifficulty:\+:\+Beginner}}\end{DoxyParamCaption})}
+
+
+
+Instatiates a new \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world}{World} object with specified dimensions and difficulty level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maxX} & Sets the maximum X-\/coordinate value. \\
+\hline
+{\em maxY} & Sets the maximum Y-\/coordinate value. \\
+\hline
+{\em difficulty} & Sets the difficulty of the game. Options include Beginner, Intermediate, and Expert. Default is set to Beginner.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a565918c3a734b0e67208ca627a599ec3}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!AddCreature@{AddCreature}}
+\index{AddCreature@{AddCreature}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{AddCreature()}{AddCreature()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a565918c3a734b0e67208ca627a599ec3} 
+void Mandatory2\+DGame\+Framework.\+worlds.\+World.\+Add\+Creature (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}}}]{creature}{}\end{DoxyParamCaption})}
+
+
+
+Adds a \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature} to the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature to add.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_aef4de3605390ade10c8ce879275cd555}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!AddObject@{AddObject}}
+\index{AddObject@{AddObject}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{AddObject()}{AddObject()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_aef4de3605390ade10c8ce879275cd555} 
+void Mandatory2\+DGame\+Framework.\+worlds.\+World.\+Add\+Object (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}}}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Adds a \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} to the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to add.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0563e673ca68b396681cabaf6d8b5e81}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!CreaturesAt@{CreaturesAt}}
+\index{CreaturesAt@{CreaturesAt}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{CreaturesAt()}{CreaturesAt()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0563e673ca68b396681cabaf6d8b5e81} 
+IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}} $>$ Mandatory2\+DGame\+Framework.\+worlds.\+World.\+Creatures\+At (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Returns all \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature} instances located at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The X-\/coordinate to check.\\
+\hline
+{\em y} & The Y-\/coordinate to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An enumerable collection of \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature} instances at the specified coordinates.
+\end{DoxyReturn}
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_aaea96f12a7b8707c491f8870f41ab04a}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!FromConfig@{FromConfig}}
+\index{FromConfig@{FromConfig}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{FromConfig()}{FromConfig()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_aaea96f12a7b8707c491f8870f41ab04a} 
+\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0cb8fe6b874ce2f1b0d72bb3312b466c}{World}} Mandatory2\+DGame\+Framework.\+worlds.\+World.\+From\+Config (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1config_1_1_game_config}{Game\+Config}}}]{config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world}{World} class using the specified game configuration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & The configuration settings that define the world\textquotesingle{}s dimensions and difficulty. Cannot be null.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world}{World} instance initialized with the parameters from the specified configuration.
+\end{DoxyReturn}
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a30c70a445d132e52f91ca1055a073d08}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!ObjectsAt@{ObjectsAt}}
+\index{ObjectsAt@{ObjectsAt}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{ObjectsAt()}{ObjectsAt()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a30c70a445d132e52f91ca1055a073d08} 
+IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}} $>$ Mandatory2\+DGame\+Framework.\+worlds.\+World.\+Objects\+At (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Returns all \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} instances located at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The X-\/coordinate to check.\\
+\hline
+{\em y} & The Y-\/coordinate to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An enumerable collection of \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} instances at the specified coordinates.
+\end{DoxyReturn}
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_ae7d088ceca56746b303f0c81467d9a10}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!OnCreatureDeath@{OnCreatureDeath}}
+\index{OnCreatureDeath@{OnCreatureDeath}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{OnCreatureDeath()}{OnCreatureDeath()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_ae7d088ceca56746b303f0c81467d9a10} 
+void Mandatory2\+DGame\+Framework.\+worlds.\+World.\+On\+Creature\+Death (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}}}]{creature}{}\end{DoxyParamCaption})}
+
+
+
+Called when a creature in the world dies. 
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature to that has died.\\
+\hline
+\end{DoxyParams}
+. 
+
+
+
+Implements \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a469a85fee4e05b20b1a671cf670de489}{Mandatory2\+DGame\+Framework.\+game\+Interface.\+observer.\+ICreature\+Observer}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a8828d2714648459b46fba861143080d2}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!OnCreatureHit@{OnCreatureHit}}
+\index{OnCreatureHit@{OnCreatureHit}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{OnCreatureHit()}{OnCreatureHit()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a8828d2714648459b46fba861143080d2} 
+void Mandatory2\+DGame\+Framework.\+worlds.\+World.\+On\+Creature\+Hit (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}}}]{creature}{, }\item[{int}]{damage}{}\end{DoxyParamCaption})}
+
+
+
+Called when a creature in the world takes damage. 
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature to that was hit.\\
+\hline
+{\em damage} & How much net damage the creature took.\\
+\hline
+\end{DoxyParams}
+. 
+
+
+
+Implements \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a91e0cd8329b36ca388742c1a332a96a1}{Mandatory2\+DGame\+Framework.\+game\+Interface.\+observer.\+ICreature\+Observer}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a803b69d32ffb8b895f1ec21b0c4f34a2}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!OnCreatureLoot@{OnCreatureLoot}}
+\index{OnCreatureLoot@{OnCreatureLoot}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{OnCreatureLoot()}{OnCreatureLoot()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a803b69d32ffb8b895f1ec21b0c4f34a2} 
+void Mandatory2\+DGame\+Framework.\+worlds.\+World.\+On\+Creature\+Loot (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}}}]{creature}{, }\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}}}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Called when a creature in the world loots an object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature that looted the object.\\
+\hline
+{\em obj} & The object that was looted.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_a22161c11a7f0ffea37f9760c62d0469a}{Mandatory2\+DGame\+Framework.\+game\+Interface.\+observer.\+ICreature\+Observer}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_af9a0054ea2d402567a9dfbf28f8abde5}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!RemoveCreature@{RemoveCreature}}
+\index{RemoveCreature@{RemoveCreature}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{RemoveCreature()}{RemoveCreature()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_af9a0054ea2d402567a9dfbf28f8abde5} 
+void Mandatory2\+DGame\+Framework.\+worlds.\+World.\+Remove\+Creature (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature}}}]{creature}{}\end{DoxyParamCaption})}
+
+
+
+Removes a \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{Creature} from the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature to remove.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_ae338f5056e2c4507b4bfee81d4f65bbb}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!RemoveObject@{RemoveObject}}
+\index{RemoveObject@{RemoveObject}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{RemoveObject()}{RemoveObject()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_ae338f5056e2c4507b4bfee81d4f65bbb} 
+void Mandatory2\+DGame\+Framework.\+worlds.\+World.\+Remove\+Object (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}}}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Removes a \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} from the world if it is marked as removable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to remove.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0058e208eaf3f7e2fb61e25b66730914}\index{Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}!ToString@{ToString}}
+\index{ToString@{ToString}!Mandatory2DGameFramework.worlds.World@{Mandatory2DGameFramework.worlds.World}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1worlds_1_1_world_a0058e208eaf3f7e2fb61e25b66730914} 
+override string Mandatory2\+DGame\+Framework.\+worlds.\+World.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A string representation of the \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world}{World} object, including its dimensions and difficulty level. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+worlds/\+World.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,140 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+helper.\+logger.\+Logger Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger}{}\label{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger}\index{Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}}
+
+
+Provides a thread-\/safe, singleton logger for writing trace information, warnings, and errors to registered listeners.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_a543d8c665d9480d6c6c431ad5316a693}{Add\+Listener}} (Trace\+Listener listener)
+\begin{DoxyCompactList}\small\item\em Adds the specified trace listener to the collection of listeners if it is not already present. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_ae5ab4da0aaf3ece73377902de7fc3a3a}{Remove\+Listener}} (Trace\+Listener listener)
+\begin{DoxyCompactList}\small\item\em Removes the specified trace listener from the collection of listeners for the trace output. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_ac13d3036e0f9f3b636c8bda41d3f9509}{Log\+Info}} (string message)
+\begin{DoxyCompactList}\small\item\em Writes an informational message to the application\textquotesingle{}s trace listeners. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_a32242633b15c93beeb203b46335c2003}{Log\+Warning}} (string message)
+\begin{DoxyCompactList}\small\item\em Writes a warning message to the trace listeners configured for the application. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_ad60537e8cbef29f05ecf2ea936ebbcbe}{Log\+Error}} (string message)
+\begin{DoxyCompactList}\small\item\em Writes an error message to the trace listeners configured for the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static Logger \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_a63bb41f3132e391f305c2e4b17c2dd17}{Log}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Gets the default logger instance for the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides a thread-\/safe, singleton logger for writing trace information, warnings, and errors to registered listeners. 
+
+The \doxylink{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger}{Logger} class does not add any default listeners. User must add one or more Trace\+Listener instances using the \doxylink{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_a543d8c665d9480d6c6c431ad5316a693}{Add\+Listener} method to receive log output. This design allows the logging framework to remain neutral and adaptable to different logging targets. The singleton instance can be accessed via the \doxylink{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_a63bb41f3132e391f305c2e4b17c2dd17}{Log} property.
+
+\label{doc-func-members}
+\Hypertarget{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_a543d8c665d9480d6c6c431ad5316a693}\index{Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}!AddListener@{AddListener}}
+\index{AddListener@{AddListener}!Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{AddListener()}{AddListener()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_a543d8c665d9480d6c6c431ad5316a693} 
+void Mandatory2\+DGame\+Framework.\+helper.\+logger.\+Logger.\+Add\+Listener (\begin{DoxyParamCaption}\item[{Trace\+Listener}]{listener}{}\end{DoxyParamCaption})}
+
+
+
+Adds the specified trace listener to the collection of listeners if it is not already present. 
+
+If the specified listener is already present in the collection, this method has no effect.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The trace listener to add to the collection. Cannot be null.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_ad60537e8cbef29f05ecf2ea936ebbcbe}\index{Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}!LogError@{LogError}}
+\index{LogError@{LogError}!Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{LogError()}{LogError()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_ad60537e8cbef29f05ecf2ea936ebbcbe} 
+void Mandatory2\+DGame\+Framework.\+helper.\+logger.\+Logger.\+Log\+Error (\begin{DoxyParamCaption}\item[{string}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Writes an error message to the trace listeners configured for the application. 
+
+This method uses the application\textquotesingle{}s trace infrastructure to record error messages. Ensure that trace listeners are properly configured to capture or display error output as needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The error message to log. This value can be null or empty, but such messages may not provide useful diagnostic information.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_ac13d3036e0f9f3b636c8bda41d3f9509}\index{Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}!LogInfo@{LogInfo}}
+\index{LogInfo@{LogInfo}!Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{LogInfo()}{LogInfo()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_ac13d3036e0f9f3b636c8bda41d3f9509} 
+void Mandatory2\+DGame\+Framework.\+helper.\+logger.\+Logger.\+Log\+Info (\begin{DoxyParamCaption}\item[{string}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Writes an informational message to the application\textquotesingle{}s trace listeners. 
+
+This method uses the application\textquotesingle{}s configured trace listeners to record informational messages. Use this method to log general information about application execution, such as status updates or non-\/critical events.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The informational message to log. This value can be null or empty, in which case no message is written.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_a32242633b15c93beeb203b46335c2003}\index{Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}!LogWarning@{LogWarning}}
+\index{LogWarning@{LogWarning}!Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{LogWarning()}{LogWarning()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_a32242633b15c93beeb203b46335c2003} 
+void Mandatory2\+DGame\+Framework.\+helper.\+logger.\+Logger.\+Log\+Warning (\begin{DoxyParamCaption}\item[{string}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Writes a warning message to the trace listeners configured for the application. 
+
+Use this method to record warning information that may indicate a potential problem or require attention. The message is sent to all trace listeners; ensure that listeners are properly configured to capture or display warning output.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The warning message to log. This value cannot be null.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_ae5ab4da0aaf3ece73377902de7fc3a3a}\index{Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}!RemoveListener@{RemoveListener}}
+\index{RemoveListener@{RemoveListener}!Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{RemoveListener()}{RemoveListener()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_ae5ab4da0aaf3ece73377902de7fc3a3a} 
+void Mandatory2\+DGame\+Framework.\+helper.\+logger.\+Logger.\+Remove\+Listener (\begin{DoxyParamCaption}\item[{Trace\+Listener}]{listener}{}\end{DoxyParamCaption})}
+
+
+
+Removes the specified trace listener from the collection of listeners for the trace output. 
+
+If the specified listener is not present in the collection, no action is taken.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The trace listener to remove from the trace listeners collection. Cannot be null.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-property-members}
+\Hypertarget{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_a63bb41f3132e391f305c2e4b17c2dd17}\index{Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}!Log@{Log}}
+\index{Log@{Log}!Mandatory2DGameFramework.helper.logger.Logger@{Mandatory2DGameFramework.helper.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{Log}{Log}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_a63bb41f3132e391f305c2e4b17c2dd17} 
+Logger Mandatory2\+DGame\+Framework.\+helper.\+logger.\+Logger.\+Log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the default logger instance for the application. 
+
+Use this property to write log messages throughout the application. The returned logger is a singleton and is thread-\/safe for concurrent use.
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+helper/\+Logger.\+cs\end{DoxyCompactItemize}

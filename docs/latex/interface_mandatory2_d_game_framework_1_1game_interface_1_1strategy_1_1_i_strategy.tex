@@ -1,0 +1,71 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+game\+Interface.\+strategy.\+IStrategy Interface Reference}
+\hypertarget{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy}{}\label{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy}\index{Mandatory2DGameFramework.gameInterface.strategy.IStrategy@{Mandatory2DGameFramework.gameInterface.strategy.IStrategy}}
+
+
+Interface for calculating the damage of an attack based on a collection of attack items, and the defence based on a collection of defence items. Implementations of this interface can define different strategies for how the damage and defence are calculated.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_a6b5a1c7df79c1ff0356831e5e758aab9}{Calculate\+Damage}} (IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item}} $>$ items)
+\begin{DoxyCompactList}\small\item\em Calculates the total damage of an attack based on the provided collection of attack items. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_ae2f11d94042a261a276bf407e37c573b}{Calculate\+Defence}} (IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item}} $>$ items)
+\begin{DoxyCompactList}\small\item\em Calculates the total defence based on the provided collection of defence items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for calculating the damage of an attack based on a collection of attack items, and the defence based on a collection of defence items. Implementations of this interface can define different strategies for how the damage and defence are calculated. 
+
+\label{doc-func-members}
+\Hypertarget{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_a6b5a1c7df79c1ff0356831e5e758aab9}\index{Mandatory2DGameFramework.gameInterface.strategy.IStrategy@{Mandatory2DGameFramework.gameInterface.strategy.IStrategy}!CalculateDamage@{CalculateDamage}}
+\index{CalculateDamage@{CalculateDamage}!Mandatory2DGameFramework.gameInterface.strategy.IStrategy@{Mandatory2DGameFramework.gameInterface.strategy.IStrategy}}
+\doxysubsubsection{\texorpdfstring{CalculateDamage()}{CalculateDamage()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_a6b5a1c7df79c1ff0356831e5e758aab9} 
+int Mandatory2\+DGame\+Framework.\+game\+Interface.\+strategy.\+IStrategy.\+Calculate\+Damage (\begin{DoxyParamCaption}\item[{IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item}} $>$}]{items}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the total damage of an attack based on the provided collection of attack items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & The collection of attack items to calculate damage from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total damage calculated from the attack items.
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_aggressive_strategy_a10d550f41e92b7b588397218a66bf757}{Mandatory2\+DGame\+Framework.\+model.\+combat.\+Aggressive\+Strategy}}, \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_af6bbe54177879ef71edd4cf54184e106}{Mandatory2\+DGame\+Framework.\+model.\+combat.\+Balanced\+Strategy}}, and \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_defensive_strategy_a5c12b236153b5a82828cf63f96acba7a}{Mandatory2\+DGame\+Framework.\+model.\+combat.\+Defensive\+Strategy}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_ae2f11d94042a261a276bf407e37c573b}\index{Mandatory2DGameFramework.gameInterface.strategy.IStrategy@{Mandatory2DGameFramework.gameInterface.strategy.IStrategy}!CalculateDefence@{CalculateDefence}}
+\index{CalculateDefence@{CalculateDefence}!Mandatory2DGameFramework.gameInterface.strategy.IStrategy@{Mandatory2DGameFramework.gameInterface.strategy.IStrategy}}
+\doxysubsubsection{\texorpdfstring{CalculateDefence()}{CalculateDefence()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_ae2f11d94042a261a276bf407e37c573b} 
+int Mandatory2\+DGame\+Framework.\+game\+Interface.\+strategy.\+IStrategy.\+Calculate\+Defence (\begin{DoxyParamCaption}\item[{IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item}} $>$}]{items}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the total defence based on the provided collection of defence items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & The collection of defence items to calculate defence from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total defence calculated from the defence items.
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_aggressive_strategy_a735c14f07ca6d1ba0176b87cd5fba7f9}{Mandatory2\+DGame\+Framework.\+model.\+combat.\+Aggressive\+Strategy}}, \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_a7120dba3d70ee1827a519d5dd72afe30}{Mandatory2\+DGame\+Framework.\+model.\+combat.\+Balanced\+Strategy}}, and \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_defensive_strategy_a1147ca7d470db47f136a036d287eeac9}{Mandatory2\+DGame\+Framework.\+model.\+combat.\+Defensive\+Strategy}}.
+
+
+
+The documentation for this interface was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+game\+Interface/\+strategy/\+IStrategy.\+cs\end{DoxyCompactItemize}

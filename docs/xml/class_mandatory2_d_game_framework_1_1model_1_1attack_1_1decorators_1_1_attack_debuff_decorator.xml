@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</compoundname>
+    <basecompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.attack.AttackDecorator</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator_1a2663df7acb3700146a89e3d8a196a281" prot="private" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int Mandatory2DGameFramework.model.attack.decorators.AttackDebuffDecorator._debuff</definition>
+        <argsstring></argsstring>
+        <name>_debuff</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.decorators.AttackDebuffDecorator._debuff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/decorators/AttackDebuffDecorator.cs" line="16" column="30" bodyfile="Mandatory2DGameFramework/model/attack/decorators/AttackDebuffDecorator.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator_1a48094afce738deca5b275f6a7e8c1b81" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int Mandatory2DGameFramework.model.attack.decorators.AttackDebuffDecorator.Hit</definition>
+        <argsstring></argsstring>
+        <name>Hit</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.decorators.AttackDebuffDecorator.Hit</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the attack subtracted by the debuff. A check is employed to ensure the damage output does not return a negative value. Subclasses may override this to modify the debuff value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/decorators/AttackDebuffDecorator.cs" line="26" column="29" bodyfile="Mandatory2DGameFramework/model/attack/decorators/AttackDebuffDecorator.cs" bodystart="27" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator_1a6bda9d35205f280c245b56e07befc865" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.attack.decorators.AttackDebuffDecorator.AttackDebuffDecorator</definition>
+        <argsstring>(AttackItem baseWeapon, int debuff=3)</argsstring>
+        <name>AttackDebuffDecorator</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.decorators.AttackDebuffDecorator.AttackDebuffDecorator</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" kindref="member">AttackItem</ref></type>
+          <declname>baseWeapon</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>debuff</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+<para>Initializes a new decorator that wraps the specified attack item with added debuff. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>baseWeapon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attack item to debuff.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debuff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to debuff the attack item with. Default value is 3.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/decorators/AttackDebuffDecorator.cs" line="44" column="16" bodyfile="Mandatory2DGameFramework/model/attack/decorators/AttackDebuffDecorator.cs" bodystart="44" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Reduces the hit strength of the wrapped attack item. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.attack.decorators.AttackDebuffDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.attack.AttackDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.model.attack.AttackItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.attack.decorators.AttackDebuffDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.attack.AttackDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_baseWeapon</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.model.attack.AttackItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="Mandatory2DGameFramework/model/attack/decorators/AttackDebuffDecorator.cs" line="13" column="11" bodyfile="Mandatory2DGameFramework/model/attack/decorators/AttackDebuffDecorator.cs" bodystart="14" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a243ef79b6da76a60585e711b3e3ae3fc" prot="protected" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>_baseWeapon</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator_1a2663df7acb3700146a89e3d8a196a281" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>_debuff</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator_1a6bda9d35205f280c245b56e07befc865" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>AttackDebuffDecorator</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1ae7aeaa591be5a4489455079f2634ba25" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>AttackDecorator</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>AttackItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1aeb055ba1faa10dc9a298454955899a6c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>AttackItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a1cea0367bb6354da7543f89711a4111e" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>AttackItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator_1a48094afce738deca5b275f6a7e8c1b81" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>Hit</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>Lootable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5c96165c1c5fa6133cd63fddd3318e45" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>MoveObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a22287e4da7ba3627ce0a41cf10dc4a2c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>Name</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a57a89a86ad284ff50342442a3017ad38" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>operator+</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a4f4491c445a596cd899cf3986b8bd38b" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>Range</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8a4119f23e39f81c1f6c39156943767c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>Removable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a562d0d7ae7ce458427a7664fd1989a5a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>ToString</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a15ef1af98f28a62da8aa51d19fde625e" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>Weight</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a36701698b4ac1503dca8f4a57dc7cfc7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>WorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a08e5aa9ac1a774047559753e80376ed2" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>WorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1af69309e8102b27e50095a5d61e094a97" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>X</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a19a046421bfc9bd38c545a9e9e9c663a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::decorators::AttackDebuffDecorator</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

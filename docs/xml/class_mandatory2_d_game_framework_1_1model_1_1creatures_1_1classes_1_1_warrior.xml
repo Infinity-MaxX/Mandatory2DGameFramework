@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::creatures::classes::Warrior</compoundname>
+    <basecompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.creatures.Creature</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior_1ab41997ee04b6350d202e4556aa52eb81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.creatures.classes.Warrior.Warrior</definition>
+        <argsstring>(string name)</argsstring>
+        <name>Warrior</name>
+        <qualifiedname>Mandatory2DGameFramework.model.creatures.classes.Warrior.Warrior</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior" kindref="compound">Warrior</ref> class with the specified name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the warrior.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/creatures/BattleClass.cs" line="22" column="16" bodyfile="Mandatory2DGameFramework/model/creatures/BattleClass.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior_1a2e56ba123410795db4eda9c65134c3ef" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mandatory2DGameFramework.model.creatures.classes.Warrior.AfterHit</definition>
+        <argsstring>(Creature target)</argsstring>
+        <name>AfterHit</name>
+        <qualifiedname>Mandatory2DGameFramework.model.creatures.classes.Warrior.AfterHit</qualifiedname>
+        <reimplements refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a51d9c8de951060b3c1249705a331be4e">AfterHit</reimplements>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ada8f687b850a877a4215bbb7231f39a4" kindref="member">Creature</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Hooks into the hit process after an attack is performed, allowing the warrior to gloat. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creature that was hit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/creatures/BattleClass.cs" line="34" column="33" bodyfile="Mandatory2DGameFramework/model/creatures/BattleClass.cs" bodystart="34" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A concrete implementation of the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref> class representing a <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior" kindref="compound">Warrior</ref> character instance. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.creatures.classes.Warrior</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.creatures.Creature</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.creatures.classes.Warrior</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.creatures.Creature</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature"/>
+      </node>
+    </collaborationgraph>
+    <location file="Mandatory2DGameFramework/model/creatures/BattleClass.cs" line="14" column="11" bodyfile="Mandatory2DGameFramework/model/creatures/BattleClass.cs" bodystart="15" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a7950d8387d78c36a9c3a1de1a9704a81" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>AddAttackItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1af67c7c34dff98bbe47277f6425ffc12c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>AddDefenceItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior_1a2e56ba123410795db4eda9c65134c3ef" prot="protected" virt="virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>AfterHit</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1abee2f3c53c6ab173b31a4771a2fa0070" prot="protected" virt="virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>BeforeHit</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a35dbd21e14d6ec4bfefd125898da99f7" prot="protected" virt="virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>CalculateDamage</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ac4b45ff510cd2345d7e4809876270a1c" prot="protected" virt="virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>CalculateDefence</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ada8f687b850a877a4215bbb7231f39a4" prot="protected" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>Creature</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a895f635e4f59e77a66f7e4ef6c9ba499" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>CurrentAttackWeight</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1afe9235fd884fb2f98f45069395e0471a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>CurrentDefenceWeight</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a387dfaa6ea37c6580855fa6ffca63735" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>HitPoint</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a0648526f0e817bdb54ae06b4b9778b20" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>IsDead</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a41e4a1f9ab6d9868e84f91f04a3dcdfe" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>Loot</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a274eb44077a331053086f5512a6fc67b" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>MaxAttackWeight</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a0765d87fd2bf7dbe10558dd1af97cb1b" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>MaxDefenceWeight</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a2f12df238206d89b93b65d1edfaae14e" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>Name</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a4d37e9d85da0188fd103ac41fae577c4" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>PerformHit</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1af6fee2d078abb89e04fdda4d7c3a2f19" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>ReceiveHit</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a83b429ea45feb959cfab975cb6b77de4" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>RegisterObserver</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1aef7d906a8465b33764596752b2e8dd69" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>RemoveObserver</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a3473d8720295c3eaba3450c49ecf2a5b" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>Strategy</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a496f6512ba854eef11bcaaeb0fac440f" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>ToString</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a3beba53eb5ed2e03a6a3d89181360549" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>TotalDefence</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_warrior_1ab41997ee04b6350d202e4556aa52eb81" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>Warrior</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a69c891df3e22fcd908acb2b469e0b2a3" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>X</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a73279c70e84d878359e9524f69d2b9fa" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

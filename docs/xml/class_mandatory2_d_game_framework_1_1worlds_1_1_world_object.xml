@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::worlds::WorldObject</compoundname>
+    <derivedcompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.attack.AttackItem</derivedcompoundref>
+    <derivedcompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.defence.DefenceItem</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a22287e4da7ba3627ce0a41cf10dc4a2c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Mandatory2DGameFramework.worlds.WorldObject.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.WorldObject.Name</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the name associated with the object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="20" column="23" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mandatory2DGameFramework.worlds.WorldObject.Lootable</definition>
+        <argsstring></argsstring>
+        <name>Lootable</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.WorldObject.Lootable</qualifiedname>
+        <briefdescription>
+<para>Gets or sets a value indicating whether the item can be looted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="25" column="21" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8a4119f23e39f81c1f6c39156943767c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mandatory2DGameFramework.worlds.WorldObject.Removable</definition>
+        <argsstring></argsstring>
+        <name>Removable</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.WorldObject.Removable</qualifiedname>
+        <briefdescription>
+<para>Gets or sets a value indicating whether the item can be removed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="30" column="21" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1af69309e8102b27e50095a5d61e094a97" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.worlds.WorldObject.X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.WorldObject.X</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the X-coordinate position of the object in the world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="35" column="20" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a19a046421bfc9bd38c545a9e9e9c663a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.worlds.WorldObject.Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.WorldObject.Y</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the Y-coordinate position of the object in the world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="40" column="20" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="40" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a36701698b4ac1503dca8f4a57dc7cfc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.worlds.WorldObject.WorldObject</definition>
+        <argsstring>()</argsstring>
+        <name>WorldObject</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.WorldObject.WorldObject</qualifiedname>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> class with default values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="48" column="16" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a08e5aa9ac1a774047559753e80376ed2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.worlds.WorldObject.WorldObject</definition>
+        <argsstring>(string name, bool lootable=true, bool removable=true)</argsstring>
+        <name>WorldObject</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.WorldObject.WorldObject</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>lootable</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>removable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Initialises a new instance of the <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> class with name, lootability and removeability specified. defaults to false for lootability and removeability if not provided. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the object.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lootable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A boolean type which returns true or false depending on whether the item can be looted or not. Defaults to false if no specification is provided.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>removable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A boolean type which returns true or false depending on whether the item can be removed or not. Defaults to false if no specification is provided.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="70" column="16" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="70" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5c96165c1c5fa6133cd63fddd3318e45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.worlds.WorldObject.MoveObject</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>MoveObject</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.WorldObject.MoveObject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Moves the object to a new position in the world by updating its X and Y coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new X-coordinate.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new Y-coordinate.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="86" column="21" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="86" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8f6d24976133e2cff6bdbe69e75a29e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Mandatory2DGameFramework.worlds.WorldObject.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.WorldObject.ToString</qualifiedname>
+        <briefdescription>
+<para>A string representation of the <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref>, including its name and properties. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="97" column="32" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="97" bodyend="102"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents an object within the world with a name and properties indicating whether it can be looted or removed. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.model.attack.AttackComposite</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mandatory2DGameFramework.model.attack.AttackDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.attack.AttackItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Mandatory2DGameFramework.model.attack.decorators.AttackBuffDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Mandatory2DGameFramework.model.attack.decorators.AttackDebuffDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Mandatory2DGameFramework.model.defence.DefenceComposite</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Mandatory2DGameFramework.model.defence.DefenceDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Mandatory2DGameFramework.model.defence.DefenceItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Mandatory2DGameFramework.model.defence.decorators.DefenceBuffDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Mandatory2DGameFramework.model.defence.decorators.DefenceDebuffDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_debuff_decorator"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="14" column="11" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="15" bodyend="104"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::WorldObject</scope><name>Lootable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5c96165c1c5fa6133cd63fddd3318e45" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::WorldObject</scope><name>MoveObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a22287e4da7ba3627ce0a41cf10dc4a2c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::WorldObject</scope><name>Name</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8a4119f23e39f81c1f6c39156943767c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::WorldObject</scope><name>Removable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8f6d24976133e2cff6bdbe69e75a29e6" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::WorldObject</scope><name>ToString</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a36701698b4ac1503dca8f4a57dc7cfc7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::WorldObject</scope><name>WorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a08e5aa9ac1a774047559753e80376ed2" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::WorldObject</scope><name>WorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1af69309e8102b27e50095a5d61e094a97" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::WorldObject</scope><name>X</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a19a046421bfc9bd38c545a9e9e9c663a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::WorldObject</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="_i_creature_observer_8cs" kind="file" language="C#">
+    <compoundname>ICreatureObserver.cs</compoundname>
+    <innerclass refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer" prot="public">Mandatory2DGameFramework::gameInterface::observer::ICreatureObserver</innerclass>
+    <innernamespace refid="namespace_mandatory2_d_game_framework">Mandatory2DGameFramework</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1game_interface">Mandatory2DGameFramework::gameInterface</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer">Mandatory2DGameFramework::gameInterface::observer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1model_1_1creatures" kindref="compound">Mandatory2DGameFramework.model.creatures</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1worlds" kindref="compound">Mandatory2DGameFramework.worlds</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections.Generic;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Linq;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Text;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespace_mandatory2_d_game_framework_1_1game_interface" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer" kindref="compound">Mandatory2DGameFramework.gameInterface.observer</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15" refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer" kindref="compound">ICreatureObserver</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a91e0cd8329b36ca388742c1a332a96a1" kindref="member">OnCreatureHit</ref>(<ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref><sp/>creature,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>damage);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a469a85fee4e05b20b1a671cf670de489" kindref="member">OnCreatureDeath</ref>(<ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref><sp/>creature);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer_1a22161c11a7f0ffea37f9760c62d0469a" kindref="member">OnCreatureLoot</ref>(<ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref><sp/>creature,<sp/><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref><sp/>obj);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Mandatory2DGameFramework/gameInterface/observer/ICreatureObserver.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::attack::AttackItem</compoundname>
+    <basecompoundref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" prot="public" virt="non-virtual">Mandatory2DGameFramework.worlds.WorldObject</basecompoundref>
+    <derivedcompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.attack.AttackComposite</derivedcompoundref>
+    <derivedcompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.attack.AttackDecorator</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1aa7beb6b6c4e1bf65f56ae7e48e8297d3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>virtual int Mandatory2DGameFramework.model.attack.AttackItem.Hit</definition>
+        <argsstring></argsstring>
+        <name>Hit</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.Hit</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the hit strength of the attack item, which determines the amount of damage it can inflict on a target when used in an attack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackItem.cs" line="42" column="28" bodyfile="Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a4f6ad49d96181c66688cae16f85f5f74" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>virtual int Mandatory2DGameFramework.model.attack.AttackItem.Range</definition>
+        <argsstring></argsstring>
+        <name>Range</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.Range</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the range of the attack item, which indicates how far the attack can reach or affect targets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackItem.cs" line="52" column="28" bodyfile="Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a999b8742cf5208db9d9e1bf322bdf1ab" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>virtual int Mandatory2DGameFramework.model.attack.AttackItem.Weight</definition>
+        <argsstring></argsstring>
+        <name>Weight</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.Weight</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the weight of the attack item. Used to determine whether a creature can carry it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackItem.cs" line="61" column="28" bodyfile="Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="62" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.attack.AttackItem.AttackItem</definition>
+        <argsstring>()</argsstring>
+        <name>AttackItem</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.AttackItem</qualifiedname>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> class with default values. This version of the constructor assumes that the player has no attack items equipped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackItem.cs" line="73" column="16" bodyfile="Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="73" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1aeb055ba1faa10dc9a298454955899a6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.attack.AttackItem.AttackItem</definition>
+        <argsstring>(string name)</argsstring>
+        <name>AttackItem</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.AttackItem</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> class with a name and default values for hit strength and range. This allows for junk/gag weapons that have no attack strength or range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the weapon.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackItem.cs" line="88" column="16" bodyfile="Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="88" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a1cea0367bb6354da7543f89711a4111e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.attack.AttackItem.AttackItem</definition>
+        <argsstring>(string name, int hit, int range, int weight)</argsstring>
+        <name>AttackItem</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.AttackItem</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> class with explicit values for name, hit strength, range, and weight. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the attack item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of damage this item can inflict when used in combat.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The effective distance at which this item can be used.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The weight of the item, used to determine whether a creature is able to carry it based on its maximum carrying capacity.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackItem.cs" line="108" column="16" bodyfile="Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="108" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a39c14499449be8d78fbe387811b7a13f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Mandatory2DGameFramework.model.attack.AttackItem.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.ToString</qualifiedname>
+        <briefdescription>
+<para>A string representation of the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref>, including its name, hit strength, range, and weight. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackItem.cs" line="187" column="32" bodyfile="Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="187" bodyend="193"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a57a89a86ad284ff50342442a3017ad38" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" kindref="member">AttackItem</ref></type>
+        <definition>static AttackItem Mandatory2DGameFramework.model.attack.AttackItem.operator+</definition>
+        <argsstring>(AttackItem a, AttackItem b)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.operator+</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" kindref="member">AttackItem</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" kindref="member">AttackItem</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Combines two <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> instances into a single <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite" kindref="compound">AttackComposite</ref> item. If either item is null, the non-null item is returned. If both items are composites, their contents are merged. If one item is a composite, the other item is added to it. If neither item is a composite, a new composite containing both items is created and returned. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first attack item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second attack item.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A composite attack item containing both input items. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown if both attack items are null.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/attack/AttackItem.cs" line="132" column="34" bodyfile="Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="132" bodyend="181"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents an item that can be used to perform attacks within the game world. Provides properties for the item&apos;s name, attack strength, range, and weight. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> serves as a base class for specialized attack items, including those that implement design patterns such as Decorator (for modifying attack or defense properties) and Composite (for grouping multiple weapons). Subclasses may extend functionality to support features like weight management or composite behaviors. Instances of <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> are typically used by creatures or entities capable of carrying and utilizing attack items. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.attack.AttackItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.model.attack.AttackComposite</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mandatory2DGameFramework.model.attack.AttackDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Mandatory2DGameFramework.model.attack.decorators.AttackBuffDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_buff_decorator"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Mandatory2DGameFramework.model.attack.decorators.AttackDebuffDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators_1_1_attack_debuff_decorator"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.attack.AttackItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="Mandatory2DGameFramework/model/attack/AttackItem.cs" line="34" column="11" bodyfile="Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="35" bodyend="195"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>AttackItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1aeb055ba1faa10dc9a298454955899a6c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>AttackItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a1cea0367bb6354da7543f89711a4111e" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>AttackItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1aa7beb6b6c4e1bf65f56ae7e48e8297d3" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Hit</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Lootable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5c96165c1c5fa6133cd63fddd3318e45" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>MoveObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a22287e4da7ba3627ce0a41cf10dc4a2c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Name</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a57a89a86ad284ff50342442a3017ad38" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>operator+</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a4f6ad49d96181c66688cae16f85f5f74" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Range</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8a4119f23e39f81c1f6c39156943767c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Removable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a39c14499449be8d78fbe387811b7a13f" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>ToString</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a999b8742cf5208db9d9e1bf322bdf1ab" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Weight</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a36701698b4ac1503dca8f4a57dc7cfc7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>WorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a08e5aa9ac1a774047559753e80376ed2" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>WorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1af69309e8102b27e50095a5d61e094a97" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>X</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a19a046421bfc9bd38c545a9e9e9c663a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

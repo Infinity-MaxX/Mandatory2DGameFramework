@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespace_mandatory2_d_game_framework_1_1model_1_1attack" kind="namespace" language="C#">
+    <compoundname>Mandatory2DGameFramework::model::attack</compoundname>
+    <innerclass refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite" prot="public">Mandatory2DGameFramework::model::attack::AttackComposite</innerclass>
+    <innerclass refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator" prot="public">Mandatory2DGameFramework::model::attack::AttackDecorator</innerclass>
+    <innerclass refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" prot="public">Mandatory2DGameFramework::model::attack::AttackItem</innerclass>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators">Mandatory2DGameFramework::model::attack::decorators</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

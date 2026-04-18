@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</compoundname>
+    <basecompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.defence.DefenceDecorator</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator_1a03e4054c644c1305b9f5c44d5a75cbec" prot="private" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int Mandatory2DGameFramework.model.defence.decorators.DefenceBuffDecorator._buff</definition>
+        <argsstring></argsstring>
+        <name>_buff</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.decorators.DefenceBuffDecorator._buff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/defence/decorators/DefenceBuffDecorator.cs" line="16" column="30" bodyfile="Mandatory2DGameFramework/model/defence/decorators/DefenceBuffDecorator.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator_1acda1adb146edba59ebf81436117c0bb7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int Mandatory2DGameFramework.model.defence.decorators.DefenceBuffDecorator.ReduceDamage</definition>
+        <argsstring></argsstring>
+        <name>ReduceDamage</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.decorators.DefenceBuffDecorator.ReduceDamage</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the defence item with added buff. Subclasses may override this to modify the buff value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/defence/decorators/DefenceBuffDecorator.cs" line="24" column="29" bodyfile="Mandatory2DGameFramework/model/defence/decorators/DefenceBuffDecorator.cs" bodystart="25" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator_1a64928781694c556ee731c1a697eabec7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.defence.decorators.DefenceBuffDecorator.DefenceBuffDecorator</definition>
+        <argsstring>(DefenceItem baseDefence, int buff=5)</argsstring>
+        <name>DefenceBuffDecorator</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.decorators.DefenceBuffDecorator.DefenceBuffDecorator</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a2800a3024565901b5ceaf248890c09fa" kindref="member">DefenceItem</ref></type>
+          <declname>baseDefence</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buff</declname>
+          <defval>5</defval>
+        </param>
+        <briefdescription>
+<para>Initializes a new decorator that wraps the specified defence item with added buff. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>baseDefence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The defence item to buff.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to buff the defence item with. Default value is 5.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/model/defence/decorators/DefenceBuffDecorator.cs" line="38" column="16" bodyfile="Mandatory2DGameFramework/model/defence/decorators/DefenceBuffDecorator.cs" bodystart="38" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Increases the reduced damage of the wrapped defence item. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.defence.decorators.DefenceBuffDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.defence.DefenceDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.model.defence.DefenceItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.defence.decorators.DefenceBuffDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.defence.DefenceDecorator</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_baseDefence</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.model.defence.DefenceItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="Mandatory2DGameFramework/model/defence/decorators/DefenceBuffDecorator.cs" line="13" column="11" bodyfile="Mandatory2DGameFramework/model/defence/decorators/DefenceBuffDecorator.cs" bodystart="14" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator_1a5d2e91817e64fceda3381859ed9a10d4" prot="protected" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>_baseDefence</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator_1a03e4054c644c1305b9f5c44d5a75cbec" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>_buff</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator_1a64928781694c556ee731c1a697eabec7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>DefenceBuffDecorator</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator_1aaa27b64fca966e9e5614d6e721593ea5" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>DefenceDecorator</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a2800a3024565901b5ceaf248890c09fa" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>DefenceItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a045d49fa8375b28ec8d74a69f9e11a24" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>DefenceItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>Lootable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5c96165c1c5fa6133cd63fddd3318e45" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>MoveObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a22287e4da7ba3627ce0a41cf10dc4a2c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>Name</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a38ef30df3f4cf08306040a3674c9b2fb" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>operator+</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_buff_decorator_1acda1adb146edba59ebf81436117c0bb7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>ReduceDamage</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8a4119f23e39f81c1f6c39156943767c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>Removable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator_1a35f468fdb62b20540a415ca7ffa1eb9e" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>ToString</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator_1a917713af7125e4c222a7a943af0cd9cc" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>Weight</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a36701698b4ac1503dca8f4a57dc7cfc7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>WorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a08e5aa9ac1a774047559753e80376ed2" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>WorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1af69309e8102b27e50095a5d61e094a97" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>X</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a19a046421bfc9bd38c545a9e9e9c663a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::decorators::DefenceBuffDecorator</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

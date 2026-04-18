@@ -1,0 +1,72 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+model.\+combat.\+Balanced\+Strategy Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy}{}\label{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy}\index{Mandatory2DGameFramework.model.combat.BalancedStrategy@{Mandatory2DGameFramework.model.combat.BalancedStrategy}}
+
+
+An implementation of the \doxylink{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy}{IStrategy} interface that calculates combat in a balanced manner. No modifications are made to the total damage or defence.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_af6bbe54177879ef71edd4cf54184e106}{Calculate\+Damage}} (IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item}} $>$ items)
+\begin{DoxyCompactList}\small\item\em Calculates the total damage by summing the Hit values of all Attack\+Items without any modifications. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_a7120dba3d70ee1827a519d5dd72afe30}{Calculate\+Defence}} (IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item}} $>$ items)
+\begin{DoxyCompactList}\small\item\em Calculates the total defence by summing the Reduce\+Damage values of all Defence\+Items without any modifications. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An implementation of the \doxylink{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy}{IStrategy} interface that calculates combat in a balanced manner. No modifications are made to the total damage or defence. 
+
+\label{doc-func-members}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_af6bbe54177879ef71edd4cf54184e106}\index{Mandatory2DGameFramework.model.combat.BalancedStrategy@{Mandatory2DGameFramework.model.combat.BalancedStrategy}!CalculateDamage@{CalculateDamage}}
+\index{CalculateDamage@{CalculateDamage}!Mandatory2DGameFramework.model.combat.BalancedStrategy@{Mandatory2DGameFramework.model.combat.BalancedStrategy}}
+\doxysubsubsection{\texorpdfstring{CalculateDamage()}{CalculateDamage()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_af6bbe54177879ef71edd4cf54184e106} 
+int Mandatory2\+DGame\+Framework.\+model.\+combat.\+Balanced\+Strategy.\+Calculate\+Damage (\begin{DoxyParamCaption}\item[{IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item}} $>$}]{items}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the total damage by summing the Hit values of all Attack\+Items without any modifications. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & The collection of Attack\+Items to ~\newline
+ calculates damage from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total damage without any modifications. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_a6b5a1c7df79c1ff0356831e5e758aab9}{Mandatory2\+DGame\+Framework.\+game\+Interface.\+strategy.\+IStrategy}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_a7120dba3d70ee1827a519d5dd72afe30}\index{Mandatory2DGameFramework.model.combat.BalancedStrategy@{Mandatory2DGameFramework.model.combat.BalancedStrategy}!CalculateDefence@{CalculateDefence}}
+\index{CalculateDefence@{CalculateDefence}!Mandatory2DGameFramework.model.combat.BalancedStrategy@{Mandatory2DGameFramework.model.combat.BalancedStrategy}}
+\doxysubsubsection{\texorpdfstring{CalculateDefence()}{CalculateDefence()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_a7120dba3d70ee1827a519d5dd72afe30} 
+int Mandatory2\+DGame\+Framework.\+model.\+combat.\+Balanced\+Strategy.\+Calculate\+Defence (\begin{DoxyParamCaption}\item[{IEnumerable$<$ \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item}} $>$}]{items}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the total defence by summing the Reduce\+Damage values of all Defence\+Items without any modifications. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & The collection of Defence\+Items to calculate defence from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total defence without any modifications. 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_ae2f11d94042a261a276bf407e37c573b}{Mandatory2\+DGame\+Framework.\+game\+Interface.\+strategy.\+IStrategy}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+model/\+combat/\+Combat\+Strategy.\+cs\end{DoxyCompactItemize}

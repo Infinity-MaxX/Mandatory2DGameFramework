@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger" kind="class" language="C#" prot="public" sealed="yes">
+    <compoundname>Mandatory2DGameFramework::helper::logger::Logger</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a2e274cf6512b414f03f4ec5f6190ba9e" prot="private" static="yes" mutable="no">
+        <type>readonly Lazy&lt; Logger &gt;</type>
+        <definition>readonly Lazy&lt;Logger&gt; Mandatory2DGameFramework.helper.logger.Logger._log</definition>
+        <argsstring></argsstring>
+        <name>_log</name>
+        <qualifiedname>Mandatory2DGameFramework.helper.logger.Logger._log</qualifiedname>
+        <initializer>= new Lazy&lt;Logger&gt;(() =&gt; new Logger())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/helper/Logger.cs" line="21" column="38" bodyfile="Mandatory2DGameFramework/helper/Logger.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a63bb41f3132e391f305c2e4b17c2dd17" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Logger</type>
+        <definition>Logger Mandatory2DGameFramework.helper.logger.Logger.Log</definition>
+        <argsstring></argsstring>
+        <name>Log</name>
+        <qualifiedname>Mandatory2DGameFramework.helper.logger.Logger.Log</qualifiedname>
+        <briefdescription>
+<para>Gets the default logger instance for the application. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this property to write log messages throughout the application. The returned logger is a singleton and is thread-safe for concurrent use.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/helper/Logger.cs" line="31" column="30" bodyfile="Mandatory2DGameFramework/helper/Logger.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a79e7dd4042e8f7865c60ffd4aba4d410" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.helper.logger.Logger.Logger</definition>
+        <argsstring>()</argsstring>
+        <name>Logger</name>
+        <qualifiedname>Mandatory2DGameFramework.helper.logger.Logger.Logger</qualifiedname>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger" kindref="compound">Logger</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This constructor is private to prevent direct instantiation. Use the provided factory methods or properties to obtain a <ref refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger" kindref="compound">Logger</ref> instance. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/helper/Logger.cs" line="42" column="17" bodyfile="Mandatory2DGameFramework/helper/Logger.cs" bodystart="42" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a543d8c665d9480d6c6c431ad5316a693" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.helper.logger.Logger.AddListener</definition>
+        <argsstring>(TraceListener listener)</argsstring>
+        <name>AddListener</name>
+        <qualifiedname>Mandatory2DGameFramework.helper.logger.Logger.AddListener</qualifiedname>
+        <param>
+          <type>TraceListener</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+<para>Adds the specified trace listener to the collection of listeners if it is not already present. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the specified listener is already present in the collection, this method has no effect.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The trace listener to add to the collection. Cannot be null.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/helper/Logger.cs" line="57" column="21" bodyfile="Mandatory2DGameFramework/helper/Logger.cs" bodystart="57" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1ae5ab4da0aaf3ece73377902de7fc3a3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.helper.logger.Logger.RemoveListener</definition>
+        <argsstring>(TraceListener listener)</argsstring>
+        <name>RemoveListener</name>
+        <qualifiedname>Mandatory2DGameFramework.helper.logger.Logger.RemoveListener</qualifiedname>
+        <param>
+          <type>TraceListener</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+<para>Removes the specified trace listener from the collection of listeners for the trace output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the specified listener is not present in the collection, no action is taken.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The trace listener to remove from the trace listeners collection. Cannot be null.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/helper/Logger.cs" line="73" column="21" bodyfile="Mandatory2DGameFramework/helper/Logger.cs" bodystart="73" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1ac13d3036e0f9f3b636c8bda41d3f9509" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.helper.logger.Logger.LogInfo</definition>
+        <argsstring>(string message)</argsstring>
+        <name>LogInfo</name>
+        <qualifiedname>Mandatory2DGameFramework.helper.logger.Logger.LogInfo</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Writes an informational message to the application&apos;s trace listeners. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method uses the application&apos;s configured trace listeners to record informational messages. Use this method to log general information about application execution, such as status updates or non-critical events.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The informational message to log. This value can be null or empty, in which case no message is written.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/helper/Logger.cs" line="91" column="21" bodyfile="Mandatory2DGameFramework/helper/Logger.cs" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a32242633b15c93beeb203b46335c2003" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.helper.logger.Logger.LogWarning</definition>
+        <argsstring>(string message)</argsstring>
+        <name>LogWarning</name>
+        <qualifiedname>Mandatory2DGameFramework.helper.logger.Logger.LogWarning</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Writes a warning message to the trace listeners configured for the application. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this method to record warning information that may indicate a potential problem or require attention. The message is sent to all trace listeners; ensure that listeners are properly configured to capture or display warning output.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The warning message to log. This value cannot be null.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/helper/Logger.cs" line="106" column="21" bodyfile="Mandatory2DGameFramework/helper/Logger.cs" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1ad60537e8cbef29f05ecf2ea936ebbcbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.helper.logger.Logger.LogError</definition>
+        <argsstring>(string message)</argsstring>
+        <name>LogError</name>
+        <qualifiedname>Mandatory2DGameFramework.helper.logger.Logger.LogError</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Writes an error message to the trace listeners configured for the application. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method uses the application&apos;s trace infrastructure to record error messages. Ensure that trace listeners are properly configured to capture or display error output as needed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error message to log. This value can be null or empty, but such messages may not provide useful diagnostic information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mandatory2DGameFramework/helper/Logger.cs" line="121" column="21" bodyfile="Mandatory2DGameFramework/helper/Logger.cs" bodystart="121" bodyend="124"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Provides a thread-safe, singleton logger for writing trace information, warnings, and errors to registered listeners. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger" kindref="compound">Logger</ref> class does not add any default listeners. User must add one or more TraceListener instances using the <ref refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a543d8c665d9480d6c6c431ad5316a693" kindref="member">AddListener</ref> method to receive log output. This design allows the logging framework to remain neutral and adaptable to different logging targets. The singleton instance can be accessed via the <ref refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a63bb41f3132e391f305c2e4b17c2dd17" kindref="member">Log</ref> property.</para>
+    </detaileddescription>
+    <location file="Mandatory2DGameFramework/helper/Logger.cs" line="18" column="11" bodyfile="Mandatory2DGameFramework/helper/Logger.cs" bodystart="19" bodyend="126"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a2e274cf6512b414f03f4ec5f6190ba9e" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::helper::logger::Logger</scope><name>_log</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a543d8c665d9480d6c6c431ad5316a693" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::helper::logger::Logger</scope><name>AddListener</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a63bb41f3132e391f305c2e4b17c2dd17" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::helper::logger::Logger</scope><name>Log</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1ad60537e8cbef29f05ecf2ea936ebbcbe" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::helper::logger::Logger</scope><name>LogError</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a79e7dd4042e8f7865c60ffd4aba4d410" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::helper::logger::Logger</scope><name>Logger</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1ac13d3036e0f9f3b636c8bda41d3f9509" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::helper::logger::Logger</scope><name>LogInfo</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1a32242633b15c93beeb203b46335c2003" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::helper::logger::Logger</scope><name>LogWarning</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger_1ae5ab4da0aaf3ece73377902de7fc3a3a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::helper::logger::Logger</scope><name>RemoveListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

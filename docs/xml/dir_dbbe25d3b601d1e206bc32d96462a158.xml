@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_dbbe25d3b601d1e206bc32d96462a158" kind="dir">
+    <compoundname>Mandatory2DGameFramework/obj</compoundname>
+    <innerdir refid="dir_311ca790a6674993f295431db59864a5">Mandatory2DGameFramework/obj/Debug</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Mandatory2DGameFramework/obj/"/>
+  </compounddef>
+</doxygen>

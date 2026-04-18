@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespace_mandatory2_d_game_framework_1_1game_interface" kind="namespace" language="C#">
+    <compoundname>Mandatory2DGameFramework::gameInterface</compoundname>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer">Mandatory2DGameFramework::gameInterface::observer</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1game_interface_1_1strategy">Mandatory2DGameFramework::gameInterface::strategy</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Mandatory2DGameFramework/gameInterface/observer/ICreatureObserver.cs" line="9" column="1"/>
+  </compounddef>
+</doxygen>
