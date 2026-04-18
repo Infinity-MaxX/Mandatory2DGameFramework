@@ -28,7 +28,7 @@ Frameworket er udviklet som en del af faget **Advanced Software Construction** o
 Dotnet CLI
 
 ```PowerShell
-dotnet add package Katerina2DGameFramework --version 1.0.0
+dotnet add package Katerina2DGameFramework --version 1.0.1
 ```
 
 PowerShell
