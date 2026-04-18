@@ -7,10 +7,12 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>2D Game Framework</Title>
-    <Version>0.1.0</Version>
-    <Authors>Katerina</Authors>
+    <Version></Version>
+    <Authors>Katerina Østergaard</Authors>
     <Description>Framework for building console-based 2D games</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Company />
+    <PackageId>Katerina2DGameFramework</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
