@@ -10,6 +10,8 @@ Et fleksibelt og konfigurerbart mini‑framework til tur‑baserede 2D‑spil i 
 
 Frameworket er udviklet som en del af faget **Advanced Software Construction** og demonstrerer brugen af SOLID‑principperne samt en række klassiske design patterns: Template, Strategy, Observer, Composite, Decorator, Factory, Singleton.
 
+Link til NuGet-pakke: https://www.nuget.org/packages/Katerina2DGameFramework/
+
 ---
 
 ## Features
