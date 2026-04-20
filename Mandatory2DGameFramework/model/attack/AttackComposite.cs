@@ -9,7 +9,8 @@ namespace Mandatory2DGameFramework.model.attack
 {
     /// <summary>
     /// Represents a composite attack item that groups multiple 
-    /// AttackItem instances into a single logical weapon.
+    /// <see cref="AttackItem"/> instances into a single logical 
+    /// weapon.
     /// </summary>
     /// <remarks>
     /// This class implements the Composite design pattern, allowing 
@@ -58,7 +59,6 @@ namespace Mandatory2DGameFramework.model.attack
         /// Gets the total weight of all attack items in the composite.
         /// </summary>
         public override int Weight { get { return _items.Sum(i => i.Weight); } }
-
         #endregion
 
         #region Constructors
@@ -72,9 +72,11 @@ namespace Mandatory2DGameFramework.model.attack
         }
 
         /// <summary>
-        /// Initializes a new composite attack item with an initial list of items.
+        /// Initializes a new composite attack item with an initial 
+        /// list of items.
         /// </summary>
-        /// <param name="items">The attack items to include in the composite.</param>
+        /// <param name="items">The attack items to include in the 
+        /// composite.</param>
         public AttackComposite(IEnumerable<AttackItem> items)
         {
             _items = items.ToList();

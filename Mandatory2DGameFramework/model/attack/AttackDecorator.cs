@@ -8,14 +8,17 @@ using System;
 namespace Mandatory2DGameFramework.model.attack
 {
     /// <summary>
-    /// Represents a base decorator for attack items, allowing additional
-    /// behavior to be layered on top of an existing AttackItem instance.
+    /// Represents a base decorator for attack items, allowing 
+    /// additional behavior to be layered on top of an existing 
+    /// <see cref="AttackItem"/> instance.
     /// </summary>
     /// <remarks>
-    /// This class implements the Decorator Design Pattern. It wraps another
-    /// AttackItem and forwards all property calls to the wrapped item unless
-    /// overridden by subclasses. Concrete decorators can modify Hit, Range,
-    /// Weight, or other behavior without changing the underlying item.
+    /// This class implements the Decorator Design Pattern. It 
+    /// wraps another <see cref="AttackItem"/> and forwards all 
+    /// property calls to the wrapped item unless overridden by 
+    /// subclasses. Concrete decorators can modify <see cref="Hit"/>, 
+    /// <see cref="Range"/>, <see cref="Weight"/>, or other behavior 
+    /// without changing the underlying item.
     /// </remarks>
     public abstract class AttackDecorator : AttackItem
     {
@@ -70,7 +73,8 @@ namespace Mandatory2DGameFramework.model.attack
         {
             if (baseWeapon == null)
             {
-                throw new ArgumentNullException(nameof(baseWeapon), "Decorated attack item cannot be null.");
+                throw new ArgumentNullException(nameof(baseWeapon), 
+                    "Decorated attack item cannot be null.");
             }
             _baseWeapon = baseWeapon;
             Name = baseWeapon.Name + " (Decorated)";

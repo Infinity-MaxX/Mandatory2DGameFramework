@@ -7,14 +7,17 @@ using System.Threading.Tasks;
 namespace Mandatory2DGameFramework.model.defence
 {
     /// <summary>
-    /// Represents a base decorator for defence items, allowing additional
-    /// behavior to be layered on top of an existing DefenceItem instance.
+    /// Represents a base decorator for defence items, allowing 
+    /// additional behavior to be layered on top of an existing 
+    /// <see cref="DefenceItem"/> instance.
     /// </summary>
     /// <remarks>
-    /// This class implements the Decorator Design Pattern. It wraps another
-    /// DefenceItem and forwards all property calls to the wrapped item unless
-    /// overridden by subclasses. Concrete decorators can modify ReduceDamage,
-    /// Weight, or other behavior without changing the underlying item.
+    /// This class implements the Decorator Design Pattern. It 
+    /// wraps another <see cref="DefenceItem"/> and forwards all 
+    /// property calls to the wrapped item unless overridden by 
+    /// subclasses. Concrete decorators can modify <see cref="Weight"/>,
+    /// <see cref="ReduceDamage"/>,or other behavior without changing 
+    /// the underlying item.
     /// </remarks>
     public abstract class DefenceDecorator : DefenceItem
     {

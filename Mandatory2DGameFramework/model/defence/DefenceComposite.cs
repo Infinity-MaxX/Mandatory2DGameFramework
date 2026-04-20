@@ -8,7 +8,8 @@ namespace Mandatory2DGameFramework.model.defence
 {
     /// <summary>
     /// Represents a composite defence item that groups multiple 
-    /// DefenceItem instances into a single logical defence.
+    /// <see cref="DefenceItem"/> instances into a single logical 
+    /// defence.
     /// </summary>
     public class DefenceComposite : DefenceItem
     {
@@ -48,9 +49,11 @@ namespace Mandatory2DGameFramework.model.defence
         }
 
         /// <summary>
-        /// Initializes a new composite defence item with an initial list of items.
+        /// Initializes a new composite defence item with an initial 
+        /// list of items.
         /// </summary>
-        /// <param name="items">The defence items to include in the composite.</param>
+        /// <param name="items">The defence items to include in the 
+        /// composite.</param>
         public DefenceComposite(IEnumerable<DefenceItem> items)
         {
             _items = items.ToList();
