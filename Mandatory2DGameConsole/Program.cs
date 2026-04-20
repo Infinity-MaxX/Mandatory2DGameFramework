@@ -17,7 +17,7 @@ class Program
         Console.WriteLine("=== TESTSUITE START ===\n");
 
         // ---------------------------------------------------------
-        // 1) Configuration
+        // 1) CONFIGURATION TESTS
         // ---------------------------------------------------------
         var config = GameConfigLoader.Load("gameconfig.xml");
         World world = World.FromConfig(config);
@@ -29,7 +29,7 @@ class Program
         Debug.Assert(world.Difficulty == config.Difficulty, "World Difficulty mismatch");
 
         // ---------------------------------------------------------
-        // 2) LOGGER
+        // 2) LOGGER TESTS
         // ---------------------------------------------------------
         var logger = Logger.Log;
 
@@ -59,6 +59,7 @@ class Program
         Debug.Assert(combo.Hit == 15, "Sword + Dagger Hit mismatch");
         Debug.Assert(combo.Weight == 7, "Sword + Dagger Weight mismatch");
 
+        // composite tests
         var compA = new AttackComposite([sword, dagger]);
         var compB = new AttackComposite([new AttackItem("Axe", 12, 1, 8)]);
         var compC = sword + dagger;
@@ -69,7 +70,7 @@ class Program
         Debug.Assert(compA.Hit == compC.Hit, "Composite operator Hit mismatch");
         Debug.Assert(compA.Weight == compC.Weight, "Composite operator Weight mismatch");
 
-        // Decorators
+        // decorator tests
         var buffedSword = new AttackBuffDecorator(sword, 3);
         Console.WriteLine(buffedSword);
         Debug.Assert(buffedSword.Hit == 13, "Decorator buff mismatch");
@@ -90,10 +91,12 @@ class Program
         var shield = new DefenceItem("Shield", 5, 3);
         var helmet = new DefenceItem("Helmet", 3, 1);
 
+        // composite tests
         var defenceCombo = shield + helmet;
         Console.WriteLine(defenceCombo);
         Debug.Assert(defenceCombo.ReduceDamage == 8, "Defence combo mismatch");
 
+        // decorator tests
         var buffedShield = new DefenceBuffDecorator(new DefenceItem("Shield", 5, 3), 4);
         Console.WriteLine(buffedShield);
         Debug.Assert(buffedShield.ReduceDamage == 9, "DefenceBuffDecorator mismatch");
@@ -117,20 +120,20 @@ class Program
         world.AddCreature(warrior);
         world.AddCreature(mage);
 
-        // Looting
+        // looting
         var axe = new AttackItem("Axe", 8, 1, 8);
         axe.MoveObject(5, 5);
         world.AddObject(axe);
 
         warrior.Loot(axe);
         Debug.Assert(!world.ObjectsAt(5, 5).Any(), "Looted axe should be removed from world");
-        // Attack strategy should give 25% bonus to attack, so 8 * 1.25 = 10
+        // attack strategy should give 25% bonus to attack, so 8 * 1.25 = 10
         Debug.Assert(warrior.Strategy.CalculateDamage([axe]) == 10, "Warrior should have looted axe");
 
-        // Add defence to mage
+        // add defence to mage
         var armor = new DefenceItem("Light armor", 4, 5);
         mage.Loot(armor);
-        // Defensive strategy should give 25% bonus to defence, so 4 * 1.25 = 5
+        // defensive strategy should give 25% bonus to defence, so 4 * 1.25 = 5
         Debug.Assert(mage.Strategy.CalculateDefence([armor]) == 5, "Mage should have looted armor");
 
         // ---------------------------------------------------------
@@ -138,15 +141,15 @@ class Program
         // ---------------------------------------------------------
         Console.WriteLine("\n=== STRATEGY TESTS ===");
 
-        // Balanced
+        // balanced
         warrior.Strategy = new BalancedStrategy();
         Debug.Assert(warrior.Strategy.CalculateDamage([sword]) == 10, "Balanced damage mismatch");
 
-        // Aggressive
+        // aggressive
         warrior.Strategy = new AggressiveStrategy();
         Debug.Assert(warrior.Strategy.CalculateDamage([sword]) == (int)(10 * 1.25), "Aggressive damage mismatch");
 
-        // Defensive
+        // defensive
         mage.Strategy = new DefensiveStrategy();
         Debug.Assert(mage.Strategy.CalculateDamage([dagger]) == (int)(5 * 0.75), "Defensive damage mismatch");
 
@@ -161,7 +164,7 @@ class Program
         Debug.Assert(damage >= 0, "Damage should never be negative");
         Debug.Assert(mage.HitPoint == mageHPBefore - (damage - mage.Strategy.CalculateDefence([armor])), "Damage application mismatch");
 
-        // Kill test
+        // kill test
         Console.WriteLine("\n=== DEATH TEST ===");
         while (!mage.IsDead)
         {

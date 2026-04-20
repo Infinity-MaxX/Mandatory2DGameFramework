@@ -67,8 +67,7 @@ namespace Mandatory2DGameFramework.worlds
         /// true or false depending on whether the item can be 
         /// removed or not. Defaults to false if no specification 
         /// is provided.</param>
-        public WorldObject(string name, bool lootable = true, 
-            bool removable = true)
+        public WorldObject(string name, bool lootable = true, bool removable = true)
         {
             Name = name;
             Lootable = lootable;
