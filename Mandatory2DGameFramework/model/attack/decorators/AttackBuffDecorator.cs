@@ -30,7 +30,7 @@ namespace Mandatory2DGameFramework.model.attack.decorators
         #region Constructors
         /// <summary>
         /// Initializes a new decorator that wraps the specified attack
-        /// item with added buff.
+        /// item with an added buff.
         /// </summary>
         /// <param name="baseWeapon">The attack item to buff.</param>
         /// <param name="buff">The amount to buff the attack item with.

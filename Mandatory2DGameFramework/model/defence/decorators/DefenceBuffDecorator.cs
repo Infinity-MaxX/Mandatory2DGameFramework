@@ -30,7 +30,7 @@ namespace Mandatory2DGameFramework.model.defence.decorators
         #region Constructors
         /// <summary>
         /// Initializes a new decorator that wraps the specified defence
-        /// item with added buff.
+        /// item with the added buff.
         /// </summary>
         /// <param name="baseDefence">The defence item to buff.</param>
         /// <param name="buff">The amount to buff the defence item with.
