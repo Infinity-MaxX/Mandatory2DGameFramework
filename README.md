@@ -30,7 +30,7 @@ Link til NuGet-pakke: https://www.nuget.org/packages/Katerina2DGameFramework/
 Dotnet CLI
 
 ```PowerShell
-dotnet add package Katerina2DGameFramework --version 1.0.1
+dotnet add package Katerina2DGameFramework
 ```
 
 PowerShell
