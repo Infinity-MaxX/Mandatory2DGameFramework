@@ -32,29 +32,20 @@ namespace Mandatory2DGameFramework.model.attack
         /// which determines the amount of damage it can inflict 
         /// on a target when used in an attack.
         /// </summary>
-        public virtual int Hit
-        {
-            get; set;
-        }
+        public virtual int Hit { get; set; }
 
         /// <summary>
         /// Gets or sets the range of the attack item, which 
         /// indicates how far the attack can reach or affect 
         /// targets.
         /// </summary>
-        public virtual int Range
-        {
-            get; set;
-        }
+        public virtual int Range { get; set; }
 
         /// <summary>
         /// Gets or sets the weight of the attack item.
         /// Used to determine whether a creature can carry it.
         /// </summary>
-        public virtual int Weight
-        {
-            get; set;
-        }
+        public virtual int Weight { get; set; }
         #endregion
 
         #region Constructors
