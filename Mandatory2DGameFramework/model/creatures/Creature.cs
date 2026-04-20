@@ -38,9 +38,9 @@ namespace Mandatory2DGameFramework.model.creatures
         // singleton logger instance
         private readonly Logger _log = Logger.Log;
         // for observer pattern
-        private readonly List<ICreatureObserver> _observers = new();
-        private readonly List<AttackItem> _attackItems = new();
-        private readonly List<DefenceItem> _defenceItems = new();
+        private readonly List<ICreatureObserver> _observers;
+        private readonly List<AttackItem> _attackItems;
+        private readonly List<DefenceItem> _defenceItems;
         #endregion
 
         #region Properties
@@ -104,6 +104,10 @@ namespace Mandatory2DGameFramework.model.creatures
         protected Creature(string name, int hitPoint = 100, int maxAttackWeight = 50, 
             int maxDefenceWeight = 50)
         {
+            _observers = new List<ICreatureObserver>();
+            _attackItems = new List<AttackItem>();
+            _defenceItems = new List<DefenceItem>();
+
             Name = name;
             HitPoint = hitPoint;
             Strategy = new BalancedStrategy();
@@ -191,6 +195,12 @@ namespace Mandatory2DGameFramework.model.creatures
         // OBSERVER PATTERN
         // ---------------------------------------------------------
 
+        // you can do some crazy things with the observer pattern,
+        // like allowing subclasses of Creature that implement the
+        // observer interface and use that to modify their strategy
+        // that is beyond the scope of this assignment, but it's more
+        // to illustrate the power of the design patterns.
+
         /// <summary>
         /// Registers an observer that will be notified when the 
         /// creature is hit or dies.
@@ -198,9 +208,14 @@ namespace Mandatory2DGameFramework.model.creatures
         /// <param name="observer">The observer to register.</param>
         public void RegisterObserver(ICreatureObserver observer)
         {
+            // edge case: prevent duplicate observers
             if (!_observers.Contains(observer))
             {
                 _observers.Add(observer);
+            }
+            else
+            {
+                _log.LogWarning($"Observer {observer} is already registered for {Name}.");
             }
         }
 
@@ -210,12 +225,20 @@ namespace Mandatory2DGameFramework.model.creatures
         /// <param name="observer">The observer to remove.</param>
         public void RemoveObserver(ICreatureObserver observer)
         {
-            _observers.Remove(observer);
+            if (_observers.Contains(observer))
+            {
+                _observers.Remove(observer);
+            }
+            else
+            {
+                _log.LogWarning($"Observer {observer} is not registered for {Name}.");
+            }
         }
 
         // These methods are private because they are only called
         // internally to notify observers of events. They should
-        // not be exposed as part of the public API.
+        // not be exposed as part of the public API or be overridden
+        // by subclasses.
         private void NotifyHit(int damage)
         {
             foreach (var obs in _observers)
@@ -229,6 +252,8 @@ namespace Mandatory2DGameFramework.model.creatures
         private void NotifyDeath()
         {
             // Create a copy to avoid modification issues
+            // never modify a collection while iterating over it,
+            // that is a common source of bugs
             var originalObservers = _observers.ToList();
             foreach (var obs in originalObservers)
             {
@@ -238,6 +263,10 @@ namespace Mandatory2DGameFramework.model.creatures
             }
         }
 
+        // ideally, one would need to include a copy of the list
+        // for every notification method, but as this is a tiny example,
+        // where only NotifyDeath WILL need to modify the list, it becomes
+        // a little overkill
         private void NotifyLoot(WorldObject obj)
         {
             foreach (var obs in _observers)
@@ -250,6 +279,7 @@ namespace Mandatory2DGameFramework.model.creatures
         // COMBAT
         // ---------------------------------------------------------
 
+        // might be a redundant method
         /// <summary>
         /// Calculates the total defence value from all equipped 
         /// defence items.
@@ -376,30 +406,29 @@ namespace Mandatory2DGameFramework.model.creatures
                 return;
             }
 
+            if (obj is AttackItem atk)
+            {
+                // var atk = (AttackItem)obj;
+                if (AddAttackItem(atk))
+                {
+                    _log.LogInfo($"{Name} looted {atk.Name} (Attack Item).");
+                    NotifyLoot(atk);
+                }
+            }
+
+            else if (obj is DefenceItem def)
+            {
+                // var def = (DefenceItem)obj;
+                if (AddDefenceItem(def))
+                {
+                    _log.LogInfo($"{Name} looted {def.Name} (Defence Item).");
+                    NotifyLoot(def);
+                }
+            }
+
             else
             {
-                if (obj is AttackItem atk)
-                {
-                    // var atk = (AttackItem)obj;
-                    if (AddAttackItem(atk))
-                    {
-                        _log.LogInfo($"{Name} looted {atk.Name} (Attack Item).");
-                        NotifyLoot(atk);
-                    }
-                }
-                else if (obj is DefenceItem def)
-                {
-                    // var def = (DefenceItem)obj;
-                    if (AddDefenceItem(def))
-                    {
-                        _log.LogInfo($"{Name} looted {def.Name} (Defence Item).");
-                        NotifyLoot(def);
-                    }
-                }
-                else
-                {
-                    _log.LogInfo($"{Name} looted {obj.Name}, but it has no effect.");
-                }
+                _log.LogInfo($"{Name} looted {obj.Name}, but it has no effect.");
             }
         }
 
