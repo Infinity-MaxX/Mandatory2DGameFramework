@@ -102,6 +102,7 @@ namespace Mandatory2DGameFramework.config
         /// cannot be found.</exception>
         /// <exception cref="InvalidDataException">Thrown if the game 
         /// configurations cannot be deserialized.</exception>
+        // enables factory design pattern
         public static GameConfig Load(string filePath)
         {
             // always check the most extreme case first
@@ -112,7 +113,8 @@ namespace Mandatory2DGameFramework.config
 
             // use a 'using' statement to ensure that the XmlReader is properly
             // disposed of after use, preventing resource leaks and ensuring that
-            // file handles are released.
+            // file handles are released. open the XML file for reading and make
+            // it a parser for later use. "this is an xml file"
             using var reader = XmlReader.Create(filePath);
 
             // serializer needed to build XML objects from the config file.
@@ -121,11 +123,15 @@ namespace Mandatory2DGameFramework.config
             // into objects is what we need to get the game configuration data in
             // a usable form. doing it manually would be very tedious and error-
             // prone, so we use the XmlSerializer to handle the deserialization
-            // process for us.
+            // process for us. "this is an xml file in this exact structure/format"
+            // we give it the structure through the typeof; so, "parse this xml file
+            // and these xml elements into this structure and these properties, and
+            // give me the result as an object of this type"
             var serializer = new XmlSerializer(typeof(GameConfig));
 
             // typecast the deserialized object to GameConfig for easier access to
-            // its properties
+            // its properties. this is the actual reading and deserialisation of the
+            // file!
             var config = (GameConfig?)serializer.Deserialize(reader);
 
             if (config == null)
