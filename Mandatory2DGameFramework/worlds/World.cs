@@ -15,12 +15,13 @@ namespace Mandatory2DGameFramework.worlds
     /// difficulty level, creatures and objects placed in the
     /// world.
     /// </summary>
-    /// <remarks>The World class serves as the primary container 
-    /// for game state, defining the playable area's boundaries 
-    /// and difficulty. Use the FromConfig method to create a 
-    /// World instance from a configuration object. The MaxX and 
-    /// MaxY properties specify the world's size along the X and 
-    /// Y axes, respectively. The Difficulty property determines 
+    /// <remarks>The <see cref="World"/> class serves as the
+    /// primary container for game state, defining the playable
+    /// area's boundaries and difficulty. Use the <see cref="FromConfig"/> 
+    /// method to create a <see cref="World"/> instance from a 
+    /// configuration object. The <see cref="MaxX"/> and <see cref="MaxY"/> 
+    /// properties specify the world's size along the X and Y axes, 
+    /// respectively. The <see cref="Difficulty"/> property determines 
     /// the overall challenge level for the world.</remarks>
     public class World : ICreatureObserver
     {
@@ -93,7 +94,6 @@ namespace Mandatory2DGameFramework.worlds
             _worldObjects.Add(obj);
             _log.LogInfo($"[WORLD] Added object: {obj.ToString()} at " +
                 $"({obj.X}, {obj.Y})");
-
         }
 
         /// <summary>
