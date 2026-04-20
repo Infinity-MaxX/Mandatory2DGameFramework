@@ -13,13 +13,13 @@
         <name>ReduceDamage</name>
         <qualifiedname>Mandatory2DGameFramework.model.defence.DefenceItem.ReduceDamage</qualifiedname>
         <briefdescription>
-<para>Gets or sets the amount of hit points to reduce from the creature when damage is applied. </para>
+<para>Gets or sets the amount of hit points that this defence item reduces when the player is attacked. This value is used to calculate the net damage taken by the player after applying all defensive items. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceItem.cs" line="28" column="28" bodyfile="Mandatory2DGameFramework/model/defence/DefenceItem.cs" bodystart="28" bodyend="28"/>
+        <location file="model/defence/DefenceItem.cs" line="34" column="28" bodyfile="model/defence/DefenceItem.cs" bodystart="34" bodyend="34"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a0daed8af64f17e3f2390a88b7e76c7eb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceItem.cs" line="34" column="28" bodyfile="Mandatory2DGameFramework/model/defence/DefenceItem.cs" bodystart="34" bodyend="34"/>
+        <location file="model/defence/DefenceItem.cs" line="40" column="28" bodyfile="model/defence/DefenceItem.cs" bodystart="40" bodyend="40"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceItem.cs" line="43" column="16" bodyfile="Mandatory2DGameFramework/model/defence/DefenceItem.cs" bodystart="43" bodyend="48"/>
+        <location file="model/defence/DefenceItem.cs" line="49" column="16" bodyfile="model/defence/DefenceItem.cs" bodystart="49" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a045d49fa8375b28ec8d74a69f9e11a24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -72,14 +72,13 @@
           <declname>weight</declname>
         </param>
         <briefdescription>
-<para>Initializes a new instance of the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref> class with a <linebreak/>
- name and default values for hit point reduction and weight. This allows for junk/gag defensive items that have no defensive strength or weight. </para>
+<para>Initializes a new instance of the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref> class with a name and default values for hit point reduction and weight. This allows for junk/gag defensive items that have no defensive strength or weight. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceItem.cs" line="56" column="16" bodyfile="Mandatory2DGameFramework/model/defence/DefenceItem.cs" bodystart="56" bodyend="61"/>
+        <location file="model/defence/DefenceItem.cs" line="62" column="16" bodyfile="model/defence/DefenceItem.cs" bodystart="62" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a7b9c7ace396b732ddbecdf138fb2b0ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override string</type>
@@ -88,7 +87,7 @@
         <name>ToString</name>
         <qualifiedname>Mandatory2DGameFramework.model.defence.DefenceItem.ToString</qualifiedname>
         <briefdescription>
-<para>A string representation of the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref>, including its name and the amount of hit points it reduces. </para>
+<para>A string representation of the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref> class, including its name and the amount of hit points it reduces. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="return"><para></para>
@@ -97,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceItem.cs" line="135" column="32" bodyfile="Mandatory2DGameFramework/model/defence/DefenceItem.cs" bodystart="135" bodyend="140"/>
+        <location file="model/defence/DefenceItem.cs" line="141" column="32" bodyfile="model/defence/DefenceItem.cs" bodystart="141" bodyend="146"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -151,14 +150,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceItem.cs" line="79" column="35" bodyfile="Mandatory2DGameFramework/model/defence/DefenceItem.cs" bodystart="79" bodyend="128"/>
+        <location file="model/defence/DefenceItem.cs" line="85" column="35" bodyfile="model/defence/DefenceItem.cs" bodystart="85" bodyend="134"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Represents an object in the world that provides defensive capabilities by reducing incoming hit points. </para>
+<para>Represents an object in the world that provides defensive capabilities by reducing incoming hit points. Implements operator overloading to allow combining multiple defence items, and serves as the base class for more specialized defence items that implements design patterns such as Decorator and Composite. </para>
     </briefdescription>
     <detaileddescription>
-<para>This class implements the Composite design pattern, allowing multiple defence items to be treated as a single item. The composite sums the ReduceDamage and Weight values of all contained items. It can be used by creatures to represent carrying or equipping multiple defence items at once. </para>
+<para>This class implements the Composite design pattern, allowing multiple defence items to be treated as a single item. The composite sums the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a0daed8af64f17e3f2390a88b7e76c7eb" kindref="member">Weight</ref> and <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1aff658980d00ea677a411e11b50872825" kindref="member">ReduceDamage</ref> values of all contained items. It can be used by creatures to represent carrying or equipping multiple defence items at once. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -208,7 +207,7 @@
         <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
       </node>
     </collaborationgraph>
-    <location file="Mandatory2DGameFramework/model/defence/DefenceItem.cs" line="21" column="11" bodyfile="Mandatory2DGameFramework/model/defence/DefenceItem.cs" bodystart="22" bodyend="142"/>
+    <location file="model/defence/DefenceItem.cs" line="25" column="11" bodyfile="model/defence/DefenceItem.cs" bodystart="26" bodyend="148"/>
     <listofallmembers>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a2800a3024565901b5ceaf248890c09fa" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::DefenceItem</scope><name>DefenceItem</name></member>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a045d49fa8375b28ec8d74a69f9e11a24" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::DefenceItem</scope><name>DefenceItem</name></member>

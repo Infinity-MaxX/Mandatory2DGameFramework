@@ -2,14 +2,14 @@
 \hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}{}\label{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature}\index{Mandatory2DGameFramework.model.creatures.Creature@{Mandatory2DGameFramework.model.creatures.Creature}}
 
 
-Represents a creature in the game world and serves as the base class for all creature types. Implements Template Method, Observer, and Strategy design patterns.  
+Represents a creature in the game world and serves as the base class for all creature types. Implements Template, Observer, and Strategy design patterns.  
 
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a4d37e9d85da0188fd103ac41fae577c4}{Perform\+Hit}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_ada8f687b850a877a4215bbb7231f39a4}{Creature}} target)
-\begin{DoxyCompactList}\small\item\em Performs an attack on the specified target using the Template Method pattern. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Performs an attack on the specified target. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a83b429ea45feb959cfab975cb6b77de4}{Register\+Observer}} (\doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer}{ICreature\+Observer}} \doxymbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer}{observer}})
 \begin{DoxyCompactList}\small\item\em Registers an observer that will be notified when the creature is hit or dies. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_aef7d906a8465b33764596752b2e8dd69}{Remove\+Observer}} (\doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer}{ICreature\+Observer}} \doxymbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer}{observer}})
@@ -27,7 +27,7 @@ int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures
 int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_afe9235fd884fb2f98f45069395e0471a}{Current\+Defence\+Weight}} ()
 \begin{DoxyCompactList}\small\item\em Checks the total weight of all currently equipped defence items. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a41e4a1f9ab6d9868e84f91f04a3dcdfe}{Loot}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}} obj)
-\begin{DoxyCompactList}\small\item\em Attempts to loot a world object. If the object is lootable and is an attack or defence item, it is added to the creature\textquotesingle{}s inventory. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Attempts to loot a \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}. If the object is lootable and is an attack or defence item, it is added to the creature\textquotesingle{}s inventory. \end{DoxyCompactList}\item 
 \Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a496f6512ba854eef11bcaaeb0fac440f}\label{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a496f6512ba854eef11bcaaeb0fac440f} 
 override string {\bfseries To\+String} ()
 \begin{DoxyCompactList}\small\item\em Returns a string representation of the creature, including name, hit points, and world position. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -55,16 +55,16 @@ int {\bfseries Hit\+Point}\hspace{0.3cm}{\ttfamily  \+[get]\+}
 \begin{DoxyCompactList}\small\item\em Gets the creature\textquotesingle{}s current hit points. \end{DoxyCompactList}\item 
 \Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a0648526f0e817bdb54ae06b4b9778b20}\label{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a0648526f0e817bdb54ae06b4b9778b20} 
 bool {\bfseries Is\+Dead}\hspace{0.3cm}{\ttfamily  \+[get]\+}
-\begin{DoxyCompactList}\small\item\em Gets a value indicating whether the creature is dead. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets a bool value indicating whether the creature is dead. \end{DoxyCompactList}\item 
 \Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a274eb44077a331053086f5512a6fc67b}\label{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a274eb44077a331053086f5512a6fc67b} 
 int {\bfseries Max\+Attack\+Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
-\begin{DoxyCompactList}\small\item\em Gets or sets the maximum total weight of attack items the creature can carry. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets or sets the maximum total weight of \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} instances the creature can carry. \end{DoxyCompactList}\item 
 \Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a0765d87fd2bf7dbe10558dd1af97cb1b}\label{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a0765d87fd2bf7dbe10558dd1af97cb1b} 
 int {\bfseries Max\+Defence\+Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
-\begin{DoxyCompactList}\small\item\em Gets or sets the maximum total weight of defence items the creature can carry. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets or sets the maximum total weight of \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item} instances the creature can carry. \end{DoxyCompactList}\item 
 \Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a3473d8720295c3eaba3450c49ecf2a5b}\label{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a3473d8720295c3eaba3450c49ecf2a5b} 
 \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy}{IStrategy}} {\bfseries Strategy}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
-\begin{DoxyCompactList}\small\item\em Gets or sets the hit strategy used to calculate outgoing damage. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets or sets the strategy used to calculate attack damage and defense. \end{DoxyCompactList}\item 
 \Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a69c891df3e22fcd908acb2b469e0b2a3}\label{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a69c891df3e22fcd908acb2b469e0b2a3} 
 int {\bfseries X}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
 \begin{DoxyCompactList}\small\item\em Gets or sets the creature\textquotesingle{}s X‑coordinate in the world. \end{DoxyCompactList}\item 
@@ -74,11 +74,11 @@ int {\bfseries Y}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
 
 
 \doxysubsection{Detailed Description}
-Represents a creature in the game world and serves as the base class for all creature types. Implements Template Method, Observer, and Strategy design patterns. 
+Represents a creature in the game world and serves as the base class for all creature types. Implements Template, Observer, and Strategy design patterns. 
 
 {\bfseries{Template Method:\+}} The \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a4d37e9d85da0188fd103ac41fae577c4}{Perform\+Hit} method defines the attack flow, while subclasses may override \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a51d9c8de951060b3c1249705a331be4e}{After\+Hit} to customize post‑attack behavior. 
 
-{\bfseries{Strategy:\+}} Damage calculation is delegated to an IHit\+Strategy implementation, allowing creatures to change combat behavior dynamically. 
+{\bfseries{Strategy:\+}} Damage calculation is delegated to an \doxylink{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy}{IStrategy} implementation, allowing creatures to change combat behavior dynamically. 
 
 {\bfseries{Observer:\+}} External observers can subscribe to hit and death events using \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a83b429ea45feb959cfab975cb6b77de4}{Register\+Observer} and \doxylink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_aef7d906a8465b33764596752b2e8dd69}{Remove\+Observer}. 
 
@@ -144,6 +144,9 @@ Adds a defence item to the creature\textquotesingle{}s inventory.
 {\em item} & The defence item to add.\\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the item was added successfully; otherwise {\ttfamily false}. 
+\end{DoxyReturn}
 \Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a51d9c8de951060b3c1249705a331be4e}\index{Mandatory2DGameFramework.model.creatures.Creature@{Mandatory2DGameFramework.model.creatures.Creature}!AfterHit@{AfterHit}}
 \index{AfterHit@{AfterHit}!Mandatory2DGameFramework.model.creatures.Creature@{Mandatory2DGameFramework.model.creatures.Creature}}
 \doxysubsubsection{\texorpdfstring{AfterHit()}{AfterHit()}}
@@ -242,11 +245,11 @@ void Mandatory2\+DGame\+Framework.\+model.\+creatures.\+Creature.\+Loot (\begin{
 
 
 
-Attempts to loot a world object. If the object is lootable and is an attack or defence item, it is added to the creature\textquotesingle{}s inventory. 
+Attempts to loot a \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}. If the object is lootable and is an attack or defence item, it is added to the creature\textquotesingle{}s inventory. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em obj} & The world object to loot.\\
+{\em obj} & The \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object} to loot.\\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a4d37e9d85da0188fd103ac41fae577c4}\index{Mandatory2DGameFramework.model.creatures.Creature@{Mandatory2DGameFramework.model.creatures.Creature}!PerformHit@{PerformHit}}
@@ -257,7 +260,7 @@ int Mandatory2\+DGame\+Framework.\+model.\+creatures.\+Creature.\+Perform\+Hit (
 
 
 
-Performs an attack on the specified target using the Template Method pattern. 
+Performs an attack on the specified target. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -337,4 +340,4 @@ The total defence value.
 
 The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-Mandatory2\+DGame\+Framework/\+model/\+creatures/\+Creature.\+cs\end{DoxyCompactItemize}
+model/\+creatures/\+Creature.\+cs\end{DoxyCompactItemize}

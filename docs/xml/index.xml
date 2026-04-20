@@ -257,11 +257,17 @@
   </compound>
   <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
   </compound>
+  <compound refid="namespace_system_1_1_xml" kind="namespace"><name>System::Xml</name>
+  </compound>
   <compound refid="namespace_system_1_1_xml_1_1_serialization" kind="namespace"><name>System::Xml::Serialization</name>
   </compound>
   <compound refid="_mandatory2_d_game_console_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
   </compound>
+  <compound refid="_mandatory2_d_game_console_2obj_2_release_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
   <compound refid="_mandatory2_d_game_framework_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_mandatory2_d_game_framework_2obj_2_release_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
   </compound>
   <compound refid="_mandatory2_d_game_console_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes__clean_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes_clean.cs</name>
   </compound>
@@ -271,13 +277,17 @@
   </compound>
   <compound refid="_mandatory2_d_game_framework_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assem18ee42d761bd5b1cda7147e26f21ca88" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes_clean_clean.cs</name>
   </compound>
-  <compound refid="_mandatory2_d_game_console_8_assembly_info_8cs" kind="file"><name>Mandatory2DGameConsole.AssemblyInfo.cs</name>
+  <compound refid="_debug_2net8_80_2_mandatory2_d_game_console_8_assembly_info_8cs" kind="file"><name>Mandatory2DGameConsole.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2_mandatory2_d_game_console_8_assembly_info_8cs" kind="file"><name>Mandatory2DGameConsole.AssemblyInfo.cs</name>
   </compound>
   <compound refid="_mandatory2_d_game_console_8_assembly_info__clean_8cs" kind="file"><name>Mandatory2DGameConsole.AssemblyInfo_clean.cs</name>
   </compound>
   <compound refid="_mandatory2_d_game_console_8_assembly_info__clean__clean_8cs" kind="file"><name>Mandatory2DGameConsole.AssemblyInfo_clean_clean.cs</name>
   </compound>
-  <compound refid="_mandatory2_d_game_console_8_global_usings_8g_8cs" kind="file"><name>Mandatory2DGameConsole.GlobalUsings.g.cs</name>
+  <compound refid="_debug_2net8_80_2_mandatory2_d_game_console_8_global_usings_8g_8cs" kind="file"><name>Mandatory2DGameConsole.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2_mandatory2_d_game_console_8_global_usings_8g_8cs" kind="file"><name>Mandatory2DGameConsole.GlobalUsings.g.cs</name>
   </compound>
   <compound refid="_mandatory2_d_game_console_8_global_usings_8g__clean_8cs" kind="file"><name>Mandatory2DGameConsole.GlobalUsings.g_clean.cs</name>
   </compound>
@@ -285,7 +295,7 @@
   </compound>
   <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
   </compound>
-  <compound refid="_game_difficulty_8cs" kind="file"><name>GameDifficulty.cs</name>
+  <compound refid="_game_8cs" kind="file"><name>Game.cs</name>
   </compound>
   <compound refid="_i_creature_observer_8cs" kind="file"><name>ICreatureObserver.cs</name>
   </compound>
@@ -319,64 +329,74 @@
   </compound>
   <compound refid="_defence_item_8cs" kind="file"><name>DefenceItem.cs</name>
   </compound>
-  <compound refid="_mandatory2_d_game_framework_8_assembly_info_8cs" kind="file"><name>Mandatory2DGameFramework.AssemblyInfo.cs</name>
+  <compound refid="_debug_2net8_80_2_mandatory2_d_game_framework_8_assembly_info_8cs" kind="file"><name>Mandatory2DGameFramework.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2_mandatory2_d_game_framework_8_assembly_info_8cs" kind="file"><name>Mandatory2DGameFramework.AssemblyInfo.cs</name>
   </compound>
   <compound refid="_mandatory2_d_game_framework_8_assembly_info__clean_8cs" kind="file"><name>Mandatory2DGameFramework.AssemblyInfo_clean.cs</name>
   </compound>
   <compound refid="_mandatory2_d_game_framework_8_assembly_info__clean__clean_8cs" kind="file"><name>Mandatory2DGameFramework.AssemblyInfo_clean_clean.cs</name>
   </compound>
-  <compound refid="_mandatory2_d_game_framework_8_global_usings_8g_8cs" kind="file"><name>Mandatory2DGameFramework.GlobalUsings.g.cs</name>
+  <compound refid="_debug_2net8_80_2_mandatory2_d_game_framework_8_global_usings_8g_8cs" kind="file"><name>Mandatory2DGameFramework.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2_mandatory2_d_game_framework_8_global_usings_8g_8cs" kind="file"><name>Mandatory2DGameFramework.GlobalUsings.g.cs</name>
   </compound>
   <compound refid="_mandatory2_d_game_framework_8_global_usings_8g__clean_8cs" kind="file"><name>Mandatory2DGameFramework.GlobalUsings.g_clean.cs</name>
   </compound>
   <compound refid="_mandatory2_d_game_framework_8_global_usings_8g__clean__clean_8cs" kind="file"><name>Mandatory2DGameFramework.GlobalUsings.g_clean_clean.cs</name>
   </compound>
-  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
-  </compound>
   <compound refid="_world_8cs" kind="file"><name>World.cs</name>
   </compound>
   <compound refid="_world_object_8cs" kind="file"><name>WorldObject.cs</name>
   </compound>
-  <compound refid="dir_82e61b5fb2595d953b347c062e97bb1f" kind="dir"><name>Mandatory2DGameFramework/model/attack</name>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
-  <compound refid="dir_bd37672376abceae9f2c3f11316d9634" kind="dir"><name>Mandatory2DGameFramework/model/combat</name>
+  <compound refid="dir_82e61b5fb2595d953b347c062e97bb1f" kind="dir"><name>model/attack</name>
   </compound>
-  <compound refid="dir_362c41f5b11fda2b93be8febdbfd8a42" kind="dir"><name>Mandatory2DGameFramework/config</name>
+  <compound refid="dir_bd37672376abceae9f2c3f11316d9634" kind="dir"><name>model/combat</name>
   </compound>
-  <compound refid="dir_259a41be33fac42bf8cb6538aa74f666" kind="dir"><name>Mandatory2DGameFramework/model/creatures</name>
+  <compound refid="dir_362c41f5b11fda2b93be8febdbfd8a42" kind="dir"><name>config</name>
   </compound>
-  <compound refid="dir_dcbaa1abcc6049f2f74337bac6f4cef8" kind="dir"><name>Mandatory2DGameConsole/obj/Debug</name>
+  <compound refid="dir_259a41be33fac42bf8cb6538aa74f666" kind="dir"><name>model/creatures</name>
   </compound>
-  <compound refid="dir_311ca790a6674993f295431db59864a5" kind="dir"><name>Mandatory2DGameFramework/obj/Debug</name>
+  <compound refid="dir_dcbaa1abcc6049f2f74337bac6f4cef8" kind="dir"><name>C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole/obj/Debug</name>
   </compound>
-  <compound refid="dir_b019f5de8203ed3d0ffc9958a3b37740" kind="dir"><name>Mandatory2DGameFramework/model/attack/decorators</name>
+  <compound refid="dir_311ca790a6674993f295431db59864a5" kind="dir"><name>obj/Debug</name>
   </compound>
-  <compound refid="dir_6e1ca4677140877dca7347afb7c5d949" kind="dir"><name>Mandatory2DGameFramework/model/defence/decorators</name>
+  <compound refid="dir_b019f5de8203ed3d0ffc9958a3b37740" kind="dir"><name>model/attack/decorators</name>
   </compound>
-  <compound refid="dir_99709bcc8a98f016f948bb0c56a2d369" kind="dir"><name>Mandatory2DGameFramework/model/defence</name>
+  <compound refid="dir_6e1ca4677140877dca7347afb7c5d949" kind="dir"><name>model/defence/decorators</name>
   </compound>
-  <compound refid="dir_5a4631f505f73e88f40b95d210689c6a" kind="dir"><name>Mandatory2DGameFramework/gameInterface</name>
+  <compound refid="dir_99709bcc8a98f016f948bb0c56a2d369" kind="dir"><name>model/defence</name>
   </compound>
-  <compound refid="dir_7212c6eb6ca2e0c4c6d7ac3e93845858" kind="dir"><name>Mandatory2DGameFramework/helper</name>
+  <compound refid="dir_5a4631f505f73e88f40b95d210689c6a" kind="dir"><name>gameInterface</name>
   </compound>
-  <compound refid="dir_cadd8b6148d3397bbd460aa37bf4a7d8" kind="dir"><name>Mandatory2DGameConsole</name>
+  <compound refid="dir_7212c6eb6ca2e0c4c6d7ac3e93845858" kind="dir"><name>helper</name>
   </compound>
-  <compound refid="dir_381299e59da83805f38fdd2613dbbd2c" kind="dir"><name>Mandatory2DGameFramework</name>
+  <compound refid="dir_cadd8b6148d3397bbd460aa37bf4a7d8" kind="dir"><name>C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole</name>
   </compound>
-  <compound refid="dir_65e7ca9a4eac2191b7420c85995dd86f" kind="dir"><name>Mandatory2DGameFramework/model</name>
+  <compound refid="dir_65e7ca9a4eac2191b7420c85995dd86f" kind="dir"><name>model</name>
   </compound>
-  <compound refid="dir_dd985d0128b35157aaf00159add20a54" kind="dir"><name>Mandatory2DGameConsole/obj/Debug/net8.0</name>
+  <compound refid="dir_dd985d0128b35157aaf00159add20a54" kind="dir"><name>C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole/obj/Debug/net8.0</name>
   </compound>
-  <compound refid="dir_96e2df98be83dc6968d66ba38a59ea8f" kind="dir"><name>Mandatory2DGameFramework/obj/Debug/net8.0</name>
+  <compound refid="dir_3b5573e81c321a703a08b5d437b25277" kind="dir"><name>C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole/obj/Release/net8.0</name>
   </compound>
-  <compound refid="dir_9603f80f68a1e8bd86700ef3836632d1" kind="dir"><name>Mandatory2DGameConsole/obj</name>
+  <compound refid="dir_96e2df98be83dc6968d66ba38a59ea8f" kind="dir"><name>obj/Debug/net8.0</name>
   </compound>
-  <compound refid="dir_dbbe25d3b601d1e206bc32d96462a158" kind="dir"><name>Mandatory2DGameFramework/obj</name>
+  <compound refid="dir_e951d15ee3db14b196841423fdad7005" kind="dir"><name>obj/Release/net8.0</name>
   </compound>
-  <compound refid="dir_6302962440af046b6a2deba30c8ecc01" kind="dir"><name>Mandatory2DGameFramework/gameInterface/observer</name>
+  <compound refid="dir_9603f80f68a1e8bd86700ef3836632d1" kind="dir"><name>C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole/obj</name>
   </compound>
-  <compound refid="dir_39013238c3c654d58c4e823b837e3669" kind="dir"><name>Mandatory2DGameFramework/gameInterface/strategy</name>
+  <compound refid="dir_dbbe25d3b601d1e206bc32d96462a158" kind="dir"><name>obj</name>
   </compound>
-  <compound refid="dir_d806afad6ee8922d858f06de41b548ad" kind="dir"><name>Mandatory2DGameFramework/worlds</name>
+  <compound refid="dir_6302962440af046b6a2deba30c8ecc01" kind="dir"><name>gameInterface/observer</name>
+  </compound>
+  <compound refid="dir_2ac5f74e35d65b1cb6edc62b2711d832" kind="dir"><name>C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole/obj/Release</name>
+  </compound>
+  <compound refid="dir_b2378c164dc20b063104a5ab48cf90c4" kind="dir"><name>obj/Release</name>
+  </compound>
+  <compound refid="dir_39013238c3c654d58c4e823b837e3669" kind="dir"><name>gameInterface/strategy</name>
+  </compound>
+  <compound refid="dir_d806afad6ee8922d858f06de41b548ad" kind="dir"><name>worlds</name>
   </compound>
 </doxygenindex>

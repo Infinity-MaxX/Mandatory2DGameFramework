@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="28" column="22" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="28" bodyend="-1"/>
+        <location file="worlds/World.cs" line="29" column="22" bodyfile="worlds/World.cs" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a2dabc6d79a166bef88473bd06915ea65" prot="private" static="no" mutable="no">
         <type>List&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref> &gt;</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="29" column="22" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="29" bodyend="-1"/>
+        <location file="worlds/World.cs" line="30" column="22" bodyfile="worlds/World.cs" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a5ff8757da02d490999d83318f597a929" prot="private" static="no" mutable="no">
         <type><ref refid="class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger" kindref="compound">Logger</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="30" column="24" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="30" bodyend="-1"/>
+        <location file="worlds/World.cs" line="31" column="24" bodyfile="worlds/World.cs" bodystart="31" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="37" column="20" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="37" bodyend="37"/>
+        <location file="worlds/World.cs" line="38" column="20" bodyfile="worlds/World.cs" bodystart="38" bodyend="38"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a448ca41211652392fcc724b3f06427d7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="41" column="20" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="41" bodyend="41"/>
+        <location file="worlds/World.cs" line="42" column="20" bodyfile="worlds/World.cs" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae47b636a19335bfbbbdaed97a7ede666" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type><ref refid="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eac" kindref="member">GameDifficulty</ref></type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="45" column="31" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="45" bodyend="45"/>
+        <location file="worlds/World.cs" line="46" column="31" bodyfile="worlds/World.cs" bodystart="46" bodyend="46"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -147,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="60" column="16" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="60" bodyend="68"/>
+        <location file="worlds/World.cs" line="61" column="16" bodyfile="worlds/World.cs" bodystart="61" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1aef4de3605390ade10c8ce879275cd555" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -176,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="91" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="91" bodyend="97"/>
+        <location file="worlds/World.cs" line="92" column="21" bodyfile="worlds/World.cs" bodystart="92" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae338f5056e2c4507b4bfee81d4f65bbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -205,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="104" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="104" bodyend="112"/>
+        <location file="worlds/World.cs" line="104" column="21" bodyfile="worlds/World.cs" bodystart="104" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a565918c3a734b0e67208ca627a599ec3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -234,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="118" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="118" bodyend="124"/>
+        <location file="worlds/World.cs" line="118" column="21" bodyfile="worlds/World.cs" bodystart="118" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1af9a0054ea2d402567a9dfbf28f8abde5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -263,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="130" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="130" bodyend="136"/>
+        <location file="worlds/World.cs" line="130" column="21" bodyfile="worlds/World.cs" bodystart="130" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a8828d2714648459b46fba861143080d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -304,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="143" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="143" bodyend="146"/>
+        <location file="worlds/World.cs" line="143" column="21" bodyfile="worlds/World.cs" bodystart="143" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae7d088ceca56746b303f0c81467d9a10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -333,7 +333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="152" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="152" bodyend="156"/>
+        <location file="worlds/World.cs" line="152" column="21" bodyfile="worlds/World.cs" bodystart="152" bodyend="156"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a803b69d32ffb8b895f1ec21b0c4f34a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -375,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="163" column="21" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="163" bodyend="167"/>
+        <location file="worlds/World.cs" line="163" column="21" bodyfile="worlds/World.cs" bodystart="163" bodyend="167"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a30c70a445d132e52f91ca1055a073d08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerable&lt; <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> &gt;</type>
@@ -418,7 +418,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="177" column="28" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="177" bodyend="188"/>
+        <location file="worlds/World.cs" line="177" column="28" bodyfile="worlds/World.cs" bodystart="177" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0563e673ca68b396681cabaf6d8b5e81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerable&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature" kindref="compound">Creature</ref> &gt;</type>
@@ -461,7 +461,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="198" column="28" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="198" bodyend="209"/>
+        <location file="worlds/World.cs" line="198" column="28" bodyfile="worlds/World.cs" bodystart="198" bodyend="209"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0058e208eaf3f7e2fb61e25b66730914" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override string</type>
@@ -479,7 +479,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="216" column="32" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="216" bodyend="221"/>
+        <location file="worlds/World.cs" line="216" column="32" bodyfile="worlds/World.cs" bodystart="216" bodyend="221"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -512,14 +512,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/World.cs" line="82" column="29" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="82" bodyend="85"/>
+        <location file="worlds/World.cs" line="83" column="29" bodyfile="worlds/World.cs" bodystart="83" bodyend="86"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
 <para>Represents the game world, including its dimensions, difficulty level, creatures and objects placed in the world. </para>
     </briefdescription>
     <detaileddescription>
-<para>The <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kindref="compound">World</ref> class serves as the primary container for game state, defining the playable area&apos;s boundaries and difficulty. Use the FromConfig method to create a <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kindref="compound">World</ref> instance from a configuration object. The MaxX and MaxY properties specify the world&apos;s size along the X and Y axes, respectively. The Difficulty property determines the overall challenge level for the world.</para>
+<para>The <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kindref="compound">World</ref> class serves as the primary container for game state, defining the playable area&apos;s boundaries and difficulty. Use the <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1aaea96f12a7b8707c491f8870f41ab04a" kindref="member">FromConfig</ref> method to create a <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kindref="compound">World</ref> instance from a configuration object. The <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0b1ad1e842a47530036cb945367b8465" kindref="member">MaxX</ref> and <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a448ca41211652392fcc724b3f06427d7" kindref="member">MaxY</ref> properties specify the world&apos;s size along the X and Y axes, respectively. The <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ae47b636a19335bfbbbdaed97a7ede666" kindref="member">Difficulty</ref> property determines the overall challenge level for the world.</para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -545,7 +545,7 @@
         <link refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer"/>
       </node>
     </collaborationgraph>
-    <location file="Mandatory2DGameFramework/worlds/World.cs" line="25" column="11" bodyfile="Mandatory2DGameFramework/worlds/World.cs" bodystart="26" bodyend="223"/>
+    <location file="worlds/World.cs" line="26" column="11" bodyfile="worlds/World.cs" bodystart="27" bodyend="223"/>
     <listofallmembers>
       <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a2dabc6d79a166bef88473bd06915ea65" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>_creatures</name></member>
       <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a5ff8757da02d490999d83318f597a929" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>_log</name></member>

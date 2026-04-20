@@ -8,6 +8,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/model/creatures/BattleClass.cs" line="8" column="1"/>
+    <location file="model/creatures/BattleClass.cs" line="8" column="1"/>
   </compounddef>
 </doxygen>

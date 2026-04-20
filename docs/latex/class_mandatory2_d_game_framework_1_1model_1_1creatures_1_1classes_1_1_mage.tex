@@ -14,7 +14,7 @@ A concrete implementation of the \doxylink{class_mandatory2_d_game_framework_1_1
 \begin{DoxyCompactItemize}
 \item 
 int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a4d37e9d85da0188fd103ac41fae577c4}{Perform\+Hit}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_ada8f687b850a877a4215bbb7231f39a4}{Creature}} target)
-\begin{DoxyCompactList}\small\item\em Performs an attack on the specified target using the Template Method pattern. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Performs an attack on the specified target. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a83b429ea45feb959cfab975cb6b77de4}{Register\+Observer}} (\doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer}{ICreature\+Observer}} \doxymbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer}{observer}})
 \begin{DoxyCompactList}\small\item\em Registers an observer that will be notified when the creature is hit or dies. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_aef7d906a8465b33764596752b2e8dd69}{Remove\+Observer}} (\doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer}{ICreature\+Observer}} \doxymbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer}{observer}})
@@ -32,7 +32,7 @@ int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures
 int \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_afe9235fd884fb2f98f45069395e0471a}{Current\+Defence\+Weight}} ()
 \begin{DoxyCompactList}\small\item\em Checks the total weight of all currently equipped defence items. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_a41e4a1f9ab6d9868e84f91f04a3dcdfe}{Loot}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}} obj)
-\begin{DoxyCompactList}\small\item\em Attempts to loot a world object. If the object is lootable and is an attack or defence item, it is added to the creature\textquotesingle{}s inventory. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Attempts to loot a \doxylink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}. If the object is lootable and is an attack or defence item, it is added to the creature\textquotesingle{}s inventory. \end{DoxyCompactList}\item 
 override string {\bfseries To\+String} ()
 \begin{DoxyCompactList}\small\item\em Returns a string representation of the creature, including name, hit points, and world position. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
@@ -60,13 +60,13 @@ string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
 int {\bfseries Hit\+Point}\hspace{0.3cm}{\ttfamily  \+[get]\+}
 \begin{DoxyCompactList}\small\item\em Gets the creature\textquotesingle{}s current hit points. \end{DoxyCompactList}\item 
 bool {\bfseries Is\+Dead}\hspace{0.3cm}{\ttfamily  \+[get]\+}
-\begin{DoxyCompactList}\small\item\em Gets a value indicating whether the creature is dead. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets a bool value indicating whether the creature is dead. \end{DoxyCompactList}\item 
 int {\bfseries Max\+Attack\+Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
-\begin{DoxyCompactList}\small\item\em Gets or sets the maximum total weight of attack items the creature can carry. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets or sets the maximum total weight of \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} instances the creature can carry. \end{DoxyCompactList}\item 
 int {\bfseries Max\+Defence\+Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
-\begin{DoxyCompactList}\small\item\em Gets or sets the maximum total weight of defence items the creature can carry. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets or sets the maximum total weight of \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item} instances the creature can carry. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy}{IStrategy}} {\bfseries Strategy}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
-\begin{DoxyCompactList}\small\item\em Gets or sets the hit strategy used to calculate outgoing damage. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets or sets the strategy used to calculate attack damage and defense. \end{DoxyCompactList}\item 
 int {\bfseries X}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
 \begin{DoxyCompactList}\small\item\em Gets or sets the creature\textquotesingle{}s X‑coordinate in the world. \end{DoxyCompactList}\item 
 int {\bfseries Y}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
@@ -122,4 +122,4 @@ Reimplemented from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1mod
 
 The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-Mandatory2\+DGame\+Framework/\+model/\+creatures/\+Battle\+Class.\+cs\end{DoxyCompactItemize}
+model/\+creatures/\+Battle\+Class.\+cs\end{DoxyCompactItemize}

@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
   <compounddef id="dir_b019f5de8203ed3d0ffc9958a3b37740" kind="dir">
-    <compoundname>Mandatory2DGameFramework/model/attack/decorators</compoundname>
+    <compoundname>model/attack/decorators</compoundname>
     <innerfile refid="_attack_buff_decorator_8cs">AttackBuffDecorator.cs</innerfile>
     <innerfile refid="_attack_debuff_decorator_8cs">AttackDebuffDecorator.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/model/attack/decorators/"/>
+    <location file="model/attack/decorators/"/>
   </compounddef>
 </doxygen>

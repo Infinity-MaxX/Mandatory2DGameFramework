@@ -1,25 +1,10 @@
 var searchData=
 [
-  ['mage_0',['Mage',['../class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage.html',1,'Mandatory2DGameFramework.model.creatures.classes.Mage'],['../class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes_1_1_mage.html#a7cc108ba5df058d5b8ec922f88220357',1,'Mandatory2DGameFramework.model.creatures.classes.Mage.Mage()']]],
-  ['mandatory2dgameframework_1',['Mandatory2DGameFramework',['../namespace_mandatory2_d_game_framework.html',1,'']]],
-  ['mandatory2dgameframework_3a_3aconfig_2',['config',['../namespace_mandatory2_d_game_framework_1_1config.html',1,'Mandatory2DGameFramework']]],
-  ['mandatory2dgameframework_3a_3agameinterface_3',['gameInterface',['../namespace_mandatory2_d_game_framework_1_1game_interface.html',1,'Mandatory2DGameFramework']]],
-  ['mandatory2dgameframework_3a_3agameinterface_3a_3aobserver_4',['observer',['../namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer.html',1,'Mandatory2DGameFramework::gameInterface']]],
-  ['mandatory2dgameframework_3a_3agameinterface_3a_3astrategy_5',['strategy',['../namespace_mandatory2_d_game_framework_1_1game_interface_1_1strategy.html',1,'Mandatory2DGameFramework::gameInterface']]],
-  ['mandatory2dgameframework_3a_3ahelper_6',['helper',['../namespace_mandatory2_d_game_framework_1_1helper.html',1,'Mandatory2DGameFramework']]],
-  ['mandatory2dgameframework_3a_3ahelper_3a_3alogger_7',['logger',['../namespace_mandatory2_d_game_framework_1_1helper_1_1logger.html',1,'Mandatory2DGameFramework::helper']]],
-  ['mandatory2dgameframework_3a_3amodel_8',['model',['../namespace_mandatory2_d_game_framework_1_1model.html',1,'Mandatory2DGameFramework']]],
-  ['mandatory2dgameframework_3a_3amodel_3a_3aattack_9',['attack',['../namespace_mandatory2_d_game_framework_1_1model_1_1attack.html',1,'Mandatory2DGameFramework::model']]],
-  ['mandatory2dgameframework_3a_3amodel_3a_3aattack_3a_3adecorators_10',['decorators',['../namespace_mandatory2_d_game_framework_1_1model_1_1attack_1_1decorators.html',1,'Mandatory2DGameFramework::model::attack']]],
-  ['mandatory2dgameframework_3a_3amodel_3a_3acombat_11',['combat',['../namespace_mandatory2_d_game_framework_1_1model_1_1combat.html',1,'Mandatory2DGameFramework::model']]],
-  ['mandatory2dgameframework_3a_3amodel_3a_3acreatures_12',['creatures',['../namespace_mandatory2_d_game_framework_1_1model_1_1creatures.html',1,'Mandatory2DGameFramework::model']]],
-  ['mandatory2dgameframework_3a_3amodel_3a_3acreatures_3a_3aclasses_13',['classes',['../namespace_mandatory2_d_game_framework_1_1model_1_1creatures_1_1classes.html',1,'Mandatory2DGameFramework::model::creatures']]],
-  ['mandatory2dgameframework_3a_3amodel_3a_3adefence_14',['defence',['../namespace_mandatory2_d_game_framework_1_1model_1_1defence.html',1,'Mandatory2DGameFramework::model']]],
-  ['mandatory2dgameframework_3a_3amodel_3a_3adefence_3a_3adecorators_15',['decorators',['../namespace_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators.html',1,'Mandatory2DGameFramework::model::defence']]],
-  ['mandatory2dgameframework_3a_3aworlds_16',['worlds',['../namespace_mandatory2_d_game_framework_1_1worlds.html',1,'Mandatory2DGameFramework']]],
-  ['maxattackweight_17',['MaxAttackWeight',['../class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature.html#a274eb44077a331053086f5512a6fc67b',1,'Mandatory2DGameFramework::model::creatures::Creature']]],
-  ['maxdefenceweight_18',['MaxDefenceWeight',['../class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature.html#a0765d87fd2bf7dbe10558dd1af97cb1b',1,'Mandatory2DGameFramework::model::creatures::Creature']]],
-  ['maxx_19',['MaxX',['../class_mandatory2_d_game_framework_1_1config_1_1_world_config.html#a17713641f7078ffc6666f9ad1e27c3d1',1,'Mandatory2DGameFramework.config.WorldConfig.MaxX'],['../class_mandatory2_d_game_framework_1_1worlds_1_1_world.html#a0b1ad1e842a47530036cb945367b8465',1,'Mandatory2DGameFramework.worlds.World.MaxX']]],
-  ['maxy_20',['MaxY',['../class_mandatory2_d_game_framework_1_1config_1_1_world_config.html#a522a51347397d2471df847b8eb277544',1,'Mandatory2DGameFramework.config.WorldConfig.MaxY'],['../class_mandatory2_d_game_framework_1_1worlds_1_1_world.html#a448ca41211652392fcc724b3f06427d7',1,'Mandatory2DGameFramework.worlds.World.MaxY']]],
-  ['moveobject_21',['MoveObject',['../class_mandatory2_d_game_framework_1_1worlds_1_1_world_object.html#a5c96165c1c5fa6133cd63fddd3318e45',1,'Mandatory2DGameFramework::worlds::WorldObject']]]
+  ['log_0',['Log',['../class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger.html#a63bb41f3132e391f305c2e4b17c2dd17',1,'Mandatory2DGameFramework::helper::logger::Logger']]],
+  ['logerror_1',['LogError',['../class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger.html#ad60537e8cbef29f05ecf2ea936ebbcbe',1,'Mandatory2DGameFramework::helper::logger::Logger']]],
+  ['logger_2',['Logger',['../class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger.html',1,'Mandatory2DGameFramework::helper::logger']]],
+  ['loginfo_3',['LogInfo',['../class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger.html#ac13d3036e0f9f3b636c8bda41d3f9509',1,'Mandatory2DGameFramework::helper::logger::Logger']]],
+  ['logwarning_4',['LogWarning',['../class_mandatory2_d_game_framework_1_1helper_1_1logger_1_1_logger.html#a32242633b15c93beeb203b46335c2003',1,'Mandatory2DGameFramework::helper::logger::Logger']]],
+  ['loot_5',['Loot',['../class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature.html#a41e4a1f9ab6d9868e84f91f04a3dcdfe',1,'Mandatory2DGameFramework::model::creatures::Creature']]],
+  ['lootable_6',['Lootable',['../class_mandatory2_d_game_framework_1_1worlds_1_1_world_object.html#a5f2e01a7c9176b71b41c81c9e76135c8',1,'Mandatory2DGameFramework::worlds::WorldObject']]]
 ];

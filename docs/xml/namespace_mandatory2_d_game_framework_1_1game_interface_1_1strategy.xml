@@ -7,6 +7,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/gameInterface/strategy/IStrategy.cs" line="9" column="1"/>
+    <location file="gameInterface/strategy/IStrategy.cs" line="9" column="1"/>
   </compounddef>
 </doxygen>

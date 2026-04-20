@@ -8,6 +8,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/worlds/World.cs" line="11" column="1"/>
+    <location file="worlds/World.cs" line="11" column="1"/>
   </compounddef>
 </doxygen>

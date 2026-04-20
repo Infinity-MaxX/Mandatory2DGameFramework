@@ -2,7 +2,7 @@
 \hypertarget{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{}\label{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}\index{Mandatory2DGameFramework.model.attack.AttackItem@{Mandatory2DGameFramework.model.attack.AttackItem}}
 
 
-Represents an item that can be used to perform attacks within the game world. Provides properties for the item\textquotesingle{}s name, attack strength, range, and weight.  
+Represents an item that can be used to perform attacks within the game world. Provides properties for the item\textquotesingle{}s name, attack strength, range, and weight. Implements operator overloading to allow combining multiple attack items, thereby supporting the Composite design pattern.  
 
 
 \doxysubsubsection*{Public Member Functions}
@@ -62,7 +62,7 @@ int {\bfseries Y}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
 
 
 \doxysubsection{Detailed Description}
-Represents an item that can be used to perform attacks within the game world. Provides properties for the item\textquotesingle{}s name, attack strength, range, and weight. 
+Represents an item that can be used to perform attacks within the game world. Provides properties for the item\textquotesingle{}s name, attack strength, range, and weight. Implements operator overloading to allow combining multiple attack items, thereby supporting the Composite design pattern. 
 
 \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} serves as a base class for specialized attack items, including those that implement design patterns such as Decorator (for modifying attack or defense properties) and Composite (for grouping multiple weapons). Subclasses may extend functionality to support features like weight management or composite behaviors. Instances of \doxylink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item} are typically used by creatures or entities capable of carrying and utilizing attack items. 
 
@@ -139,4 +139,4 @@ A composite attack item containing both input items.
 
 The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-Mandatory2\+DGame\+Framework/\+model/\+attack/\+Attack\+Item.\+cs\end{DoxyCompactItemize}
+model/\+attack/\+Attack\+Item.\+cs\end{DoxyCompactItemize}

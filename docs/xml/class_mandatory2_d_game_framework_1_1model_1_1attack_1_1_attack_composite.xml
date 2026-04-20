@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="24" column="31" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="24" bodyend="-1"/>
+        <location file="model/attack/AttackComposite.cs" line="25" column="31" bodyfile="model/attack/AttackComposite.cs" bodystart="25" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="31" column="28" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="31" bodyend="31"/>
+        <location file="model/attack/AttackComposite.cs" line="32" column="28" bodyfile="model/attack/AttackComposite.cs" bodystart="32" bodyend="32"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a127a2b170a71efd7d12becb17d2d3a2d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>override int</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="36" column="29" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="37" bodyend="39"/>
+        <location file="model/attack/AttackComposite.cs" line="37" column="29" bodyfile="model/attack/AttackComposite.cs" bodystart="38" bodyend="40"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1aa5ed01eb27059bd87134521fce2ac967" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>override int</type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="48" column="29" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="49" bodyend="55"/>
+        <location file="model/attack/AttackComposite.cs" line="49" column="29" bodyfile="model/attack/AttackComposite.cs" bodystart="50" bodyend="56"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a267f1ba089101be176d392bfc41e1a83" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>override int</type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="60" column="29" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="60" bodyend="60"/>
+        <location file="model/attack/AttackComposite.cs" line="61" column="29" bodyfile="model/attack/AttackComposite.cs" bodystart="61" bodyend="61"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="68" column="16" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="68" bodyend="72"/>
+        <location file="model/attack/AttackComposite.cs" line="68" column="16" bodyfile="model/attack/AttackComposite.cs" bodystart="68" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a54f101a10e1a4f9ce617470bd7ec9ea3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -125,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="78" column="16" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="78" bodyend="82"/>
+        <location file="model/attack/AttackComposite.cs" line="80" column="16" bodyfile="model/attack/AttackComposite.cs" bodystart="80" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a9f66103f71f90b0e95ede1fc158886b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="90" column="21" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="90" bodyend="93"/>
+        <location file="model/attack/AttackComposite.cs" line="92" column="21" bodyfile="model/attack/AttackComposite.cs" bodystart="92" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a2fd468f722a65d8f137b803f86aa3967" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="99" column="21" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="99" bodyend="102"/>
+        <location file="model/attack/AttackComposite.cs" line="101" column="21" bodyfile="model/attack/AttackComposite.cs" bodystart="101" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a0afff0652d5b4fe81580f46363475a46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override string</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="108" column="32" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="108" bodyend="112"/>
+        <location file="model/attack/AttackComposite.cs" line="110" column="32" bodyfile="model/attack/AttackComposite.cs" bodystart="110" bodyend="114"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -243,7 +243,7 @@
         <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
       </node>
     </collaborationgraph>
-    <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="21" column="11" bodyfile="Mandatory2DGameFramework/model/attack/AttackComposite.cs" bodystart="22" bodyend="114"/>
+    <location file="model/attack/AttackComposite.cs" line="22" column="11" bodyfile="model/attack/AttackComposite.cs" bodystart="23" bodyend="116"/>
     <listofallmembers>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a948615f856ca3bc3b7452fe4451cbc62" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>_items</name></member>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_composite_1a9f66103f71f90b0e95ede1fc158886b8" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackComposite</scope><name>Add</name></member>

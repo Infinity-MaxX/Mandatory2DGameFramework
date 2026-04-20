@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/BattleClass.cs" line="22" column="16" bodyfile="Mandatory2DGameFramework/model/creatures/BattleClass.cs" bodystart="22" bodyend="25"/>
+        <location file="model/creatures/BattleClass.cs" line="22" column="16" bodyfile="model/creatures/BattleClass.cs" bodystart="22" bodyend="25"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-func">
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/BattleClass.cs" line="34" column="33" bodyfile="Mandatory2DGameFramework/model/creatures/BattleClass.cs" bodystart="34" bodyend="37"/>
+        <location file="model/creatures/BattleClass.cs" line="34" column="33" bodyfile="model/creatures/BattleClass.cs" bodystart="34" bodyend="37"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -95,7 +95,7 @@
         <link refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature"/>
       </node>
     </collaborationgraph>
-    <location file="Mandatory2DGameFramework/model/creatures/BattleClass.cs" line="14" column="11" bodyfile="Mandatory2DGameFramework/model/creatures/BattleClass.cs" bodystart="15" bodyend="39"/>
+    <location file="model/creatures/BattleClass.cs" line="14" column="11" bodyfile="model/creatures/BattleClass.cs" bodystart="15" bodyend="39"/>
     <listofallmembers>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a7950d8387d78c36a9c3a1de1a9704a81" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>AddAttackItem</name></member>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1af67c7c34dff98bbe47277f6425ffc12c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::classes::Warrior</scope><name>AddDefenceItem</name></member>

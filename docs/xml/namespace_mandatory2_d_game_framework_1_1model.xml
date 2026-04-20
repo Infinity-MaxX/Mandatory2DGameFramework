@@ -10,6 +10,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/model/attack/AttackComposite.cs" line="8" column="1"/>
+    <location file="model/attack/AttackComposite.cs" line="8" column="1"/>
   </compounddef>
 </doxygen>

@@ -9,6 +9,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" line="10" column="1"/>
+    <location file="model/combat/CombatStrategy.cs" line="10" column="1"/>
   </compounddef>
 </doxygen>

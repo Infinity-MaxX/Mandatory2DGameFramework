@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
   <compounddef id="namespace_mandatory2_d_game_framework_1_1config" kind="namespace" language="C#">
     <compoundname>Mandatory2DGameFramework::config</compoundname>
-    <innerclass refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config" prot="public">Mandatory2DGameFramework::config::GameConfig</innerclass>
     <innerclass refid="class_mandatory2_d_game_framework_1_1config_1_1_world_config" prot="public">Mandatory2DGameFramework::config::WorldConfig</innerclass>
+    <innerclass refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config" prot="public">Mandatory2DGameFramework::config::GameConfig</innerclass>
     <innerclass refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config_loader" prot="public">Mandatory2DGameFramework::config::GameConfigLoader</innerclass>
     <sectiondef kind="enum">
       <memberdef kind="enum" id="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eac" prot="public" static="no" strong="yes">
@@ -21,7 +21,7 @@
         <enumvalue id="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eaca960b44c579bc2f6818d2daaf9e4c16f0" prot="public">
           <name>Normal</name>
           <briefdescription>
-<para>Represents a moderate level of difficulty, providing a balanced gaming experince for players. </para>
+<para>Represents a moderate level of difficulty, providing a balanced gaming experience for players. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -29,7 +29,7 @@
         <enumvalue id="namespace_mandatory2_d_game_framework_1_1config_1a3d8ea8230e1215280d9f9e50bc2a0eaca0b84df4e0b66e9d55b22eefb55ca928f" prot="public">
           <name>Expert</name>
           <briefdescription>
-<para>Represents the most difficuly level in the game, suited for experienced players seeking a challenge. </para>
+<para>Represents the most difficult level in the game, suited for experienced players seeking a challenge. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -38,17 +38,17 @@
 <para>Specifies the available difficulty levels for a game. </para>
         </briefdescription>
         <detaileddescription>
-<para>Use this enumeration to select or indicate the current difficulty setting. The values typically correspond to increasing levels of challenge, with &apos;Beginner&apos; being the easiest and &apos;Expert&apos; the most difficult. The meaning of each level may vary depending on the game implementation. </para>
+<para>Use this enumeration to select or indicate the current difficulty setting. The values typically correspond to increasing levels of challenge, with &apos;Beginner&apos; being the easiest and &apos;Expert&apos; the most difficult. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="19" column="11" bodyfile="Mandatory2DGameFramework/config/GameDifficulty.cs" bodystart="20" bodyend="37"/>
+        <location file="config/Game.cs" line="19" column="11" bodyfile="config/Game.cs" bodystart="20" bodyend="37"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="8" column="1"/>
+    <location file="config/Game.cs" line="9" column="1"/>
   </compounddef>
 </doxygen>

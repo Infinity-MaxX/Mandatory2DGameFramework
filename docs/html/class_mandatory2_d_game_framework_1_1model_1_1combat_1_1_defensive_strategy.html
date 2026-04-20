@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mandatory Assignment ASWC: Mandatory2DGameFramework.model.combat.DefensiveStrategy Class Reference</title>
+<title>2DGameFramework: Mandatory2DGameFramework.model.combat.DefensiveStrategy Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Mandatory Assignment ASWC
+   <div id="projectname">2DGameFramework<span id="projectnumber">&#160;1.0.2</span>
    </div>
   </td>
  </tr>
@@ -82,20 +82,18 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>An implementation of the <a class="el" href="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy.html" title="Interface for calculating the damage of an attack based on a collection of attack items,...">IStrategy</a> interface that calculates <br  />
- combat in a defensive manner, decreasing the total damage by 25% and increasing defence by 25%.  
+<p>An implementation of the <a class="el" href="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy.html" title="Interface for calculating the damage of an attack based on a collection of attack items,...">IStrategy</a> interface that calculates combat in a defensive manner, decreasing the total damage by 25% and increasing defence by 25%.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c12b236153b5a82828cf63f96acba7a" id="r_a5c12b236153b5a82828cf63f96acba7a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a5c12b236153b5a82828cf63f96acba7a">CalculateDamage</a> (IEnumerable&lt; <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item.html">AttackItem</a> &gt; items)</td></tr>
-<tr class="memdesc:a5c12b236153b5a82828cf63f96acba7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the total damage by summing the Hit values of all AttackItems and applying a defensive multiplier of 0.75.  <br /></td></tr>
+<tr class="memdesc:a5c12b236153b5a82828cf63f96acba7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the total damage by summing the Hit values of all <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item.html" title="Represents an item that can be used to perform attacks within the game world. Provides properties for...">AttackItem</a> instances and applying a defensive multiplier of 0.75.  <br /></td></tr>
 <tr class="memitem:a1147ca7d470db47f136a036d287eeac9" id="r_a1147ca7d470db47f136a036d287eeac9"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a1147ca7d470db47f136a036d287eeac9">CalculateDefence</a> (IEnumerable&lt; <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html">DefenceItem</a> &gt; items)</td></tr>
-<tr class="memdesc:a1147ca7d470db47f136a036d287eeac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the total defence by summing the ReduceDamage values of all DefenceItems and applying a defensive multiplier of 1.25.  <br /></td></tr>
+<tr class="memdesc:a1147ca7d470db47f136a036d287eeac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the total defence by summing the ReduceDamage values of all <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html" title="Represents an object in the world that provides defensive capabilities by reducing incoming hit point...">DefenceItem</a> instances and applying a defensive multiplier of 1.25.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An implementation of the <a class="el" href="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy.html" title="Interface for calculating the damage of an attack based on a collection of attack items,...">IStrategy</a> interface that calculates <br  />
- combat in a defensive manner, decreasing the total damage by 25% and increasing defence by 25%. </p>
+<div class="textblock"><p>An implementation of the <a class="el" href="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy.html" title="Interface for calculating the damage of an attack based on a collection of attack items,...">IStrategy</a> interface that calculates combat in a defensive manner, decreasing the total damage by 25% and increasing defence by 25%. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a5c12b236153b5a82828cf63f96acba7a" name="a5c12b236153b5a82828cf63f96acba7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c12b236153b5a82828cf63f96acba7a">&#9670;&#160;</a></span>CalculateDamage()</h2>
@@ -112,10 +110,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates the total damage by summing the Hit values of all AttackItems and applying a defensive multiplier of 0.75. </p>
+<p>Calculates the total damage by summing the Hit values of all <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item.html" title="Represents an item that can be used to perform attacks within the game world. Provides properties for...">AttackItem</a> instances and applying a defensive multiplier of 0.75. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">items</td><td>The collection of AttackItems to calculate damage from.</td></tr>
+    <tr><td class="paramname">items</td><td>The collection of <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item.html" title="Represents an item that can be used to perform attacks within the game world. Provides properties for...">AttackItem</a> instances to calculate damage from.</td></tr>
   </table>
   </dd>
 </dl>
@@ -140,10 +138,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates the total defence by summing the ReduceDamage values of all DefenceItems and applying a defensive multiplier of 1.25. </p>
+<p>Calculates the total defence by summing the ReduceDamage values of all <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html" title="Represents an object in the world that provides defensive capabilities by reducing incoming hit point...">DefenceItem</a> instances and applying a defensive multiplier of 1.25. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">items</td><td>The collection of DefenceItems to calculate defence from.</td></tr>
+    <tr><td class="paramname">items</td><td>The collection of <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html" title="Represents an object in the world that provides defensive capabilities by reducing incoming hit point...">DefenceItem</a> instances to calculate defence from.</td></tr>
   </table>
   </dd>
 </dl>
@@ -154,7 +152,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Mandatory2DGameFramework/model/combat/<b>CombatStrategy.cs</b></li>
+<li>model/combat/<b>CombatStrategy.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

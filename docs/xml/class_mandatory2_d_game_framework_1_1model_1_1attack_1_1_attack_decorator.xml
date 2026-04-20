@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" line="26" column="39" bodyfile="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" bodystart="26" bodyend="-1"/>
+        <location file="model/attack/AttackDecorator.cs" line="29" column="39" bodyfile="model/attack/AttackDecorator.cs" bodystart="29" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" line="34" column="29" bodyfile="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" bodystart="35" bodyend="38"/>
+        <location file="model/attack/AttackDecorator.cs" line="37" column="29" bodyfile="model/attack/AttackDecorator.cs" bodystart="38" bodyend="41"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a4f4491c445a596cd899cf3986b8bd38b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>override int</type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" line="44" column="29" bodyfile="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" bodystart="45" bodyend="48"/>
+        <location file="model/attack/AttackDecorator.cs" line="47" column="29" bodyfile="model/attack/AttackDecorator.cs" bodystart="48" bodyend="51"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a15ef1af98f28a62da8aa51d19fde625e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>override int</type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" line="54" column="29" bodyfile="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" bodystart="55" bodyend="58"/>
+        <location file="model/attack/AttackDecorator.cs" line="57" column="29" bodyfile="model/attack/AttackDecorator.cs" bodystart="58" bodyend="61"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" line="69" column="16" bodyfile="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" bodystart="69" bodyend="77"/>
+        <location file="model/attack/AttackDecorator.cs" line="72" column="16" bodyfile="model/attack/AttackDecorator.cs" bodystart="72" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a562d0d7ae7ce458427a7664fd1989a5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override string</type>
@@ -121,14 +121,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" line="84" column="32" bodyfile="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" bodystart="84" bodyend="88"/>
+        <location file="model/attack/AttackDecorator.cs" line="88" column="32" bodyfile="model/attack/AttackDecorator.cs" bodystart="88" bodyend="92"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
 <para>Represents a base decorator for attack items, allowing additional behavior to be layered on top of an existing <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> instance. </para>
     </briefdescription>
     <detaileddescription>
-<para>This class implements the Decorator Design Pattern. It wraps another <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> and forwards all property calls to the wrapped item unless overridden by subclasses. Concrete decorators can modify Hit, Range, Weight, or other behavior without changing the underlying item. </para>
+<para>This class implements the Decorator Design Pattern. It wraps another <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> and forwards all property calls to the wrapped item unless overridden by subclasses. Concrete decorators can modify <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a7575a7cda9e9284912427a35b68881da" kindref="member">Hit</ref>, <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a4f4491c445a596cd899cf3986b8bd38b" kindref="member">Range</ref>, <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a15ef1af98f28a62da8aa51d19fde625e" kindref="member">Weight</ref>, or other behavior without changing the underlying item. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -181,7 +181,7 @@
         <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
       </node>
     </collaborationgraph>
-    <location file="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" line="20" column="21" bodyfile="Mandatory2DGameFramework/model/attack/AttackDecorator.cs" bodystart="21" bodyend="90"/>
+    <location file="model/attack/AttackDecorator.cs" line="23" column="21" bodyfile="model/attack/AttackDecorator.cs" bodystart="24" bodyend="94"/>
     <listofallmembers>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1a243ef79b6da76a60585e711b3e3ae3fc" prot="protected" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackDecorator</scope><name>_baseWeapon</name></member>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_decorator_1ae7aeaa591be5a4489455079f2634ba25" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackDecorator</scope><name>AttackDecorator</name></member>

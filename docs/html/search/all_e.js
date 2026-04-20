@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['performhit_0',['PerformHit',['../class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature.html#a4d37e9d85da0188fd103ac41fae577c4',1,'Mandatory2DGameFramework::model::creatures::Creature']]],
-  ['program_1',['Program',['../class_program.html',1,'']]],
-  ['program_2',['Executing program',['../dir_381299e59da83805f38fdd2613dbbd2c.html#autotoc_md5',1,'']]],
-  ['project_20title_3',['Project Title',['../dir_381299e59da83805f38fdd2613dbbd2c.html#autotoc_md0',1,'']]]
+  ['objectsat_0',['ObjectsAt',['../class_mandatory2_d_game_framework_1_1worlds_1_1_world.html#a30c70a445d132e52f91ca1055a073d08',1,'Mandatory2DGameFramework::worlds::World']]],
+  ['oncreaturedeath_1',['OnCreatureDeath',['../interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer.html#a469a85fee4e05b20b1a671cf670de489',1,'Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver.OnCreatureDeath()'],['../class_mandatory2_d_game_framework_1_1worlds_1_1_world.html#ae7d088ceca56746b303f0c81467d9a10',1,'Mandatory2DGameFramework.worlds.World.OnCreatureDeath()']]],
+  ['oncreaturehit_2',['OnCreatureHit',['../interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer.html#a91e0cd8329b36ca388742c1a332a96a1',1,'Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver.OnCreatureHit()'],['../class_mandatory2_d_game_framework_1_1worlds_1_1_world.html#a8828d2714648459b46fba861143080d2',1,'Mandatory2DGameFramework.worlds.World.OnCreatureHit()']]],
+  ['oncreatureloot_3',['OnCreatureLoot',['../interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer.html#a22161c11a7f0ffea37f9760c62d0469a',1,'Mandatory2DGameFramework.gameInterface.observer.ICreatureObserver.OnCreatureLoot()'],['../class_mandatory2_d_game_framework_1_1worlds_1_1_world.html#a803b69d32ffb8b895f1ec21b0c4f34a2',1,'Mandatory2DGameFramework.worlds.World.OnCreatureLoot()']]],
+  ['operator_2b_4',['operator+',['../class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item.html#a57a89a86ad284ff50342442a3017ad38',1,'Mandatory2DGameFramework.model.attack.AttackItem.operator+()'],['../class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html#a38ef30df3f4cf08306040a3674c9b2fb',1,'Mandatory2DGameFramework.model.defence.DefenceItem.operator+()']]]
 ];

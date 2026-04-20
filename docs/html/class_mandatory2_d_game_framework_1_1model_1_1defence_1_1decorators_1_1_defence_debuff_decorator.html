@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mandatory Assignment ASWC: Mandatory2DGameFramework.model.defence.decorators.DefenceDebuffDecorator Class Reference</title>
+<title>2DGameFramework: Mandatory2DGameFramework.model.defence.decorators.DefenceDebuffDecorator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Mandatory Assignment ASWC
+   <div id="projectname">2DGameFramework<span id="projectnumber">&#160;1.0.2</span>
    </div>
   </td>
  </tr>
@@ -89,7 +89,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afeb5d16a3b01de30cd1c0a0e3b5f33e5" id="r_afeb5d16a3b01de30cd1c0a0e3b5f33e5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afeb5d16a3b01de30cd1c0a0e3b5f33e5">DefenceDebuffDecorator</a> (<a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html#a2800a3024565901b5ceaf248890c09fa">DefenceItem</a> baseDefence, int debuff=3)</td></tr>
-<tr class="memdesc:afeb5d16a3b01de30cd1c0a0e3b5f33e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new decorator that wraps the specified defence item with added debuff.  <br /></td></tr>
+<tr class="memdesc:afeb5d16a3b01de30cd1c0a0e3b5f33e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new decorator that wraps the specified defence item with the subtracted debuff.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator.html">Mandatory2DGameFramework.model.defence.DefenceDecorator</a></td></tr>
 <tr class="memitem:aaa27b64fca966e9e5614d6e721593ea5 inherit pub_methods_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator" id="r_aaa27b64fca966e9e5614d6e721593ea5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator.html#aaa27b64fca966e9e5614d6e721593ea5">DefenceDecorator</a> (<a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html#a2800a3024565901b5ceaf248890c09fa">DefenceItem</a> baseDefence)</td></tr>
 <tr class="memdesc:aaa27b64fca966e9e5614d6e721593ea5 inherit pub_methods_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new decorator that wraps the specified defence item.  <br /></td></tr>
@@ -102,10 +102,9 @@ override string&#160;</td><td class="memItemRight"><b>ToString</b> ()</td></tr>
 <tr class="memdesc:a2800a3024565901b5ceaf248890c09fa inherit pub_methods_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html" title="Represents an object in the world that provides defensive capabilities by reducing incoming hit point...">DefenceItem</a> class with default values. This version assumes the player is not wearing any defensive items. <br /></td></tr>
 <tr class="memitem:a045d49fa8375b28ec8d74a69f9e11a24 inherit pub_methods_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" id="r_a045d49fa8375b28ec8d74a69f9e11a24"><td class="memItemLeft">
 &#160;</td><td class="memItemRight"><b>DefenceItem</b> (string name, int reduceDamage, int weight)</td></tr>
-<tr class="memdesc:a045d49fa8375b28ec8d74a69f9e11a24 inherit pub_methods_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html" title="Represents an object in the world that provides defensive capabilities by reducing incoming hit point...">DefenceItem</a> class with a <br  />
- name and default values for hit point reduction and weight. This allows for junk/gag defensive items that have no defensive strength or weight. <br /></td></tr>
+<tr class="memdesc:a045d49fa8375b28ec8d74a69f9e11a24 inherit pub_methods_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html" title="Represents an object in the world that provides defensive capabilities by reducing incoming hit point...">DefenceItem</a> class with a name and default values for hit point reduction and weight. This allows for junk/gag defensive items that have no defensive strength or weight. <br /></td></tr>
 <tr class="memitem:a7b9c7ace396b732ddbecdf138fb2b0ea inherit pub_methods_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" id="r_a7b9c7ace396b732ddbecdf138fb2b0ea"><td class="memItemLeft">override string&#160;</td><td class="memItemRight"><a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html#a7b9c7ace396b732ddbecdf138fb2b0ea">ToString</a> ()</td></tr>
-<tr class="memdesc:a7b9c7ace396b732ddbecdf138fb2b0ea inherit pub_methods_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string representation of the <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html" title="Represents an object in the world that provides defensive capabilities by reducing incoming hit point...">DefenceItem</a>, including its name and the amount of hit points it reduces.  <br /></td></tr>
+<tr class="memdesc:a7b9c7ace396b732ddbecdf138fb2b0ea inherit pub_methods_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string representation of the <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html" title="Represents an object in the world that provides defensive capabilities by reducing incoming hit point...">DefenceItem</a> class, including its name and the amount of hit points it reduces.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_mandatory2_d_game_framework_1_1worlds_1_1_world_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object.html">Mandatory2DGameFramework.worlds.WorldObject</a></td></tr>
 <tr class="memitem:a36701698b4ac1503dca8f4a57dc7cfc7 inherit pub_methods_class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" id="r_a36701698b4ac1503dca8f4a57dc7cfc7"><td class="memItemLeft">
 &#160;</td><td class="memItemRight"><b>WorldObject</b> ()</td></tr>
@@ -132,7 +131,7 @@ override int&#160;</td><td class="memItemRight"><b>Weight</b><code> [get, set]</
 <tr class="inherit_header properties_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Properties inherited from <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html">Mandatory2DGameFramework.model.defence.DefenceItem</a></td></tr>
 <tr class="memitem:aff658980d00ea677a411e11b50872825 inherit properties_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" id="r_aff658980d00ea677a411e11b50872825"><td class="memItemLeft">
 virtual int&#160;</td><td class="memItemRight"><b>ReduceDamage</b><code> [get, set]</code></td></tr>
-<tr class="memdesc:aff658980d00ea677a411e11b50872825 inherit properties_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the amount of hit points to reduce from the creature when damage is applied. <br /></td></tr>
+<tr class="memdesc:aff658980d00ea677a411e11b50872825 inherit properties_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the amount of hit points that this defence item reduces when the player is attacked. This value is used to calculate the net damage taken by the player after applying all defensive items. <br /></td></tr>
 <tr class="memitem:a0daed8af64f17e3f2390a88b7e76c7eb inherit properties_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" id="r_a0daed8af64f17e3f2390a88b7e76c7eb"><td class="memItemLeft">
 virtual int&#160;</td><td class="memItemRight"><b>Weight</b><code> [get, set]</code></td></tr>
 <tr class="memdesc:a0daed8af64f17e3f2390a88b7e76c7eb inherit properties_class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the weight of the defence item, which will be used to determine how much it affects the player's mobility or weight capacity in subclasses. <br /></td></tr>
@@ -185,7 +184,7 @@ readonly <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defen
       </table>
 </div><div class="memdoc">
 
-<p>Initializes a new decorator that wraps the specified defence item with added debuff. </p>
+<p>Initializes a new decorator that wraps the specified defence item with the subtracted debuff. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">baseDefence</td><td>The defence item to debuff.</td></tr>
@@ -197,7 +196,7 @@ readonly <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defen
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Mandatory2DGameFramework/model/defence/decorators/<b>DefenceDebuffDecorator.cs</b></li>
+<li>model/defence/decorators/<b>DefenceDebuffDecorator.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

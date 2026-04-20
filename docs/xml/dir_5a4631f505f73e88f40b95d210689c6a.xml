@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
   <compounddef id="dir_5a4631f505f73e88f40b95d210689c6a" kind="dir">
-    <compoundname>Mandatory2DGameFramework/gameInterface</compoundname>
-    <innerdir refid="dir_6302962440af046b6a2deba30c8ecc01">Mandatory2DGameFramework/gameInterface/observer</innerdir>
-    <innerdir refid="dir_39013238c3c654d58c4e823b837e3669">Mandatory2DGameFramework/gameInterface/strategy</innerdir>
+    <compoundname>gameInterface</compoundname>
+    <innerdir refid="dir_6302962440af046b6a2deba30c8ecc01">gameInterface/observer</innerdir>
+    <innerdir refid="dir_39013238c3c654d58c4e823b837e3669">gameInterface/strategy</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/gameInterface/"/>
+    <location file="gameInterface/"/>
   </compounddef>
 </doxygen>

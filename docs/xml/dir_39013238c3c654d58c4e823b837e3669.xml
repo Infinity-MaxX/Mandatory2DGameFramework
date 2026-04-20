@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
   <compounddef id="dir_39013238c3c654d58c4e823b837e3669" kind="dir">
-    <compoundname>Mandatory2DGameFramework/gameInterface/strategy</compoundname>
+    <compoundname>gameInterface/strategy</compoundname>
     <innerfile refid="_i_strategy_8cs">IStrategy.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/gameInterface/strategy/"/>
+    <location file="gameInterface/strategy/"/>
   </compounddef>
 </doxygen>

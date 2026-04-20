@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
   <compounddef id="dir_82e61b5fb2595d953b347c062e97bb1f" kind="dir">
-    <compoundname>Mandatory2DGameFramework/model/attack</compoundname>
-    <innerdir refid="dir_b019f5de8203ed3d0ffc9958a3b37740">Mandatory2DGameFramework/model/attack/decorators</innerdir>
+    <compoundname>model/attack</compoundname>
+    <innerdir refid="dir_b019f5de8203ed3d0ffc9958a3b37740">model/attack/decorators</innerdir>
     <innerfile refid="_attack_composite_8cs">AttackComposite.cs</innerfile>
     <innerfile refid="_attack_decorator_8cs">AttackDecorator.cs</innerfile>
     <innerfile refid="_attack_item_8cs">AttackItem.cs</innerfile>
@@ -10,6 +10,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/model/attack/"/>
+    <location file="model/attack/"/>
   </compounddef>
 </doxygen>

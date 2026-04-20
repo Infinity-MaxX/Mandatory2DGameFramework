@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="20" column="23" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="20" bodyend="20"/>
+        <location file="worlds/WorldObject.cs" line="20" column="23" bodyfile="worlds/WorldObject.cs" bodystart="20" bodyend="20"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>bool</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="25" column="21" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="25" bodyend="25"/>
+        <location file="worlds/WorldObject.cs" line="25" column="21" bodyfile="worlds/WorldObject.cs" bodystart="25" bodyend="25"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8a4119f23e39f81c1f6c39156943767c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>bool</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="30" column="21" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="30" bodyend="30"/>
+        <location file="worlds/WorldObject.cs" line="30" column="21" bodyfile="worlds/WorldObject.cs" bodystart="30" bodyend="30"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1af69309e8102b27e50095a5d61e094a97" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="35" column="20" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="35" bodyend="35"/>
+        <location file="worlds/WorldObject.cs" line="35" column="20" bodyfile="worlds/WorldObject.cs" bodystart="35" bodyend="35"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a19a046421bfc9bd38c545a9e9e9c663a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="40" column="20" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="40" bodyend="40"/>
+        <location file="worlds/WorldObject.cs" line="40" column="20" bodyfile="worlds/WorldObject.cs" bodystart="40" bodyend="40"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="48" column="16" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="48" bodyend="53"/>
+        <location file="worlds/WorldObject.cs" line="48" column="16" bodyfile="worlds/WorldObject.cs" bodystart="48" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a08e5aa9ac1a774047559753e80376ed2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="70" column="16" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="70" bodyend="76"/>
+        <location file="worlds/WorldObject.cs" line="70" column="16" bodyfile="worlds/WorldObject.cs" bodystart="70" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5c96165c1c5fa6133cd63fddd3318e45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -191,7 +191,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="86" column="21" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="86" bodyend="90"/>
+        <location file="worlds/WorldObject.cs" line="85" column="21" bodyfile="worlds/WorldObject.cs" bodystart="85" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8f6d24976133e2cff6bdbe69e75a29e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override string</type>
@@ -209,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="97" column="32" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="97" bodyend="102"/>
+        <location file="worlds/WorldObject.cs" line="96" column="32" bodyfile="worlds/WorldObject.cs" bodystart="96" bodyend="101"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -283,7 +283,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="Mandatory2DGameFramework/worlds/WorldObject.cs" line="14" column="11" bodyfile="Mandatory2DGameFramework/worlds/WorldObject.cs" bodystart="15" bodyend="104"/>
+    <location file="worlds/WorldObject.cs" line="14" column="11" bodyfile="worlds/WorldObject.cs" bodystart="15" bodyend="103"/>
     <listofallmembers>
       <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::WorldObject</scope><name>Lootable</name></member>
       <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5c96165c1c5fa6133cd63fddd3318e45" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::WorldObject</scope><name>MoveObject</name></member>

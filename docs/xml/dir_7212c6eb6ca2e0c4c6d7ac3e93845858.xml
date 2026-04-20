@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
   <compounddef id="dir_7212c6eb6ca2e0c4c6d7ac3e93845858" kind="dir">
-    <compoundname>Mandatory2DGameFramework/helper</compoundname>
+    <compoundname>helper</compoundname>
     <innerfile refid="_logger_8cs">Logger.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/helper/"/>
+    <location file="helper/"/>
   </compounddef>
 </doxygen>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mandatory Assignment ASWC: Mandatory2DGameFramework.model.attack.AttackItem Class Reference</title>
+<title>2DGameFramework: Mandatory2DGameFramework.model.attack.AttackItem Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Mandatory Assignment ASWC
+   <div id="projectname">2DGameFramework<span id="projectnumber">&#160;1.0.2</span>
    </div>
   </td>
  </tr>
@@ -84,7 +84,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Represents an item that can be used to perform attacks within the game world. Provides properties for the item's name, attack strength, range, and weight.  
+<p>Represents an item that can be used to perform attacks within the game world. Provides properties for the item's name, attack strength, range, and weight. Implements operator overloading to allow combining multiple attack items, thereby supporting the Composite design pattern.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -144,7 +144,7 @@ int&#160;</td><td class="memItemRight"><b>Y</b><code> [get, set]</code></td></tr
 <tr class="memdesc:a19a046421bfc9bd38c545a9e9e9c663a inherit properties_class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the Y-coordinate position of the object in the world. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents an item that can be used to perform attacks within the game world. Provides properties for the item's name, attack strength, range, and weight. </p>
+<div class="textblock"><p>Represents an item that can be used to perform attacks within the game world. Provides properties for the item's name, attack strength, range, and weight. Implements operator overloading to allow combining multiple attack items, thereby supporting the Composite design pattern. </p>
 <p><a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item.html" title="Represents an item that can be used to perform attacks within the game world. Provides properties for...">AttackItem</a> serves as a base class for specialized attack items, including those that implement design patterns such as Decorator (for modifying attack or defense properties) and Composite (for grouping multiple weapons). Subclasses may extend functionality to support features like weight management or composite behaviors. Instances of <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item.html" title="Represents an item that can be used to perform attacks within the game world. Provides properties for...">AttackItem</a> are typically used by creatures or entities capable of carrying and utilizing attack items. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aeb055ba1faa10dc9a298454955899a6c" name="aeb055ba1faa10dc9a298454955899a6c"></a>
@@ -261,7 +261,7 @@ int&#160;</td><td class="memItemRight"><b>Y</b><code> [get, set]</code></td></tr
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Mandatory2DGameFramework/model/attack/<b>AttackItem.cs</b></li>
+<li>model/attack/<b>AttackItem.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

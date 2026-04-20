@@ -9,7 +9,7 @@ Reduces the hit strength of the wrapped defence item.
 \begin{DoxyCompactItemize}
 \item 
 \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1decorators_1_1_defence_debuff_decorator_afeb5d16a3b01de30cd1c0a0e3b5f33e5}{Defence\+Debuff\+Decorator}} (\doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a2800a3024565901b5ceaf248890c09fa}{Defence\+Item}} base\+Defence, int debuff=3)
-\begin{DoxyCompactList}\small\item\em Initializes a new decorator that wraps the specified defence item with added debuff. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initializes a new decorator that wraps the specified defence item with the subtracted debuff. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_decorator}{Mandatory2\+DGame\+Framework.\+model.\+defence.\+Defence\+Decorator}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -23,10 +23,9 @@ override string {\bfseries To\+String} ()
 {\bfseries Defence\+Item} ()
 \begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item} class with default values. This version assumes the player is not wearing any defensive items. \end{DoxyCompactList}\item 
 {\bfseries Defence\+Item} (string name, int reduce\+Damage, int weight)
-\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item} class with a ~\newline
- name and default values for hit point reduction and weight. This allows for junk/\+gag defensive items that have no defensive strength or weight. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item} class with a name and default values for hit point reduction and weight. This allows for junk/\+gag defensive items that have no defensive strength or weight. \end{DoxyCompactList}\item 
 override string \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_a7b9c7ace396b732ddbecdf138fb2b0ea}{To\+String}} ()
-\begin{DoxyCompactList}\small\item\em A string representation of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item}, including its name and the amount of hit points it reduces. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A string representation of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item} class, including its name and the amount of hit points it reduces. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{Mandatory2\+DGame\+Framework.\+worlds.\+World\+Object}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -55,7 +54,7 @@ override int {\bfseries Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
 \begin{DoxyCompactItemize}
 \item 
 virtual int {\bfseries Reduce\+Damage}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
-\begin{DoxyCompactList}\small\item\em Gets or sets the amount of hit points to reduce from the creature when damage is applied. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets or sets the amount of hit points that this defence item reduces when the player is attacked. This value is used to calculate the net damage taken by the player after applying all defensive items. \end{DoxyCompactList}\item 
 virtual int {\bfseries Weight}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
 \begin{DoxyCompactList}\small\item\em Gets or sets the weight of the defence item, which will be used to determine how much it affects the player\textquotesingle{}s mobility or weight capacity in subclasses. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{Mandatory2\+DGame\+Framework.\+worlds.\+World\+Object}}}
@@ -98,7 +97,7 @@ Mandatory2\+DGame\+Framework.\+model.\+defence.\+decorators.\+Defence\+Debuff\+D
 
 
 
-Initializes a new decorator that wraps the specified defence item with added debuff. 
+Initializes a new decorator that wraps the specified defence item with the subtracted debuff. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -111,4 +110,4 @@ Initializes a new decorator that wraps the specified defence item with added deb
 
 The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-Mandatory2\+DGame\+Framework/\+model/\+defence/\+decorators/\+Defence\+Debuff\+Decorator.\+cs\end{DoxyCompactItemize}
+model/\+defence/\+decorators/\+Defence\+Debuff\+Decorator.\+cs\end{DoxyCompactItemize}

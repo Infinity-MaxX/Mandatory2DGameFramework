@@ -45,6 +45,6 @@
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="46"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Mandatory2DGameFramework/model/attack/decorators/AttackBuffDecorator.cs"/>
+    <location file="model/attack/decorators/AttackBuffDecorator.cs"/>
   </compounddef>
 </doxygen>

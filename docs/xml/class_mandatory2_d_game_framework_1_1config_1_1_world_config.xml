@@ -10,13 +10,13 @@
         <name>MaxX</name>
         <qualifiedname>Mandatory2DGameFramework.config.WorldConfig.MaxX</qualifiedname>
         <briefdescription>
-<para>Gets or sets the maximum X-coordinate value. </para>
+<para>Gets or sets the maximum X-coordinate value. Mapped onto the XML element name &quot;MaxX&quot; for deserialization from the game configuration file. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="73" column="20" bodyfile="Mandatory2DGameFramework/config/GameDifficulty.cs" bodystart="73" bodyend="73"/>
+        <location file="config/Game.cs" line="51" column="20" bodyfile="config/Game.cs" bodystart="51" bodyend="51"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1config_1_1_world_config_1a522a51347397d2471df847b8eb277544" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -25,21 +25,21 @@
         <name>MaxY</name>
         <qualifiedname>Mandatory2DGameFramework.config.WorldConfig.MaxY</qualifiedname>
         <briefdescription>
-<para>Gets or sets the maximum Y-coordinate value. </para>
+<para>Gets or sets the maximum Y-coordinate value. Mapped onto the XML element name &quot;MaxY&quot; for deserialization from the game configuration file. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="79" column="20" bodyfile="Mandatory2DGameFramework/config/GameDifficulty.cs" bodystart="79" bodyend="79"/>
+        <location file="config/Game.cs" line="59" column="20" bodyfile="config/Game.cs" bodystart="59" bodyend="59"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Represents configuration settings that define the boundaries of a of a two-dimensional world. </para>
+<para>Represents configuration settings that define the boundaries of a two-dimensional world. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="67" column="11" bodyfile="Mandatory2DGameFramework/config/GameDifficulty.cs" bodystart="68" bodyend="80"/>
+    <location file="config/Game.cs" line="43" column="11" bodyfile="config/Game.cs" bodystart="44" bodyend="60"/>
     <listofallmembers>
       <member refid="class_mandatory2_d_game_framework_1_1config_1_1_world_config_1a17713641f7078ffc6666f9ad1e27c3d1" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::config::WorldConfig</scope><name>MaxX</name></member>
       <member refid="class_mandatory2_d_game_framework_1_1config_1_1_world_config_1a522a51347397d2471df847b8eb277544" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::config::WorldConfig</scope><name>MaxY</name></member>

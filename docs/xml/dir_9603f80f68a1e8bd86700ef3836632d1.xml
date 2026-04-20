@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
   <compounddef id="dir_9603f80f68a1e8bd86700ef3836632d1" kind="dir">
-    <compoundname>Mandatory2DGameConsole/obj</compoundname>
-    <innerdir refid="dir_dcbaa1abcc6049f2f74337bac6f4cef8">Mandatory2DGameConsole/obj/Debug</innerdir>
+    <compoundname>C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole/obj</compoundname>
+    <innerdir refid="dir_dcbaa1abcc6049f2f74337bac6f4cef8">C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole/obj/Debug</innerdir>
+    <innerdir refid="dir_2ac5f74e35d65b1cb6edc62b2711d832">C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole/obj/Release</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameConsole/obj/"/>
+    <location file="C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole/obj/"/>
   </compounddef>
 </doxygen>

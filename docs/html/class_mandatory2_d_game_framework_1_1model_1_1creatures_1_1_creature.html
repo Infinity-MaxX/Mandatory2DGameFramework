@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mandatory Assignment ASWC: Mandatory2DGameFramework.model.creatures.Creature Class Reference</title>
+<title>2DGameFramework: Mandatory2DGameFramework.model.creatures.Creature Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Mandatory Assignment ASWC
+   <div id="projectname">2DGameFramework<span id="projectnumber">&#160;1.0.2</span>
    </div>
   </td>
  </tr>
@@ -84,13 +84,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a creature in the game world and serves as the base class for all creature types. Implements Template Method, Observer, and Strategy design patterns.  
+<p>Represents a creature in the game world and serves as the base class for all creature types. Implements Template, Observer, and Strategy design patterns.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d37e9d85da0188fd103ac41fae577c4" id="r_a4d37e9d85da0188fd103ac41fae577c4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a4d37e9d85da0188fd103ac41fae577c4">PerformHit</a> (<a class="el" href="#ada8f687b850a877a4215bbb7231f39a4">Creature</a> target)</td></tr>
-<tr class="memdesc:a4d37e9d85da0188fd103ac41fae577c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs an attack on the specified target using the Template Method pattern.  <br /></td></tr>
+<tr class="memdesc:a4d37e9d85da0188fd103ac41fae577c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs an attack on the specified target.  <br /></td></tr>
 <tr class="memitem:a83b429ea45feb959cfab975cb6b77de4" id="r_a83b429ea45feb959cfab975cb6b77de4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a83b429ea45feb959cfab975cb6b77de4">RegisterObserver</a> (<a class="el" href="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer.html">ICreatureObserver</a> <a class="el" href="namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer.html">observer</a>)</td></tr>
 <tr class="memdesc:a83b429ea45feb959cfab975cb6b77de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an observer that will be notified when the creature is hit or dies.  <br /></td></tr>
 <tr class="memitem:aef7d906a8465b33764596752b2e8dd69" id="r_aef7d906a8465b33764596752b2e8dd69"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aef7d906a8465b33764596752b2e8dd69">RemoveObserver</a> (<a class="el" href="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer.html">ICreatureObserver</a> <a class="el" href="namespace_mandatory2_d_game_framework_1_1game_interface_1_1observer.html">observer</a>)</td></tr>
@@ -108,7 +108,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe9235fd884fb2f98f45069395e0471a" id="r_afe9235fd884fb2f98f45069395e0471a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#afe9235fd884fb2f98f45069395e0471a">CurrentDefenceWeight</a> ()</td></tr>
 <tr class="memdesc:afe9235fd884fb2f98f45069395e0471a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the total weight of all currently equipped defence items.  <br /></td></tr>
 <tr class="memitem:a41e4a1f9ab6d9868e84f91f04a3dcdfe" id="r_a41e4a1f9ab6d9868e84f91f04a3dcdfe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a41e4a1f9ab6d9868e84f91f04a3dcdfe">Loot</a> (<a class="el" href="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object.html">WorldObject</a> obj)</td></tr>
-<tr class="memdesc:a41e4a1f9ab6d9868e84f91f04a3dcdfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to loot a world object. If the object is lootable and is an attack or defence item, it is added to the creature's inventory.  <br /></td></tr>
+<tr class="memdesc:a41e4a1f9ab6d9868e84f91f04a3dcdfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to loot a <a class="el" href="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object.html" title="Represents an object within the world with a name and properties indicating whether it can be looted ...">WorldObject</a>. If the object is lootable and is an attack or defence item, it is added to the creature's inventory.  <br /></td></tr>
 <tr class="memitem:a496f6512ba854eef11bcaaeb0fac440f" id="r_a496f6512ba854eef11bcaaeb0fac440f"><td class="memItemLeft"><a id="a496f6512ba854eef11bcaaeb0fac440f" name="a496f6512ba854eef11bcaaeb0fac440f"></a>
 override string&#160;</td><td class="memItemRight"><b>ToString</b> ()</td></tr>
 <tr class="memdesc:a496f6512ba854eef11bcaaeb0fac440f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the creature, including name, hit points, and world position. <br /></td></tr>
@@ -136,16 +136,16 @@ int&#160;</td><td class="memItemRight"><b>HitPoint</b><code> [get]</code></td></
 <tr class="memdesc:a387dfaa6ea37c6580855fa6ffca63735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the creature's current hit points. <br /></td></tr>
 <tr class="memitem:a0648526f0e817bdb54ae06b4b9778b20" id="r_a0648526f0e817bdb54ae06b4b9778b20"><td class="memItemLeft"><a id="a0648526f0e817bdb54ae06b4b9778b20" name="a0648526f0e817bdb54ae06b4b9778b20"></a>
 bool&#160;</td><td class="memItemRight"><b>IsDead</b><code> [get]</code></td></tr>
-<tr class="memdesc:a0648526f0e817bdb54ae06b4b9778b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the creature is dead. <br /></td></tr>
+<tr class="memdesc:a0648526f0e817bdb54ae06b4b9778b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a bool value indicating whether the creature is dead. <br /></td></tr>
 <tr class="memitem:a274eb44077a331053086f5512a6fc67b" id="r_a274eb44077a331053086f5512a6fc67b"><td class="memItemLeft"><a id="a274eb44077a331053086f5512a6fc67b" name="a274eb44077a331053086f5512a6fc67b"></a>
 int&#160;</td><td class="memItemRight"><b>MaxAttackWeight</b><code> [get, set]</code></td></tr>
-<tr class="memdesc:a274eb44077a331053086f5512a6fc67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the maximum total weight of attack items the creature can carry. <br /></td></tr>
+<tr class="memdesc:a274eb44077a331053086f5512a6fc67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the maximum total weight of <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item.html" title="Represents an item that can be used to perform attacks within the game world. Provides properties for...">AttackItem</a> instances the creature can carry. <br /></td></tr>
 <tr class="memitem:a0765d87fd2bf7dbe10558dd1af97cb1b" id="r_a0765d87fd2bf7dbe10558dd1af97cb1b"><td class="memItemLeft"><a id="a0765d87fd2bf7dbe10558dd1af97cb1b" name="a0765d87fd2bf7dbe10558dd1af97cb1b"></a>
 int&#160;</td><td class="memItemRight"><b>MaxDefenceWeight</b><code> [get, set]</code></td></tr>
-<tr class="memdesc:a0765d87fd2bf7dbe10558dd1af97cb1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the maximum total weight of defence items the creature can carry. <br /></td></tr>
+<tr class="memdesc:a0765d87fd2bf7dbe10558dd1af97cb1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the maximum total weight of <a class="el" href="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item.html" title="Represents an object in the world that provides defensive capabilities by reducing incoming hit point...">DefenceItem</a> instances the creature can carry. <br /></td></tr>
 <tr class="memitem:a3473d8720295c3eaba3450c49ecf2a5b" id="r_a3473d8720295c3eaba3450c49ecf2a5b"><td class="memItemLeft"><a id="a3473d8720295c3eaba3450c49ecf2a5b" name="a3473d8720295c3eaba3450c49ecf2a5b"></a>
 <a class="el" href="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy.html">IStrategy</a>&#160;</td><td class="memItemRight"><b>Strategy</b><code> [get, set]</code></td></tr>
-<tr class="memdesc:a3473d8720295c3eaba3450c49ecf2a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the hit strategy used to calculate outgoing damage. <br /></td></tr>
+<tr class="memdesc:a3473d8720295c3eaba3450c49ecf2a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the strategy used to calculate attack damage and defense. <br /></td></tr>
 <tr class="memitem:a69c891df3e22fcd908acb2b469e0b2a3" id="r_a69c891df3e22fcd908acb2b469e0b2a3"><td class="memItemLeft"><a id="a69c891df3e22fcd908acb2b469e0b2a3" name="a69c891df3e22fcd908acb2b469e0b2a3"></a>
 int&#160;</td><td class="memItemRight"><b>X</b><code> [get, set]</code></td></tr>
 <tr class="memdesc:a69c891df3e22fcd908acb2b469e0b2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the creature's X‑coordinate in the world. <br /></td></tr>
@@ -154,9 +154,9 @@ int&#160;</td><td class="memItemRight"><b>Y</b><code> [get, set]</code></td></tr
 <tr class="memdesc:a73279c70e84d878359e9524f69d2b9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the creature's Y‑coordinate in the world. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a creature in the game world and serves as the base class for all creature types. Implements Template Method, Observer, and Strategy design patterns. </p>
-<p><b>Template Method:</b> The <a class="el" href="#a4d37e9d85da0188fd103ac41fae577c4" title="Performs an attack on the specified target using the Template Method pattern.">PerformHit</a> method defines the attack flow, while subclasses may override <a class="el" href="#a51d9c8de951060b3c1249705a331be4e" title="Hook method invoked after a successful hit. Subclasses may override this to implement custom post‑att...">AfterHit</a> to customize post‑attack behavior. </p>
-<p><b>Strategy:</b> Damage calculation is delegated to an IHitStrategy implementation, allowing creatures to change combat behavior dynamically. </p>
+<div class="textblock"><p>Represents a creature in the game world and serves as the base class for all creature types. Implements Template, Observer, and Strategy design patterns. </p>
+<p><b>Template Method:</b> The <a class="el" href="#a4d37e9d85da0188fd103ac41fae577c4" title="Performs an attack on the specified target.">PerformHit</a> method defines the attack flow, while subclasses may override <a class="el" href="#a51d9c8de951060b3c1249705a331be4e" title="Hook method invoked after a successful hit. Subclasses may override this to implement custom post‑att...">AfterHit</a> to customize post‑attack behavior. </p>
+<p><b>Strategy:</b> Damage calculation is delegated to an <a class="el" href="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy.html" title="Interface for calculating the damage of an attack based on a collection of attack items,...">IStrategy</a> implementation, allowing creatures to change combat behavior dynamically. </p>
 <p><b>Observer:</b> External observers can subscribe to hit and death events using <a class="el" href="#a83b429ea45feb959cfab975cb6b77de4" title="Registers an observer that will be notified when the creature is hit or dies.">RegisterObserver</a> and <a class="el" href="#aef7d906a8465b33764596752b2e8dd69" title="Removes a previously registered observer.">RemoveObserver</a>. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ada8f687b850a877a4215bbb7231f39a4" name="ada8f687b850a877a4215bbb7231f39a4"></a>
@@ -258,6 +258,7 @@ int&#160;</td><td class="memItemRight"><b>Y</b><code> [get, set]</code></td></tr
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the item was added successfully; otherwise <code>false</code>. </dd></dl>
 
 </div>
 </div>
@@ -442,10 +443,10 @@ int&#160;</td><td class="memItemRight"><b>Y</b><code> [get, set]</code></td></tr
       </table>
 </div><div class="memdoc">
 
-<p>Attempts to loot a world object. If the object is lootable and is an attack or defence item, it is added to the creature's inventory. </p>
+<p>Attempts to loot a <a class="el" href="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object.html" title="Represents an object within the world with a name and properties indicating whether it can be looted ...">WorldObject</a>. If the object is lootable and is an attack or defence item, it is added to the creature's inventory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj</td><td>The world object to loot.</td></tr>
+    <tr><td class="paramname">obj</td><td>The <a class="el" href="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object.html" title="Represents an object within the world with a name and properties indicating whether it can be looted ...">WorldObject</a> to loot.</td></tr>
   </table>
   </dd>
 </dl>
@@ -467,7 +468,7 @@ int&#160;</td><td class="memItemRight"><b>Y</b><code> [get, set]</code></td></tr
       </table>
 </div><div class="memdoc">
 
-<p>Performs an attack on the specified target using the Template Method pattern. </p>
+<p>Performs an attack on the specified target. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">target</td><td>The creature being attacked.</td></tr>
@@ -584,7 +585,7 @@ Invoke a customizable hook (<a class="el" href="#a51d9c8de951060b3c1249705a331be
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Mandatory2DGameFramework/model/creatures/<b>Creature.cs</b></li>
+<li>model/creatures/<b>Creature.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -67,6 +67,6 @@
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="127"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Mandatory2DGameFramework/helper/Logger.cs"/>
+    <location file="helper/Logger.cs"/>
   </compounddef>
 </doxygen>

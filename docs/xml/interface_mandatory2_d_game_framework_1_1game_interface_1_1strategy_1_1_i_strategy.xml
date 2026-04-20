@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/gameInterface/strategy/IStrategy.cs" line="28" column="13"/>
+        <location file="gameInterface/strategy/IStrategy.cs" line="28" column="13"/>
       </memberdef>
       <memberdef kind="function" id="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_1ae2f11d94042a261a276bf407e37c573b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/gameInterface/strategy/IStrategy.cs" line="37" column="13"/>
+        <location file="gameInterface/strategy/IStrategy.cs" line="37" column="13"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -104,7 +104,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="Mandatory2DGameFramework/gameInterface/strategy/IStrategy.cs" line="18" column="22" bodyfile="Mandatory2DGameFramework/gameInterface/strategy/IStrategy.cs" bodystart="19" bodyend="38"/>
+    <location file="gameInterface/strategy/IStrategy.cs" line="18" column="22" bodyfile="gameInterface/strategy/IStrategy.cs" bodystart="19" bodyend="38"/>
     <listofallmembers>
       <member refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_1a6b5a1c7df79c1ff0356831e5e758aab9" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::gameInterface::strategy::IStrategy</scope><name>CalculateDamage</name></member>
       <member refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy_1ae2f11d94042a261a276bf407e37c573b" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::gameInterface::strategy::IStrategy</scope><name>CalculateDefence</name></member>

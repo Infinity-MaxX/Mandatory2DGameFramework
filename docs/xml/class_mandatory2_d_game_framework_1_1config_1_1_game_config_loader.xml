@@ -14,7 +14,7 @@
           <declname>filePath</declname>
         </param>
         <briefdescription>
-<para>Loads the game configuration from an XML file at the specified path. </para>
+<para>Loads and reads the game configuration from an XML file at the specified path. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -22,17 +22,18 @@
 <parametername>filePath</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>The path to the XML file containing the game configuration.</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para></para>
+<simplesect kind="return"><para>The deserialized <ref refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config" kindref="compound">GameConfig</ref> object.</para>
 </simplesect>
 <parameterlist kind="exception"><parameteritem>
 <parameternamelist>
 <parametername>FileNotFoundException</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Throw an exception if the config file cannot be found.</para>
+<para>Thrown if the config file cannot be found.</para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -40,7 +41,7 @@
 <parametername>InvalidDataException</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Throw an exception if the game configurations cannot be deserialised.</para>
+<para>Thrown if the game configurations cannot be deserialized.</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -48,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="96" column="34" bodyfile="Mandatory2DGameFramework/config/GameDifficulty.cs" bodystart="96" bodyend="112"/>
+        <location file="config/Game.cs" line="105" column="34" bodyfile="config/Game.cs" bodystart="105" bodyend="136"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -56,7 +57,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="85" column="19" bodyfile="Mandatory2DGameFramework/config/GameDifficulty.cs" bodystart="86" bodyend="113"/>
+    <location file="config/Game.cs" line="92" column="19" bodyfile="config/Game.cs" bodystart="93" bodyend="137"/>
     <listofallmembers>
       <member refid="class_mandatory2_d_game_framework_1_1config_1_1_game_config_loader_1aa5137fe21742afe01ae1a584428af0e5" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::config::GameConfigLoader</scope><name>Load</name></member>
     </listofallmembers>

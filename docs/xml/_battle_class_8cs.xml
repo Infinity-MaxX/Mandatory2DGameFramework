@@ -58,6 +58,6 @@
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Mandatory2DGameFramework/model/creatures/BattleClass.cs"/>
+    <location file="model/creatures/BattleClass.cs"/>
   </compounddef>
 </doxygen>

@@ -50,6 +50,6 @@
 <codeline lineno="52"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="Mandatory2DGameFramework/model/attack/decorators/AttackDebuffDecorator.cs"/>
+    <location file="model/attack/decorators/AttackDebuffDecorator.cs"/>
   </compounddef>
 </doxygen>

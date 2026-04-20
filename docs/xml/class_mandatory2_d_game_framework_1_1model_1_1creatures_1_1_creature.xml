@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="38" column="33" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="38" bodyend="-1"/>
+        <location file="model/creatures/Creature.cs" line="39" column="33" bodyfile="model/creatures/Creature.cs" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ac4588eb03df1782ee51a844ddddb98c5" prot="private" static="no" mutable="no">
         <type>readonly List&lt; <ref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1observer_1_1_i_creature_observer" kindref="compound">ICreatureObserver</ref> &gt;</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="39" column="31" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="39" bodyend="-1"/>
+        <location file="model/creatures/Creature.cs" line="41" column="31" bodyfile="model/creatures/Creature.cs" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1aa1a98a9ea3ff5c074c6c8fd968c29a74" prot="private" static="no" mutable="no">
         <type>readonly List&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> &gt;</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="40" column="31" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="40" bodyend="-1"/>
+        <location file="model/creatures/Creature.cs" line="42" column="31" bodyfile="model/creatures/Creature.cs" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ad7a06caf5b5b84ff9ad7e407ef316237" prot="private" static="no" mutable="no">
         <type>readonly List&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref> &gt;</type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="41" column="31" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="41" bodyend="-1"/>
+        <location file="model/creatures/Creature.cs" line="43" column="31" bodyfile="model/creatures/Creature.cs" bodystart="43" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="48" column="23" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="48" bodyend="48"/>
+        <location file="model/creatures/Creature.cs" line="50" column="23" bodyfile="model/creatures/Creature.cs" bodystart="50" bodyend="50"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a387dfaa6ea37c6580855fa6ffca63735" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
         <type>int</type>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="53" column="20" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="53" bodyend="53"/>
+        <location file="model/creatures/Creature.cs" line="55" column="20" bodyfile="model/creatures/Creature.cs" bodystart="55" bodyend="55"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a0648526f0e817bdb54ae06b4b9778b20" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>bool</type>
@@ -104,13 +104,13 @@
         <name>IsDead</name>
         <qualifiedname>Mandatory2DGameFramework.model.creatures.Creature.IsDead</qualifiedname>
         <briefdescription>
-<para>Gets a value indicating whether the creature is dead. </para>
+<para>Gets a bool value indicating whether the creature is dead. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="58" column="21" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="58" bodyend="58"/>
+        <location file="model/creatures/Creature.cs" line="61" column="21" bodyfile="model/creatures/Creature.cs" bodystart="61" bodyend="61"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a274eb44077a331053086f5512a6fc67b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -119,13 +119,13 @@
         <name>MaxAttackWeight</name>
         <qualifiedname>Mandatory2DGameFramework.model.creatures.Creature.MaxAttackWeight</qualifiedname>
         <briefdescription>
-<para>Gets or sets the maximum total weight of attack items the creature can carry. </para>
+<para>Gets or sets the maximum total weight of <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> instances the creature can carry. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="64" column="20" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="64" bodyend="64"/>
+        <location file="model/creatures/Creature.cs" line="67" column="20" bodyfile="model/creatures/Creature.cs" bodystart="67" bodyend="67"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a0765d87fd2bf7dbe10558dd1af97cb1b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -134,13 +134,13 @@
         <name>MaxDefenceWeight</name>
         <qualifiedname>Mandatory2DGameFramework.model.creatures.Creature.MaxDefenceWeight</qualifiedname>
         <briefdescription>
-<para>Gets or sets the maximum total weight of defence items the creature can carry. </para>
+<para>Gets or sets the maximum total weight of <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref> instances the creature can carry. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="70" column="20" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="70" bodyend="70"/>
+        <location file="model/creatures/Creature.cs" line="73" column="20" bodyfile="model/creatures/Creature.cs" bodystart="73" bodyend="73"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a3473d8720295c3eaba3450c49ecf2a5b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type><ref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy" kindref="compound">IStrategy</ref></type>
@@ -149,13 +149,13 @@
         <name>Strategy</name>
         <qualifiedname>Mandatory2DGameFramework.model.creatures.Creature.Strategy</qualifiedname>
         <briefdescription>
-<para>Gets or sets the hit strategy used to calculate outgoing damage. </para>
+<para>Gets or sets the strategy used to calculate attack damage and defense. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="76" column="26" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="76" bodyend="76"/>
+        <location file="model/creatures/Creature.cs" line="79" column="26" bodyfile="model/creatures/Creature.cs" bodystart="79" bodyend="79"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a69c891df3e22fcd908acb2b469e0b2a3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="81" column="20" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="81" bodyend="81"/>
+        <location file="model/creatures/Creature.cs" line="84" column="20" bodyfile="model/creatures/Creature.cs" bodystart="84" bodyend="84"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a73279c70e84d878359e9524f69d2b9fa" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="86" column="20" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="86" bodyend="86"/>
+        <location file="model/creatures/Creature.cs" line="89" column="20" bodyfile="model/creatures/Creature.cs" bodystart="89" bodyend="89"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-func">
@@ -255,7 +255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="101" column="19" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="101" bodyend="108"/>
+        <location file="model/creatures/Creature.cs" line="104" column="19" bodyfile="model/creatures/Creature.cs" bodystart="104" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a51d9c8de951060b3c1249705a331be4e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -285,7 +285,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="126" column="32" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="126" bodyend="129"/>
+        <location file="model/creatures/Creature.cs" line="129" column="32" bodyfile="model/creatures/Creature.cs" bodystart="129" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1abee2f3c53c6ab173b31a4771a2fa0070" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -315,7 +315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="136" column="32" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="136" bodyend="139"/>
+        <location file="model/creatures/Creature.cs" line="139" column="32" bodyfile="model/creatures/Creature.cs" bodystart="139" bodyend="142"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a35dbd21e14d6ec4bfefd125898da99f7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -333,7 +333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="146" column="31" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="146" bodyend="149"/>
+        <location file="model/creatures/Creature.cs" line="149" column="31" bodyfile="model/creatures/Creature.cs" bodystart="149" bodyend="152"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ac4b45ff510cd2345d7e4809876270a1c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>int</type>
@@ -351,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="155" column="31" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="155" bodyend="158"/>
+        <location file="model/creatures/Creature.cs" line="158" column="31" bodyfile="model/creatures/Creature.cs" bodystart="158" bodyend="161"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -366,7 +366,7 @@
           <declname>target</declname>
         </param>
         <briefdescription>
-<para>Performs an attack on the specified target using the Template Method pattern. </para>
+<para>Performs an attack on the specified target. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -399,7 +399,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="179" column="20" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="179" bodyend="186"/>
+        <location file="model/creatures/Creature.cs" line="181" column="20" bodyfile="model/creatures/Creature.cs" bodystart="181" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a83b429ea45feb959cfab975cb6b77de4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -428,7 +428,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="199" column="21" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="199" bodyend="205"/>
+        <location file="model/creatures/Creature.cs" line="199" column="21" bodyfile="model/creatures/Creature.cs" bodystart="199" bodyend="205"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1aef7d906a8465b33764596752b2e8dd69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -457,7 +457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="211" column="21" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="211" bodyend="214"/>
+        <location file="model/creatures/Creature.cs" line="211" column="21" bodyfile="model/creatures/Creature.cs" bodystart="211" bodyend="214"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a3beba53eb5ed2e03a6a3d89181360549" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -475,7 +475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="252" column="20" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="252" bodyend="260"/>
+        <location file="model/creatures/Creature.cs" line="254" column="20" bodyfile="model/creatures/Creature.cs" bodystart="254" bodyend="262"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1af6fee2d078abb89e04fdda4d7c3a2f19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -504,7 +504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="266" column="21" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="266" bodyend="282"/>
+        <location file="model/creatures/Creature.cs" line="269" column="21" bodyfile="model/creatures/Creature.cs" bodystart="269" bodyend="285"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a7950d8387d78c36a9c3a1de1a9704a81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -535,7 +535,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="296" column="21" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="296" bodyend="305"/>
+        <location file="model/creatures/Creature.cs" line="299" column="21" bodyfile="model/creatures/Creature.cs" bodystart="299" bodyend="308"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1af67c7c34dff98bbe47277f6425ffc12c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -560,11 +560,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the item was added successfully; otherwise <computeroutput>false</computeroutput>. </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="311" column="21" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="311" bodyend="320"/>
+        <location file="model/creatures/Creature.cs" line="318" column="21" bodyfile="model/creatures/Creature.cs" bodystart="318" bodyend="327"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a895f635e4f59e77a66f7e4ef6c9ba499" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -582,7 +584,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="326" column="20" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="326" bodyend="334"/>
+        <location file="model/creatures/Creature.cs" line="333" column="20" bodyfile="model/creatures/Creature.cs" bodystart="333" bodyend="341"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1afe9235fd884fb2f98f45069395e0471a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -600,7 +602,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="340" column="20" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="340" bodyend="348"/>
+        <location file="model/creatures/Creature.cs" line="347" column="20" bodyfile="model/creatures/Creature.cs" bodystart="347" bodyend="355"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a41e4a1f9ab6d9868e84f91f04a3dcdfe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -613,7 +615,7 @@
           <declname>obj</declname>
         </param>
         <briefdescription>
-<para>Attempts to loot a world object. If the object is lootable and is an attack or defence item, it is added to the creature&apos;s inventory. </para>
+<para>Attempts to loot a <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref>. If the object is lootable and is an attack or defence item, it is added to the creature&apos;s inventory. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -621,7 +623,7 @@
 <parametername>obj</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The world object to loot.</para>
+<para>The <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> to loot.</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -629,7 +631,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="360" column="21" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="360" bodyend="391"/>
+        <location file="model/creatures/Creature.cs" line="367" column="21" bodyfile="model/creatures/Creature.cs" bodystart="367" bodyend="400"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a496f6512ba854eef11bcaaeb0fac440f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override string</type>
@@ -644,7 +646,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="397" column="32" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="397" bodyend="400"/>
+        <location file="model/creatures/Creature.cs" line="406" column="32" bodyfile="model/creatures/Creature.cs" bodystart="406" bodyend="409"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -664,7 +666,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="219" column="22" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="219" bodyend="225"/>
+        <location file="model/creatures/Creature.cs" line="219" column="22" bodyfile="model/creatures/Creature.cs" bodystart="219" bodyend="225"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ad355612da36a9ac6d1ea648d91ec2b12" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -678,7 +680,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="227" column="22" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="227" bodyend="234"/>
+        <location file="model/creatures/Creature.cs" line="227" column="22" bodyfile="model/creatures/Creature.cs" bodystart="227" bodyend="235"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a6acc2da87cb4283caa2836de1b57fd77" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -696,15 +698,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="236" column="22" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="236" bodyend="242"/>
+        <location file="model/creatures/Creature.cs" line="237" column="22" bodyfile="model/creatures/Creature.cs" bodystart="237" bodyend="243"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Represents a creature in the game world and serves as the base class for all creature types. Implements Template Method, Observer, and Strategy design patterns. </para>
+<para>Represents a creature in the game world and serves as the base class for all creature types. Implements Template, Observer, and Strategy design patterns. </para>
     </briefdescription>
     <detaileddescription>
 <para><bold>Template Method:</bold> The <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a4d37e9d85da0188fd103ac41fae577c4" kindref="member">PerformHit</ref> method defines the attack flow, while subclasses may override <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a51d9c8de951060b3c1249705a331be4e" kindref="member">AfterHit</ref> to customize post‑attack behavior. </para>
-<para><bold>Strategy:</bold> Damage calculation is delegated to an IHitStrategy implementation, allowing creatures to change combat behavior dynamically. </para>
+<para><bold>Strategy:</bold> Damage calculation is delegated to an <ref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy" kindref="compound">IStrategy</ref> implementation, allowing creatures to change combat behavior dynamically. </para>
 <para><bold>Observer:</bold> External observers can subscribe to hit and death events using <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1a83b429ea45feb959cfab975cb6b77de4" kindref="member">RegisterObserver</ref> and <ref refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1aef7d906a8465b33764596752b2e8dd69" kindref="member">RemoveObserver</ref>. </para>
     </detaileddescription>
     <inheritancegraph>
@@ -725,7 +727,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="Mandatory2DGameFramework/model/creatures/Creature.cs" line="35" column="21" bodyfile="Mandatory2DGameFramework/model/creatures/Creature.cs" bodystart="36" bodyend="402"/>
+    <location file="model/creatures/Creature.cs" line="35" column="21" bodyfile="model/creatures/Creature.cs" bodystart="36" bodyend="411"/>
     <listofallmembers>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1aa1a98a9ea3ff5c074c6c8fd968c29a74" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::Creature</scope><name>_attackItems</name></member>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1creatures_1_1_creature_1ad7a06caf5b5b84ff9ad7e407ef316237" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::creatures::Creature</scope><name>_defenceItems</name></member>

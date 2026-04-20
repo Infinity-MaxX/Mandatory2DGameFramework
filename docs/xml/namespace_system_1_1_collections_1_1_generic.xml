@@ -6,6 +6,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/config/GameDifficulty.cs" line="2" column="33"/>
+    <location file="config/Game.cs" line="2" column="33"/>
   </compounddef>
 </doxygen>

@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
   <compounddef id="dir_cadd8b6148d3397bbd460aa37bf4a7d8" kind="dir">
-    <compoundname>Mandatory2DGameConsole</compoundname>
-    <innerdir refid="dir_9603f80f68a1e8bd86700ef3836632d1">Mandatory2DGameConsole/obj</innerdir>
+    <compoundname>C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole</compoundname>
+    <innerdir refid="dir_9603f80f68a1e8bd86700ef3836632d1">C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole/obj</innerdir>
     <innerfile refid="_program_8cs">Program.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameConsole/"/>
+    <location file="C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/Mandatory2DGameConsole/"/>
   </compounddef>
 </doxygen>

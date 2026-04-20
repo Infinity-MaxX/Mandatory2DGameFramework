@@ -7,69 +7,106 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">#<sp/>Project<sp/>Title</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Mandatory2DGameFramework</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Simple<sp/>overview<sp/>of<sp/>use/purpose.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Features](#features)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Installation](#installation)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Konfiguration](#konfiguration)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Eksempel](#eksempel)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Arkitektur](#arkitektur)</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Description</highlight></codeline>
+<codeline><highlight class="normal">Et<sp/>fleksibelt<sp/>og<sp/>konfigurerbart<sp/>mini‑framework<sp/>til<sp/>tur‑baserede<sp/>2D‑spil<sp/>i<sp/>C#.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">An<sp/>in-depth<sp/>paragraph<sp/>about<sp/>your<sp/>project<sp/>and<sp/>overview<sp/>of<sp/>use.</highlight></codeline>
+<codeline><highlight class="normal">Frameworket<sp/>er<sp/>udviklet<sp/>som<sp/>en<sp/>del<sp/>af<sp/>faget<sp/>**Advanced<sp/>Software<sp/>Construction**<sp/>og<sp/>demonstrerer<sp/>brugen<sp/>af<sp/>SOLID‑principperne<sp/>samt<sp/>en<sp/>række<sp/>klassiske<sp/>design<sp/>patterns:<sp/>Template,<sp/>Strategy,<sp/>Observer,<sp/>Composite,<sp/>Decorator,<sp/>Factory,<sp/>Singleton.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Getting<sp/>Started</highlight></codeline>
+<codeline><highlight class="normal">Link<sp/>til<sp/>NuGet-pakke:<sp/>https://www.nuget.org/packages/Katerina2DGameFramework/</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">###<sp/>Dependencies</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">*<sp/>Describe<sp/>any<sp/>prerequisites,<sp/>libraries,<sp/>OS<sp/>version,<sp/>etc.,<sp/>needed<sp/>before<sp/>installing<sp/>program.</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>ex.<sp/>Windows<sp/>10</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Features</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">###<sp/>Installing</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>2D‑verden<sp/>med<sp/>dynamisk<sp/>størrelse<sp/>(konfigureret<sp/>via<sp/>XML)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Creatures<sp/>med<sp/>position,<sp/>inventory,<sp/>strategi‑baseret<sp/>kamp<sp/>og<sp/>observer‑notifikationer</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Attack‑<sp/>og<sp/>defence‑items<sp/>med<sp/>Composite<sp/>og<sp/>Decorator<sp/>patterns</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Looting‑system<sp/>med<sp/>automatisk<sp/>fjernelse<sp/>af<sp/>objekter<sp/>fra<sp/>verden</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Logging<sp/>via<sp/>singleton‑logger<sp/>med<sp/>udskiftelige<sp/>TraceListeners</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Klar<sp/>til<sp/>brug<sp/>som<sp/>NuGet‑pakke</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">*<sp/>How/where<sp/>to<sp/>download<sp/>your<sp/>program</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>Any<sp/>modifications<sp/>needed<sp/>to<sp/>be<sp/>made<sp/>to<sp/>files/folders</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">###<sp/>Executing<sp/>program</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Installation</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">*<sp/>How<sp/>to<sp/>run<sp/>the<sp/>program</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>Step-by-step<sp/>bullets</highlight></codeline>
+<codeline><highlight class="normal">Dotnet<sp/>CLI</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```PowerShell</highlight></codeline>
+<codeline><highlight class="normal">dotnet<sp/>add<sp/>package<sp/>Katerina2DGameFramework<sp/>--version<sp/>1.0.1</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
-<codeline><highlight class="normal">code<sp/>blocks<sp/>for<sp/>commands</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PowerShell</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```PowerShell</highlight></codeline>
+<codeline><highlight class="normal">Install-Package<sp/>Katerina2DGameFramework</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Help</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Konfiguration</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Any<sp/>advise<sp/>for<sp/>common<sp/>problems<sp/>or<sp/>issues.</highlight></codeline>
+<codeline><highlight class="normal">Frameworket<sp/>læser<sp/>konfiguration<sp/>fra<sp/>en<sp/>XML‑fil:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```xml</highlight></codeline>
+<codeline><highlight class="normal">&lt;GameConfig&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;World&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;MaxX&gt;20&lt;/MaxX&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;MaxY&gt;10&lt;/MaxY&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;/World&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;GameDifficulty&gt;Beginner&lt;/GameDifficulty&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/GameConfig&gt;</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
-<codeline><highlight class="normal">command<sp/>to<sp/>run<sp/>if<sp/>program<sp/>contains<sp/>helper<sp/>info</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Eksempel</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```csharp</highlight></codeline>
+<codeline><highlight class="normal">var<sp/>world<sp/>=<sp/>World.FromConfig(GameConfigLoader.Load(&quot;gameconfig.xml&quot;));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">var<sp/>warrior<sp/>=<sp/>new<sp/>Warrior(&quot;Laezel&quot;);</highlight></codeline>
+<codeline><highlight class="normal">var<sp/>mage<sp/>=<sp/>new<sp/>Mage(&quot;Gale&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">world.AddCreature(warrior);</highlight></codeline>
+<codeline><highlight class="normal">world.AddCreature(mage);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">var<sp/>sword<sp/>=<sp/>new<sp/>AttackItem(&quot;Sword&quot;,<sp/>10,<sp/>1,<sp/>5);</highlight></codeline>
+<codeline><highlight class="normal">warrior.Loot(sword);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">warrior.PerformHit(mage);</highlight></codeline>
+<codeline><highlight class="normal">Console.WriteLine(mage);</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Authors</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Arkitektur</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Contributors<sp/>names<sp/>and<sp/>contact<sp/>info</highlight></codeline>
+<codeline><highlight class="normal">World</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">ex.<sp/>Dominique<sp/>Pizzie<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">ex.<sp/>[@DomPizzie](https://twitter.com/dompizzie)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Indeholder<sp/>creatures<sp/>og<sp/>world<sp/>objects</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Observerer<sp/>creatures<sp/>(hit,<sp/>death,<sp/>loot)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Factory:<sp/>World.FromConfig</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Version<sp/>History</highlight></codeline>
+<codeline><highlight class="normal">Creature</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">*<sp/>0.2</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Various<sp/>bug<sp/>fixes<sp/>and<sp/>optimizations</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>See<sp/>[commit<sp/>change]()<sp/>or<sp/>See<sp/>[release<sp/>history]()</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>0.1</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Initial<sp/>Release</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Template<sp/>Method:<sp/>PerformHit</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Strategy:<sp/>Aggressive,<sp/>Balanced,<sp/>Defensive</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Observer:<sp/>registrerer<sp/>world</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Inventory:<sp/>attack<sp/>+<sp/>defence<sp/>items</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Looting<sp/>med<sp/>vægtbegrænsning</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">##<sp/>License</highlight></codeline>
+<codeline><highlight class="normal">AttackItem<sp/>/<sp/>DefenceItem</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">This<sp/>project<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>[NAME<sp/>HERE]<sp/>License<sp/>-<sp/>see<sp/>the<sp/>LICENSE.md<sp/>file<sp/>for<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Composite:<sp/>kombiner<sp/>flere<sp/>items</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Decorator:<sp/>buff/debuff</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Operator<sp/>overload:<sp/>+</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Acknowledgments</highlight></codeline>
+<codeline><highlight class="normal">Logger</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Inspiration,<sp/>code<sp/>snippets,<sp/>etc.</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>[awesome-readme](https://github.com/matiassingers/awesome-readme)</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>[PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>[dbader](https://github.com/dbader/readme-template)</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>[zenorocha](https://gist.github.com/zenorocha/4526327)</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>[fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Singleton</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Understøtter<sp/>udskiftelige<sp/>TraceListeners</highlight></codeline>
     </programlisting>
-    <location file="Mandatory2DGameFramework/README.md"/>
+    <location file="C:/Users/kater/Documents/Zealand Akademi/Fag/Advanced Software Construction/Mandatory2DGameFramework/README.md"/>
   </compounddef>
 </doxygen>

@@ -39,19 +39,19 @@
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53" refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy" kindref="compound">BalancedStrategy</ref><sp/>:<sp/><ref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy" kindref="compound">IStrategy</ref></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_1af6bbe54177879ef71edd4cf54184e106" kindref="member">CalculateDamage</ref>(IEnumerable&lt;AttackItem&gt;<sp/>items)</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>items.Sum(i<sp/>=&gt;<sp/>i.Hit);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_1a7120dba3d70ee1827a519d5dd72afe30" kindref="member">CalculateDefence</ref>(IEnumerable&lt;DefenceItem&gt;<sp/>items)</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>items.Sum(i<sp/>=&gt;<sp/>i.ReduceDamage);</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87" refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_defensive_strategy" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_defensive_strategy" kindref="compound">DefensiveStrategy</ref><sp/>:<sp/><ref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy" kindref="compound">IStrategy</ref></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_1af6bbe54177879ef71edd4cf54184e106" kindref="member">CalculateDamage</ref>(IEnumerable&lt;AttackItem&gt;<sp/>items)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>items.Sum(i<sp/>=&gt;<sp/>i.Hit);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_balanced_strategy_1a7120dba3d70ee1827a519d5dd72afe30" kindref="member">CalculateDefence</ref>(IEnumerable&lt;DefenceItem&gt;<sp/>items)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>items.Sum(i<sp/>=&gt;<sp/>i.ReduceDamage);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_defensive_strategy" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_defensive_strategy" kindref="compound">DefensiveStrategy</ref><sp/>:<sp/><ref refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy" kindref="compound">IStrategy</ref></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_defensive_strategy_1a5c12b236153b5a82828cf63f96acba7a" kindref="member">CalculateDamage</ref>(IEnumerable&lt;AttackItem&gt;<sp/>items)</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(items.Sum(i<sp/>=&gt;<sp/>i.Hit)<sp/>*<sp/>0.75);</highlight></codeline>
@@ -64,6 +64,6 @@
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="116"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Mandatory2DGameFramework/model/combat/CombatStrategy.cs"/>
+    <location file="model/combat/CombatStrategy.cs"/>
   </compounddef>
 </doxygen>

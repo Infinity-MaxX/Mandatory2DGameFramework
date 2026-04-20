@@ -16,7 +16,7 @@
           <declname>items</declname>
         </param>
         <briefdescription>
-<para>Calculates the total damage by summing the Hit values of all AttackItems and applying an aggressive multiplier of 1.25. </para>
+<para>Calculates the total damage by summing the Hit values of all <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref> instances and applying an aggressive multiplier of 1.25. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -24,7 +24,7 @@
 <parametername>items</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The collection of AttackItems to calculate damage from.</para>
+<para>The collection of <ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref>s to calculate damage from.</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" line="28" column="20" bodyfile="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" bodystart="28" bodyend="31"/>
+        <location file="model/combat/CombatStrategy.cs" line="28" column="20" bodyfile="model/combat/CombatStrategy.cs" bodystart="28" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_aggressive_strategy_1a735c14f07ca6d1ba0176b87cd5fba7f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -48,7 +48,7 @@
           <declname>items</declname>
         </param>
         <briefdescription>
-<para>Calculates the total defence by summing the ReduceDamage values of all DefenceItems and applying a defensive multiplier of 0.75. </para>
+<para>Calculates the total defence by summing the ReduceDamage values of all <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref> instances and applying a defensive multiplier of 0.75. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -56,7 +56,7 @@
 <parametername>items</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The collection of DefenceItems to calculate defence from.</para>
+<para>The collection of <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref> instances to calculate defence from.</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" line="42" column="20" bodyfile="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" bodystart="42" bodyend="45"/>
+        <location file="model/combat/CombatStrategy.cs" line="42" column="20" bodyfile="model/combat/CombatStrategy.cs" bodystart="42" bodyend="45"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -98,7 +98,7 @@
         <link refid="interface_mandatory2_d_game_framework_1_1game_interface_1_1strategy_1_1_i_strategy"/>
       </node>
     </collaborationgraph>
-    <location file="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" line="17" column="11" bodyfile="Mandatory2DGameFramework/model/combat/CombatStrategy.cs" bodystart="18" bodyend="46"/>
+    <location file="model/combat/CombatStrategy.cs" line="17" column="11" bodyfile="model/combat/CombatStrategy.cs" bodystart="18" bodyend="46"/>
     <listofallmembers>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_aggressive_strategy_1a10d550f41e92b7b588397218a66bf757" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::combat::AggressiveStrategy</scope><name>CalculateDamage</name></member>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1combat_1_1_aggressive_strategy_1a735c14f07ca6d1ba0176b87cd5fba7f9" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::combat::AggressiveStrategy</scope><name>CalculateDefence</name></member>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
   <compounddef id="dir_6302962440af046b6a2deba30c8ecc01" kind="dir">
-    <compoundname>Mandatory2DGameFramework/gameInterface/observer</compoundname>
+    <compoundname>gameInterface/observer</compoundname>
     <innerfile refid="_i_creature_observer_8cs">ICreatureObserver.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/gameInterface/observer/"/>
+    <location file="gameInterface/observer/"/>
   </compounddef>
 </doxygen>

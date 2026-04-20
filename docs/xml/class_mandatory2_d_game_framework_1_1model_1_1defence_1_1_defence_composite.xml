@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="16" column="31" bodyfile="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="16" bodyend="-1"/>
+        <location file="model/defence/DefenceComposite.cs" line="17" column="31" bodyfile="model/defence/DefenceComposite.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="23" column="28" bodyfile="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="23" bodyend="23"/>
+        <location file="model/defence/DefenceComposite.cs" line="24" column="28" bodyfile="model/defence/DefenceComposite.cs" bodystart="24" bodyend="24"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a703086c327eff56c15b4db46e5936f3a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>override int</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="28" column="29" bodyfile="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="29" bodyend="31"/>
+        <location file="model/defence/DefenceComposite.cs" line="29" column="29" bodyfile="model/defence/DefenceComposite.cs" bodystart="30" bodyend="32"/>
       </memberdef>
       <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1aaa969c7b3b0e8ad7475b6b9f2f4d83b6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>override int</type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="36" column="29" bodyfile="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="36" bodyend="36"/>
+        <location file="model/defence/DefenceComposite.cs" line="37" column="29" bodyfile="model/defence/DefenceComposite.cs" bodystart="37" bodyend="37"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="44" column="16" bodyfile="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="44" bodyend="48"/>
+        <location file="model/defence/DefenceComposite.cs" line="45" column="16" bodyfile="model/defence/DefenceComposite.cs" bodystart="45" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a22dc8c855cc0590015660a2387013f7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -109,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="54" column="16" bodyfile="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="54" bodyend="58"/>
+        <location file="model/defence/DefenceComposite.cs" line="57" column="16" bodyfile="model/defence/DefenceComposite.cs" bodystart="57" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1afdd3391d09285496d2f21ed9f06aaa43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="66" column="21" bodyfile="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="66" bodyend="69"/>
+        <location file="model/defence/DefenceComposite.cs" line="69" column="21" bodyfile="model/defence/DefenceComposite.cs" bodystart="69" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a11c9d33f527c302bfa9ec427716e9ccf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -167,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="75" column="21" bodyfile="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="75" bodyend="78"/>
+        <location file="model/defence/DefenceComposite.cs" line="78" column="21" bodyfile="model/defence/DefenceComposite.cs" bodystart="78" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a6d5f1f8df76d4358d3f055c6bec3ff0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override string</type>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="84" column="32" bodyfile="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="84" bodyend="88"/>
+        <location file="model/defence/DefenceComposite.cs" line="87" column="32" bodyfile="model/defence/DefenceComposite.cs" bodystart="87" bodyend="91"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -226,7 +226,7 @@
         <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
       </node>
     </collaborationgraph>
-    <location file="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="13" column="11" bodyfile="Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="14" bodyend="90"/>
+    <location file="model/defence/DefenceComposite.cs" line="14" column="11" bodyfile="model/defence/DefenceComposite.cs" bodystart="15" bodyend="93"/>
     <listofallmembers>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a66a39d2a2f3bc6a90dcca37b6921037d" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::DefenceComposite</scope><name>_items</name></member>
       <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1afdd3391d09285496d2f21ed9f06aaa43" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::DefenceComposite</scope><name>Add</name></member>

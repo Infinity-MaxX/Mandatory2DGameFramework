@@ -8,6 +8,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Mandatory2DGameFramework/gameInterface/observer/ICreatureObserver.cs" line="9" column="1"/>
+    <location file="gameInterface/observer/ICreatureObserver.cs" line="9" column="1"/>
   </compounddef>
 </doxygen>
