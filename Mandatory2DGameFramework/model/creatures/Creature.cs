@@ -12,7 +12,7 @@ namespace Mandatory2DGameFramework.model.creatures
     /// <summary>
     /// Represents a creature in the game world and serves as
     /// the base class for all creature types. Implements 
-    /// Template Method, Observer, and Strategy design patterns.
+    /// Template, Observer, and Strategy design patterns.
     /// </summary>
     /// <remarks>
     /// <para>
@@ -23,7 +23,7 @@ namespace Mandatory2DGameFramework.model.creatures
     /// </para>
     /// <para>
     /// <b>Strategy:</b> Damage calculation is delegated to an 
-    /// <see cref="IHitStrategy"/> implementation, allowing 
+    /// <see cref="IStrategy"/> implementation, allowing 
     /// creatures to change combat behavior dynamically.
     /// </para>
     /// <para>
@@ -35,8 +35,10 @@ namespace Mandatory2DGameFramework.model.creatures
     public abstract class Creature
     {
         #region Instances
-        private readonly Logger _log = Logger.Log; // singleton logger instance
-        private readonly List<ICreatureObserver> _observers = new(); // for observer pattern
+        // singleton logger instance
+        private readonly Logger _log = Logger.Log;
+        // for observer pattern
+        private readonly List<ICreatureObserver> _observers = new();
         private readonly List<AttackItem> _attackItems = new();
         private readonly List<DefenceItem> _defenceItems = new();
         #endregion
@@ -53,25 +55,26 @@ namespace Mandatory2DGameFramework.model.creatures
         public int HitPoint { get; private set; }
 
         /// <summary>
-        /// Gets a value indicating whether the creature is dead.
+        /// Gets a <see cref="bool"/> value indicating whether the creature 
+        /// is dead.
         /// </summary>
         public bool IsDead { get { return HitPoint <= 0; } }
 
         /// <summary>
-        /// Gets or sets the maximum total weight of attack items 
-        /// the creature can carry.
+        /// Gets or sets the maximum total weight of <see cref="AttackItem"/> 
+        /// instances the creature can carry.
         /// </summary>
         public int MaxAttackWeight { get; set; }
 
         /// <summary>
-        /// Gets or sets the maximum total weight of defence items
-        /// the creature can carry.
+        /// Gets or sets the maximum total weight of <see cref="DefenceItem"/> 
+        /// instances the creature can carry.
         /// </summary>
         public int MaxDefenceWeight { get; set; }
 
         /// <summary>
-        /// Gets or sets the hit strategy used to calculate 
-        /// outgoing damage.
+        /// Gets or sets the strategy used to calculate attack damage 
+        /// and defense.
         /// </summary>
         public IStrategy Strategy { get; set; }
         
@@ -98,7 +101,8 @@ namespace Mandatory2DGameFramework.model.creatures
         /// creature can carry. Default is 50.</param>
         /// <param name="maxDefenceWeight">The maximum defence weight the
         /// creature can carry. Default is 50.</param>
-        protected Creature(string name, int hitPoint = 100, int maxAttackWeight = 50, int maxDefenceWeight = 50)
+        protected Creature(string name, int hitPoint = 100, int maxAttackWeight = 50, 
+            int maxDefenceWeight = 50)
         {
             Name = name;
             HitPoint = hitPoint;
@@ -110,7 +114,7 @@ namespace Mandatory2DGameFramework.model.creatures
 
         #region Methods
         // ----------------------------------------------------------
-        // TEMPLATE METHOD
+        // TEMPLATE METHODS
         // ----------------------------------------------------------
 
         // Hook methods should be protected and virtual, allowing
@@ -118,9 +122,8 @@ namespace Mandatory2DGameFramework.model.creatures
         // of the public API.
 
         /// <summary>
-        /// Hook method invoked after a successful hit. Subclasses 
-        /// may override
-        /// this to implement custom post‑attack behavior.
+        /// Hook method invoked after a successful hit. Subclasses may
+        /// override this to implement custom post‑attack behavior.
         /// </summary>
         /// <param name="target">The creature that was hit.</param>
         protected virtual void AfterHit(Creature target)
@@ -158,8 +161,7 @@ namespace Mandatory2DGameFramework.model.creatures
         }
 
         /// <summary>
-        /// Performs an attack on the specified target using the 
-        /// Template Method pattern.
+        /// Performs an attack on the specified target.
         /// </summary>
         /// <param name="target">The creature being attacked.</param>
         /// <returns>The amount of damage dealt.</returns>
@@ -184,8 +186,6 @@ namespace Mandatory2DGameFramework.model.creatures
             AfterHit(target);
             return damage;
         }
-
-
 
         // ---------------------------------------------------------
         // OBSERVER PATTERN
@@ -226,7 +226,8 @@ namespace Mandatory2DGameFramework.model.creatures
 
         private void NotifyDeath()
         {
-            var originalObservers = _observers.ToList(); // Create a copy to avoid modification issues
+            // Create a copy to avoid modification issues
+            var originalObservers = _observers.ToList();
             foreach (var obs in originalObservers)
             {
                 obs.OnCreatureDeath(this);
@@ -240,6 +241,7 @@ namespace Mandatory2DGameFramework.model.creatures
                 obs.OnCreatureLoot(this, obj);
             }
         }
+
         // ---------------------------------------------------------
         // COMBAT
         // ---------------------------------------------------------
@@ -258,6 +260,7 @@ namespace Mandatory2DGameFramework.model.creatures
             }
             return sum;
         }
+
         /// <summary>
         /// Applies incoming damage to the creature, reduced by all 
         /// equipped defence items.
@@ -308,6 +311,10 @@ namespace Mandatory2DGameFramework.model.creatures
         /// Adds a defence item to the creature's inventory.
         /// </summary>
         /// <param name="item">The defence item to add.</param>
+        /// <returns>
+        /// <c>true</c> if the item was added successfully; otherwise 
+        /// <c>false</c>.
+        /// </returns>
         public bool AddDefenceItem(DefenceItem item)
         {
             if (CurrentDefenceWeight() + item.Weight > MaxDefenceWeight)
@@ -352,11 +359,11 @@ namespace Mandatory2DGameFramework.model.creatures
         // ---------------------------------------------------------
 
         /// <summary>
-        /// Attempts to loot a world object. If the object is lootable 
-        /// and is an attack or defence item, it is added to the 
-        /// creature's inventory.
+        /// Attempts to loot a <see cref="WorldObject"/>. If the object 
+        /// is lootable and is an attack or defence item, it is added to 
+        /// the creature's inventory.
         /// </summary>
-        /// <param name="obj">The world object to loot.</param>
+        /// <param name="obj">The <see cref="WorldObject"/> to loot.</param>
         public void Loot(WorldObject obj)
         {
             if (!obj.Lootable)
@@ -369,6 +376,7 @@ namespace Mandatory2DGameFramework.model.creatures
             {
                 if (obj is AttackItem atk)
                 {
+                    // var atk = (AttackItem)obj;
                     if (AddAttackItem(atk))
                     {
                         _log.LogInfo($"{Name} looted {atk.Name} (Attack Item).");
@@ -377,6 +385,7 @@ namespace Mandatory2DGameFramework.model.creatures
                 }
                 else if (obj is DefenceItem def)
                 {
+                    // var def = (DefenceItem)obj;
                     if (AddDefenceItem(def))
                     {
                         _log.LogInfo($"{Name} looted {def.Name} (Defence Item).");

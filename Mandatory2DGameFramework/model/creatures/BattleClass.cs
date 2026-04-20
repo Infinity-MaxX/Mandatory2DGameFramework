@@ -15,8 +15,8 @@ namespace Mandatory2DGameFramework.model.creatures.classes
     {
         #region Constructors
         /// <summary>
-        /// Initializes a new instance of the Warrior class 
-        /// with the specified name.
+        /// Initializes a new instance of the <see cref="Warrior"/> 
+        /// class with the specified name.
         /// </summary>
         /// <param name="name">The name of the warrior.</param>
         public Warrior(string name) : base(name)
@@ -39,15 +39,15 @@ namespace Mandatory2DGameFramework.model.creatures.classes
     }
 
     /// <summary>
-    /// A concrete implementation of the Creature class representing
-    /// a Mage character instance.
+    /// A concrete implementation of the <see cref="Creature"/> class
+    /// representing a <see cref="Mage"/> character instance.
     /// </summary>
     public class Mage : Creature
     {
         #region Constructors
         /// <summary>
-        /// Initializes a new instance of the Mage class with the 
-        /// specified name.
+        /// Initializes a new instance of the <see cref="Mage"/> class
+        /// with the specified name.
         /// </summary>
         /// <param name="name">The name of the mage.</param>
         public Mage(string name) : base(name)
