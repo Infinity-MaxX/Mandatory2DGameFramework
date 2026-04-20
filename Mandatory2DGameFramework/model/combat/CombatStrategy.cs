@@ -10,19 +10,19 @@ using System.Threading.Tasks;
 namespace Mandatory2DGameFramework.model.combat
 {
     /// <summary>
-    /// An implementation of the IStrategy interface that 
-    /// calculates combat in an aggressive manner, increasing
+    /// An implementation of the <see cref="IStrategy"/> interface
+    /// that calculates combat in an aggressive manner, increasing
     /// the total damage by 25% and decreasing defence by 25%.
     /// </summary>
     public class AggressiveStrategy : IStrategy
     {
         /// <summary>
         /// Calculates the total damage by summing the Hit 
-        /// values of all AttackItems and applying an aggressive 
-        /// multiplier of 1.25.
+        /// values of all <see cref="AttackItem"/> instances 
+        /// and applying an aggressive multiplier of 1.25.
         /// </summary>
-        /// <param name="items">The collection of AttackItems to 
-        /// calculate damage from.</param>
+        /// <param name="items">The collection of
+        ///  <see cref="AttackItem"/>s to calculate damage from.</param>
         /// <returns>The total damage after applying the aggressive 
         /// multiplier.</returns>
         public int CalculateDamage(IEnumerable<AttackItem> items)
@@ -31,12 +31,12 @@ namespace Mandatory2DGameFramework.model.combat
         }
 
         /// <summary>
-        /// Calculates the total defence by summing the ReduceDamage 
-        /// values of all DefenceItems and applying a defensive 
-        /// multiplier of 0.75.
+        /// Calculates the total defence by summing the ReduceDamage
+        /// values of all <see cref="DefenceItem"/> instances and 
+        /// applying a defensive multiplier of 0.75.
         /// </summary>
-        /// <param name="items">The collection of DefenceItems to 
-        /// calculate defence from.</param>
+        /// <param name="items">The collection of <see cref="DefenceItem"/> 
+        /// instances to calculate defence from.</param>
         /// <returns>The total defence after applying the defensive 
         /// multiplier.</returns>
         public int CalculateDefence(IEnumerable<DefenceItem> items)
@@ -46,20 +46,19 @@ namespace Mandatory2DGameFramework.model.combat
     }
 
     /// <summary>
-    /// An implementation of the IStrategy interface that calculates 
-    /// combat in a balanced manner. No modifications are made to the 
-    /// total damage or defence.
+    /// An implementation of the <see cref="IStrategy"/> interface 
+    /// that calculates combat in a balanced manner. No modifications 
+    /// are made to the total damage or defence.
     /// </summary>
     public class BalancedStrategy : IStrategy
     {
         /// <summary>
         /// Calculates the total damage by summing the Hit values of
-        /// all AttackItems without any modifications.
+        /// all <see cref="AttackItem"/> instances without any modifications.
         /// </summary>
-        /// <param name="items">The collection of AttackItems to  
-        /// calculates damage from.</param>
-        /// <returns>The total damage without any modifications.
-        /// </returns>
+        /// <param name="items">The collection of <see cref="AttackItem"/> 
+        /// instances to calculates damage from.</param>
+        /// <returns>The total damage without any modifications.</returns>
         public int CalculateDamage(IEnumerable<AttackItem> items)
         {
             return items.Sum(i => i.Hit);
@@ -67,12 +66,12 @@ namespace Mandatory2DGameFramework.model.combat
 
         /// <summary>
         /// Calculates the total defence by summing the ReduceDamage
-        /// values of all DefenceItems without any modifications.
+        /// values of all <see cref="DefenceItem"/> instances without 
+        /// any modifications.
         /// </summary>
-        /// <param name="items">The collection of DefenceItems to 
-        /// calculate defence from.</param>
-        /// <returns>The total defence without any modifications.
-        /// </returns>
+        /// <param name="items">The collection of <see cref="DefenceItem"/> 
+        /// instances to calculate defence from.</param>
+        /// <returns>The total defence without any modifications.</returns>
         public int CalculateDefence(IEnumerable<DefenceItem> items)
         {
             return items.Sum(i => i.ReduceDamage);
@@ -80,18 +79,19 @@ namespace Mandatory2DGameFramework.model.combat
     }
 
     /// <summary>
-    /// An implementation of the IStrategy interface that calculates  
-    /// combat in a defensive manner, decreasing the total damage by 25% 
-    /// and increasing defence by 25%.
+    /// An implementation of the <see cref="IStrategy"/> interface that 
+    /// calculates combat in a defensive manner, decreasing the total 
+    /// damage by 25% and increasing defence by 25%.
     /// </summary>
     public class DefensiveStrategy : IStrategy
     {
         /// <summary>
         /// Calculates the total damage by summing the Hit values of all 
-        /// AttackItems and applying a defensive multiplier of 0.75.
+        /// <see cref="AttackItem"/> instances and applying a defensive 
+        /// multiplier of 0.75.
         /// </summary>
-        /// <param name="items">The collection of AttackItems to calculate 
-        /// damage from.</param>
+        /// <param name="items">The collection of <see cref="AttackItem"/> 
+        /// instances to calculate damage from.</param>
         /// <returns>The total damage after applying the defensive
         /// multiplier.</returns>    
         public int CalculateDamage(IEnumerable<AttackItem> items)
@@ -101,11 +101,11 @@ namespace Mandatory2DGameFramework.model.combat
 
         /// <summary>
         /// Calculates the total defence by summing the ReduceDamage 
-        /// values of all DefenceItems and applying a defensive multiplier 
-        /// of 1.25.
+        /// values of all <see cref="DefenceItem"/> instances and applying
+        /// a defensive multiplier of 1.25.
         /// </summary>
-        /// <param name="items">The collection of DefenceItems to calculate 
-        /// defence from.</param>
+        /// <param name="items">The collection of <see cref="DefenceItem"/> 
+        /// instances to calculate defence from.</param>
         /// <returns>The total defence after applying the defensive 
         /// multiplier.</returns>
         public int CalculateDefence(IEnumerable<DefenceItem> items)

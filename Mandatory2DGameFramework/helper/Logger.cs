@@ -87,7 +87,7 @@ namespace Mandatory2DGameFramework.helper.logger
         /// log general information about application execution, such as 
         /// status updates or non-critical events.</remarks>
         /// <param name="message">The informational message to log. This value
-        /// can  be null or empty, in which case no message is written.</param>
+        /// can be null or empty, in which case no message is written.</param>
         public void LogInfo(string message)
         {
             Trace.TraceInformation(message);
