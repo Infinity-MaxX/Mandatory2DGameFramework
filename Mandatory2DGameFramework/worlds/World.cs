@@ -79,7 +79,9 @@ namespace Mandatory2DGameFramework.worlds
         /// be null.</param>
         /// <returns>A new <see cref="World"/> instance initialized
         /// with the parameters from the specified configuration.</returns>
-        // factory design pattern method
+        // factory design pattern method - allows for customisation of world
+        // creation logic in one place, and makes it easy to create different
+        // worlds with different configurations
         public static World FromConfig(GameConfig config)
         {
             return new World(config.World.MaxX, config.World.MaxY, config.Difficulty);
@@ -109,12 +111,19 @@ namespace Mandatory2DGameFramework.worlds
                 _log.LogInfo($"[WORLD] Removed object: {obj.ToString()} from " +
                     $"({obj.X}, {obj.Y})");
             }
+            else
+            {
+                _log.LogWarning($"[WORLD] Attempted to remove non-removable object: " +
+                    $"{obj.ToString()} at ({obj.X}, {obj.Y}). No action taken.");
+            }
         }
 
         /// <summary>
         /// Adds a <see cref="Creature"/> to the world.
         /// </summary>
         /// <param name="creature">The creature to add.</param>
+        // observer pattern - world observes creatures, so it can
+        // react to their actions (e.g. death, loot)
         public void AddCreature(Creature creature)
         {
             _creatures.Add(creature);
@@ -127,6 +136,8 @@ namespace Mandatory2DGameFramework.worlds
         /// Removes a <see cref="Creature"/> from the world.
         /// </summary>
         /// <param name="creature">The creature to remove.</param>
+        // observer pattern - world is no longer observing the creature,
+        // so it won't react to its actions
         public void RemoveCreature(Creature creature)
         {
             _creatures.Remove(creature);
@@ -137,9 +148,9 @@ namespace Mandatory2DGameFramework.worlds
 
         /// <summary>
         /// Called when a creature in the world takes damage.
-        /// <param name="creature">The creature to that was hit.</param>
-        /// <param name="damage">How much net damage the creature took.</param>
         /// </summary>
+        /// <param name="creature">The creature that was hit.</param>
+        /// <param name="damage">How much net damage the creature took.</param>
         public void OnCreatureHit(Creature creature, int damage)
         {
             _log.LogInfo($"[WORLD] {creature.Name} took {damage} damage.");
@@ -147,8 +158,8 @@ namespace Mandatory2DGameFramework.worlds
 
         /// <summary>
         /// Called when a creature in the world dies.
-        /// <param name="creature">The creature to that has died.</param>
         /// </summary>
+        /// <param name="creature">The creature that has died.</param>
         public void OnCreatureDeath(Creature creature)
         {
             _log.LogInfo($"[WORLD] {creature.Name} has died.");
@@ -174,6 +185,7 @@ namespace Mandatory2DGameFramework.worlds
         /// <param name="y">The Y-coordinate to check.</param>
         /// <returns>An enumerable collection of <see cref="WorldObject"/> 
         /// instances at the specified coordinates.</returns>
+        // analogy: think of a chest that has multiple items in it
         public IEnumerable<WorldObject> ObjectsAt(int x, int y)
         {
             var found = new List<WorldObject>();
@@ -195,6 +207,9 @@ namespace Mandatory2DGameFramework.worlds
         /// <param name="y">The Y-coordinate to check.</param>
         /// <returns>An enumerable collection of <see cref="Creature"/> 
         /// instances at the specified coordinates.</returns>
+        // analogy: think of an encounter where colliding at the same
+        // coordinates triggers a fight with the other creature - or
+        // think of random encounters in old Final Fantasy games
         public IEnumerable<Creature> CreaturesAt(int x, int y)
         {
             var found = new List<Creature>();

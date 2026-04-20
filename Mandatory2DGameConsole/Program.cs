@@ -186,6 +186,12 @@ class Program
 
         Debug.Assert(world.ObjectsAt(2, 2).Count() == 1, "Chest should still be there");
 
+        // ---------------------------------------------------------
+        // 9) LOGGING END
+        // ---------------------------------------------------------
+        Console.WriteLine("\n=== LOGGING END TEST ===");
+        logger.RemoveListener(fileListener);
+
         Console.WriteLine("\n=== TESTSUITE END ===");
     }
 }

@@ -86,6 +86,9 @@ namespace Mandatory2DGameFramework.worlds
         {
             X = x;
             Y = y;
+            // in an ideal world, there would be some validation here
+            // to ensure the new coordinates are within the world bounds
+            // and to ensure that there is no collision errors
         }
 
         /// <summary>

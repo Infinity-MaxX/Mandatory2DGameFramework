@@ -220,6 +220,8 @@ namespace Mandatory2DGameFramework.model.creatures
         {
             foreach (var obs in _observers)
             {
+                // obs is 'World'
+                // World.OnCreatureHit(creature, damage)
                 obs.OnCreatureHit(this, damage);
             }
         }
@@ -230,7 +232,9 @@ namespace Mandatory2DGameFramework.model.creatures
             var originalObservers = _observers.ToList();
             foreach (var obs in originalObservers)
             {
-                obs.OnCreatureDeath(this);
+                // obs is 'World'
+                // World.OnCreatureDeath(creature)
+                obs.OnCreatureDeath(this); 
             }
         }
 
