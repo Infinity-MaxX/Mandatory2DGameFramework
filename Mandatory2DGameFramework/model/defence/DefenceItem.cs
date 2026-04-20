@@ -9,21 +9,27 @@ namespace Mandatory2DGameFramework.model.defence
 {
     /// <summary>
     /// Represents an object in the world that provides 
-    /// defensive capabilities by reducing incoming hit points.
+    /// defensive capabilities by reducing incoming hit points. 
+    /// Implements operator overloading to allow combining multiple 
+    /// defence items, and serves as the base class for more 
+    /// specialized defence items that implements design patterns 
+    /// such as Decorator and Composite.
     /// </summary>
     /// <remarks>
     /// This class implements the Composite design pattern, allowing 
     /// multiple defence items to be treated as a single item. The 
-    /// composite sums the ReduceDamage and Weight values of all 
-    /// contained items. It can be used by creatures to represent 
-    /// carrying or equipping multiple defence items at once.
+    /// composite sums the <see cref="Weight"/> and <see cref="ReduceDamage"/>
+    /// values of all contained items. It can be used by creatures to
+    /// represent carrying or equipping multiple defence items at once.
     /// </remarks>
     public class DefenceItem : WorldObject
     {
         #region Properties
         /// <summary>
-        /// Gets or sets the amount of hit points to reduce 
-        /// from the creature when damage is applied.
+        /// Gets or sets the amount of hit points that this
+        /// defence item reduces when the player is attacked. 
+        /// This value is used to calculate the net damage taken
+        /// by the player after applying all defensive items.
         /// </summary>
         public virtual int ReduceDamage { get; set; }
         /// <summary>
@@ -36,9 +42,9 @@ namespace Mandatory2DGameFramework.model.defence
 
         #region Constructors
         /// <summary>
-        /// Initializes a new instance of the DefenceItem class with 
-        /// default values. This version assumes the player is not
-        /// wearing any defensive items.
+        /// Initializes a new instance of the <see cref="DefenceItem"/> 
+        /// class with default values. This version assumes the player 
+        /// is not wearing any defensive items.
         /// </summary>
         public DefenceItem()
         {
@@ -48,10 +54,10 @@ namespace Mandatory2DGameFramework.model.defence
         }
 
         /// <summary>
-        /// Initializes a new instance of the DefenceItem class with a  
-        /// name and default values for hit point reduction and weight.
-        /// This allows for junk/gag defensive items that have no
-        /// defensive strength or weight.
+        /// Initializes a new instance of the <see cref="DefenceItem"/>
+        /// class with a name and default values for hit point reduction
+        /// and weight. This allows for junk/gag defensive items that 
+        /// have no defensive strength or weight.
         /// </summary>
         public DefenceItem(string name, int reduceDamage, int weight)
         {
@@ -128,8 +134,8 @@ namespace Mandatory2DGameFramework.model.defence
         }
         
         /// <summary>
-        /// A string representation of the DefenceItem, including
-        /// its name and the amount of hit points it reduces.
+        /// A string representation of the <see cref="DefenceItem"/> class, 
+        /// including its name and the amount of hit points it reduces.
         /// </summary>
         /// <returns></returns>
         public override string ToString()

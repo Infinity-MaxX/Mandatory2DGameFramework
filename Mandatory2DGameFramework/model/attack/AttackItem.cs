@@ -7,29 +7,22 @@ using System.Threading.Tasks;
 
 namespace Mandatory2DGameFramework.model.attack
 {
-    // There needs to be a subclass for AttackItem that uses the
-    // Decorator Design Pattern: example: boost or weaken defence
-    // There needs to be a subclass for AttackItem that uses the
-    // Composite Design Pattern; it needs to store weapons
-
-    // Note: The AttackItem must have a property weight. A creature
-    // must be configurable to be able to carry a maximum weight of
-    // attack weapons (attackItems). Hint: May be implemented in the
-    // Composite class
-
     /// <summary>
     /// Represents an item that can be used to perform attacks within 
     /// the game world. Provides properties for the item's name, attack
-    /// strength, range, and weight.
+    /// strength, range, and weight. Implements operator overloading to 
+    /// allow combining multiple attack items, thereby supporting the 
+    /// Composite design pattern.
     /// </summary>
     /// <remarks>
-    /// AttackItem serves as a base class for specialized attack items,
-    /// including those that implement design patterns such as Decorator
-    /// (for modifying attack or defense properties) and Composite (for
-    /// grouping multiple weapons). Subclasses may extend functionality 
-    /// to support features like weight management or composite behaviors. 
-    /// Instances of AttackItem are typically used by creatures or entities 
-    /// capable of carrying and utilizing attack items.
+    /// <see cref="AttackItem"/> serves as a base class for specialized 
+    /// attack items, including those that implement design patterns such 
+    /// as Decorator (for modifying attack or defense properties) and 
+    /// Composite (for grouping multiple weapons). Subclasses may extend 
+    /// functionality to support features like weight management or 
+    /// composite behaviors. Instances of <see cref="AttackItem"/> are 
+    /// typically used by creatures or entities capable of carrying and 
+    /// utilizing attack items.
     /// </remarks>
     public class AttackItem : WorldObject
     {
@@ -66,9 +59,9 @@ namespace Mandatory2DGameFramework.model.attack
 
         #region Constructors
         /// <summary>
-        /// Initializes a new instance of the AttackItem class with 
-        /// default values. This version of the constructor assumes 
-        /// that the player has no attack items equipped.
+        /// Initializes a new instance of the <see cref="AttackItem"/> 
+        /// class with default values. This version of the constructor 
+        /// assumes that the player has no attack items equipped.
         /// </summary>
         public AttackItem()
         {
@@ -79,10 +72,10 @@ namespace Mandatory2DGameFramework.model.attack
         }
 
         /// <summary>
-        /// Initializes a new instance of the AttackItem class with a
-        /// name and default values for hit strength and range. This
-        /// allows for junk/gag weapons that have no attack strength 
-        /// or range.
+        /// Initializes a new instance of the <see cref="AttackItem"/> 
+        /// class with a name and default values for hit strength and 
+        /// range. This allows for junk/gag weapons that have no attack 
+        /// strength or range.
         /// </summary>
         /// <param name="name">The name of the weapon.</param>
         public AttackItem(string name)
