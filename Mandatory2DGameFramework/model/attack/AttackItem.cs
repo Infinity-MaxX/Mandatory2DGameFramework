@@ -21,8 +21,7 @@ namespace Mandatory2DGameFramework.model.attack
     /// Composite (for grouping multiple weapons). Subclasses may extend 
     /// functionality to support features like weight management or 
     /// composite behaviors. Instances of <see cref="AttackItem"/> are 
-    /// typically used by creatures or entities capable of carrying and 
-    /// utilizing attack items.
+    /// used by creatures capable of carrying and utilizing attack items.
     /// </remarks>
     public class AttackItem : WorldObject
     {
@@ -130,6 +129,7 @@ namespace Mandatory2DGameFramework.model.attack
             // "a is AttackComposite compositeA" checks if a is an 
             // AttackComposite and, if so, cast it and assign it to
             // compositeA. do the same for b
+            // pattern matching
             if (a is AttackComposite compositeA && b is AttackComposite compositeB)
             {
                 // create a new composite with the items from compositeA,

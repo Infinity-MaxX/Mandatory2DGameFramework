@@ -26,6 +26,7 @@ namespace Mandatory2DGameFramework.model.attack
         /// <summary>
         /// The wrapped attack item being decorated.
         /// </summary>
+        // bad naming convention, I'm so sorry! ;^;
         protected readonly AttackItem _baseWeapon;
         #endregion
 
